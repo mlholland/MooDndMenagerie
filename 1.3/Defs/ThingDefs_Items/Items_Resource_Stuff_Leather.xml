@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DND_Leather_Owlbear</defName>
+    <label>owlbear Featherfur</label>
+    <description>This unusual pelt consists of a thick layer of fur covered by an outer layer of feathers. It provides excellent protection, and the sound-muffling feathers provide a hunting stealth bonus to coats (outer-layer torso clothing) made from this material.</description>
+    <graphicData>
+      <color>(130,126,119)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.0</MarketValue>
+      <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(130,126,119)</color>
+      <commonality>0.025</commonality>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>2</Beauty>
+      </statFactors>
+    </stuffProps>
+    <comps>
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_BuffedStuff">
+        <appliedHediffWhenWorn>DND_OwlbearSilence</appliedHediffWhenWorn>
+        <requiredLayer>Shell</requiredLayer>
+        <requiredBodyPartGroup>Torso</requiredBodyPartGroup>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DND_Leather_DisplacerBeast</defName>
+    <label>Displacer Beast Fur</label>
+    <description>A beautiful pelt harvested from a displacer beast. Like a living displacer beast, the pelt occasionally bends light, making it appear a few feet away from its real location. This makes the leather exceptionally difficult to work with, but also confers the same benefit to the wearer if clothing is made from it. The clothing must be fairly large to provide this effect, so it must cover the wearer's torso on the outer layer.</description>
+    <graphicData>
+      <color>(189,161,116)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7</MarketValue>
+      <StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+      <WorkToMake>3</WorkToMake>
+      <WorkToBuild>3</WorkToBuild>
+    </statBases>
+    <stuffProps>
+      <color>(189,161,116)</color>
+      <commonality>0.025</commonality>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>3</Beauty>
+      </statFactors>
+    </stuffProps>
+    <comps>
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_BuffedStuff">
+        <appliedHediffWhenWorn>DND_WornDisplacement</appliedHediffWhenWorn>
+        <requiredLayer>Shell</requiredLayer>
+        <requiredBodyPartGroup>Torso</requiredBodyPartGroup>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DND_Leather_Basilisk</defName>
+    <label>basilisk skin</label>
+    <description>The tanned skin of a basilisk. This ugly, rock-studded hide provides above-average defence against blunt weapons.</description>
+    <graphicData>
+      <color>(189,161,116)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.3</MarketValue>
+      <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>.74</StuffPower_Armor_Blunt>
+    </statBases>
+    <stuffProps>
+      <color>(189,161,116)</color>
+      <commonality>0.025</commonality>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>.25</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DND_Leather_FaerieDragon</defName>
+    <label>faerie dragon skin</label>
+    <description>The delicate skin of a faerie dragon. This thin material offers little protection or insulation, but is very pretty.</description>
+    <graphicData>
+      <color>(189,161,116)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.8</MarketValue>
+      <StuffPower_Armor_Sharp>0.1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.0</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>7</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(189,161,116)</color>
+      <commonality>0.025</commonality>
+      <statFactors>
+        <MaxHitPoints>.5</MaxHitPoints>
+        <Beauty>5</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DND_Leather_Flumph</defName>
+    <label>flumph skin</label>
+    <description>The strange, rubbery skin a flumph. This material is a poor insulator and offers little protection.</description>
+    <graphicData>
+      <color>(189,161,116)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>.3</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(189,161,116)</color>
+      <commonality>0.025</commonality>
+      <statFactors>
+        <MaxHitPoints>.7</MaxHitPoints>
+        <Beauty>.7</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+</Defs>

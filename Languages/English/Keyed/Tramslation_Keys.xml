@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <!-- settings-->
+  <allowDungeonMonsterRaids>Allow monster raids</allowDungeonMonsterRaids>
+  <allowRustMonsterInfestations>Allow rust monster infestation events</allowRustMonsterInfestations>
+  <DND_MoodndAnimalSpawnMultiplier>Dnd Managerie animal spawning frequency multiplier</DND_MoodndAnimalSpawnMultiplier>
+  <DND_MoodndAnimalSpawnMultiplierTooltip>This multiplier will affect the spawn changes (commonalities) of ALL animals in this mod. For example, if this is set to 0.5, then animals from the mod will spawn half as much as default (which is 1). If set to 2, you'll get twice as many as default, and so on. This only affects wild spawns.</DND_MoodndAnimalSpawnMultiplierTooltip>
+  <DND_DisableAnimal>Disable {0}</DND_DisableAnimal>
+  <DND_EventSettingsTitle>Event Toggles</DND_EventSettingsTitle>
+  <DND_SpawningSettingsTitle>Wild Spawning Toggles</DND_SpawningSettingsTitle>
+  <DND_MoodndRewardMultiplier>Dnd Managerie quest reward frequency multiplier</DND_MoodndRewardMultiplier>
+  <DND_MoodndRewardMultiplierTooltip>This multiplier will affect the quest reward rate (commonalities) of ALL animals in this mod. For example, if this is set to 0.5, then items from the mod will appear as quest rewards half as much as the default (which is 1). If set to 2, you'll see quest rewards from this mod twice as often, and so on.</DND_MoodndRewardMultiplierTooltip>
+ 
+  <!-- misc -->
+  <DND_FurnitureAnimated>A {0} has been brought to life to serve the colony! It has been named {1}.</DND_FurnitureAnimated>
+  
+  <DND_GolemAwoken_Notification>A {0} has been magically compelled to life! It has been named {1} and will now serve the colony.</DND_GolemAwoken_Notification>
+  <DND_GolemAwoken_IconDesc>Invoke the last vestiges of power in the manual of golems at the heart of the statue. Doing so will awaken the golem and permanently turn it into a {0} to serve the colony.</DND_GolemAwoken_IconDesc>
+  <DND_GolemAwoken_IconLabel>Awaken</DND_GolemAwoken_IconLabel>
+  
+  <DND_SpectatorSummoned_Notification>A {0} has been lured into this reality and bound to serve the colony! It has been named {1}.</DND_SpectatorSummoned_Notification>
+  <DND_SpectatorSummoned_IconDesc>Activate this effigy to summon a loyal {0} from another dimension to serve the colony.</DND_SpectatorSummoned_IconDesc>
+  <DND_SpectatorSummoned_IconLabel>Summon</DND_SpectatorSummoned_IconLabel>
+    
+  <DND_MadeFromMaterialAddon>\n\nThis particular creature is made of {0}</DND_MadeFromMaterialAddon>
+  <DND_AnimatedCreatureLabel>{0} ({1})</DND_AnimatedCreatureLabel>
+  
+</LanguageData>

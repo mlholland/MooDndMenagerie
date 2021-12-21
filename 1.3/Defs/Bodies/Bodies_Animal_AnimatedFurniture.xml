@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+	Each coverage value is relative to its parent.
+	Remaining body part coverage (100% minus coverage of all child nodes) is a chance to hit exactly this part.
+	Damage "starts" at corePart, and then "goes deeper" until it hits remaining body part coverage or leaf node
+  - this body part is then hit.
+-->
+
+<!-- Stool -->
+
+<Defs>
+  <BodyDef>
+    <defName>DND_StoolBody</defName>
+    <label>Animated Stool</label>
+    <corePart>
+      <def>DND_Chair_Seat</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>DND_BodySlamTool</li>
+      </groups>
+      <parts>
+        <li>
+          <depth>Inside</depth>
+          <def>DND_Animating_Mechanites</def>
+          <coverage>0.01</coverage>
+        </li>
+        <li>
+          <def>DND_Chair_Leg</def>
+          <customLabel>front left chair leg</customLabel>
+          <coverage>0.08</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Floor_Protector</def>
+              <customLabel>front left floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Chair_Leg</def>
+          <customLabel>front right chair leg</customLabel>
+          <coverage>0.08</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Floor_Protector</def>
+              <customLabel>front right floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Chair_Leg</def>
+          <customLabel>back left chair leg</customLabel>
+          <coverage>0.08</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Floor_Protector</def>
+              <customLabel>back left floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Chair_Leg</def>
+          <customLabel>back right chair leg</customLabel>
+          <coverage>0.08</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Floor_Protector</def>
+              <customLabel>back right floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+  <!--Dining Chair-->   
+  <BodyDef>
+		<defName>DND_DiningChairBody</defName>
+		<label>Animated Dining Chair</label>
+		<corePart>
+			<def>DND_Chair_Seat</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+      <groups>
+        <li>DND_BodySlamTool</li>
+      </groups>
+			<parts>
+				<li>
+          <depth>Inside</depth>
+					<def>DND_Animating_Mechanites</def>
+					<coverage>0.01</coverage>
+				</li>
+			
+				<li>
+					<def>DND_Backrest</def>
+					<coverage>0.3</coverage>
+					<height>Top</height>
+					<parts>
+            <li>
+              <def>DND_Backrest_Spoke</def>
+              <depth>Outside</depth>
+              <customLabel>left backrest spoke</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+            <li>
+              <def>DND_Backrest_Spoke</def>
+              <customLabel>middle backrest spoke</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+            <li>
+              <def>DND_Backrest_Spoke</def>
+              <customLabel>right backrest spoke</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+					</parts>
+				</li>
+        <li>
+          <def>DND_Chair_Leg</def>
+          <customLabel>front left chair leg</customLabel>
+          <coverage>0.08</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Floor_Protector</def>
+              <customLabel>front left floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Chair_Leg</def>
+          <customLabel>front right chair leg</customLabel>
+          <coverage>0.08</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Floor_Protector</def>
+              <customLabel>front right floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Chair_Leg</def>
+          <customLabel>back left chair leg</customLabel>
+          <coverage>0.08</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Floor_Protector</def>
+              <customLabel>back left floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Chair_Leg</def>
+          <customLabel>back right chair leg</customLabel>
+          <coverage>0.08</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Floor_Protector</def>
+              <customLabel>back right floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+  <!-- Tool Cabinet -->
+  
+  <BodyDef>
+    <defName>DND_ToolCabinetBody</defName>
+    <label>Animated Tool Cabinet Body</label>
+    <corePart>
+      <groups>
+        <li>DND_BodySlamTool</li>
+      </groups>
+      <def>DND_Tool_Cabinet_Case</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <depth>Inside</depth>
+          <def>DND_Animating_Mechanites</def>
+          <coverage>0.01</coverage>
+        </li>
+        <li>
+          <def>DND_Drawer</def>
+          <customLabel>upper tool drawer</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>DND_Animated_Hammer</def>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Drawer</def>
+          <customLabel>middle tool drawer</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>DND_Animated_Handsaw</def>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Drawer</def>
+          <customLabel>lower tool drawer</customLabel>
+          <coverage>0.1</coverage>
+          <parts>
+            <li>
+              <def>DND_Animated_Screwdriver</def>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Cabinet_Leg</def>
+          <customLabel>front left cabinet leg</customLabel>
+          <coverage>0.03</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Cabinet_Floor_Protector</def>
+              <customLabel>front left floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Cabinet_Leg</def>
+          <customLabel>front right cabinet leg</customLabel>
+          <coverage>0.03</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Cabinet_Floor_Protector</def>
+              <customLabel>front right floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Cabinet_Leg</def>
+          <customLabel>back left cabinet leg</customLabel>
+          <coverage>0.03</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Cabinet_Floor_Protector</def>
+              <customLabel>back left floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Cabinet_Leg</def>
+          <customLabel>back right cabinet leg</customLabel>
+          <coverage>0.03</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>DND_Cabinet_Floor_Protector</def>
+              <customLabel>back right floor protector</customLabel>
+              <coverage>0.1</coverage>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+	
+	
+</Defs>

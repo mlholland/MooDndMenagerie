@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!-- todo move to a groupdef file-->
+  <BodyPartGroupDef>
+    <defName>DND_BodySlamTool</defName>
+    <label>body</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>DND_SnakeHairTool</defName>
+    <label>snake hair</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>DND_MiddleRightPaw</defName>
+    <label>middle right paw</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>DND_MiddleLeftPaw</defName>
+    <label>middle left paw</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>DND_LeftTentacleLasher</defName>
+    <label>left tentacle lasher</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>DND_RightTentacleLasher</defName>
+    <label>right tentacle lasher</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>DND_AcidTentacle</defName>
+    <label>acidic tentacle</label>
+  </BodyPartGroupDef> 
+
+  <BodyPartGroupDef>
+    <defName>DND_EyestalkGroup</defName>
+    <label>beholder eyestalk</label>
+  </BodyPartGroupDef>
+
+  
+  <BodyPartGroupDef>
+    <defName>DND_BasiliskEyeGroup</defName>
+    <label>basilisk eye</label>
+  </BodyPartGroupDef>
+  
+
+  
+  <BodyPartGroupDef>
+    <defName>DND_BuiltinSwordGroup</defName>
+    <label>built-in sword</label>
+  </BodyPartGroupDef>
+
+</Defs>

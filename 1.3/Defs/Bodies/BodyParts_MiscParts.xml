@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <BodyPartDef>
+    <defName>DND_Snake_Hair_Body</defName>
+    <label>snake hair body</label>
+    <hitPoints>15</hitPoints>
+    <skinCovered>true</skinCovered>
+  </BodyPartDef>
+
+
+  <BodyPartDef>
+    <defName>DND_Snake_Hair_Head</defName>
+    <label>snake hair head</label>
+    <hitPoints>10</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>HearingSource</li>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+
+
+  <BodyPartDef>
+    <defName>DND_Medusa_Main_Head</defName>
+    <label>Head</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+  </BodyPartDef>
+  
+  
+  <BodyPartDef>
+    <defName>DND_Huge_Tail</defName>
+    <label>tail</label>
+    <hitPoints>80</hitPoints>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Tail_Bones</defName>
+    <label>tail bones</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Displacer_Tentacle</defName>
+    <label>tentacle</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Displacer_Lasher</defName>
+    <label>tentacle lasher</label>
+    <hitPoints>15</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+
+  <BodyPartDef>
+    <defName>DND_Psychic_Flyer_Brain</defName>
+    <label>brain</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>HearingSource</li>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Eyestalk</defName>
+    <label>eyestalk</label>
+    <hitPoints>15</hitPoints>
+    <skinCovered>true</skinCovered>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Flumph_Tentacle</defName>
+    <label>tentacle</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>.5</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Flumph_Flap</defName>
+    <label>intake flap</label>
+    <hitPoints>15</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>EatingSource</li>
+    </tags>
+  </BodyPartDef>
+
+
+  <BodyPartDef>
+    <defName>DND_Massive_Eye</defName>
+    <label>massive eye</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>
+        <li>SightSource</li>
+      </li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Massive_Jaw</defName>
+    <label>massive jaw</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>
+        <li>EatingSource</li>
+      </li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Telekinetic_Flyer_Brain</defName>
+    <label>brain</label>
+    <hitPoints>40</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbCore</li>
+      <li>ConsciousnessSource</li>
+      <li>HearingSource</li>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Large_Body</defName>
+    <label>body</label>
+    <hitPoints>60</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canScarify>true</canScarify>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Levitation_Bladder</defName>
+    <label>levitation bladder</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>false</skinCovered>
+    <canScarify>false</canScarify>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+
+  <BodyPartDef>
+    <defName>DND_Pseudopod</defName>
+    <label>Pseudopod</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canScarify>false</canScarify>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+  
+  <BodyPartDef>
+    <defName>DND_MoutherCore</defName>
+    <label>Gibbering Core</label>
+    <hitPoints>50</hitPoints>
+    <skinCovered>false</skinCovered>
+    <canScarify>false</canScarify>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>MetabolismSource</li>
+      <li>BloodFiltrationKidney</li>
+      <li>BloodPumpingSource</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>DND_BuiltinSword</defName>
+    <label>Built-in Sword</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canScarify>false</canScarify>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_GolemMechaniteCore</defName>
+    <label>Golem Mechanite Core</label>
+    <hitPoints>50</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <tags>
+      <li>ConsciousnessSource</li>
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>MetabolismSource</li>
+      <li>BloodFiltrationKidney</li>
+      <li>BloodPumpingSource</li>
+    </tags>
+  </BodyPartDef>
+
+
+</Defs>

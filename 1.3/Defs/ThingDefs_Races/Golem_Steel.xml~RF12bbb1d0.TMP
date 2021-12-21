@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>DND_GolemSteel</defName>
+    <label>steel golem</label> <!-- and can be directed to release a huge plume of poison at their enemies-->
+    <description>A powerful golem made of steel. Like all golems, steel golems are incredibly strong, difficult-to-injure guardians of their creators. This comes at the cost of making and repairing them, as they do not heal naturally and must be operated upon to remove injuries. Steel golems are armed with a built-in sword the size of an adult human.</description>
+    <statBases>
+      <Flammability>0</Flammability>
+      <Mass>600</Mass>
+      <ToxicSensitivity>0.0</ToxicSensitivity>
+      <IncomingDamageFactor>1</IncomingDamageFactor>
+      <MoveSpeed>5.3</MoveSpeed>
+      <ComfyTemperatureMin>-300</ComfyTemperatureMin>
+      <ComfyTemperatureMax>1000</ComfyTemperatureMax>
+      <MarketValue>5000</MarketValue>
+      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+      <ArmorRating_Heat>2</ArmorRating_Heat>
+      <FilthRate>2</FilthRate>
+    </statBases>
+    <race>
+      <deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass>
+      <wildBiomes>
+      </wildBiomes>
+      <petness>0</petness>
+      <hasGenders>false</hasGenders>
+      <herdAnimal>false</herdAnimal>
+      <predator>false</predator>
+      <packAnimal>false</packAnimal>
+      <body>DND_GolemWithSwordBody</body>
+      <baseBodySize>3</baseBodySize>
+      <baseHealthScale>14</baseHealthScale>
+      <baseHungerRate>0.01</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <wildness>0.0</wildness>
+      <manhunterOnDamageChance>0.0</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <trainability>Advanced</trainability>
+      <lifeExpectancy>2000</lifeExpectancy>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <leatherDef>Steel</leatherDef>
+      <specificMeatDef>Steel</specificMeatDef>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundAngry>AA_MeadowAve_Angry</soundAngry>
+          <soundWounded>AA_MeadowAve_Wounded</soundWounded>
+          <soundDeath>AA_MeadowAve_Death</soundDeath>
+          <soundCall>AA_MeadowAve_Call</soundCall>
+        </li>
+      </lifeStageAges> 
+    </race>
+    <tradeTags>
+    </tradeTags>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_InitialHediff">
+        <hediffname>DND_GolemStatsSteel</hediffname>
+        <hediffseverity>1</hediffseverity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>built-in sword</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>45</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>DND_BuiltinSwordGroup</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>29</power>
+        <cooldownTime>1.7</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <recipes>
+      <li>DND_RepairGolemSteelFull</li>
+      <li>DND_RepairGolemSteelSingle</li>
+    </recipes>
+  </ThingDef>
+  
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>DND_GolemSteel</defName>
+    <label>Steel Golem</label>
+    <labelPlural>Steel Golems</labelPlural>
+    <race>DND_GolemSteel</race>
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.3</ecoSystemWeight>
+    <combatPower>1200</combatPower>
+
+    <wildGroupSize>
+      <min>1</min>
+      <max>1</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Megaspider/Megaspider</texPath>
+          <drawSize>3.15</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Megaspider/Megaspider</texPath>
+          <drawSize>3.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+
+  </PawnKindDef>
+
+</Defs>

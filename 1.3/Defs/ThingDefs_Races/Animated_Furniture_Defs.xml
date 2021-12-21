@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- TODO add notes on how to add more. -->
+
+  <ThingDef ParentName="AnimalThingBase" Name="BaseAnimatedFurniture" Abstract="True">
+    <defName>DND_BaseAnimatedAnimalDef</defName>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Ethereal</category>
+    <label>Base Animated Furniture - You shouldn't see this name</label>
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <Flammability>0.0</Flammability>
+      <Mass>1</Mass>
+      <ToxicSensitivity>0.0</ToxicSensitivity>
+    </statBases>
+    <race>
+      <deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass>
+      <wildBiomes>
+      </wildBiomes>
+      <petness>0</petness>
+      <hasGenders>false</hasGenders>
+      <herdAnimal>false</herdAnimal>
+      <predator>false</predator>
+      <packAnimal>false</packAnimal>
+      <baseHungerRate>0.01</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <wildness>0.0</wildness>
+      <manhunterOnDamageChance>0.0</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <trainability>Advanced</trainability>
+      <lifeExpectancy>2000</lifeExpectancy>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <leatherDef>Leather_Bird</leatherDef>
+      <gestationPeriodDays>999</gestationPeriodDays>
+      <baseHealthScale>1</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Dining Chair-->
+  <ThingDef ParentName="BaseAnimatedFurniture">
+    <defName>DND_AnimatedDiningChair_Base</defName>
+    <label>Animated Dining Chair</label>
+    <description>A dining chair that has been animated into a fascimile of life a scroll of animation. It always seems to be behind you right when you need a a place to sit.
+
+Animated Chairs will aggresively try to comfort nearby colonists, increasing their comfort need if it's below 50%.</description>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <MarketValue>500</MarketValue>
+      <FilthRate>.2</FilthRate>
+    </statBases>
+    <race>
+      <body>DND_DiningChairBody</body>
+      <baseBodySize>.4</baseBodySize>
+    </race>
+    <tools>
+      <li>
+        <label>slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_NeedBooster">
+        <radius>15</radius>
+        <tickInterval>2500</tickInterval>
+        <maxTargets>1</maxTargets>
+        <needBoostPct>.1</needBoostPct>
+        <maxTargetablePct>.5</maxTargetablePct>
+        <needDef>Comfort</needDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <Def Class="MoodndBehaviorsAndEvents.Def_AnimatedFurniture">
+    <defName>DND_AnimatedDiningChair</defName>
+    <furnitureDef>DiningChair</furnitureDef>
+    <baseDefName>DND_AnimatedDiningChair_Base</baseDefName>
+    <label>Animated Dining Chair</label>
+    <labelPlural>Animated Dining Chairs</labelPlural>
+    <ecoSystemWeight>0.0</ecoSystemWeight>
+    <combatPower>25</combatPower>
+    <wildGroupSize>
+      <min>1</min>
+      <max>1</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <shadowData>
+            <volume>(.35, .35, .35)</volume>
+            <offset>(.1,0,-.1)</offset> <!-- positive=left, nothing, positive=up-->
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </Def>
+
+  <!-- Tool cabinet-->
+  <ThingDef ParentName="BaseAnimatedFurniture">
+    <defName>DND_AnimatedToolCabinet</defName>
+    <thingClass>Pawn</thingClass>
+    <category>Pawn</category>
+    <label>Animated Tool Cabinet</label>
+    <description>A tool cabinet that has been animated into a fascimile of life using a scroll of animation. Now it lumbers around dispensing tools to nearby colonists.
+
+Animated tool cabinets periodically give a small general labor speed boost to nearby colonists. They also have a blunt ranged attack.</description>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <MarketValue>500</MarketValue>
+      <FilthRate>.2</FilthRate>
+      <LeatherAmount>200</LeatherAmount>
+    </statBases>
+    <race>
+      <body>DND_ToolCabinetBody</body>
+      <baseBodySize>1.5</baseBodySize>
+      <leatherDef>Steel</leatherDef>
+    </race>
+    <tools>
+      <li>
+        <label>slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_HediffEffecterRework">
+        <radius>20</radius>
+        <tickInterval>5000</tickInterval>
+        <maxTargets>1</maxTargets>
+        <hediff>DND_HelpfulTools</hediff>
+      </li> 
+        <li Class="AnimalBehaviours.CompProperties_InitialHediff">
+          <hediffname>DND_Material_Hediff_Steel</hediffname>
+          <hediffseverity>1</hediffseverity>
+        </li> 
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_ToolThrow</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>20</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <soundCast>ThrowGrenade</soundCast> 
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>1</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.98</accuracyMedium>
+        <accuracyLong>.97</accuracyLong>
+        <minRange>1</minRange>
+        <label>Hammer Throw</label>
+        <commonality>1</commonality>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <PawnKindDef  ParentName="AnimalKindBase">
+    <defName>DND_AnimatedToolCabinet</defName>
+    <race>DND_AnimatedToolCabinet</race>
+    <label>Animated Tool Cabinet</label>
+    <labelPlural>Animated Tool Cabinets</labelPlural>
+    <ecoSystemWeight>0.0</ecoSystemWeight>
+    <combatPower>50</combatPower>
+    <wildGroupSize>
+      <min>1</min>
+      <max>1</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Building/Misc/ToolCabinet</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(2,1)</drawSize>
+          <color>(96,114,95)</color>
+          <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+          </damageData>
+          <shadowData>
+            <volume>(1, 1, 1)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <Def Class="MoodndBehaviorsAndEvents.Def_AnimatedFurniture">
+    <defName>DND_AnimatedToolCabinet_ProgramDef</defName>
+    <baseDefName>DND_AnimatedToolCabinet</baseDefName>
+    <makeProgrammaticDefs>false</makeProgrammaticDefs>
+    <furnitureDef>ToolCabinet</furnitureDef>
+  </Def>
+
+  <!--Stool-->
+  <ThingDef ParentName="BaseAnimatedFurniture">
+    <defName>DND_AnimatedStool_Base</defName>
+    <label>Animated Stool</label>
+    <description>A stool that has been animated into a fascimile of life using a scroll of animation. It is constantly waddling underfoot, and everyone is convinced that it makes a cute chirping noise when they aren't looking.
+
+Animated stools are strangely endearing, and have a very high nuzzle interval.</description>
+    <statBases>
+      <MoveSpeed>4.7</MoveSpeed>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <MarketValue>100</MarketValue>
+      <FilthRate>.1</FilthRate>
+    </statBases>
+    <race>
+      <body>DND_StoolBody</body>
+      <baseBodySize>.25</baseBodySize>
+      <baseHealthScale>.5</baseHealthScale>
+      <nuzzleMtbHours>3</nuzzleMtbHours>
+    </race>
+    <tools>
+      <li>
+        <label>slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.2</cooldownTime>
+        <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <Def Class="MoodndBehaviorsAndEvents.Def_AnimatedFurniture">
+    <defName>DND_AnimatedStool</defName>
+    <furnitureDef>Stool</furnitureDef>
+    <baseDefName>DND_AnimatedStool_Base</baseDefName>
+    <label>Animated Stool</label>
+    <labelPlural>Animated Stools</labelPlural>
+    <ecoSystemWeight>0.0</ecoSystemWeight>
+    <combatPower>50</combatPower>
+    <wildGroupSize>
+      <min>1</min>
+      <max>1</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <shadowData>
+            <volume>(.4, .4, .4)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </Def>
+
+</Defs>

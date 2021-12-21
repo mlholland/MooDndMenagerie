@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Mooloh's Dnd Managerie</name>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+  <modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+		</li>
+	</modDependencies> 
+
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+    <li>brrainz.harmony</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>vanillaexpanded.achievements</li>
+	</loadAfter>
+	<author>Mooloh</author>
+
+	<packageId>mooloh.monmanmanagerie</packageId>
+
+	<description>Adds over a dozen Dungeons and Dragons-inspired animals to Rimworld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear as part of raids from unique factions, while others are loyal allies that must be acquired or built. Full list and descriptions below.
+
+&lt;size=24&gt;Features&lt;/size&gt; 
+
+     - Flumph: A friendly, psychic jellyfish that be tamed to produce a psychic-boosting drug.
+     - Golems: Extremely powerful guardians that be constructed from either human flesh, stone, or steel that trade long-term durability for immediate strength. In order to build one, you must first find a manual of golems from quests or traders.
+     - Animated Furniture: Made by using a scroll of animation quest reward on dining chairs, stools, or tool cabinets. Their exact stats depend on the quality and material of the original furniture. Each type of furniture also has a different behavior.
+     - Annihilator: A deadly underground predator that disintegrates is prey before consuming the resulting dust. Only appears in raids.
+     - Basilisk: A large lizard that can pretrify prey.
+     - Faerie Dragon: A small friendly dragon that can keep colonists happy but slow with their eupohira breath.
+     - Beholder: A malevolent, otherworldly creature that can shoot magical beams with a variety of effects. Only appears in raids.
+     - Medusa: A dangerous creature with a very powerful petrification attack. Only appears in raids.
+     - Owlbear: A deadly predator with an unnaturally large appetite.
+     - Displacer Beast: A large feline that distorts light around its body.
+     - Rust Monster: A strange crustacean that makes and eats rusted metals.
+     - Gibbering Mouther: An unnatural blob of flesh that disorients nearby creatures with noise.
+     - Spectator: A smaller cousin of beholders. Can be summoned using eyestalks harvested from beholders.
+&lt;size=24&gt;Issues&lt;/size&gt;
+
+I'm sure I'll make some
+
+	</description>
+</ModMetaData>

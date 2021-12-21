@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>DND_EuphoriaThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>DND_EuphoricHaze</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Euphoria</label>
+        <description>Wow, everything smells and sounds so... purple and happy!</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

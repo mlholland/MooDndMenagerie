@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DND_RepairGolemFleshFull</defName>
+    <label>fully repair flesh golem</label>
+    <description>Repair all injuries on a flesh golem using a large quantity of human flesh.</description>
+    <workerClass>MoodndBehaviorsAndEvents.Recipe_FullHealInjuries</workerClass>
+    <jobString>Repairing.</jobString>
+    <workAmount>400</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Human</li>
+					</thingDefs>
+				</filter>
+				<count>600</count>
+			</li>
+		</ingredients>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DND_RepairGolemFleshTen</defName>
+    <label>repair 10 wounds</label>
+    <description>Repair the 10 worst injuries on this golem using some human flesh. This acts like 10 applications of a healer mech serum.</description>
+    <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
+    <jobString>Repairing.</jobString>
+    <workAmount>400</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_Human</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DND_RepairGolemStoneFull</defName>
+    <label>fully repair stone golem</label>
+    <description>Repair all injuries on a stone golem using a large quantity of stone blocks.</description>
+    <workerClass>MoodndBehaviorsAndEvents.Recipe_FullHealInjuries</workerClass>
+    <jobString>Repairing.</jobString>
+    <workAmount>400</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>600</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DND_RepairGolemStoneTen</defName>
+    <label>repair 10 wounds</label>
+    <description>Repair the 10 worst injuries on this golem using some stone blocks. This acts like 10 applications of a healer mech serum.</description>
+    <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
+    <jobString>Repairing.</jobString>
+    <workAmount>400</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DND_RepairGolemSteelFull</defName>
+    <label>fully repair steel golem</label>
+    <description>Repair all injuries on a steel golem using a large quantity of steel.</description>
+    <workerClass>MoodndBehaviorsAndEvents.Recipe_FullHealInjuries</workerClass>
+    <jobString>Repairing.</jobString>
+    <workAmount>400</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>600</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>DND_RepairGolemSteelTen</defName>
+    <label>repair 10 wounds</label>
+    <description>Repair the 10 worst injuries on this golem using some steel. This acts like 10 applications of a healer mech serum.</description>
+    <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
+    <jobString>Repairing.</jobString>
+    <workAmount>400</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  
+</Defs>

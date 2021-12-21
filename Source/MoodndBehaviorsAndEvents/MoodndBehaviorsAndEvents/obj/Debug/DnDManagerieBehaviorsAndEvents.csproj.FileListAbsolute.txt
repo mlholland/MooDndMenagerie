@@ -1,0 +1,5 @@
+C:\Users\Miles\rimworld_modding\firstMod\1.3\Source\DnDManagerieBehaviorsAndEvents\DnDManagerieBehaviorsAndEvents\obj\Debug\DnDManagerieBehaviorsAndEvents.csprojAssemblyReference.cache
+C:\Users\Miles\rimworld_modding\firstMod\1.3\Source\DnDManagerieBehaviorsAndEvents\DnDManagerieBehaviorsAndEvents\obj\Debug\DnDManagerieBehaviorsAndEvents.csproj.CoreCompileInputs.cache
+C:\Users\Miles\rimworld_modding\firstMod\1.3\Source\Assemblies\DnDManagerieBehaviorsAndEvents.dll
+C:\Users\Miles\rimworld_modding\firstMod\1.3\Source\DnDManagerieBehaviorsAndEvents\DnDManagerieBehaviorsAndEvents\obj\Debug\DnDManagerieBehaviorsAndEvents.csproj.CopyComplete
+C:\Users\Miles\rimworld_modding\firstMod\1.3\Source\DnDManagerieBehaviorsAndEvents\DnDManagerieBehaviorsAndEvents\obj\Debug\DnDManagerieBehaviorsAndEvents.dll

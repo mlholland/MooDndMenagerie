@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingDef ParentName="ResourceBase" Name="ScrollAndTomeBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>Artifact</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <workSpeedStat>ResearchSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Research</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+    </recipeMaker>
+  
+</ThingDef>
+
+
+  <ThingDef ParentName="ScrollAndTomeBase">
+    <defName>DND_ScrollAnimateObjects</defName>
+    <label>Scroll of Animate Objects</label>
+    <description>A one-use magical scroll which animates a piece of furniture into a loyal creature. This can be used on dining chairs, tool cabinets, and stools, and the resulting creature's stats depend on the material and quality of the originating furniture.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use Scroll</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>MoodndBehaviorsAndEvents.CompTargetable_AnimateableFurniture</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>MoodndBehaviorsAndEvents.CompUseEffect_AnimateObject</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li> 
+    </thingSetMakerTags>
+    <recipeMaker> 
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Tailor</soundWorking>
+    </recipeMaker>
+    <costList>
+      <DND_AncientNotes>7</DND_AncientNotes> 
+    </costList>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ScrollAndTomeBase">
+    <defName>DND_TomeGolemFlesh</defName>
+    <label>Tome of Golems (Flesh)</label>
+    <description>An ancient tome which describes how to create an obedient flesh golem to serve its creator. The tome also serves as a magical power source to animate the completed golem, making it single-use.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li> 
+    </thingSetMakerTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <workSpeedStat></workSpeedStat>
+    </recipeMaker>
+    <costList>
+      <DND_AncientNotes>15</DND_AncientNotes>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="ScrollAndTomeBase">
+    <defName>DND_TomeGolemStone</defName>
+    <label>Tome of Golems (Stone)</label>
+    <description>An ancient tome which describes how to createe an obedient stone golem to serve its creator. The tome also serves as a magical power source to animate the completed golem, making it single-use.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <thingSetMakerTags> 
+      <li>RewardStandardMedFreq</li>
+    </thingSetMakerTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Tailor</soundWorking>
+    </recipeMaker>
+    <costList>
+      <DND_AncientNotes>35</DND_AncientNotes>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="ScrollAndTomeBase">
+    <defName>DND_TomeGolemSteel</defName>
+    <label>Tome of Golems (Steel)</label>
+    <description>An ancient tome which describes how to create an obedient steel golem to serve its creator. The tome also serves as a magical power source to animate the completed golem, making it single-use.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>4000</MarketValue>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <thingSetMakerTags> 
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Tailor</soundWorking>
+    </recipeMaker>
+    <costList>
+      <DND_AncientNotes>60</DND_AncientNotes>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>DND_AncientNotes</defName>
+    <label>Ancient Notes</label>
+    <description>Ancient scraps of magical research notes. The knowledge is fragmented and difficult to understand, but a someone might be able to decipher something useful from these pieces.
+
+      Ancient notes can be crafted into various rare items from the Dnd Managerie Mod at a crafting spot.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>1</Flammability>
+      <MarketValue>150</MarketValue>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <stackLimit>100</stackLimit>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>Artifact</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

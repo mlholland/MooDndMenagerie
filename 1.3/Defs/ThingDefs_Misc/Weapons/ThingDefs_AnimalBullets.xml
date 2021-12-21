@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ThingDef ParentName="BaseBullet">
+    <defName>DND_ToolThrow</defName>
+    <label>thrown hammer</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>30</speed>
+      <armorPenetrationBase>.5</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
+    <defName>DND_MedusaRay</defName>
+    <dgi>
+      <immunityHediffDefs>
+        <li>DND_Petrification_Complete</li>
+        <li>DND_PetrificationImmunity</li>
+        <li>DND_Argaiv</li>
+      </immunityHediffDefs>
+      <csv>
+        <capacityDef>Sight</capacityDef>
+      </csv>
+    </dgi>
+    <addHediffChance>1</addHediffChance>
+    <hediffToAdd>DND_Petrification</hediffToAdd>
+    <severityToAdd>.03</severityToAdd>
+    <label>medusa gaze</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_MedusaRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>120</speed>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass>
+  </ThingDef>
+  
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
+    <defName>DND_BasiliskRay</defName>
+    <dgi>
+      <immunityHediffDefs>
+        <li>DND_Petrification_Complete</li>
+        <li>DND_PetrificationImmunity</li>
+        <li>DND_Argaiv</li>
+      </immunityHediffDefs>
+      <csv>
+        <capacityDef>Sight</capacityDef>
+      </csv>
+    </dgi>
+    <addHediffChance>1</addHediffChance>
+    <hediffToAdd>DND_Petrification</hediffToAdd> 
+    <severityToAdd>.01</severityToAdd>
+    <label>medusa gaze</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_MedusaRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>120</speed>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass> 
+  </ThingDef>
+    
+  <ThingDef ParentName="BaseBullet">
+    <defName>DND_SpectatorEnervationRay</defName>
+    <label>Enervation ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderEnervationRay</damageDef>
+      <damageAmountBase>4</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>1</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <!--This pawn represents a pawn that is moving due to a telekinetic power-->
+  <ThingDef ParentName="BaseBullet" Name="Projectile_Pawn_Linear">
+    <defName>DND_Projectile_Pawn_Linear</defName>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_Pawn_Linear</thingClass>
+    <label>flying creature</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--This pawn represents a pawn that is floating due to a telekinetic power-->
+  <ThingDef ParentName="BaseBullet" Name="Projectile_Pawn_Suspend">
+    <defName>DND_Projectile_Pawn_Suspend</defName>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_Pawn_Suspend</thingClass>
+    <label>flying creature</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+
+</Defs>

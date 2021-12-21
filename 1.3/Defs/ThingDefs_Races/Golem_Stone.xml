@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- TODO notes on how to add more. -->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>DND_GolemStone</defName>
+    <label>stone golem</label>
+    <!--While drafted, stone golems can be directed to release a psionic burst from their underlying mechanites,
+     which slow creatures caught in the blast.-->
+    <description>A golem made of stone. Like all golems, stone golems are incredibly strong, difficult-to-injure guardians of their creators. This comes at the cost of making and repairing them, as they do not heal naturally and must be operated upon to remove injuries. 
+     
+     Note: Although stone golems can be constructed from any stone blocks, the resulting golem is always the same.</description>
+    <statBases>
+      <Flammability>0</Flammability>
+      <Mass>350</Mass>
+      <ToxicSensitivity>0.0</ToxicSensitivity>
+      <IncomingDamageFactor>1</IncomingDamageFactor>
+      <MoveSpeed>3.9</MoveSpeed>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>500</ComfyTemperatureMax>
+      <MarketValue>3500</MarketValue>
+      <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+      <ArmorRating_Heat>2</ArmorRating_Heat>
+      <FilthRate>5</FilthRate>
+    </statBases>
+    <race>
+      <!--deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass-->
+      <wildBiomes>
+      </wildBiomes>
+      <petness>0</petness>
+      <hasGenders>false</hasGenders>
+      <herdAnimal>false</herdAnimal>
+      <predator>false</predator>
+      <packAnimal>false</packAnimal>
+      <body>DND_GolemBody</body>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>12</baseHealthScale>
+      <baseHungerRate>0.01</baseHungerRate>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <wildness>0.0</wildness>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <trainability>Advanced</trainability>
+      <lifeExpectancy>2000</lifeExpectancy>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <leatherDef>BlocksSandstone</leatherDef>
+      <specificMeatDef>BlocksSandstone</specificMeatDef>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges> 
+    </race>
+    <tradeTags>
+    </tradeTags>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_InitialHediff">
+        <hediffname>DND_GolemStatsStone</hediffname>
+        <hediffseverity>1</hediffseverity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1.7</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1.7</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+    </tools>
+    <recipes>
+      <li>DND_RepairGolemStoneFull</li>
+      <li>DND_RepairGolemStoneTen</li>
+    </recipes>
+  </ThingDef>
+  
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>DND_GolemStone</defName>
+    <label>Stone Golem</label>
+    <labelPlural>Stone Golems</labelPlural>
+    <race>DND_GolemStone</race>
+		<canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.3</ecoSystemWeight>
+    <combatPower>800</combatPower>
+
+    <wildGroupSize>
+      <min>1</min>
+      <max>1</max>
+    </wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_GolemStone/DND_SGolem</texPath>
+          <drawSize>3.15</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData> 
+        <dessicatedBodyGraphicData>
+          <!-- corpse shouldn't ever show up in game -->
+          <texPath>Things/Pawn/Animal/DND_GolemStone/DND_SGolem</texPath>
+          <drawSize>3.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+
+  </PawnKindDef>
+
+</Defs>

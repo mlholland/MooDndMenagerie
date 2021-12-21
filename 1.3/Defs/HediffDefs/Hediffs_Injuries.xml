@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>DND_Necrosis</defName>
+    <label>necrosis</label>
+    <labelNoun>sudden necrosis</labelNoun>
+    <description>Sudden necrosis has left large sections of tissue decaying on the body. More likely to get infected than other injuries, and more painful.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>Cleaned</labelTendedWell>
+        <labelTendedWellInner>Cleaned</labelTendedWellInner>
+        <labelSolidTendedWell>Disinfected</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.25</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>necrosis scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0175</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.06</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Rotted Away</destroyedLabel>
+      <destroyedOutLabel>Rotted AWay</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>DND_Disintegration</defName>
+    <label>disintegration</label>
+    <labelNoun>rapid disintegration</labelNoun>
+    <description>Disintegrated Flesh.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>Cleaned</labelTendedWell>
+        <labelTendedWellInner>Cleaned</labelTendedWellInner>
+        <labelSolidTendedWell>Disinfected</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.0</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>necrosis scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0175</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.06</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Disintegrated</destroyedLabel>
+      <destroyedOutLabel>Disintegrated</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>DND_BodyRusting</defName>
+    <label>rust</label>
+    <labelNoun>rapid rusting</labelNoun>
+    <description>This artifical part was hit by a rapid-rusting agent of some sort, causing immense damage.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>Cleaned</labelTendedWell>
+        <labelTendedWellInner>Cleaned</labelTendedWellInner>
+        <labelSolidTendedWell>Disinfected</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.0</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>rust wounds</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0175</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.00</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Rusted Away</destroyedLabel>
+      <destroyedOutLabel>Rusted Away</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+ <!--
+  <HediffDef ParentName="InjuryBase">
+    <defName>Gunshot</defName>
+    <label>gunshot</label>
+    <labelNoun>a gunshot wound</labelNoun>
+    <description>A gunshot wound.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>old gunshot</permanentLabel>
+        <instantlyPermanentLabel>permanent gunshot injury</instantlyPermanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.06</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Shot off</destroyedLabel>
+      <destroyedOutLabel>Shot out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>-->
+
+</Defs>

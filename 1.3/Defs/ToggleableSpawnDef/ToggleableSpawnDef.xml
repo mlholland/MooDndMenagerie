@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <MoodndBehaviorsAndEvents.ToggleableSpawnDef>
+    <defName>DND_ToggleableAnimals</defName>
+    <toggleablePawns>
+      <li>DND_Owlbear</li>
+      <li>DND_FaerieDragon</li>
+      <li>DND_DisplacerBeast</li>
+      <li>DND_Flumph</li>
+      <li>DND_GibberingMouther</li>
+      <li>DND_RustMonster</li>
+      <li>DND_Basilisk</li>
+    </toggleablePawns>
+  </MoodndBehaviorsAndEvents.ToggleableSpawnDef>
+</Defs>
