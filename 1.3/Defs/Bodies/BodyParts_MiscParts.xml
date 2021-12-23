@@ -221,8 +221,8 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>DND_GolemMechaniteCore</defName>
-    <label>Golem Mechanite Core</label>
+    <defName>DND_GolemMagicalCore</defName>
+    <label>Magical Golem Core</label>
     <hitPoints>50</hitPoints>
     <bleedRate>0</bleedRate>
     <skinCovered>false</skinCovered>
@@ -237,6 +237,5 @@
       <li>BloodPumpingSource</li>
     </tags>
   </BodyPartDef>
-
 
 </Defs>

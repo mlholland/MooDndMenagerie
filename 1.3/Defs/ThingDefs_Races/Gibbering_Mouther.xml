@@ -62,6 +62,9 @@ These mouths constantly emit a disorienting babble of gibberish that induces vom
         <resistancePerApplication>.2</resistancePerApplication>
         <immunityHediffs>
           <li>DND_GibberingBabbleImmunity</li>
+          <li>DND_GolemStatsFlesh</li>
+          <li>DND_GolemStatsStone</li>
+          <li>DND_GolemStatsSteel</li>
         </immunityHediffs>
       </li>
       <li Class="AnimalBehaviours.CompProperties_InitialHediff">

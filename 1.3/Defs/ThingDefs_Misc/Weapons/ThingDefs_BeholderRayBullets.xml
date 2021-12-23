@@ -7,6 +7,9 @@
         <li>DND_PetrificationImmunity</li>
         <li>DND_Petrification_Complete</li>
         <li>DND_Argaiv</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
       </immunityHediffDefs>
       <shieldPierceChance>.4</shieldPierceChance>
       <shieldDamage>100</shieldDamage>
@@ -33,6 +36,9 @@
     <dgi>
       <immunityHediffDefs> 
         <li>WakeUpHigh</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
       </immunityHediffDefs>
       <shieldPierceChance>.5</shieldPierceChance>
       <shieldDamage>40</shieldDamage>  
@@ -61,6 +67,9 @@
       <resistanceHediffDef>DND_MindControlResistance</resistanceHediffDef>
       <immunityHediffDefs>
         <li>DND_MindControlImmunity</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
       </immunityHediffDefs>
       <shieldPierceChance>1</shieldPierceChance>
       <shieldDamage>0</shieldDamage>
@@ -85,6 +94,9 @@
     <dgi>
       <immunityHediffDefs>
         <li>DND_MindControlImmunity</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
       </immunityHediffDefs>
       <resistanceHediffDef>DND_MindControlResistance</resistanceHediffDef>
       <shieldPierceChance>.5</shieldPierceChance>
@@ -152,6 +164,11 @@
     <dgi>
       <shieldPierceChance>.3</shieldPierceChance>
       <shieldDamage>70</shieldDamage>
+      <immunityHediffs>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
+      </immunityHediffs>
     </dgi>
     <hediffToAdd>DND_TemporaryParalysis</hediffToAdd>
     <severityToAdd>.5~1</severityToAdd>

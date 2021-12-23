@@ -142,8 +142,8 @@
 
   
   <BodyPartDef>
-    <defName>DND_Animating_Mechanites</defName>
-    <label>Animating Mechanites</label>
+    <defName>DND_Magical_Core</defName>
+    <label>Magical Core</label>
     <hitPoints>20</hitPoints>
     <bleedRate>0</bleedRate>
     <skinCovered>false</skinCovered>
@@ -151,10 +151,8 @@
     <frostbiteVulnerability>0.5</frostbiteVulnerability>
     <tags>
       <li>SightSource</li>
-      <li>ConsciousnessSource</li>
-      <li>HearingSource</li>
-      <li>EatingSource</li>
-      <li>TalkingSource</li>
+      <li>ConsciousnessSource</li> 
+      <li>EatingSource</li> 
       <li>BreathingSource</li>
       <li>BloodFiltrationLiver</li>
       <li>MetabolismSource</li>

@@ -23,7 +23,7 @@
       <parts>
         <li>
           <depth>Inside</depth>
-          <def>DND_Animating_Mechanites</def>
+          <def>DND_Magical_core</def>
           <coverage>0.01</coverage>
         </li>
         <li>
@@ -96,7 +96,7 @@
 			<parts>
 				<li>
           <depth>Inside</depth>
-					<def>DND_Animating_Mechanites</def>
+					<def>DND_Magical_core</def>
 					<coverage>0.01</coverage>
 				</li>
 			
@@ -194,7 +194,7 @@
       <parts>
         <li>
           <depth>Inside</depth>
-          <def>DND_Animating_Mechanites</def>
+          <def>DND_Magical_core</def>
           <coverage>0.01</coverage>
         </li>
         <li>

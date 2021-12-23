@@ -39,7 +39,7 @@
               </groups>
               <parts>
                 <li>
-                  <def>DND_GolemMechaniteCore</def>
+                  <def>DND_GolemMagicalCore</def>
                   <coverage>0.1</coverage>
                   <groups>
                     <li>UpperHead</li>

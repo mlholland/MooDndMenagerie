@@ -22,7 +22,7 @@ namespace MoodndBehaviorsAndEvents
         public static ThingDef MakeAnimalDef(ThingDef aniDef, ThingDef furnitureThingDef)
         {
             ThingDef newThing = new ThingDef();
-            //Values set in basepawn
+            //Values set in basepawn def
             newThing.thingClass = typeof(Pawn); // this and the category value must be reset directly, since animated furniture defs
             newThing.category = ThingCategory.Pawn; // set these wierdly to avoid be processed like normal animals.
 
@@ -49,7 +49,7 @@ namespace MoodndBehaviorsAndEvents
             // This doesn't work for some reason
             // probably need to carefully examine how the VEF animal ranged attack framework works, and see if there are any
             // extra values it sets (probably related to widget creation).
-            if (aniDef.Verbs != null && newThing.Verbs != null)
+            /*if (aniDef.Verbs != null && newThing.Verbs != null)
             {
                 newThing.Verbs.Clear();
                 foreach (VerbProperties verb in aniDef.Verbs)
@@ -73,7 +73,7 @@ namespace MoodndBehaviorsAndEvents
                     newVerb.commonality = verb.commonality;
                     newThing.Verbs.Add(newVerb); 
                 }
-            }
+            }*/
             newThing.drawGUIOverlay = aniDef.drawGUIOverlay;
 
             newThing.race = new RaceProperties();
@@ -229,7 +229,7 @@ namespace MoodndBehaviorsAndEvents
             CompProperties_InitialHediff newProp = new CompProperties_InitialHediff();
             newProp.hediffname = HediffDef.Named(String.Format("DND_Material_Hediff_{0}", stuff.defName)).defName; // Done this way to guarantee during load that hediff defs exist.
             newProp.hediffseverity = 1.0f;
-            newProp.applyToAGivenBodypart = true;
+            newProp.applyToAGivenBodypart = false;
             newProp.part = newThing.race.body.corePart.def;
             newProp.addRandomHediffs = false;
             newThing.comps.Add(newProp);
