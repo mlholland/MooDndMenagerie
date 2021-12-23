@@ -142,7 +142,7 @@
 
   
   <BodyPartDef>
-    <defName>DND_Magical_Core</defName>
+    <defName>DND_MagicalCore</defName>
     <label>Magical Core</label>
     <hitPoints>20</hitPoints>
     <bleedRate>0</bleedRate>

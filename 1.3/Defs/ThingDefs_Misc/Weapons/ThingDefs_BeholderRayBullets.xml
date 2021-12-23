@@ -164,11 +164,11 @@
     <dgi>
       <shieldPierceChance>.3</shieldPierceChance>
       <shieldDamage>70</shieldDamage>
-      <immunityHediffs>
+      <immunityHediffDefs>
         <li>DND_GolemStatsFlesh</li>
         <li>DND_GolemStatsStone</li>
         <li>DND_GolemStatsSteel</li>
-      </immunityHediffs>
+      </immunityHediffDefs>
     </dgi>
     <hediffToAdd>DND_TemporaryParalysis</hediffToAdd>
     <severityToAdd>.5~1</severityToAdd>
