@@ -385,7 +385,7 @@
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DefMakers\MaterialToAnimalDefConverter.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DefMakers\MaterialToPawnKindDefConverter.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\HediffSetExtraLogic.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\HediffAddingUtil.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DebuffLogicUtil.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\FurnitureToAnimatedObjectConverter.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\MoodndDefOf.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Verbs\Verb_MeleeApplyHediff_MoreOptions.cs" />

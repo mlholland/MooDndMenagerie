@@ -27,14 +27,14 @@ namespace MoodndBehaviorsAndEvents
             // sanity check that nothing important is null
             if (Def != null && hitThing != null && hitThing is Pawn hitPawn)
             {
-                if (HediffAddingUtil.DoesDebuffHappen(hitPawn, Def.dgi)) // try to roll to 'hit'
+                if (DebuffLogicUtil.DoesDebuffHappen(hitPawn, Def.dgi)) // try to roll to 'hit'
                 {
                     var hediffOnPawn = hitPawn.health?.hediffSet?.GetFirstHediffOfDef(Def.hediffToAdd);
                     Hediff hediff;
                     if (Def.modifyExistingHediff && hediffOnPawn != null) // if modify existing hediff if it's present and designated
                     {
                         hediff = hediffOnPawn;
-                        if (Def.usesSeverity)
+                        if (Def.severityToAdd.max > 0) // add severity if this hediff uses it
                         {
                             float severity = Def.severityToAdd.RandomInRange;
                             if (Def.addSeverityToExisting) // increase existing hediff severity
@@ -80,7 +80,7 @@ namespace MoodndBehaviorsAndEvents
                             Log.Error("Couldn't get disappear comp from hediff - this likely means that an invalid hediff was inputted into a TimedHediffBullet");
                         }*/
 
-                        if (Def.usesSeverity) // add severity if this hediff uses it
+                        if (Def.severityToAdd.max > 0f) // add severity if this hediff uses it
                         {
                             hediff.Severity = Def.severityToAdd.RandomInRange;
                         }
@@ -104,7 +104,7 @@ namespace MoodndBehaviorsAndEvents
                     }
 
                     // Regardless of the exact details of what hediff we added or modified, the fact that we're in this if-statement means that it was probably applied, so run a resistance check
-                    HediffAddingUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
+                    DebuffLogicUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
                 }
             }
         }

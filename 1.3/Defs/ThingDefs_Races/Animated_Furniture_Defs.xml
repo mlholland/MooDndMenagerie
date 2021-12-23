@@ -52,7 +52,7 @@
   <ThingDef ParentName="BaseAnimatedFurniture">
     <defName>DND_AnimatedDiningChair_Base</defName>
     <label>Animated Dining Chair</label>
-    <description>A dining chair that has been animated into a fascimile of life a scroll of animation. It always seems to be behind you right when you need a a place to sit.
+    <description>A dining chair that has been brought to life by a scroll of animation. It seems to always be behind you right when you need a a place to sit.
 
 Animated Chairs will aggresively try to comfort nearby colonists, increasing their comfort need if it's below 50%.</description>
     <statBases>

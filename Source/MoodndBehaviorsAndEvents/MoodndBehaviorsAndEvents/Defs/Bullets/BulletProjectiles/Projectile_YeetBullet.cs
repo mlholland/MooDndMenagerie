@@ -25,10 +25,10 @@ namespace MoodndBehaviorsAndEvents
 
             if (Def != null && hitThing != null && hitThing is Pawn hitPawn)
             {
-                if (HediffAddingUtil.DoesDebuffHappen(hitPawn, Def.dgi))
+                if (DebuffLogicUtil.DoesDebuffHappen(hitPawn, Def.dgi))
                 {
                     // todo this first before the pawn in cached to avoid possible issues
-                    HediffAddingUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
+                    DebuffLogicUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
                     IntVec3 targetDirection;
                     if (RCellFinder.TryFindDirectFleeDestination(this.launcher.Position, 9f, hitPawn, out targetDirection))
                     {

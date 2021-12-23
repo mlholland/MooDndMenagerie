@@ -10,6 +10,6 @@ namespace MoodndBehaviorsAndEvents
 {
     public class ThingDef_YeetBullet : ThingDef
     {
-        public HediffAddingUtil.DebuffGiverInputs dgi;
+        public DebuffLogicUtil.DebuffGiverInputs dgi;
     }
 }

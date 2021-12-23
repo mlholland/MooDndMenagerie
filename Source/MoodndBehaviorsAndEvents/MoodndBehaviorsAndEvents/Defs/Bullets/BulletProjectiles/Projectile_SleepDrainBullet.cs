@@ -26,7 +26,7 @@ namespace MoodndBehaviorsAndEvents
             base.Impact(hitThing);
             if (Def != null && hitThing != null && hitThing is Pawn hitPawn)
             {
-                if (HediffAddingUtil.DoesDebuffHappen(hitPawn, Def.dgi))
+                if (DebuffLogicUtil.DoesDebuffHappen(hitPawn, Def.dgi))
                 {
                     var pawnNeed = hitPawn.needs.TryGetNeed(NeedDefOf.Rest);
                     if (pawnNeed != null)
@@ -41,7 +41,7 @@ namespace MoodndBehaviorsAndEvents
                             hitPawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
                             hitPawn.jobs.TryTakeOrderedJob(forcedSleepJob);
                         }
-                        HediffAddingUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
+                        DebuffLogicUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
                     }
                 }
             }

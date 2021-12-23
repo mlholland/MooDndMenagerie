@@ -36,7 +36,7 @@ namespace MoodndBehaviorsAndEvents
             {
                 Log.Error(String.Format("Moodnd Verb_MeleeApplyHediff_MoreOptions: custom verb expected DebuffingManeuverDef {0} with a non-null hediff def.", this.maneuver.defName));
             }
-            if (HediffAddingUtil.DoesDebuffHappen(pawn, dmd.dgi)) {
+            if (DebuffLogicUtil.DoesDebuffHappen(pawn, dmd.dgi)) {
                 if (!dmd.onlyApplyHediffIfWounded || damageResult.wounded)
                 { 
                     if (dmd.applyHediffToWholeBody)

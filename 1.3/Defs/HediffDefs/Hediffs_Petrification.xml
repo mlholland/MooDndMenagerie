@@ -48,6 +48,7 @@
     <description>A magical disease that causes the victim's body to calcify. If untreated it can become a permanent condition that emtombs the victim. Thankfully the development of the disease can be heavily slowed with sufficient medical treatment, and the magic fades after several days if it doesn't take over the victim's entire body.</description>
     <makesSickThought>true</makesSickThought>
     <tendable>true</tendable>
+    <lethalSeverity>1.01</lethalSeverity><!--Lethal severity is  -->
     <minSeverity>0.001</minSeverity>
     <maxSeverity>1</maxSeverity>
     <initialSeverity>0.001</initialSeverity>

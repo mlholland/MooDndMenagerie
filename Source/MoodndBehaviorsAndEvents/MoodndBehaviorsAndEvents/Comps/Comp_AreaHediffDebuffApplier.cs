@@ -85,7 +85,7 @@ namespace MoodndBehaviorsAndEvents
                             // apply capacity scaling if needed
                             if (Props.capacityScalingValues != null && applicationChance > 0)
                             {
-                                applicationChance *= HediffAddingUtil.PawnCapacityScaling(pawn, Props.capacityScalingValues);
+                                applicationChance *= DebuffLogicUtil.PawnCapacityScaling(pawn, Props.capacityScalingValues);
                             } 
 
                             // done modifying the chance to hit

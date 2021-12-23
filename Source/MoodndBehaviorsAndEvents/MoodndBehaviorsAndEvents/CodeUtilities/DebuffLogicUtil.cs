@@ -7,12 +7,11 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 
-/* Utility functions related to pawn logic. Generally used when trying to apply hediffs to determine whether or not to try adding
- * the hediff, and how likely that application is to work.
+/* Utility functions related to debuff logic. Main functions are the DebuffGiverInputs subclass and the DoesDebuffHappen function.
 */
 namespace MoodndBehaviorsAndEvents
 {
-    public class HediffAddingUtil
+    public class DebuffLogicUtil
     {
 
         public class DebuffGiverInputs

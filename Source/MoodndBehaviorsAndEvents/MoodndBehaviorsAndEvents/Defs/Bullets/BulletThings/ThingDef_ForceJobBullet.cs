@@ -11,7 +11,7 @@ namespace MoodndBehaviorsAndEvents
     public class ThingDef_ForceJobBullet : ThingDef
     {
         public JobDef forcedJob;
-        public HediffAddingUtil.DebuffGiverInputs dgi;
+        public DebuffLogicUtil.DebuffGiverInputs dgi;
         public float applicationChance = 1f;
         public int minJobDurationTicks = 100;
         public int jobDurationVarianceTicks = 0;

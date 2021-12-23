@@ -34,7 +34,7 @@ namespace MoodndBehaviorsAndEvents
             if (ticksSinceLastCheck >= Props.painCheckFrequencyTicks)
             {
                 ticksSinceLastCheck = 0;
-                if(!HediffAddingUtil.PawnHasAnyHediff(this.Pawn, immunityDefs) && this.Pawn.health.hediffSet.PainTotal >= Props.painThreshold) 
+                if(!DebuffLogicUtil.PawnHasAnyHediff(this.Pawn, immunityDefs) && this.Pawn.health.hediffSet.PainTotal >= Props.painThreshold) 
                 {
 
                     Hediff addedDebuff = this.Pawn.health.AddHediff(rageGrace);

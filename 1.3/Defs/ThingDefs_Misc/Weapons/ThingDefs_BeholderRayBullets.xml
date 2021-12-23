@@ -4,15 +4,16 @@
     <defName>DND_BeholderPetrificationRay</defName>
     <dgi>
       <immunityHediffDefs>
+        <li>DND_PetrificationImmunity</li>
         <li>DND_Petrification_Complete</li>
         <li>DND_Argaiv</li>
       </immunityHediffDefs>
-      <shieldPierceChance>.6</shieldPierceChance>
+      <shieldPierceChance>.4</shieldPierceChance>
       <shieldDamage>100</shieldDamage>
     </dgi>
     <addHediffChance>1</addHediffChance>
     <hediffToAdd>DND_Petrification</hediffToAdd>
-    <severityToAdd>.65</severityToAdd>
+    <severityToAdd>.4~.75</severityToAdd>
     <label>petrification ray</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -33,7 +34,7 @@
       <immunityHediffDefs> 
         <li>WakeUpHigh</li>
       </immunityHediffDefs>
-      <shieldPierceChance>.7</shieldPierceChance>
+      <shieldPierceChance>.5</shieldPierceChance>
       <shieldDamage>40</shieldDamage>  
   </dgi>
     <drainChance>1</drainChance>
@@ -86,7 +87,7 @@
         <li>DND_MindControlImmunity</li>
       </immunityHediffDefs>
       <resistanceHediffDef>DND_MindControlResistance</resistanceHediffDef>
-      <shieldPierceChance>1</shieldPierceChance>
+      <shieldPierceChance>.5</shieldPierceChance>
       <shieldDamage>0</shieldDamage>
     </dgi>
     <applicationChance>1</applicationChance> 
@@ -109,7 +110,7 @@
     <defName>DND_BeholderTelekineticRay</defName>
     <dgi>
       <shieldPierceChance>0</shieldPierceChance>
-      <shieldDamage>80</shieldDamage>
+      <shieldDamage>120</shieldDamage>
     </dgi>
     <label>telekinesis ray</label>
     <graphicData>
@@ -149,12 +150,10 @@
   <ThingDef Name="ParalysisRayBullet" Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
     <defName>DND_BeholderParalysisRay</defName>
     <dgi>
-      <shieldPierceChance>0</shieldPierceChance>
-      <shieldDamage>40</shieldDamage>
+      <shieldPierceChance>.3</shieldPierceChance>
+      <shieldDamage>70</shieldDamage>
     </dgi>
     <hediffToAdd>DND_TemporaryParalysis</hediffToAdd>
-    <usesSeverity>True</usesSeverity>
-    <addSeverityToExisting>True</addSeverityToExisting>
     <severityToAdd>.5~1</severityToAdd>
     <label>paralysis ray</label>
     <graphicData>

@@ -25,13 +25,13 @@ namespace MoodndBehaviorsAndEvents
             base.Impact(hitThing);
             if (Def != null && hitThing != null && hitThing is Pawn hitPawn)
             {
-                if (HediffAddingUtil.DoesDebuffHappen(hitPawn, Def.dgi))
+                if (DebuffLogicUtil.DoesDebuffHappen(hitPawn, Def.dgi))
                 {
                     var pawnNeed = hitPawn.needs.TryGetNeed(Def.needToDrain);
                     if (pawnNeed != null)
                     {
                         pawnNeed.CurLevel -= Def.drainAmount;
-                        HediffAddingUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
+                        DebuffLogicUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
                     }
                 }
             }

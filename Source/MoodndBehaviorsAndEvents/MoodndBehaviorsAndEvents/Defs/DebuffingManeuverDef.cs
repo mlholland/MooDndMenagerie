@@ -14,7 +14,7 @@ namespace MoodndBehaviorsAndEvents
 {
     public class DebuffingManeuverDef : ManeuverDef
     {
-        public HediffAddingUtil.DebuffGiverInputs dgi; // DG-inputs to be used by the verb, if needed.
+        public DebuffLogicUtil.DebuffGiverInputs dgi; // DG-inputs to be used by the verb, if needed.
         public HediffDef hediffDef; // A hediff to be used by the verb, if needed
         public bool applyHediffToWholeBody = false; // if dealing with an extra hediff, apply it to the whole body if true, and the last hit part according to normal calculations otherwise.
         // ... if there is no last part to hit, then a random part is selected and added to the DamageResult.

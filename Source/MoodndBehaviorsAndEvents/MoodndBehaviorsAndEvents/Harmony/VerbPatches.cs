@@ -34,7 +34,6 @@ namespace MoodndBehaviorsAndEvents
                 var debug = man?.debugOpts != null && man.debugOpts.ScoreLogging;
                 if (!target.IsValid || (p.Map != null && !target.Cell.InBounds(p.Map))) // not sure why the last condition is red according to VS; it compiles just fine.
                 {
-                    Log.Error("MooDnd BestVerbForTarget patch: given invalid target with pawn " + p + " and target " + target);
                     if (debug)
                         Log.Error("MooDnd BestVerbForTarget patch: (Current job is " + p.CurJob + " with verb " + p.CurJob?.verbToUse + " and target " +
                                   p.CurJob?.targetA + ")");
@@ -51,7 +50,6 @@ namespace MoodndBehaviorsAndEvents
                         return false;
                     } 
                     var score = VerbScore(p, verb.Verb, target, debug);
-                    if (debug) Log.Message("Score is " + score + " compared to " + bestScore);
                     if (score < bestScore) continue;
                     else if (score == bestScore) bestVerbs.Add(verb.Verb);
                     else

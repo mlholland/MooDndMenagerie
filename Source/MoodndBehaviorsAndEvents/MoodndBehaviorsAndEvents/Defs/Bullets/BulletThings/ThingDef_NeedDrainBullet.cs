@@ -11,7 +11,7 @@ namespace MoodndBehaviorsAndEvents
     public class ThingDef_NeedDrainBullet : ThingDef
     {
         public NeedDef needToDrain = NeedDefOf.Food;
-        public HediffAddingUtil.DebuffGiverInputs dgi;
+        public DebuffLogicUtil.DebuffGiverInputs dgi;
         public float drainChance = 0.05f;
         public float drainAmount = 0.05f; 
     }

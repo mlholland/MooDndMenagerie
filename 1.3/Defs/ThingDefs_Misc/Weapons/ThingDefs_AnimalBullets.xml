@@ -27,10 +27,12 @@
       <csv>
         <capacityDef>Sight</capacityDef>
       </csv>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>18</shieldDamage>
     </dgi>
     <addHediffChance>1</addHediffChance>
     <hediffToAdd>DND_Petrification</hediffToAdd>
-    <severityToAdd>.03</severityToAdd>
+    <severityToAdd>.03~0.07</severityToAdd>
     <label>medusa gaze</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -55,10 +57,12 @@
       <csv>
         <capacityDef>Sight</capacityDef>
       </csv>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>12</shieldDamage>
     </dgi>
     <addHediffChance>1</addHediffChance>
     <hediffToAdd>DND_Petrification</hediffToAdd> 
-    <severityToAdd>.01</severityToAdd>
+    <severityToAdd>.01~0.03</severityToAdd>
     <label>medusa gaze</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>

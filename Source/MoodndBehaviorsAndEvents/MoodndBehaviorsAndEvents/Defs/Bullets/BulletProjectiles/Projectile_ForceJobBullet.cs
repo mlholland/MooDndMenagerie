@@ -28,7 +28,7 @@ namespace MoodndBehaviorsAndEvents
             base.Impact(hitThing);
             if (Def != null && hitThing != null && hitThing is Pawn hitPawn)
             {
-                if (HediffAddingUtil.DoesDebuffHappen(hitPawn, Def.dgi))
+                if (DebuffLogicUtil.DoesDebuffHappen(hitPawn, Def.dgi))
                 {
                     Job forcedJob = CreateForcedJob(hitPawn); 
                     if (forcedJob != null) {
@@ -36,7 +36,7 @@ namespace MoodndBehaviorsAndEvents
                         hitPawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
                         if(hitPawn.jobs.TryTakeOrderedJob(forcedJob))
                         {
-                            HediffAddingUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
+                            DebuffLogicUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
                         } else
                         {
                             Log.Error(String.Format("MooDnd managerie - Projectile_ForceJobBullet: failed to make pawn take job as part of forced job bullet impact. Jobdef was {0}", Def.forcedJob.defName));

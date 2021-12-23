@@ -13,12 +13,11 @@ namespace MoodndBehaviorsAndEvents
         // mandatory
         public HediffDef hediffToAdd;
         // optional
-        public HediffAddingUtil.DebuffGiverInputs dgi;
-        public float addHediffChance = 1f; 
+        public DebuffLogicUtil.DebuffGiverInputs dgi; // Contains a bunch of options for what affects the likelihood that a hediff will be added.
+        public float addHediffChance = 1f; // chance the hediff is applied before other values like capacity scaling or resistances are applied
         public bool modifyExistingHediff = true; // if false, create and add a new hediff every time
-        public bool usesSeverity = false;
-        public bool addSeverityToExisting = false; // if false, replace severity with new value if the new value is higher, still updates time
-        public Verse.FloatRange severityToAdd = Verse.FloatRange.ZeroToOne;
+        public Verse.FloatRange severityToAdd = Verse.FloatRange.Zero; // If the max is non zero, then assume this hediff uses severity, and add a random amount from this range to the created hediff
+        public bool addSeverityToExisting = true; // if false, replace severity with new value only if the newly rolled value is higher
         public bool addHediffToWholeBody = true; // If false, applies the hediff to the body part that was hit, and becomes incompatible with modifyExistingHediff=true. The hit part is calculated separately from normal damage.
        
         // TODO figure out if this is possible, not sure if I can really modify hediff durations when they're added
