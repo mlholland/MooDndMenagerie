@@ -21,7 +21,7 @@
       <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
     </statBases>
     <race>
-      <!--deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass-->
+      <deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass>
       <petness>0</petness>
       <hasGenders>false</hasGenders>
       <herdAnimal>false</herdAnimal>

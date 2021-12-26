@@ -24,8 +24,8 @@ namespace MoodndBehaviorsAndEvents
     {
         static void Postfix()
         {
-            Log.Message("MooDnd Generation: Creating and modifying defs");
-            Log.Message("MooDnd Generation: Generating Material-based animal defs and material hediffs");
+            Log.Message("MooDnd Generation: Interrupting GenerateImpliedDefs to Create and modify defs");
+            Log.Message("MooDnd Generation: Generating material-based animal defs and material hediffs");
             StartupHelper.GenerateAnimatedAnimalDefs();
             Log.Message("MooDnd Generation: Modifying existing clothing defs to allow special material buffs");
             StartupHelper.ModifyExistingDefs();
@@ -35,24 +35,22 @@ namespace MoodndBehaviorsAndEvents
 
     static class StartupHelper
     {
+        // should probably move this, among many other things into a separate utility mod if I keep making stuff.
         public static void ModifyExistingDefs()
         {
             foreach(ThingDef td in DefDatabase<ThingDef>.AllDefs)
             {
                 if (td.IsApparel)
-                {
-                    //Log.Message(String.Format("MooDnd Generation: Adding CompProperties_BuffedItem to apparel {0}", td.defName));
+                { 
                     td.comps.Add(new CompProperties_BuffedItem());
                 }
             }
         }
 
-
-        // Adds new Defs to the game - namely all the stuff related to animated-furnituire (besides tool cabinets)
+        // Adds new Defs to the game - namely all the stuff related to animated furnituire (besides tool cabinets)
         public static void GenerateAnimatedAnimalDefs()
         {
-            // add material hediffs for all stuff defs
-            //Log.Message("Moodnd Generation: Making Animated Animals Material Buffs...");
+            // add material hediffs for all stuff defs 
             foreach (ThingDef td in DefDatabase<ThingDef>.AllDefs)
             {
                 if (td.IsStuff)
@@ -62,14 +60,11 @@ namespace MoodndBehaviorsAndEvents
                 }
 
             }
-            // add animal and animal kind defs for all animatedObjectDefs 
-            //Log.Message("Moodnd Generation: Making Animated Animals Thing and Kind Defs...");
-            // used for corpse creation later
+
+            // Create both thingDefs and pawnKindDefs for each Def_AnimatedFurniture.
             HashSet<String> newAnimalDefNames = new HashSet<String>();
             foreach (Def_AnimatedFurniture aniFurDef in DefDatabase<Def_AnimatedFurniture>.AllDefsListForReading)
             {
-                //Log.Message(String.Format("generating {0}", aniFurDef.defName));
-
                 ThingDef furnitureDef = aniFurDef.furnitureDef;
                 if (furnitureDef == null)
                 {
@@ -82,26 +77,37 @@ namespace MoodndBehaviorsAndEvents
                     Log.Error(String.Format("Moodnd Generation: Animated furniture failed to find template thing def named {0} for {1} ", aniFurDef.baseDefName, aniFurDef.defName));
                     continue;
                 }
+                // Iterate over all valid stuff types for the furnitureDef if it's stuffable, and create a pair of defs for each.
                 if (furnitureDef.stuffCategories != null && furnitureDef.stuffCategories.Count > 0)
                 {
                     foreach (String stuffDefName in StuffCategoryToThingUtil.GetInstance().GetThingDefsOfStuffCategories(furnitureDef.stuffCategories))
                     {
-                        //Log.Message(String.Format("generating for stuff {0}", stuffDefName));
                         ThingDef stuffDef = ThingDef.Named(stuffDefName);
                         ThingDef newAnimalDef = MaterialToAnimalDefConverter.MakeAnimalDefWithStuff(templateThingDef, furnitureDef, stuffDef);
                         newAnimalDef.ResolveReferences();
                         newAnimalDefNames.Add(newAnimalDef.defName);
                         FurnitureToAnimatedObjectConverter.AddStuffable(furnitureDef, stuffDef, newAnimalDef);
-                        DefGenerator.AddImpliedDef<ThingDef>(newAnimalDef); 
-                        DefGenerator.AddImpliedDef<PawnKindDef>(MaterialToPawnKindDefConverter.MakeStuffBasedDef(aniFurDef, newAnimalDef, furnitureDef, stuffDef));
-                        DefGenerator.AddImpliedDef<ThingDef>(ThingDefGenerator_CorpseFromDef.ImpliedCorpseDefFromAnimalDef(newAnimalDef)); 
+                        DefGenerator.AddImpliedDef<ThingDef>(newAnimalDef);
+                        PawnKindDef newPawnKindDef = MaterialToPawnKindDefConverter.MakeStuffBasedDef(aniFurDef, newAnimalDef, furnitureDef, stuffDef);
+                        DefGenerator.AddImpliedDef<PawnKindDef>(newPawnKindDef);
+
+                        // This line causes a single error to be thrown at the end of the entire GenerateImpliedDefs postFix
+                        ThingDef newCorpseDef = ThingDefGenerator_CorpseFromDef.ImpliedCorpseDefFromAnimalDef(newAnimalDef);
+                        DefGenerator.AddImpliedDef<ThingDef>(newCorpseDef);
+                        
+                        // This did not fix the issue, need to ask discord what this even does anyway
+                        //newAnimalDef.ResolveReferences();
+                        //newPawnKindDef.ResolveReferences();
+                        //newCorpseDef.ResolveReferences();
                     }
                 }
                 else
                 {
+                    // the 'true' condition is no longer being executed as of v1.0
                     if (aniFurDef.makeProgrammaticDefs)
                     {
                         ThingDef newAnimalDef = MaterialToAnimalDefConverter.MakeAnimalDef(templateThingDef, furnitureDef);
+                        // todo what was this addImpliedDef line doing? Do we still need it?
                         //DefGenerator.AddImpliedDef<ThingDef>(newAnimalDef);
                         newAnimalDefNames.Add(newAnimalDef.defName);
                         FurnitureToAnimatedObjectConverter.Add(furnitureDef, newAnimalDef);
@@ -128,30 +134,6 @@ namespace MoodndBehaviorsAndEvents
                     }
                 }
             }
-            
-            /*// Add corpses for everything
-            foreach (ThingDef corpse in ThingDefGenerator_Corpses.ImpliedCorpseDefs())
-            {
-                // Todo is there a better way to do this check? How can I access the 'innerPawn' value I saw somewhere else a while ago?
-                if (newAnimalDefNames.Contains(corpse.defName.Substring(7))) // Remove "Corpse_" from beginning of def name to get original animal def name
-                {
-                    //corpse.ResolveReferences();
-                    //DefGenerator.AddImpliedDef<ThingDef>(corpse);
-                } else if (corpse.defName.Contains("DND_"))
-                {
-                    //corpse.ResolveReferences();
-                }
-            }*/
-            //DirectXmlCrossRefLoader.ResolveAllWantedCrossReferences(FailMode.Silent);
-            /*foreach (PawnColumnDef column in PawnColumnDefgenerator.ImpliedPawnColumnDefs())
-            {
-                if (newAnimalDefNames.Contains(column.defName.Substring(10))) // Remove "Trainable_" from beginning of def name to get original animal def name
-                {
-                    DefGenerator.AddImpliedDef<PawnColumnDef>(column);
-                }
-            }*/
         }
     }
-
-
 }

@@ -19,7 +19,7 @@
       <FilthRate>2</FilthRate>
     </statBases>
     <race>
-      <!--deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass-->
+      <deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass>
       <wildBiomes>
       </wildBiomes>
       <petness>0</petness>
