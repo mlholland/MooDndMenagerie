@@ -13,6 +13,8 @@
       <Flammability>0.0</Flammability>
       <Mass>1</Mass>
       <ToxicSensitivity>0.0</ToxicSensitivity>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>0</MeatAmount>
     </statBases>
     <race>
       <deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass>
@@ -52,7 +54,7 @@
   <ThingDef ParentName="BaseAnimatedFurniture">
     <defName>DND_AnimatedDiningChair_Base</defName>
     <label>Animated Dining Chair</label>
-    <description>A dining chair that has been brought to life by a scroll of animation. It seems to always be behind you right when you need a a place to sit.
+    <description>A dining chair that has been brought to life by a scroll of animation. It seems to always be behind you right when you need a place to sit.
 
 Animated Chairs will aggresively try to comfort nearby colonists, increasing their comfort need if it's below 50%.</description>
     <statBases>
@@ -123,17 +125,18 @@ Animated Chairs will aggresively try to comfort nearby colonists, increasing the
 
 Animated tool cabinets periodically give a small general labor speed boost to nearby colonists. They also have a blunt ranged attack.</description>
     <statBases>
-      <MoveSpeed>3.0</MoveSpeed>
+      <MoveSpeed>3.3</MoveSpeed>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
-      <MarketValue>500</MarketValue>
+      <MarketValue>650</MarketValue>
       <FilthRate>.2</FilthRate>
-      <LeatherAmount>200</LeatherAmount>
+      <MeatAmount>100</MeatAmount>
     </statBases>
     <race>
       <body>DND_ToolCabinetBody</body>
-      <baseBodySize>1.5</baseBodySize>
+      <baseBodySize>2</baseBodySize>
       <leatherDef>Steel</leatherDef>
+      <specificMeatDef>Steel</specificMeatDef>
     </race>
     <tools>
       <li>
@@ -224,7 +227,7 @@ Animated tool cabinets periodically give a small general labor speed boost to ne
   <ThingDef ParentName="BaseAnimatedFurniture">
     <defName>DND_AnimatedStool_Base</defName>
     <label>Animated Stool</label>
-    <description>A stool that has been animated into a fascimile of life using a scroll of animation. It is constantly waddling underfoot, and everyone is convinced that it makes a cute chirping noise when they aren't looking.
+    <description>A stool that has been animated into a fascimile of life using a scroll of animation. It is constantly waddling underfoot, and everyone is convinced that it makes a cute chirping noise when they aren't watching it.
 
 Animated stools are strangely endearing, and have a very high nuzzle interval.</description>
     <statBases>

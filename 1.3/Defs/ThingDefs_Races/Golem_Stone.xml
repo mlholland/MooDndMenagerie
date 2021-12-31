@@ -24,6 +24,8 @@
       <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
       <ArmorRating_Heat>2</ArmorRating_Heat>
       <FilthRate>5</FilthRate>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>240</MeatAmount>
     </statBases>
     <race>
       <deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass>

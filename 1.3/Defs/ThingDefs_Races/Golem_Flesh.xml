@@ -6,7 +6,7 @@
     <!--are empowered by lighting, but they -->
     <description>A lesser golem made of human flesh. Like all golems, flesh golems are incredibly strong, difficult-to-injure guardians of their creators. This comes at the cost of making and repairing them, as they do not heal naturally and must be operated upon to remove injuries. 
     
-    Flesh golems are extremely flameable, and they may go berserk when sufficiently injured.</description>
+Flesh golems are extremely flammable, and they may go berserk when sufficiently injured.</description>
     <statBases>
       <Flammability>2</Flammability>
       <Mass>200</Mass>
@@ -19,6 +19,8 @@
       <FilthRate>3</FilthRate>
       <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>300</MeatAmount>
     </statBases>
     <race>
       <deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass>

@@ -12,11 +12,13 @@
       <MoveSpeed>5.1</MoveSpeed>
       <ComfyTemperatureMin>-300</ComfyTemperatureMin>
       <ComfyTemperatureMax>1000</ComfyTemperatureMax>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>7000</MarketValue>
       <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
       <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
       <ArmorRating_Heat>2</ArmorRating_Heat>
       <FilthRate>2</FilthRate>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>200</MeatAmount>
     </statBases>
     <race>
       <deathActionWorkerClass>MoodndBehaviorsAndEvents.DeathActionWorker_AnimatedObjects</deathActionWorkerClass>

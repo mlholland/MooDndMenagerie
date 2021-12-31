@@ -116,20 +116,13 @@ namespace MoodndBehaviorsAndEvents
                 // Overwrite values that exist in BaseAnimalDef but need to be overridden by furniture
                 if (newMod.stat == StatDefOf.LeatherAmount)
                 {
-                    if (furnitureThingDef.costList != null && furnitureThingDef.costList.Count > 0)
-                    {
-                        newMod.value = furnitureThingDef.costList[0].count;
-                    }
-                    else
-                    {
-                        newMod.value = 50; // ensure this is always set to non-zero value
-                    }
+                    newMod.value = 0;
                 }
-                if (newMod.stat == StatDefOf.Mass)
+                else if (newMod.stat == StatDefOf.Mass)
                 {
                     newMod.value = furnitureThingDef.statBases.GetStatFactorFromList(StatDefOf.Mass);
                 }
-                if (newMod.stat == StatDefOf.Flammability)
+                else if (newMod.stat == StatDefOf.Flammability)
                 {
                     newMod.value = furnitureThingDef.BaseFlammability;
                 }
@@ -211,7 +204,7 @@ namespace MoodndBehaviorsAndEvents
             {
                 if (statMod.stat == StatDefOf.LeatherAmount)
                 {
-                    statMod.value = furnitureThingDef.costStuffCount * (stuff.smallVolume ? stuff.VolumePerUnit : 1);
+                    statMod.value = 0;
                 }
                 if (statMod.stat == StatDefOf.Flammability)
                 {
@@ -220,6 +213,10 @@ namespace MoodndBehaviorsAndEvents
                 if (statMod.stat == StatDefOf.MarketValue)
                 {
                     statMod.value += stuff.BaseMarketValue * furnitureThingDef.costStuffCount * (stuff.smallVolume ? stuff.VolumePerUnit : 1);
+                }
+                if (statMod.stat == StatDefOf.MeatAmount)
+                {
+                    statMod.value += furnitureThingDef.costStuffCount * (stuff.smallVolume ? 1/stuff.VolumePerUnit : 1) / newThing.race.baseBodySize;
                 }
             }
             newThing.race.leatherDef = stuff;

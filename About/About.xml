@@ -29,26 +29,55 @@
 
 	<packageId>mooloh.monmanmanagerie</packageId>
 
-	<description>Adds over a dozen Dungeons and Dragons-inspired animals to Rimworld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear as part of raids from unique factions, while others are loyal allies that must be acquired or built. Full list and descriptions below.
+	<description>This mod adds over a dozen Dungeons and Dragons-inspired animals to Rimworld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear as part of raids from a unique faction, while others are loyal allies that must be acquired or built. 
 
-&lt;size=24&gt;Features&lt;/size&gt; 
+&lt;size=24&gt;Animal List&lt;/size&gt; 
 
+     - Golems: Extremely powerful guardians that be constructed from either human flesh, stone, or steel. In order to build one, you must first find a manual of golems from quests or traders. Even the weakest one is more powerful than a thrumbo. Their main drawback is that they have no natural healing, so they must be occasionally repaired.
+     - Animated Furniture: Made by using a scroll of animation item on furniture. Their exact stats depend on the quality and material of the original furniture. Each type of furniture also has a different behavior. Current valid furniture types include dining chairs, tool cabinets, and stools.
      - Flumph: A friendly, psychic jellyfish that be tamed to produce a psychic-boosting drug.
-     - Golems: Extremely powerful guardians that be constructed from either human flesh, stone, or steel that trade long-term durability for immediate strength. In order to build one, you must first find a manual of golems from quests or traders.
-     - Animated Furniture: Made by using a scroll of animation quest reward on dining chairs, stools, or tool cabinets. Their exact stats depend on the quality and material of the original furniture. Each type of furniture also has a different behavior.
-     - Annihilator: A deadly underground predator that disintegrates is prey before consuming the resulting dust. Only appears in raids.
-     - Basilisk: A large lizard that can pretrify prey.
-     - Faerie Dragon: A small friendly dragon that can keep colonists happy but slow with their eupohira breath.
-     - Beholder: A malevolent, otherworldly creature that can shoot magical beams with a variety of effects. Only appears in raids.
+     - Faerie Dragon: A small friendly dragon that can keep colonists happy but unready for combat with their eupohira breath.     
+     - Basilisk: A large reptile that can pretrify prey.
      - Medusa: A dangerous creature with a very powerful petrification attack. Only appears in raids.
-     - Owlbear: A deadly predator with an unnaturally large appetite.
-     - Displacer Beast: A large feline that distorts light around its body.
-     - Rust Monster: A strange crustacean that makes and eats rusted metals.
-     - Gibbering Mouther: An unnatural blob of flesh that disorients nearby creatures with noise.
-     - Spectator: A smaller cousin of beholders. Can be summoned using eyestalks harvested from beholders.
+     - Owlbear: A deadly predator with an unnaturally large appetite. Its damage and armor penetration are much higher than you'd expect for a creature of its size.
+     - Displacer Beast: A large magical feline that distorts light around its body. Boasts a high dodge chance, which is passed onto clothing made from its pelt.
+     - Gibbering Mouther: An unnatural blob of flesh that disorients nearby creatures with noise. Appears very rarely outside of raids.
+     - Beholder: A malevolent, otherworldly creature that shoots magical beams with a variety of effects. Only appears in late-game raids.
+     - Spectator: A small cousin of beholders. Can be summoned using eyestalks harvested from beholders.    
+     - Rust Monster: A strange crustacean that eats rusted metals. Keep away from your metal stockpiles and armored warriors.
+     - Annihilator: A predatory cousin of rust monsters that disintegrates prey and consumes the resulting dust. Keep away from your... everything. Only appears in raids.
+     
+&lt;size=24&gt;Mod compatability&lt;/size&gt;
+
+This is my first mod, and I've made zero efforts at mod compatability thus far. That said, this mod doesn't do too much beyond adding animals, so I don't expect too many problems. I do intend to make this mod compatable with the following mods:
+    
+A dog said and related mods
+...Whatever else commonly needs patches for animal mods. I'm sure people will point them out.
+ 
+I do not have any intention of making this mod compatable with the following mods:
+
+Combat Extended: I've never used this mod, and don't intend to plan around it. 
+
 &lt;size=24&gt;Issues&lt;/size&gt;
 
-I'm sure I'll make some
+Balance is the main concern. I based most of the combat stats off of vanilla animals, and did some playtesting, but there are several new combat mechanics that can warp combat a bit. I'm certainly open to feedback regarding resistance, shield-pierce rates for magical attacks, and general dps/tankiness of creatures.
+    
+Other issues to be noted if/when they arise...
 
+&lt;size=24&gt;Credits and Thanks&lt;/size&gt;
+
+Code - Mooloh
+Art - Erok
+Big thanks to the many wonderful people on the Rimworld Discord's modding channel - especially Steve - who helped me learn, debug, and solve all sorts of issues that came up as I learned about modding.
+Thanks to Hi19Hi19 and Frogoe for early playtesting.
+
+&lt;size=24&gt;Legal&lt;/size&gt;
+
+MIT License: TODO - add link when this repo is public.
+Source Code on Github: TODO - add when the repo is published on 1.0 release.
+
+&lt;size=24&gt;Changelog&lt;/size&gt;
+
+    v0.1: Alpha release on Steam
 	</description>
 </ModMetaData>
