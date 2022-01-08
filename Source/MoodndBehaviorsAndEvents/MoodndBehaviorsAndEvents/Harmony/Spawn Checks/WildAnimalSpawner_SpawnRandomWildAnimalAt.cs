@@ -46,26 +46,6 @@ namespace MoodndBehaviorsAndEvents
             }
 
         }
-
-        public static bool DetectMoodndCreatureAndOptions(PawnKindDef theCreature)
-        {
-            if (theCreature != null)
-            {
-                // removed vanilla creature controls, my mod doesn't contain enough to merit removing all vanilla animals IMO
-
-                if (MoodndManagerie_Mod.settings.pawnSpawnStates != null && MoodndManagerie_Mod.settings.pawnSpawnStates.Keys.Contains(theCreature.defName))
-                {
-                    if (MoodndManagerie_Mod.settings.pawnSpawnStates[theCreature.defName])
-                    {
-
-                        return true;
-                    }
-                    else return false;
-                }
-                else return false;
-            }
-            else return false;
-        }
     }
 
 }

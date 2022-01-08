@@ -6,21 +6,20 @@
 		<label>Faerie Dragon</label>
 		<description>Faerie dragons are small, friendly dragons with beautiful, butterfly-like wings. Although they cannot breathe fire like larger dragons, they can exhale a euphoric gas which puts creatures in a happy, albiet slow-moving, high. 
     
-When tame, faerie dragons will occasionally exhale this euphoric gas on nearby colonists. To ensure that entire colonies don't slow down to a crawl, faerie dragons are trained to only bestow this effect on colonists that are very close to them (within 10 tiles).</description>
+When tame and trained, faerie dragons will occasionally exhale this euphoric gas on whichever colonist is their current trainer.</description>
 		<statBases>
 			<MoveSpeed>4.7</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
-			<MarketValue>350</MarketValue>
-      <FilthRate>.5</FilthRate>
+			<MarketValue>400</MarketValue>
+      <FilthRate>1</FilthRate>
 		</statBases>
-
 		<race>
 			<wildBiomes>
-        <TemperateForest>0.5</TemperateForest>
-        <TemperateSwamp>0.5</TemperateSwamp>
-        <TropicalRainforest>.6</TropicalRainforest>
-        <TropicalSwamp>.7</TropicalSwamp>
+        <TemperateForest>0.3</TemperateForest>
+        <TemperateSwamp>0.3</TemperateSwamp>
+        <TropicalRainforest>.3</TropicalRainforest>
+        <TropicalSwamp>.5</TropicalSwamp>
       </wildBiomes>
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
@@ -30,18 +29,19 @@ When tame, faerie dragons will occasionally exhale this euphoric gas on nearby c
 			<baseHealthScale>.45</baseHealthScale>
 			<baseHungerRate>0.8</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.85</wildness>
+			<wildness>0.65</wildness>
       <nuzzleMtbHours>12</nuzzleMtbHours>
-			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>.01</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
 			<leatherDef>DND_Leather_FaerieDragon</leatherDef>
-			<gestationPeriodDays>32</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
 					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
+          <li>(1, .5)</li>
+          <li>(2, .5)</li>
+					<li>(2.01, 0)</li>
 				</points>
 			</litterSizeCurve>
 			<lifeExpectancy>70</lifeExpectancy>
@@ -77,7 +77,13 @@ When tame, faerie dragons will occasionally exhale this euphoric gas on nearby c
         <tickInterval>2000</tickInterval>
         <hediff>DND_EuphoricHaze</hediff>
         <needsToBeTamed>true</needsToBeTamed>
-      </li>
+      </li> 
+        <li Class="CompProperties_EggLayer">
+          <eggFertilizedDef>DND_EggFaerieDragonFertilized</eggFertilizedDef>
+          <eggFertilizationCountMax>1</eggFertilizationCountMax>
+          <eggLayIntervalDays>20</eggLayIntervalDays>
+          <eggCountRange>1</eggCountRange>
+        </li> 
 		</comps>
     <tools>
       <li>
@@ -85,7 +91,7 @@ When tame, faerie dragons will occasionally exhale this euphoric gas on nearby c
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>6</power>
+        <power>4.5</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
       </li>
@@ -94,7 +100,7 @@ When tame, faerie dragons will occasionally exhale this euphoric gas on nearby c
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>6</power>
+        <power>4.5</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
       </li>
@@ -102,7 +108,7 @@ When tame, faerie dragons will occasionally exhale this euphoric gas on nearby c
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>7</power>
+        <power>6.8</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
@@ -112,7 +118,7 @@ When tame, faerie dragons will occasionally exhale this euphoric gas on nearby c
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>3</power>
+        <power>2</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -125,8 +131,7 @@ When tame, faerie dragons will occasionally exhale this euphoric gas on nearby c
 		<defName>DND_FaerieDragon</defName>
 		<label>Faerie Dragon</label>
 		<labelPlural>Faerie Dragons</labelPlural>
-		<race>DND_FaerieDragon</race>
-    <canArriveManhunter>false</canArriveManhunter>
+		<race>DND_FaerieDragon</race> 
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<combatPower>37</combatPower>
 		<wildGroupSize>
@@ -150,7 +155,7 @@ When tame, faerie dragons will occasionally exhale this euphoric gas on nearby c
     </alternateGraphics>
 		<lifeStages>
 			<li>
-				<label>faerie welp</label>
+				<label>faerie dragon wyrmling</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonBlue</texPath>
 					<drawSize>0.75</drawSize>

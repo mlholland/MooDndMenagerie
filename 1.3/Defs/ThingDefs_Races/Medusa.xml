@@ -3,14 +3,14 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_Medusa</defName>
 		<label>Medusa</label>
-		<description>Although mythological Medusae were thought to be cursed humanoids, their modern-day equivalents on the Rim are actually reptilian cousins of hydras and basilisks. Like a hydra, Medusae possess multiple heads that sprout from a larger primary head. Like a basilisk, Medusae possess the magical ability to petrify enemies with their stare. 
+		<description>Although mythological Medusae were thought to be cursed humanoids, their modern-day equivalents on the Rim are actually reptilian cousins of hydras and basilisks. Like a hydra, Medusae possess multiple heads, although most of them that from a larger primary head. Like a basilisk, Medusae possess the magical ability to petrify enemies with their stare. 
     
 Thankfully their petrification attack obeys magical relativity, so it requires that the victim can observe the Medusa, rendering blind creatures immune to the effect. Medusae are immune to petrification themselves, and a petrification antidote can be harvested from their main head.</description>
 		<statBases>
 			<MoveSpeed>4.7</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>100</ComfyTemperatureMax>
-			<MarketValue>1500</MarketValue>
+			<MarketValue>1400</MarketValue>
       <FilthRate>2</FilthRate>
 		</statBases>
 		<race>
@@ -18,7 +18,7 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 			<predator>false</predator>
 			<body>DND_MedusaBody</body>
 			<packAnimal>false</packAnimal>
-			<baseBodySize>2</baseBodySize>
+			<baseBodySize>1.2</baseBodySize>
 			<baseHealthScale>3</baseHealthScale>
 			<baseHungerRate>0.37</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
@@ -26,9 +26,8 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
-			<leatherDef>Leather_Human</leatherDef>
-      <useMeatFrom>Human</useMeatFrom>
-			<gestationPeriodDays>32</gestationPeriodDays>
+			<leatherDef>Leather_Lizard</leatherDef> 
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
 					<li>(0.99, 0)</li>
@@ -71,17 +70,17 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_MedusaRay</defaultProjectile>
-        <warmupTime>2.5</warmupTime>
-        <range>35</range>
-        <burstShotCount>50</burstShotCount>
+        <warmupTime>2</warmupTime>
+        <range>35.9</range>
+        <burstShotCount>30</burstShotCount>
         <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
         <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <accuracyTouch>.5</accuracyTouch>
-        <accuracyShort>0.4</accuracyShort>
-        <accuracyMedium>0.3</accuracyMedium>
-        <accuracyLong>0.2</accuracyLong>
+        <accuracyTouch>1</accuracyTouch>
+        <accuracyShort>0.8</accuracyShort>
+        <accuracyMedium>0.7</accuracyMedium>
+        <accuracyLong>0.5</accuracyLong>
         <minRange>1</minRange>
         <label>Petrification Ray</label>
         <commonality>.8</commonality>
@@ -150,7 +149,7 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 		<race>DND_Medusa</race>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
-		<combatPower>450</combatPower>
+		<combatPower>325</combatPower>
 
 		<wildGroupSize>
 			<min>1</min>
@@ -201,7 +200,5 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
         </butcherBodyPart>
 			</li>
 		</lifeStages>
-
 	</PawnKindDef>
-
 </Defs>

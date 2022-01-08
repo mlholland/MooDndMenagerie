@@ -3,9 +3,9 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_Flumph</defName>
 		<label>Flumph</label>
-		<description>One of the few nice aliens on the rim, flumphs are intelligent, jellyfish-like creatures. Their body consists of a disk-shaped bell, with two large eyestalks sprouting upwards, and several tentacles dangling below.  They are curious, friendly towards people, and tend to glow slightly based on their mood. They are also very weak in combat; their only defence is a mild acid on their tentacles. 
+		<description>One of the few nice aliens on the rim, flumphs are intelligent, jellyfish-like creatures. Their body is a disk-shaped bell, with two large eyestalks sprouting upwards, and several tentacles dangling below. They are curious, friendly towards people, and tend to glow slightly based on their mood. They are also very weak in combat; their only defence is a mild acid on their tentacles.  Flumphs are natural psionics, and they use their power to levitate and feed themselves by siphoning trace amounts of psychic energy from nearby creatures. 
     
-Flumphs are natural psycasters, and they use their power to levitate and feed themselves by siphoning trace amounts of psychic energy from nearby creatures. If tamed, a flumph's tentacles can occasionally be 'milked' for an acid which can be refined into a psychic-boosting drug.</description>
+If tamed, a flumph's tentacles can occasionally be 'milked' for an acidic secretion. This substance can be refined into a psychic-boosting drug.</description>
 		<statBases>
 			<MoveSpeed>4.2</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -31,7 +31,7 @@ Flumphs are natural psycasters, and they use their power to levitate and feed th
 			<baseHealthScale>.7</baseHealthScale>
 			<baseHungerRate>0.03</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>.15</wildness>
+			<wildness>.25</wildness>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.00</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
@@ -105,7 +105,7 @@ Flumphs are natural psycasters, and they use their power to levitate and feed th
 		<race>DND_Flumph</race>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>.5</ecoSystemWeight>
-		<combatPower>40</combatPower>
+		<combatPower>25</combatPower>
 		<wildGroupSize>
 			<min>3</min>
 			<max>8</max>

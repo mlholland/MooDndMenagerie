@@ -69,7 +69,7 @@
     <addHediffChance>1</addHediffChance>
     <hediffToAdd>DND_Petrification</hediffToAdd> 
     <severityToAdd>.01~0.03</severityToAdd>
-    <label>medusa gaze</label>
+    <label>basilisk gaze</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -130,7 +130,4 @@
       <speed>40</speed>
     </projectile>
   </ThingDef>
-  
-  
-
 </Defs>

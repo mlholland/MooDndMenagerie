@@ -3,25 +3,33 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_GibberingMouther</defName>
 		<label>Gibbering Mouther</label>
-		<description>Thought to be the failed result of some profane experiment, a gibbering mouther is an amorphous, liquid-like blob of flesh. Countless eyes and mouths are ceacelessly coalescing and dissolving over its body. 
-
-These mouths constantly emit a disorienting babble of gibberish that induces vomiting and nausia in nearby creatures that hear it, which allows this slow predator to close in and consume its the disoriented victims. The effectiveness of a mouther's babble depends on the victim's hearing. Deaf creatures are immune, while acute listeners are more easily affected. Creatures that experience prolonged exposure to the babble will slowly build a temporary resistance to the effect.</description>
+		<description>Thought to be the failed result of some profane experiment, a gibbering mouther is an amorphous, liquid-like blob of flesh. Countless eyes and mouths are ceacelessly coalescing and dissolving over its body. These many mouths constantly emit a disorienting babble of gibberish that induces vomiting and nausia in nearby creatures that hear it, which allows this slow predator to close in and consume its the disoriented victims. 
+    
+The effectiveness of a mouther's babble depends on the victim's hearing. Deaf creatures are immune, while acute listeners are more easily affected. Creatures that experience prolonged exposure to the babble will build a temporary resistance to the effect.</description>
 		<statBases>
 			<MoveSpeed>2.7</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>100</ComfyTemperatureMax>
-			<MarketValue>100</MarketValue>
+			<MarketValue>500</MarketValue>
       <FilthRate>10</FilthRate>
       <MeatAmount>60</MeatAmount>
 		</statBases>
 		<race>
+      <wildBiomes>
+        <TropicalRainforest>0.01</TropicalRainforest>
+        <TropicalSwamp>0.01</TropicalSwamp>
+        <TemperateForest>0.01</TemperateForest>
+        <TemperateSwamp>0.01</TemperateSwamp>
+        <AridShrubland>0.01</AridShrubland>
+      </wildBiomes>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<body>DND_MoutherBody</body>
 			<packAnimal>false</packAnimal>
 			<baseBodySize>1.4</baseBodySize>
-			<baseHealthScale>1.4</baseHealthScale>
-			<baseHungerRate>.5</baseHungerRate>
+      <maxPreyBodySize>3.5</maxPreyBodySize>
+      <baseHealthScale>2</baseHealthScale>
+			<baseHungerRate>.4</baseHungerRate>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<wildness>1</wildness>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -43,7 +51,7 @@ These mouths constantly emit a disorienting babble of gibberish that induces vom
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
       <hasGenders>false</hasGenders>
     </race>
-    <!-- This comp gives the gibbering mouther an AOE effect every 10 seconds that tries to apply a vomit-inducing hediff on up to 10 nearby creatures that aren't part of its faction.-->
+    <!-- This comp gives the gibbering mouther an AOE effect every 10 seconds that tries to apply a vomit-inducing hediff on up to 3 nearby creatures that aren't part of its faction.-->
     <comps>
       <li Class="MoodndBehaviorsAndEvents.CompProperties_AreaHediffDebuffApplier">
         <radius>15</radius>
@@ -52,20 +60,21 @@ These mouths constantly emit a disorienting babble of gibberish that induces vom
         <needsToBeTamed>false</needsToBeTamed>
         <onlyAffectColonists>false</onlyAffectColonists>
         <affectsSameFaction>false</affectsSameFaction>
-        <applicationChance>.5</applicationChance>
-        <maxTargets>10</maxTargets> 
-        <capacityScalingValues>
-          <capacityDef>Hearing</capacityDef>
-        </capacityScalingValues> 
-        <resistanceHediff>DND_GibberingBabbleResistance</resistanceHediff>
-        <resistanceScaling>1</resistanceScaling>
-        <resistancePerApplication>.2</resistancePerApplication>
-        <immunityHediffs>
-          <li>DND_GibberingBabbleImmunity</li>
-          <li>DND_GolemStatsFlesh</li>
-          <li>DND_GolemStatsStone</li>
-          <li>DND_GolemStatsSteel</li>
-        </immunityHediffs>
+        <maxTargets>3</maxTargets>
+        <dgi>
+          <csv>
+            <capacityDef>Hearing</capacityDef>
+          </csv>
+          <resistanceHediffDef>DND_GibberingBabbleResistance</resistanceHediffDef>  
+          <immunityHediffDefs>
+            <li>DND_GibberingBabbleImmunity</li>
+            <li>DND_GolemStatsFlesh</li>
+            <li>DND_GolemStatsStone</li>
+            <li>DND_GolemStatsSteel</li>
+          </immunityHediffDefs>
+          <affectedByShields>false</affectedByShields>
+          <baseApplicationChance>.5</baseApplicationChance>
+        </dgi>
       </li>
       <li Class="AnimalBehaviours.CompProperties_InitialHediff">
         <hediffname>DND_GibberingBabbleImmunity</hediffname>
@@ -79,11 +88,22 @@ These mouths constantly emit a disorienting babble of gibberish that induces vom
           <li>Bite</li>
         </capacities>
         <power>34</power>
-        <cooldownTime>3</cooldownTime>
+        <cooldownTime>2.3</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
         <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
         <armorPenetration>0.5</armorPenetration>
+      </li>
+      <li>
+        <label>slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.01</chanceFactor>
       </li>
     </tools>
 	</ThingDef>
@@ -94,7 +114,7 @@ These mouths constantly emit a disorienting babble of gibberish that induces vom
 		<labelPlural>Gibbering Mouthers</labelPlural>
 		<race>DND_GibberingMouther</race>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
-		<combatPower>170</combatPower>
+		<combatPower>200</combatPower>
 		<wildGroupSize>
 			<min>1</min>
 			<max>1</max>

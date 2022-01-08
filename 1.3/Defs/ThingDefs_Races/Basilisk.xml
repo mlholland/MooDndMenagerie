@@ -5,21 +5,21 @@
 		<label>Basilisk</label>
 		<description>Basilisks are burrowing reptilian predators with large heads and eight legs. They are known for their troublesome ability to petrify their prey using their magical gaze. 
     
-Thankfully this effect is not as powerful as the dreaded medusa, and it requires that the victim be capable of sight, so blind creatures are immune. If slain, a petrification antidote can be harvested from their eyes.</description>
+Thankfully this effect is not as powerful as the dreaded medusa, and it requires that the victim be capable of sight, so blind creatures are immune. If slain, a petrification antidote can be harvested from a basilisk's eyes.</description>
 		<statBases>
 			<MoveSpeed>3.95</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>100</ComfyTemperatureMax>
-			<MarketValue>600</MarketValue>
-      <FilthRate>6</FilthRate>
-      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<MarketValue>700</MarketValue>
+      <FilthRate>8</FilthRate>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 		</statBases>
 		<race>
 			<wildBiomes>
-        <TemperateSwamp>0.02</TemperateSwamp>
-        <TemperateForest>0.04</TemperateForest>
-        <TropicalSwamp>0.02</TropicalSwamp>
-        <TropicalRainforest>0.02</TropicalRainforest>
+        <TemperateSwamp>0.03</TemperateSwamp>
+        <TemperateForest>0.03</TemperateForest>
+        <TropicalSwamp>0.03</TropicalSwamp>
+        <TropicalRainforest>0.01</TropicalRainforest>
         <AridShrubland>0.17</AridShrubland>
         <Desert>0.15</Desert>
         <ExtremeDesert>0.1</ExtremeDesert>
@@ -30,15 +30,15 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 			<packAnimal>false</packAnimal>
 			<baseBodySize>1.5</baseBodySize>
       <maxPreyBodySize>1.2</maxPreyBodySize> 
-			<baseHealthScale>2</baseHealthScale>
+			<baseHealthScale>1.5</baseHealthScale>
 			<baseHungerRate>0.2</baseHungerRate>
       <foodType>CarnivoreAnimal</foodType>
 			<wildness>.75</wildness>
 			<manhunterOnDamageChance>.85</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>.15</manhunterOnTameFailChance>
-			<trainability>Advanced</trainability>
+			<manhunterOnTameFailChance>.10</manhunterOnTameFailChance>
+			<trainability>Intermediate</trainability>
 			<leatherDef>DND_Leather_Basilisk</leatherDef>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
 					<li>(0.99, 0)</li>
@@ -54,11 +54,11 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
-					<minAge>.5</minAge>
+					<minAge>.2</minAge>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>1</minAge>
+					<minAge>.5</minAge>
           <soundWounded>Pawn_Iguana_Wounded</soundWounded>
           <soundDeath>Pawn_Iguana_Death</soundDeath>
           <soundCall>Pawn_Iguana_Call</soundCall>
@@ -77,16 +77,16 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BasiliskRay</defaultProjectile>
-        <warmupTime>1.5</warmupTime>
-        <range>100</range>
+        <warmupTime>2</warmupTime>
+        <range>25.9</range>
         <burstShotCount>10</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <soundCast>DND_PetrificationRay_Fire6</soundCast>
         <muzzleFlashScale>3</muzzleFlashScale>
-        <accuracyTouch>.8</accuracyTouch>
-        <accuracyShort>.6</accuracyShort>
+        <accuracyTouch>1</accuracyTouch>
+        <accuracyShort>.7</accuracyShort>
         <accuracyMedium>.5</accuracyMedium>
-        <accuracyLong>.45</accuracyLong>
+        <accuracyLong>.4</accuracyLong>
         <minRange>1</minRange>
         <label>Petrification Ray B</label>
         <commonality>.8</commonality>
@@ -98,7 +98,7 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>9</power>
+        <power>10.7</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -115,7 +115,7 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>9</power>
+        <power>10.7</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -132,7 +132,7 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>18</power>
+        <power>19</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.07</chanceFactor> 

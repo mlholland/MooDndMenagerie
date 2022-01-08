@@ -9,11 +9,11 @@
       <color>(130,126,119)</color>
     </graphicData>
     <statBases>
-      <MarketValue>4.0</MarketValue>
-      <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt>
-      <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+      <MarketValue>4.5</MarketValue>
+      <StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
       <color>(130,126,119)</color>
@@ -40,10 +40,10 @@
       <color>(189,161,116)</color>
     </graphicData>
     <statBases>
-      <MarketValue>7</MarketValue>
+      <MarketValue>5.5</MarketValue>
       <StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
-      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>26</StuffPower_Insulation_Heat>
       <WorkToMake>3</WorkToMake>
       <WorkToBuild>3</WorkToBuild>
     </statBases>
@@ -74,7 +74,7 @@
     </graphicData>
     <statBases>
       <MarketValue>3.3</MarketValue>
-      <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Sharp>1.02</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>.74</StuffPower_Armor_Blunt>
     </statBases>
     <stuffProps>
@@ -91,15 +91,15 @@
   <ThingDef ParentName="LeatherBase">
     <defName>DND_Leather_FaerieDragon</defName>
     <label>faerie dragon skin</label>
-    <description>The delicate skin of a faerie dragon. This thin material offers little protection or insulation, but is very pretty.</description>
+    <description>The delicate skin of a faerie dragon. This thin material offers little protection and insulation, but is very pretty.</description>
     <graphicData>
       <color>(189,161,116)</color>
     </graphicData>
     <statBases>
-      <MarketValue>3.8</MarketValue>
-      <StuffPower_Armor_Sharp>0.1</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.0</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>.5</StuffPower_Armor_Heat>
+      <MarketValue>7</MarketValue>
+      <StuffPower_Armor_Sharp>0.52</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.08</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>.3</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>7</StuffPower_Insulation_Heat>
     </statBases>
@@ -108,7 +108,7 @@
       <commonality>0.025</commonality>
       <statFactors>
         <MaxHitPoints>.5</MaxHitPoints>
-        <Beauty>5</Beauty>
+        <Beauty>5.2</Beauty>
       </statFactors>
     </stuffProps>
   </ThingDef>
@@ -121,19 +121,19 @@
       <color>(189,161,116)</color>
     </graphicData>
     <statBases>
-      <MarketValue>1.2</MarketValue>
-      <StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>.3</StuffPower_Armor_Heat>
+      <MarketValue>1</MarketValue>
+      <StuffPower_Armor_Sharp>0.4</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.12</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>.75</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
       <color>(189,161,116)</color>
-      <commonality>0.025</commonality>
+      <commonality>0.001</commonality>
       <statFactors>
-        <MaxHitPoints>.7</MaxHitPoints>
-        <Beauty>.7</Beauty>
+        <MaxHitPoints>.75</MaxHitPoints>
+        <Beauty>.5</Beauty>
       </statFactors>
     </stuffProps>
   </ThingDef>

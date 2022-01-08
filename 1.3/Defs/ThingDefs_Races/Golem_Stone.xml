@@ -10,7 +10,7 @@
      which slow creatures caught in the blast.-->
     <description>A golem made of stone. Like all golems, stone golems are incredibly strong, difficult-to-injure guardians of their creators. This comes at the cost of making and repairing them, as they do not heal naturally and must be operated upon to remove injuries. 
      
-     Note: Although stone golems can be constructed from any stone blocks, the resulting golem is always the same.</description>
+Note: Although stone golems can be constructed from any stone blocks, the resulting golem is always the same.</description>
     <statBases>
       <Flammability>0</Flammability>
       <Mass>350</Mass>
@@ -20,7 +20,7 @@
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>500</ComfyTemperatureMax>
       <MarketValue>3500</MarketValue>
-      <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+      <ArmorRating_Sharp>.9</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
       <ArmorRating_Heat>2</ArmorRating_Heat>
       <FilthRate>5</FilthRate>
@@ -72,7 +72,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>26</power>
+        <power>22.8</power>
         <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <armorPenetration>0.4</armorPenetration>
@@ -82,10 +82,21 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>26</power>
+        <power>22.8</power>
         <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <armorPenetration>0.4</armorPenetration>
+      </li>
+      <li>
+        <label>slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.01</chanceFactor>
       </li>
     </tools>
     <recipes>
@@ -102,7 +113,7 @@
     <race>DND_GolemStone</race>
 		<canArriveManhunter>false</canArriveManhunter>
     <ecoSystemWeight>0.3</ecoSystemWeight>
-    <combatPower>800</combatPower>
+    <combatPower>750</combatPower>
 
     <wildGroupSize>
       <min>1</min>

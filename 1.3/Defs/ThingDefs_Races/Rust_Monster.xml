@@ -4,9 +4,9 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>DND_RustMonster</defName>
     <label>Rust Monster</label>
-    <description>Rust monsters are chunky, quadrupedal crustaceans with long feathery antennae. As their name might suggest, rust monsters eat rusted metals. If no rust is present, they can secrete an ususual chemical from their antennae which rapidly oxidizes most metals on touch. Close combat with these creatures while wearing metal armor (or worse, having metal body parts) is ill-advised.
+    <description>Rust monsters are chunky, quadrupedal crustaceans with long feathery antennae. As their name might suggest, rust monsters eat rusted metals. If no rust is present, they can secrete an ususual chemical from their antennae which rapidly oxidizes most metals on touch. Close combat with these creatures while wearing metal armor (or worse, while having metal body parts) is ill-advised.
 
-Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food as well, but they stil prefer to eat metal when it's available, including mineable ores, slag, and even some metal structures.</description>
+Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food as well, but they stil prefer to eat metal when it's available, including mineable ores, slag, and even some metal structures...</description>
     <statBases>
       <MoveSpeed>3.9</MoveSpeed>
       <MarketValue>200</MarketValue>      
@@ -82,11 +82,11 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
     <race>
       <body>DND_RustMonsterBody</body>
       <wildBiomes>
-        <TemperateSwamp>0.15</TemperateSwamp>
-        <TemperateForest>0.25</TemperateForest>
-        <TropicalSwamp>0.15</TropicalSwamp>
-        <TropicalRainforest>0.25</TropicalRainforest>
-        <AridShrubland>0.25</AridShrubland>
+        <TemperateSwamp>0.05</TemperateSwamp>
+        <TemperateForest>0.05</TemperateForest>
+        <TropicalSwamp>0.05</TropicalSwamp>
+        <TropicalRainforest>0.05</TropicalRainforest>
+        <AridShrubland>0.1</AridShrubland>
       </wildBiomes>
 
       <fleshType>Insectoid</fleshType>
@@ -98,15 +98,15 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
       <herdAnimal>false</herdAnimal>
       <predator>false</predator>
       <baseBodySize>2</baseBodySize>
-      <baseHungerRate>.15</baseHungerRate>
+      <baseHungerRate>.25</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Panthera</leatherDef>
-      <wildness>0.85</wildness>
-      <trainability>Advanced</trainability>
-      <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+      <wildness>0.75</wildness>
+      <trainability>Intermediate</trainability>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
-      <gestationPeriodDays>15</gestationPeriodDays>
+      <gestationPeriodDays>12</gestationPeriodDays>
       <lifeExpectancy>50</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -115,11 +115,11 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.3</minAge>
+          <minAge>0.2</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.6</minAge>
+          <minAge>0.5</minAge>
           <soundWounded>Pawn_BigInsect_Pain</soundWounded>
           <soundDeath>Pawn_BigInsect_Death</soundDeath>
           <soundCall>Pawn_BigInsect_Call</soundCall>
@@ -158,7 +158,7 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
     <label>rust monster</label>
     <labelPlural>rust monsters</labelPlural>
     <race>DND_RustMonster</race>
-    <combatPower>150</combatPower>
+    <combatPower>120</combatPower>
     <ecoSystemWeight>0.2</ecoSystemWeight>
     <lifeStages>
       <li>

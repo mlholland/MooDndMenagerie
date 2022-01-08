@@ -15,18 +15,6 @@ namespace MoodndBehaviorsAndEvents
     class MaterialToPawnKindDefConverter
     {
         // todo make functions
-        public static void ModifyDef(PawnKindDef original, ThingDef furniture)
-        {
-            foreach (PawnKindLifeStage origStage in original.lifeStages)
-            {
-                origStage.bodyGraphicData.texPath = furniture.graphicData.texPath;
-                origStage.bodyGraphicData.drawSize = furniture.graphicData.drawSize;
-                origStage.bodyGraphicData.color = furniture.graphicData.color;
-                origStage.bodyGraphicData.graphicClass = furniture.graphicData.graphicClass;
-            }
-        }
-
-        // todo make functions
         public static PawnKindDef MakeDef(Def_AnimatedFurniture original, ThingDef animalDef, ThingDef furniture)
         {
             PawnKindDef copyKindDef = new PawnKindDef();
@@ -50,8 +38,11 @@ namespace MoodndBehaviorsAndEvents
                 copyStage.dessicatedBodyGraphicData = origStage.dessicatedBodyGraphicData;
                 copyStage.label = origStage.label;
                 copyKindDef.lifeStages.Add(copyStage);
-                
+
             }
+            // never allow these things to show up as manhunters or sappers
+            copyKindDef.canArriveManhunter = false;
+            copyKindDef.canBeSapper = false;
             return copyKindDef;
         }
 

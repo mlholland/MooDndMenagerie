@@ -29,7 +29,7 @@
     <description>Repair the 10 worst injuries on this golem using some human flesh. This acts like 10 applications of a healer mech serum.</description>
     <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
     <jobString>Repairing.</jobString>
-    <workAmount>400</workAmount>
+    <workAmount>200</workAmount>
     <hideBodyPartNames>true</hideBodyPartNames>
     <targetsBodyPart>false</targetsBodyPart>
     <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
@@ -78,7 +78,7 @@
     <description>Repair the 10 worst injuries on this golem using some stone blocks. This acts like 10 applications of a healer mech serum.</description>
     <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
     <jobString>Repairing.</jobString>
-    <workAmount>400</workAmount>
+    <workAmount>200</workAmount>
     <hideBodyPartNames>true</hideBodyPartNames>
     <targetsBodyPart>false</targetsBodyPart>
     <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
@@ -127,7 +127,7 @@
     <description>Repair the 10 worst injuries on this golem using some steel. This acts like 10 applications of a healer mech serum.</description>
     <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
     <jobString>Repairing.</jobString>
-    <workAmount>400</workAmount>
+    <workAmount>200</workAmount>
     <hideBodyPartNames>true</hideBodyPartNames>
     <targetsBodyPart>false</targetsBodyPart>
     <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>

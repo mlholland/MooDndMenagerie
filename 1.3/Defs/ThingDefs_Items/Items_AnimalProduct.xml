@@ -4,7 +4,7 @@
   <ThingDef  ParentName="OrganicProductBase">
     <defName>DND_FlumphInk</defName>
     <label>flumph "ink"</label>
-    <description>The acidic secretions of a flumph. It is not useful on its own, it contains trace amounts of psychic-boosting chemicals which can be refined into psy-kick, a powerful psycast-amplifying drug</description>
+    <description>The acidic secretions of a flumph. Although it is not useful on its own, it contains trace amounts of psychic-boosting chemicals which can be refined into psy-kick, a powerful psycast-amplifying drug</description>
     <graphicData>
       <texPath>Things/Item/Resource/Neutroamine</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -59,19 +59,34 @@
       <drawSize>2</drawSize>
     </graphicData>
     <statBases>
-      <MarketValue>150.0</MarketValue>
+      <MarketValue>250.0</MarketValue>
       <Mass>3</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Nutrition>1.5</Nutrition>
-      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
     </statBases>
     <comps>
       <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>15</hatcherDaystoHatch>
+        <hatcherDaystoHatch>10</hatcherDaystoHatch>
         <hatcherPawn>DND_Owlbear</hatcherPawn>
       </li>
     </comps>
   </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>DND_EggFaerieDragonFertilized</defName>
+    <label>Faerie Dragon egg (fert.)</label>
+    <description>A colorful fertilized faerie dragon egg. If all goes well, it should hatch into an faerie dragon wyrmling. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(100,245,100)</color>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>15</hatcherDaystoHatch>
+        <hatcherPawn>DND_FaerieDragon</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
 
 
 </Defs>

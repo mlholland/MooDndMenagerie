@@ -209,7 +209,7 @@
 
   <ThingDef ParentName="BaseBullet">
     <defName>DND_BeholderEnervationRay</defName>
-    <label>Enervation ray</label>
+    <label>enervation ray</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>

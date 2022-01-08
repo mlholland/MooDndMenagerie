@@ -29,10 +29,11 @@ namespace MoodndBehaviorsAndEvents
             public bool affectedByShields = true;
         }
 
-        /* A generalized function that applies all possible hit modifiers based on the inputted DebuffGiverInputs
-         * This means that it can possibly consider any combination of a worn shield belt, immunity and resistance hediffs, and a relevant capacity.
+        /* A generalized function that applies all possible hit modifiers based on the inputted DebuffGiverInputs, then rolls a random number from 0 to 1.
+         * If the rolled number is below the computed hit chance, then this returns true, otherwise it returns false.
+         * This function can consider any combination of a worn shield belt, immunity and resistance hediffs, and a relevant capacity.
          * For the most part, all null DebuffGiverInput fields are either checked then ignored, or assumed to not be null.
-         * Returns false if the inputted pawn is null, but true if the inputs are null while the pawn isn't.
+         * Returns false if the inputted pawn is null, but true if the 'inputs' value is null while the pawn isn't.
          */
         public static bool DoesDebuffHappen(Pawn hitPawn, DebuffGiverInputs inputs)
         {

@@ -3,13 +3,13 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_Spectator</defName>
 		<label>Spectator</label>
-    <description>Spectators are weaker relatives of beholders. Their orb-like body-head is four feet in diameter, and they only sport 4 eyestalks. They can be pulled from whatever dimension they hail from by constructing an effigy in their likeness using the eyestalks of a killed beholder. Spectators that are summoned this way are loyal to their summoner, and will fight for them.</description>
+    <description>Spectators are weaker relatives of beholders. Their orb-like head is four feet in diameter, and they only have 4 eyestalks. They can be pulled from whatever dimension they hail from by constructing an effigy in their likeness using the eyestalks of a killed beholder. Spectators that are summoned this way are loyal to their summoner, and will fight for them.</description>
     <statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>100</ComfyTemperatureMax>
-			<MarketValue>600</MarketValue>
-      <FilthRate>2</FilthRate>
+			<MarketValue>800</MarketValue>
+      <FilthRate>1</FilthRate>
       <MeatAmount>0</MeatAmount>
 		</statBases>
 		<race>
@@ -47,54 +47,55 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_SpectatorEnervationRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>25</range>
+        <warmupTime>1.5</warmupTime>
+        <range>25.9</range>
         <burstShotCount>3</burstShotCount>
         <soundCast>DND_SpectatorRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <accuracyTouch>1</accuracyTouch>
-        <accuracyShort>.995</accuracyShort>
-        <accuracyMedium>.99</accuracyMedium>
+        <accuracyTouch>.98</accuracyTouch>
+        <accuracyShort>.98</accuracyShort>
+        <accuracyMedium>.98</accuracyMedium>
         <accuracyLong>.98</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
+        <defaultCooldownTime>2</defaultCooldownTime>
       </li>
       <li>
         <label>Slow Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderSlowRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>25.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_SpectatorRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <accuracyTouch>1</accuracyTouch>
-        <accuracyShort>.995</accuracyShort>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
         <accuracyMedium>.99</accuracyMedium>
-        <accuracyLong>.98</accuracyLong>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
-        <commonality>1</commonality>
-      </li>
+        <commonality>1</commonality> 
+    </li>
       <li>
         <label>Fear Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderFearRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>25.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_SpectatorRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <accuracyTouch>1</accuracyTouch>
-        <accuracyShort>.995</accuracyShort>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
         <accuracyMedium>.99</accuracyMedium>
-        <accuracyLong>.98</accuracyLong>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
-        <commonality>1</commonality>
+        <commonality>1</commonality> 
       </li>
     </verbs>
     <tools>
@@ -103,7 +104,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>5.2</power>
+        <power>9.7</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.07</chanceFactor>
@@ -133,9 +134,9 @@
 		<labelPlural>Spectators</labelPlural>
 		<race>DND_Spectator</race>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
-		<combatPower>300</combatPower>
-
-		<wildGroupSize>
+		<combatPower>200</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <wildGroupSize>
 			<min>1</min>
 			<max>1</max>
 		</wildGroupSize>

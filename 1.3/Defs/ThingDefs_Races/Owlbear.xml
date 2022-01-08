@@ -3,15 +3,15 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>DND_Owlbear</defName>
     <label>owlbear</label>
-    <description>It's unclear if owlbears are natural creatures, or the result of an ancient magical experiment. What is definitely clear is that owlbears are bear-shaped creatures with several owl-like features, including feathers, talons, and a large beak. For an animal of their size, owlbears are exceptionally deadly, and their natural weapons have an easy time shredding through armor. They make use of this strength to maintain their unusually large appetite. 
+    <description>It is unclear if owlbears are natural creatures, or the result of an ancient magical experiment. What is definitely clear is that owlbears are bear-shaped creatures with several owl-like features, including feathers, talons, and a large beak. For an animal of their size, owlbears are exceptionally deadly, and their natural weapons have an easy time shredding through armor. They make use of this strength to maintain their unusually large appetite. 
     
 Tame owlbears make for excellent attack animals, assuming one has the resources to keep them fed. If hunted, their pelts muffle noises, and can be crafted into good hunting gear.</description>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
-      <MarketValue>700</MarketValue>
-      <FilthRate>6</FilthRate>
+      <MarketValue>800</MarketValue>
+      <FilthRate>7</FilthRate>
     </statBases>
     <uiIconScale>1.15</uiIconScale>
     <tools>
@@ -55,7 +55,7 @@ Tame owlbears make for excellent attack animals, assuming one has the resources 
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>31</power>
+        <power>29.5</power>
         <cooldownTime>2.3</cooldownTime>
         <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
         <chanceFactor>0.5</chanceFactor>
@@ -92,20 +92,19 @@ Tame owlbears make for excellent attack animals, assuming one has the resources 
         <Tundra>.1</Tundra>
       </wildBiomes>
       <predator>true</predator>
-      <maxPreyBodySize>3</maxPreyBodySize>
+      <maxPreyBodySize>2.5</maxPreyBodySize>
       <body>DND_BeakedQuadruped</body>
       <useMeatFrom>Bear_Grizzly</useMeatFrom>
-      <baseHungerRate>.42</baseHungerRate>
+      <baseHungerRate>.47</baseHungerRate>
       <baseBodySize>3</baseBodySize>
-      <baseHealthScale>3.5</baseHealthScale>
+      <baseHealthScale>3</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
       <leatherDef>DND_Leather_Owlbear</leatherDef>
-      <gestationPeriodDays>15</gestationPeriodDays>
       <wildness>0.9</wildness>
       <lifeExpectancy>35</lifeExpectancy>
-      <trainability>Advanced</trainability>
-      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+      <trainability>Intermediate</trainability>
+      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>.7</manhunterOnDamageChance>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -136,7 +135,7 @@ Tame owlbears make for excellent attack animals, assuming one has the resources 
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>DND_EggOwlbearFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>30</eggLayIntervalDays>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
       </li>
     </comps>
@@ -154,7 +153,7 @@ Tame owlbears make for excellent attack animals, assuming one has the resources 
         <label>owlbear cub</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Owlbear/DND_Owlbear</texPath>
-          <drawSize>1.7</drawSize> 
+          <drawSize>1.3</drawSize> 
           <shadowData>
             <volume>(0.45, 0.35, 0.35)</volume>
             <offset>(0,0,-0.25)</offset>
@@ -168,7 +167,7 @@ Tame owlbears make for excellent attack animals, assuming one has the resources 
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Owlbear/DND_Owlbear</texPath>
-          <drawSize>2.2</drawSize> 
+          <drawSize>2.1</drawSize> 
           <shadowData>
             <volume>(0.7, 0.5, 0.5)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -176,7 +175,7 @@ Tame owlbears make for excellent attack animals, assuming one has the resources 
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Owlbear/DND_Dessicated_Owlbear</texPath>
-          <drawSize>2</drawSize>
+          <drawSize>2.1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -190,11 +189,9 @@ Tame owlbears make for excellent attack animals, assuming one has the resources 
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Owlbear/DND_Dessicated_Owlbear</texPath>
-          <drawSize>2.7</drawSize>
+          <drawSize>2.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
-
-
 </Defs>

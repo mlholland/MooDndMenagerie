@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<MVCF.ModDef>
-		<defName>DND_MooDndManagerie</defName>
+		<defName>DND_MooDndManagerie_MVCF</defName>
 		<label>Mooloh's DND Managerie</label>
 		<description>Adding animal ranged attacks for Mooloh's DND Managerie creatures</description>
 		<Features>

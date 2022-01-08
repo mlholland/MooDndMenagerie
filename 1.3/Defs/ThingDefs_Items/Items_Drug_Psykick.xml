@@ -4,7 +4,7 @@
   <ThingDef ParentName="MakeableDrugBase">
     <defName>DND_Psykick</defName>
     <label>psy-kick</label>
-    <description>Psy-kick is a drug refined from flumph acid that drastically improves a users potential for psychic abilities. It Boosts psychic sensitivity, neural heat decay, and immediately grants psyfocus. Using psy-kick can give psycasters a powerful edge, but overuse can lead to a mind-numbing addiction.</description>
+    <description>Psy-kick is a drug that drastically improves a users potential for psychic abilities. On top of boosting the user's consciousness, psycasters will benefit from improved psychic sensitivity, neural heat decay, and an immediate burst psyfocus. These effects can give psycasters a powerful edge, but the transcendent sensation can lead to a mind-numbing addiction.</description>
     <descriptionHyperlinks>
       <HediffDef>DND_PsykickHigh</HediffDef>
       <HediffDef>DND_PsykickAddiction</HediffDef>
@@ -22,7 +22,7 @@
     <techLevel>Industrial</techLevel>
     <ingestible>
       <joyKind>Chemical</joyKind>
-      <joy>0.40</joy>
+      <joy>0.3</joy>
       <drugCategory>Hard</drugCategory>
       <foodType>Processed, Fluid</foodType>
       <baseIngestTicks>80</baseIngestTicks>
@@ -61,8 +61,7 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>DND_Psykick</chemical>
-        <addictiveness>0.013</addictiveness>
-        <existingAddictionSeverityOffset>0.50</existingAddictionSeverityOffset>
+        <addictiveness>0.03</addictiveness>
         <needLevelOffset>0.9</needLevelOffset>
         <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
         <listOrder>200</listOrder>
@@ -84,7 +83,7 @@
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.75</severityPerDay>
+        <severityPerDay>-1.5</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -112,7 +111,7 @@
     <stages>
       <li>
         <label>high on psy-kick</label>
-        <description>My mind is reaching beyond my body. I feel more in touch with the world than ever.</description>
+        <description>My mind is expanding beyond my body. I feel more in touch with the world than ever.</description>
         <baseMoodEffect>8</baseMoodEffect>
       </li>
     </stages>
@@ -158,7 +157,7 @@ Without regular doses of psy-kick, withdrawal symptoms will begin. However, exte
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.05</offset>
+            <offset>-0.3</offset>
           </li>
         </capMods>
         <mentalStateGivers>
@@ -170,6 +169,8 @@ Without regular doses of psy-kick, withdrawal symptoms will begin. However, exte
       </li>
     </stages>
   </HediffDef>
+  
+  
 
   <ThoughtDef>
     <defName>DND_PsykickWithdrawal</defName>
@@ -183,7 +184,7 @@ Without regular doses of psy-kick, withdrawal symptoms will begin. However, exte
       <li>
         <label>psy-kick withdrawal</label>
         <description>My mind has been reduced to a shadow of its former glory. Nothing feels real anymore.</description>
-        <baseMoodEffect>-16</baseMoodEffect>
+        <baseMoodEffect>-20</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -216,6 +217,4 @@ Without regular doses of psy-kick, withdrawal symptoms will begin. However, exte
       </li>
     </hediffGivers>
   </HediffDef>
-
-
 </Defs>

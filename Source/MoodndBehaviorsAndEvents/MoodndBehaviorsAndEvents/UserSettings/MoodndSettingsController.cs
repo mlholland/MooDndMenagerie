@@ -22,27 +22,11 @@ namespace MoodndBehaviorsAndEvents
         {
             settings = GetSettings<Moodnd_Settings>();
         }
-        public override string SettingsCategory() => "DND Managerie: Event and Spawning Options";
+        public override string SettingsCategory() => "DND_modSettingsTitle".Translate();
 
         public override void DoSettingsWindowContents(Rect inRect) 
         {
             base.DoSettingsWindowContents(inRect);
-
-            ToggleableSpawnDef toggleablespawndef = (from k in DefDatabase<ToggleableSpawnDef>.AllDefsListForReading
-                                                     where k.defName == "DND_ToggleableAnimals"
-                                                     select k).RandomElement();
-
-
-            if (settings.pawnSpawnStates == null) settings.pawnSpawnStates = new Dictionary<string, bool>();
-            foreach (string defName in toggleablespawndef.toggleablePawns)
-            {
-                if (!settings.pawnSpawnStates.ContainsKey(defName))
-                {
-                    settings.pawnSpawnStates[defName] = false;
-                }
-            }
-
-
 
             settings.DoWindowContents(inRect);
 

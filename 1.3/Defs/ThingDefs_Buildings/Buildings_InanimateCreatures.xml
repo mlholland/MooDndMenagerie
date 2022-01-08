@@ -3,7 +3,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DND_GolemBuildingFlesh</defName>
     <label>dormant flesh golen</label>
-    <description>A archomechanite-animated golem constructed from human flesh. It can be sold now in its dormant state, or awakened to guard the colony. Golems are only loyal to the people that summoned them,so they cannot be sold once awakened.</description>
+    <description>A lesser magical golem constructed from human flesh. It is currently dormant, and can either be sold now, or awakened to guard the colony. Golems are only loyal to the people that awakened them, so they cannot be sold once awakened.</description>
     <graphicData>
       <texPath>Things/Building/Misc/ToolCabinet</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -58,7 +58,9 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DND_GolemBuildingStone</defName>
     <label>dormant flesh golen</label>
-    <description>A archomechanite-animated golem constructed from stone. It can be sold now in its dormant state, or awakened to guard the colony. Golems are only loyal to the people that summoned them, so they cannot be sold once awakened.\n\n NOTE: For balance reasons, the resulting golem will have the same stats and abilities, regardless of the stone type used to make it.</description>
+    <description>A magical golem constructed from stone. It is currently dormant, and can either be sold now, or awakened to guard the colony. Golems are only loyal to the people that awakened them, so they cannot be sold once awakened
+    
+Note: For balance reasons, the resulting golem will always have the same stats and abilities, regardless of the stone type used to make it. Using Jade to make stone golems is not recommended unless you just want to flex.</description>
     <graphicData>
       <texPath>Things/Building/Misc/ToolCabinet</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -116,7 +118,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DND_GolemBuildingSteel</defName>
     <label>dormant steel golen</label>
-    <description>A mighty archomechanite-animated golem constructed from steel. It can be sold now in its dormant state, or awakened to guard the colony. Golems are only loyal to the people that summoned them, so they cannot be sold once awakened.</description>
+    <description>A grand magical golem constructed from steel. It is currently dormant, and can either be sold now, or awakened to guard the colony. Golems are only loyal to the people that awakened them, so they cannot be sold once awakened.</description>
     <graphicData>
       <texPath>Things/Building/Misc/ToolCabinet</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -172,7 +174,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DND_SpectatorEffigy</defName>
     <label>spectator effigy</label>
-    <description>A crude effigy made from human flesh and beholder eyestalks. Activating this will forceably replace the effigy with a similarly-sized create from the dimension of beholders, and bind it to the colony's will.the colony.</description>
+    <description>A crude effigy made from human flesh and beholder eyestalks. Activating this will forceably replace the effigy with a similarly-sized creature from the dimension of beholders, and bind it to the colony.</description>
     <graphicData>
       <texPath>Things/Building/Misc/ToolCabinet</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

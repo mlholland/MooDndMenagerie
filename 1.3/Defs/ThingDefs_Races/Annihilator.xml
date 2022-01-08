@@ -7,14 +7,14 @@
     <description>Annihilators are extremely dangerous relatives of the innocuous rust monster. Like rust monsters, they possess large antennae that are coated in unusual chemicals, but instead of corroding metals on contact, an annihilator's chemicals will disintegrate most solid matter on contact, leaving behind nothing but a fine dust which the annihilator then consumes. Armor will last seconds at most against them, and flesh will fare even worse. Avoid close quaters combat with these creatures at all costs.</description>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
-      <MarketValue>800</MarketValue>      
+      <MarketValue>1200</MarketValue>      
       <ComfyTemperatureMin>-50</ComfyTemperatureMin>
       <ToxicSensitivity>0</ToxicSensitivity>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
-      <FilthRate>0</FilthRate>
-      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.40</ArmorRating_Heat>
+      <FilthRate>2</FilthRate>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
     </statBases> 
     <ingredient>
       <mergeCompatibilityTags>
@@ -80,19 +80,20 @@
       <herdAnimal>false</herdAnimal>
       <predator>true</predator>
       <baseBodySize>2</baseBodySize>
+      <maxPreyBodySize>3</maxPreyBodySize>
       <fleshType>Insectoid</fleshType>
       <bloodDef>Filth_BloodInsect</bloodDef>
       <meatColor>(160,168,139)</meatColor>
       <useMeatFrom>Megaspider</useMeatFrom>
       <meatMarketValue>0.5</meatMarketValue> 
-      <baseHungerRate>.4</baseHungerRate>
-      <baseHealthScale>3</baseHealthScale>
+      <baseHungerRate>.2</baseHungerRate>
+      <baseHealthScale>2.5</baseHealthScale>
       <foodType>CarnivoreAnimalStrict</foodType>
       <wildness>0.99</wildness>
       <trainability>Intermediate</trainability>
       <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
-      <gestationPeriodDays>60</gestationPeriodDays>
+      <gestationPeriodDays>40</gestationPeriodDays>
       <lifeExpectancy>30</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -101,11 +102,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.3</minAge>
+          <minAge>0.75</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.6</minAge>
+          <minAge>1.5</minAge>
           <soundWounded>Pawn_BigInsect_Pain</soundWounded>
           <soundDeath>Pawn_BigInsect_Death</soundDeath>
           <soundCall>Pawn_BigInsect_Call</soundCall>
@@ -125,8 +126,7 @@
     <label>Annihilator</label>
     <labelPlural>Annihilator</labelPlural>
     <race>DND_Annihilator</race>
-    <canArriveManhunter>false</canArriveManhunter>
-    <combatPower>500</combatPower>
+    <combatPower>250</combatPower>
     <ecoSystemWeight>0.2</ecoSystemWeight>
     <lifeStages>
       <li>

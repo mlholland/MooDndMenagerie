@@ -4,15 +4,15 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>DND_DisplacerBeast</defName>
     <label>displacer beast</label>
-    <description>At a glance, a displacer beast looks like an enormous panther, but their alien origin is quickly apparent when you look beyond their feline face. Displacer beasts have six legs, as well as two tentacles sprouting from their shoulders. These tentacles end in spiny lashers, and the displacer beast uses them to shred their prey. 
+    <description>At a glance, a displacer beast looks like an enormous panther, but their alien origin is quickly apparent when you look beyond their feline face. Displacer beasts have six legs, as well as two tentacles sprouting from their shoulders. These tentacles end in spiny lashers, and the displacer beast uses them to shred their prey. If this was not dangerous enough, displacer beasts earn their name from their ability to distort light, making them appear to be standing a few feet away from their actual location. 
     
-If this was not dangerous enough, displacer beasts also posses the ability to distort light around them, making them appear to be standing a few feet away from their actual location, which makes hitting them very difficult. If successfully hunted, a displacer beast's pelt can confer a light-bending ability to clothing made from it.</description>
+This light-bending power makes hitting a displacer beast extremely difficult. If successfully hunted, a displacer beast's pelt can confer its light-bending ability to large clothing made from it.</description>
     <statBases>
       <MoveSpeed>6.1</MoveSpeed>
-      <MarketValue>750</MarketValue>      
+      <MarketValue>900</MarketValue>      
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
-      <FilthRate>3</FilthRate>
+      <FilthRate>4</FilthRate>
     </statBases>
     <uiIconScale>1.15</uiIconScale>
     <comps>
@@ -27,7 +27,7 @@ If this was not dangerous enough, displacer beasts also posses the ability to di
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>12.5</power>
+        <power>12.1</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -44,7 +44,7 @@ If this was not dangerous enough, displacer beasts also posses the ability to di
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>12.5</power>
+        <power>12.1</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -60,7 +60,7 @@ If this was not dangerous enough, displacer beasts also posses the ability to di
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>17</power>
+        <power>19</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
@@ -90,11 +90,11 @@ If this was not dangerous enough, displacer beasts also posses the ability to di
           <li>Blunt</li>
           <li>Scratch</li>
         </capacities>
-        <power>9.5</power>
+        <power>1</power>
         <cooldownTime>1.1</cooldownTime>
         <linkedBodyPartsGroup>DND_LeftTentacleLasher</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>.8</chanceFactor>
+        <chanceFactor>1</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -110,11 +110,11 @@ If this was not dangerous enough, displacer beasts also posses the ability to di
           <li>Blunt</li>
           <li>Scratch</li>
         </capacities>
-        <power>9.5</power>
+        <power>1</power>
         <cooldownTime>1.1</cooldownTime>
         <linkedBodyPartsGroup>DND_RightTentacleLasher</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>.8</chanceFactor>
+        <chanceFactor>1</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -128,26 +128,24 @@ If this was not dangerous enough, displacer beasts also posses the ability to di
     <race>
       <body>DND_DisplacerBeastBody</body>
       <wildBiomes>
-        <TemperateSwamp>0.1</TemperateSwamp>
-        <TemperateForest>0.1</TemperateForest>
-        <TropicalSwamp>0.15</TropicalSwamp>
-        <TropicalRainforest>0.15</TropicalRainforest>
-        <AridShrubland>0.03</AridShrubland>
-        <BorealForest>.03</BorealForest>
+        <TemperateSwamp>0.07</TemperateSwamp>
+        <TemperateForest>0.07</TemperateForest>
+        <TropicalSwamp>0.1</TropicalSwamp>
+        <TropicalRainforest>0.1</TropicalRainforest>
       </wildBiomes>
       <herdAnimal>true</herdAnimal>
       <predator>true</predator>
       <maxPreyBodySize>2</maxPreyBodySize>
       <baseBodySize>2.5</baseBodySize>
-      <baseHungerRate>0.2</baseHungerRate>
+      <baseHungerRate>0.18</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <leatherDef>DND_Leather_DisplacerBeast</leatherDef>
       <wildness>0.85</wildness>
       <trainability>Advanced</trainability>
-      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.90</manhunterOnDamageChance>
-      <gestationPeriodDays>20</gestationPeriodDays>
+      <gestationPeriodDays>15</gestationPeriodDays>
       <lifeExpectancy>50</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -156,11 +154,11 @@ If this was not dangerous enough, displacer beasts also posses the ability to di
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.4</minAge>
+          <minAge>0.2</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.8</minAge>
+          <minAge>0.5</minAge>
           <soundWounded>Pawn_Cougar_Injured</soundWounded>
           <soundDeath>Pawn_Cougar_Death</soundDeath>
           <soundAngry>Pawn_Cougar_Angry</soundAngry>
@@ -181,7 +179,7 @@ If this was not dangerous enough, displacer beasts also posses the ability to di
     <label>displacer beast</label>
     <labelPlural>displacer beasts</labelPlural>
     <race>DND_DisplacerBeast</race>
-    <combatPower>300</combatPower>
+    <combatPower>250</combatPower>
     <ecoSystemWeight>0.2</ecoSystemWeight>
     <lifeStages>
       <li>

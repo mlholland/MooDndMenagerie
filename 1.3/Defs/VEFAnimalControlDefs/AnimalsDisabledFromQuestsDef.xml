@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>DND_DisabledAnimalToggles</defName>
+		<disabledFromQuestsPawns>
+      <li>DND_Beholder</li>
+      <li>DND_GolemFlesh</li>
+      <li>DND_GolemStone</li>
+      <li>DND_GolemSteel</li>
+      <li>DND_Spectator</li>
+      <li>DND_Annihilator</li>
+      <li>DND_Medusa</li>
+      <li>DND_GibberingMouther</li>
+		</disabledFromQuestsPawns>							
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+</Defs>

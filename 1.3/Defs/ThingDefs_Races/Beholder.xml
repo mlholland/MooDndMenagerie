@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_Beholder</defName>
 		<label>Beholder</label>
-    <description>Beholders are dangerous and malevolent creatures, thought to be from another dimension. Their body consists of an enormous floating head with a single huge eye. Ten eyestalks sprout from this head, which each end in a single, smaller eye. 
+    <description>Beholders are dangerous and malevolent creatures, thought to be from another dimension. Their entire body consists of a large magically floating head with a single huge eye. Ten eyestalks sprout from this head, which each end in a single, smaller eye. 
     
 If their appearance wasn't bad enough, beholders can shoot magical rays of light from their eyes. They rays can have one of ten effects: charming, paralysis, terror, slowing time dilation, sudden necrosis, telekenesis, narcolepsy, petrification, disintigration, and... death.
     
@@ -12,11 +12,11 @@ Most of a beholder's body solidifies into a useless stone-like material on death
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>100</ComfyTemperatureMax>
-			<MarketValue>2000</MarketValue>
-      <FilthRate>3</FilthRate>
+			<MarketValue>3000</MarketValue>
+      <FilthRate>4</FilthRate>
       <LeatherAmount>0</LeatherAmount>
       <MeatAmount>0</MeatAmount>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
 		</statBases>
 		<race>
@@ -25,8 +25,8 @@ Most of a beholder's body solidifies into a useless stone-like material on death
 			<body>DND_BeholderBody</body>
 			<packAnimal>false</packAnimal>
 			<baseBodySize>3.5</baseBodySize>
-			<baseHealthScale>15</baseHealthScale>
-			<baseHungerRate>0.57</baseHungerRate>
+			<baseHealthScale>12</baseHealthScale>
+			<baseHungerRate>0.17</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<wildness>1</wildness>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -66,16 +66,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderSleepRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <accuracyTouch>.98</accuracyTouch>
-        <accuracyShort>.98</accuracyShort>
-        <accuracyMedium>.98</accuracyMedium>
-        <accuracyLong>.98</accuracyLong>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
@@ -84,17 +84,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderPetrificationRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>.98</accuracyTouch>
-        <accuracyShort>.98</accuracyShort>
-        <accuracyMedium>.98</accuracyMedium>
-        <accuracyLong>.98</accuracyLong>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
@@ -103,17 +102,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderFearRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>.98</accuracyTouch>
-        <accuracyShort>.98</accuracyShort>
-        <accuracyMedium>.98</accuracyMedium>
-        <accuracyLong>.98</accuracyLong>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
@@ -122,18 +120,17 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_ForcedCharmApproachRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>.98</accuracyTouch>
-        <accuracyShort>.98</accuracyShort>
-        <accuracyMedium>.98</accuracyMedium>
-        <accuracyLong>.98</accuracyLong>
-        <minRange>1</minRange>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>15</minRange>
         <commonality>1</commonality>
       </li>
       <li>
@@ -141,17 +138,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderTelekineticRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>.98</accuracyTouch>
-        <accuracyShort>.98</accuracyShort>
-        <accuracyMedium>.98</accuracyMedium>
-        <accuracyLong>.98</accuracyLong>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
@@ -160,17 +156,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderDeathRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>2.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>.98</accuracyTouch>
-        <accuracyShort>.98</accuracyShort>
-        <accuracyMedium>.98</accuracyMedium>
-        <accuracyLong>.98</accuracyLong>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
@@ -179,17 +174,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderParalysisRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>1</accuracyTouch>
-        <accuracyShort>1</accuracyShort>
-        <accuracyMedium>1</accuracyMedium>
-        <accuracyLong>1</accuracyLong>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
@@ -198,17 +192,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderSlowRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>1</accuracyTouch>
-        <accuracyShort>1</accuracyShort>
-        <accuracyMedium>1</accuracyMedium>
-        <accuracyLong>1</accuracyLong>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
@@ -217,17 +210,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderEnervationRay</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>4</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>1</accuracyTouch>
-        <accuracyShort>1</accuracyShort>
-        <accuracyMedium>1</accuracyMedium>
-        <accuracyLong>1</accuracyLong>
+        <accuracyTouch>.97</accuracyTouch>
+        <accuracyShort>.97</accuracyShort>
+        <accuracyMedium>.97</accuracyMedium>
+        <accuracyLong>.97</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
@@ -236,17 +228,16 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_BeholderDisintegrationRay</defaultProjectile>
-        <warmupTime>.2</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>DND_BeholderRay_Fire1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-
-        <accuracyTouch>1</accuracyTouch>
-        <accuracyShort>1</accuracyShort>
-        <accuracyMedium>1</accuracyMedium>
-        <accuracyLong>1</accuracyLong>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>.4</commonality>
       </li>
@@ -257,7 +248,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>15.2</power>
+        <power>19</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.07</chanceFactor>
@@ -273,7 +264,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.1</chanceFactor>
+        <chanceFactor>0.01</chanceFactor>
       </li>
     </tools>
     <comps>
@@ -289,7 +280,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
 		<race>DND_Beholder</race>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
-		<combatPower>800</combatPower>
+		<combatPower>600</combatPower>
 
 		<wildGroupSize>
 			<min>1</min>

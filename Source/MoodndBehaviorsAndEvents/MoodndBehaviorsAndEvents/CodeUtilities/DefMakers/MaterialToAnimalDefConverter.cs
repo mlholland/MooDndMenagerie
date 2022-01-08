@@ -212,7 +212,7 @@ namespace MoodndBehaviorsAndEvents
                 }
                 if (statMod.stat == StatDefOf.MarketValue)
                 {
-                    statMod.value += stuff.BaseMarketValue * furnitureThingDef.costStuffCount * (stuff.smallVolume ? stuff.VolumePerUnit : 1);
+                    statMod.value += stuff.BaseMarketValue * furnitureThingDef.costStuffCount * (stuff.smallVolume ? 1 / stuff.VolumePerUnit : 1);
                 }
                 if (statMod.stat == StatDefOf.MeatAmount)
                 {

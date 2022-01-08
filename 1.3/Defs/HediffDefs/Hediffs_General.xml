@@ -115,7 +115,7 @@
 		<maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+        <disappearsAfterTicks>240~360</disappearsAfterTicks>
         <showRemainingTime>True</showRemainingTime>
       </li>
     </comps>
@@ -147,7 +147,7 @@
 
   <HediffDef>
     <defName>DND_Rusting</defName>
-    <description>This creature was coated by rapid-rusting chemicals. Metallic clothing or body parts at the impact site are rusting away at a dangerous rate.</description>
+    <description>This creature was covered in rapid-rusting chemicals. Metallic clothing or body parts at the impact site are rusting away at a dangerous rate.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Rapid Rusting</label>
     <defaultLabelColor>(.8,0,0)</defaultLabelColor>
@@ -222,7 +222,7 @@
 
   <HediffDef>
     <defName>DND_BeholderSlowRayHit</defName>
-    <description>This creature has been hit by a beholder's time-slowing ray.</description>
+    <description>This creature has been hit by a magical time-slowing effect.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Time-Slowed</label>
     <defaultLabelColor>(.8,0,0)</defaultLabelColor>
@@ -336,7 +336,7 @@
           <InjuryHealingFactor>0</InjuryHealingFactor>
         </statFactors>
         <totalBleedFactor>0</totalBleedFactor>
-        <painFactor>0.2</painFactor>
+        <painFactor>0.6</painFactor>
       </li>
     </stages>
     <comps>
@@ -427,6 +427,4 @@
       </li>
     </stages>
   </HediffDef>
-          
-
 </Defs>

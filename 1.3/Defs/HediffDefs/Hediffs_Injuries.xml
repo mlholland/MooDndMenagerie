@@ -5,7 +5,7 @@
     <defName>DND_Necrosis</defName>
     <label>necrosis</label>
     <labelNoun>sudden necrosis</labelNoun>
-    <description>Sudden necrosis has left large sections of tissue decaying on the body. More likely to get infected than other injuries, and more painful.</description>
+    <description>Sudden necrosis has left large sections of tissue decaying on the body. This is more likely to get infected than other injuries, and more painful.</description>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
         <labelTendedWell>Cleaned</labelTendedWell>
@@ -61,7 +61,7 @@
     <defName>DND_BodyRusting</defName>
     <label>rust</label>
     <labelNoun>rapid rusting</labelNoun>
-    <description>This artifical part was hit by a rapid-rusting agent of some sort, causing immense damage.</description>
+    <description>This metallic body part was hit by a rapid-rusting chemical of some sort, causing immense damage.</description>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
         <labelTendedWell>Cleaned</labelTendedWell>

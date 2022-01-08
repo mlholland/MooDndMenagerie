@@ -17,7 +17,7 @@
     <hediffClass>HediffWithComps</hediffClass>
     <label>full petrification</label>
     <defaultLabelColor>(0.25, 0.25, 0.25)</defaultLabelColor>
-    <description>>A magical disease that causes the victim's body to calcify. This particular case had advanced to the point that the victim is emtombed in their own body. They don't need to eat, and diseases will struggle to infect them, but they're also immobile. To undo advanced petrification, someone else must administer a dose of Argiav to the victim.</description>
+    <description>>A magical disease that causes the victim's body to turn to stone. This particular case had advanced to the point that the victim is emtombed in their own body. They don't need to eat, and diseases will struggle to infect them, but they're also immobile. To undo advanced petrification, someone else must administer a dose of Argiav to the victim.</description>
     <makesSickThought>true</makesSickThought>
     <stages>
       <li>
@@ -45,7 +45,7 @@
     <hediffClass>HediffWithComps</hediffClass>
     <label>petrification</label>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-    <description>A magical disease that causes the victim's body to calcify. If untreated it can become a permanent condition that emtombs the victim. Thankfully the development of the disease can be heavily slowed with sufficient medical treatment, and the magic fades after several days if it doesn't take over the victim's entire body.</description>
+    <description>A magical disease that causes the victim's body to turn to stone. If untreated it can become a permanent condition that emtombs the victim. Thankfully the development of the disease can be heavily slowed with sufficient medical treatment, and the magic fades after several days if it doesn't take over the victim's entire body.</description>
     <makesSickThought>true</makesSickThought>
     <tendable>true</tendable>
     <lethalSeverity>1.01</lethalSeverity><!--Lethal severity is  -->
@@ -123,8 +123,4 @@
       </li>
     </stages>
   </HediffDef>
-
-
-
-
 </Defs>

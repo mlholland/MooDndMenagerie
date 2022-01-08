@@ -19,6 +19,7 @@
       <depth>Outside</depth>
       <groups>
         <li>Torso</li>
+        <li>DND_BodySlamTool</li>
       </groups>
       <parts>
         <li>

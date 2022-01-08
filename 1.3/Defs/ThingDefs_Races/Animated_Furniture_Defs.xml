@@ -54,9 +54,9 @@
   <ThingDef ParentName="BaseAnimatedFurniture">
     <defName>DND_AnimatedDiningChair_Base</defName>
     <label>Animated Dining Chair</label>
-    <description>A dining chair that has been brought to life by a scroll of animation. It seems to always be behind you right when you need a place to sit.
+    <description>A dining chair that has been brought to life by a scroll of animation. It always seems be right behind you when you need a place to sit.
 
-Animated Chairs will aggresively try to comfort nearby colonists, increasing their comfort need if it's below 50%.</description>
+Animated Chairs will periodically try to comfort nearby colonists, increasing their comfort need if it's below 50%.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
@@ -66,7 +66,7 @@ Animated Chairs will aggresively try to comfort nearby colonists, increasing the
     </statBases>
     <race>
       <body>DND_DiningChairBody</body>
-      <baseBodySize>.4</baseBodySize>
+      <baseBodySize>.5</baseBodySize>
     </race>
     <tools>
       <li>
@@ -74,7 +74,7 @@ Animated Chairs will aggresively try to comfort nearby colonists, increasing the
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>6</power>
+        <power>8</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
       </li>
@@ -98,7 +98,7 @@ Animated Chairs will aggresively try to comfort nearby colonists, increasing the
     <label>Animated Dining Chair</label>
     <labelPlural>Animated Dining Chairs</labelPlural>
     <ecoSystemWeight>0.0</ecoSystemWeight>
-    <combatPower>25</combatPower>
+    <combatPower>80</combatPower>
     <wildGroupSize>
       <min>1</min>
       <max>1</max>
@@ -121,7 +121,7 @@ Animated Chairs will aggresively try to comfort nearby colonists, increasing the
     <thingClass>Pawn</thingClass>
     <category>Pawn</category>
     <label>Animated Tool Cabinet</label>
-    <description>A tool cabinet that has been animated into a fascimile of life using a scroll of animation. Now it lumbers around dispensing tools to nearby colonists.
+    <description>A tool cabinet that has been brought to life using a scroll of animation. Now it lumbers around and dispenses tools to nearby colonists.
 
 Animated tool cabinets periodically give a small general labor speed boost to nearby colonists. They also have a blunt ranged attack.</description>
     <statBases>
@@ -144,7 +144,7 @@ Animated tool cabinets periodically give a small general labor speed boost to ne
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>16</power>
+        <power>15</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
       </li>
@@ -166,8 +166,8 @@ Animated tool cabinets periodically give a small general labor speed boost to ne
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DND_ToolThrow</defaultProjectile>
-        <warmupTime>1.3</warmupTime>
-        <range>20</range>
+        <warmupTime>1.7</warmupTime>
+        <range>24.9</range>
         <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
         <soundCast>ThrowGrenade</soundCast> 
@@ -189,7 +189,8 @@ Animated tool cabinets periodically give a small general labor speed boost to ne
     <label>Animated Tool Cabinet</label>
     <labelPlural>Animated Tool Cabinets</labelPlural>
     <ecoSystemWeight>0.0</ecoSystemWeight>
-    <combatPower>50</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <combatPower>180</combatPower>
     <wildGroupSize>
       <min>1</min>
       <max>1</max>
@@ -227,9 +228,9 @@ Animated tool cabinets periodically give a small general labor speed boost to ne
   <ThingDef ParentName="BaseAnimatedFurniture">
     <defName>DND_AnimatedStool_Base</defName>
     <label>Animated Stool</label>
-    <description>A stool that has been animated into a fascimile of life using a scroll of animation. It is constantly waddling underfoot, and everyone is convinced that it makes a cute chirping noise when they aren't watching it.
+    <description>A stool that has been brought to life using a scroll of animation. It is constantly waddling underfoot, and everyone is convinced that it makes a cute chirping noise when they aren't watching it.
 
-Animated stools are strangely endearing, and have a very high nuzzle interval.</description>
+Animated stools are oddly endearing, and have a very high nuzzle interval.</description>
     <statBases>
       <MoveSpeed>4.7</MoveSpeed>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
@@ -263,7 +264,7 @@ Animated stools are strangely endearing, and have a very high nuzzle interval.</
     <label>Animated Stool</label>
     <labelPlural>Animated Stools</labelPlural>
     <ecoSystemWeight>0.0</ecoSystemWeight>
-    <combatPower>50</combatPower>
+    <combatPower>40</combatPower>
     <wildGroupSize>
       <min>1</min>
       <max>1</max>

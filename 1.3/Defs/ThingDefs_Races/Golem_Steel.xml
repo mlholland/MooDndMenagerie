@@ -12,9 +12,9 @@
       <MoveSpeed>5.1</MoveSpeed>
       <ComfyTemperatureMin>-300</ComfyTemperatureMin>
       <ComfyTemperatureMax>1000</ComfyTemperatureMax>
-      <MarketValue>7000</MarketValue>
-      <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
-      <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+      <MarketValue>6000</MarketValue>
+      <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
       <ArmorRating_Heat>2</ArmorRating_Heat>
       <FilthRate>2</FilthRate>
       <LeatherAmount>0</LeatherAmount>
@@ -65,7 +65,7 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>45</power>
+        <power>29</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>DND_BuiltinSwordGroup</linkedBodyPartsGroup>
         <armorPenetration>1</armorPenetration>
@@ -75,10 +75,21 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>31</power>
+        <power>24</power>
         <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <armorPenetration>0.6</armorPenetration>
+      </li>
+      <li>
+        <label>slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.01</chanceFactor>
       </li>
     </tools>
     <recipes>
@@ -95,7 +106,7 @@
     <race>DND_GolemSteel</race>
     <canArriveManhunter>false</canArriveManhunter>
     <ecoSystemWeight>0.3</ecoSystemWeight>
-    <combatPower>1200</combatPower>
+    <combatPower>1000</combatPower>
 
     <wildGroupSize>
       <min>1</min>

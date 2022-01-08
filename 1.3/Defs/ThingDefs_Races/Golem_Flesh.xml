@@ -17,8 +17,8 @@ Flesh golems are extremely flammable, and they may go berserk when sufficiently 
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
       <MarketValue>1500</MarketValue>
       <FilthRate>3</FilthRate>
-      <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
       <LeatherAmount>0</LeatherAmount>
       <MeatAmount>300</MeatAmount>
     </statBases>
@@ -65,7 +65,7 @@ Flesh golems are extremely flammable, and they may go berserk when sufficiently 
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>24</power>
+        <power>19.5</power>
         <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <armorPenetration>0.2</armorPenetration>
@@ -75,10 +75,21 @@ Flesh golems are extremely flammable, and they may go berserk when sufficiently 
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>24</power>
+        <power>19.5</power>
         <cooldownTime>1.7</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <armorPenetration>0.2</armorPenetration>
+      </li>
+      <li>
+        <label>slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.01</chanceFactor>
       </li>
     </tools>
     <recipes>

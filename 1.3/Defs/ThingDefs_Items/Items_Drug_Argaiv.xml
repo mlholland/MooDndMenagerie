@@ -5,7 +5,8 @@
     <defName>DND_Argaiv</defName>
     <label>Argaiv</label>
     <description>A medicinal drug that quickly counters the effects of petrification prion disease. Can be used to cure all stages of petrification, or to give a creature a few hours of immunity to petrification.
-    Argaiv can be isolated from the blood of Medusas and Basilisks, or it can be produced using large quantites of neutroamine.</description>
+    
+Argaiv can be isolated from the corpses of Medusas and Basilisks, or it can be produced artificially using large quantites of neutroamine.</description>
     <descriptionHyperlinks>
       <HediffDef>DND_Argaiv</HediffDef>
     </descriptionHyperlinks>
@@ -55,7 +56,7 @@
       <soundWorking>Recipe_Drug</soundWorking>
     </recipeMaker>
     <costList>
-      <Neutroamine>12</Neutroamine>
+      <Neutroamine>20</Neutroamine>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -69,14 +70,14 @@
     <defName>DND_Argaiv</defName>
     <hediffClass>Hediff_High</hediffClass>
     <label>argaiv</label>
-    <description>Argaiv-induced petrification immunity. Unlike penoxycyline, this cures existing petrification when consumed.</description>
+    <description>This creature is benefitting from Argaiv-induced petrification immunity.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.8</severityPerDay>
+        <severityPerDay>-1.2</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
