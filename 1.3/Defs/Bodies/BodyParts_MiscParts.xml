@@ -3,17 +3,9 @@
 <Defs>
 
   <BodyPartDef>
-    <defName>DND_Snake_Hair_Body</defName>
-    <label>snake hair body</label>
-    <hitPoints>15</hitPoints>
-    <skinCovered>true</skinCovered>
-  </BodyPartDef>
-
-
-  <BodyPartDef>
     <defName>DND_Snake_Hair_Head</defName>
     <label>snake hair head</label>
-    <hitPoints>10</hitPoints>
+    <hitPoints>5</hitPoints>
     <skinCovered>true</skinCovered>
     <tags>
       <li>ConsciousnessSource</li>
@@ -27,7 +19,7 @@
   <BodyPartDef>
     <defName>DND_Medusa_Main_Head</defName>
     <label>Head</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>15</hitPoints>
     <skinCovered>true</skinCovered>
     <tags>
       <li>BreathingPathway</li>
@@ -82,6 +74,12 @@
     </tags>
   </BodyPartDef>
 
+  <BodyPartDef>
+    <defName>DND_ChemicalAntenna</defName>
+    <label>chemical antenna</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>true</skinCovered> 
+  </BodyPartDef>
 
   <BodyPartDef>
     <defName>DND_Psychic_Flyer_Brain</defName>
@@ -174,7 +172,7 @@
   <BodyPartDef>
     <defName>DND_Levitation_Bladder</defName>
     <label>levitation bladder</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>20</hitPoints>
     <skinCovered>false</skinCovered>
     <canScarify>false</canScarify>
     <tags>
@@ -199,7 +197,7 @@
   <BodyPartDef>
     <defName>DND_MoutherCore</defName>
     <label>Gibbering Core</label>
-    <hitPoints>50</hitPoints>
+    <hitPoints>30</hitPoints>
     <skinCovered>false</skinCovered>
     <canScarify>false</canScarify>
     <tags>

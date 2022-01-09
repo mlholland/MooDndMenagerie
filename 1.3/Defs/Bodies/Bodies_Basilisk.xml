@@ -132,13 +132,13 @@
         </li>
         <li>
           <def>Leg</def>
-          <customLabel>front left leg</customLabel>
+          <customLabel>first left leg</customLabel>
           <coverage>0.05</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>front left paw</customLabel>
+              <customLabel>first left paw</customLabel>
               <coverage>0.15</coverage>
               <groups>
                 <li>FrontLeftPaw</li>
@@ -148,13 +148,13 @@
         </li>
         <li>
           <def>Leg</def>
-          <customLabel>front right leg</customLabel>
+          <customLabel>first right leg</customLabel>
           <coverage>0.05</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>front right paw</customLabel>
+              <customLabel>first right paw</customLabel>
               <coverage>0.15</coverage>
               <groups>
                 <li>FrontRightPaw</li>
@@ -164,13 +164,13 @@
         </li>
         <li>
           <def>Leg</def>
-          <customLabel>middle left leg</customLabel>
+          <customLabel>second left leg</customLabel>
           <coverage>0.05</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>middle left paw</customLabel>
+              <customLabel>second left paw</customLabel>
               <coverage>0.15</coverage>
               <groups>
                 <li>DND_MiddleLeftPaw</li>
@@ -180,13 +180,13 @@
         </li>
         <li>
           <def>Leg</def>
-          <customLabel>middle right leg</customLabel>
+          <customLabel>second right leg</customLabel>
           <coverage>0.05</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>middle right paw</customLabel>
+              <customLabel>second right paw</customLabel>
               <coverage>0.15</coverage>
               <groups>
                 <li>DND_MiddleRightPaw</li>
@@ -196,26 +196,58 @@
         </li>
         <li>
           <def>Leg</def>
-          <customLabel>rear left leg</customLabel>
+          <customLabel>third left leg</customLabel>
           <coverage>0.05</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>rear left paw</customLabel>
+              <customLabel>third left paw</customLabel>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_MiddleLeftPaw</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Leg</def>
+          <customLabel>third right leg</customLabel>
+          <coverage>0.05</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>Paw</def>
+              <customLabel>third right paw</customLabel>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_MiddleRightPaw</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Leg</def>
+          <customLabel>fourth left leg</customLabel>
+          <coverage>0.05</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>Paw</def>
+              <customLabel>fourth left paw</customLabel>
               <coverage>0.15</coverage>
             </li>
           </parts>
         </li>
         <li>
           <def>Leg</def>
-          <customLabel>rear right leg</customLabel>
+          <customLabel>fourth right leg</customLabel>
           <coverage>0.05</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>rear right paw</customLabel>
+              <customLabel>fourth right paw</customLabel>
               <coverage>0.15</coverage>
             </li>
           </parts>
