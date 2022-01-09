@@ -3,16 +3,16 @@ using RimWorld;
 using Verse; 
 
 
-/*Based on:  https://github.com/juanosarg/AlphaAnimals/blob/master/1.3/Source/AlphaBehavioursAndEvents/AlphaBehavioursAndEvents/Harmony/BiomeDef_CommonalityOfAnimal_patch.cs */
+/*Based on the the code to scale a mod's animals' spawn frequency in alpha animals:  https://github.com/juanosarg/AlphaAnimals/blob/master/1.3/Source/AlphaBehavioursAndEvents/AlphaBehavioursAndEvents/Harmony/BiomeDef_CommonalityOfAnimal_patch.cs */
 namespace MoodndBehaviorsAndEvents
 {
      /*This Harmony Postfix multiplies commonality of animals in the biome */
     [HarmonyPatch(typeof(BiomeDef))]
     [HarmonyPatch("CommonalityOfAnimal")]
-    public static class AlphaAnimals_BiomeDef_CommonalityOfAnimal_Patch
+    public static class MooDND_Animals_BiomeDef_CommonalityOfAnimal_Patch
     {
         [HarmonyPostfix]
-        public static void MultiplyAlphaAnimalCommonality(PawnKindDef animalDef, ref float __result)
+        public static void MultiplyDndAnimalCommonality(PawnKindDef animalDef, ref float __result)
         {
             if (animalDef.defName.StartsWith("DND_"))
             {
