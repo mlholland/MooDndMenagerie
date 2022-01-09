@@ -333,8 +333,6 @@
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Suspend.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Linear.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\SappersUtility_IsGoodSapper.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Harmony\Spawn Checks\WildAnimalSpawner_SpawnRandomWildAnimalAt.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Harmony\BiomeDef_CommonalityOfAnimal_patch.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\VerbPatches.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_Goto_Forced.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_FleeAndCower_Forced.cs" />
