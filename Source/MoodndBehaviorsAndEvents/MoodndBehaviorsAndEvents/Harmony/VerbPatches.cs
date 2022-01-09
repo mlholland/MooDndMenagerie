@@ -9,20 +9,19 @@ using Verse;
 using MVCF.Utilities;
 using MVCF;
 
-
-
 // Other Harmony patches
 namespace MoodndBehaviorsAndEvents
 {
 
-    // The Normal logic for animal ranged attacks doesn't work for some of animals for 2 reasons:
+    // The Normal logic for animal ranged attacks doesn't work for some of my animals for 2 reasons:
     // - The verb-choosing logic only looks at expected damage when picking a verb, so attacks that only apply effects instead of damage are never selected
     // - If multiple verbs have the same weight, the first in the list is always selected.
     // The patch below is more or less a copy of the code found [here](https://github.com/AndroidQuazar/VanillaExpandedFramework/blob/master/Source/MVCF/Utilities/PawnVerbUtility.cs#L47)
     // but with the following changes:
     // - It only activates if the pawn in question is from my mod.
-    // - It uses custom logic for determiningverb scores that's much more lenient, and generally produces the same value for most viable verbs
-    // - It selects randomly among viable verbs if multiple verbs have the same best sore.
+    // - It uses custom logic for determining verb scores that's much more lenient, and generally produces the same value for most viable verbs
+    // - It selects randomly among viable verbs if multiple verbs have the same best sore, 
+    // TODO: figure out if it's possible to make verb selection be weighted by commonality.
     [HarmonyPatch(typeof(PawnVerbUtility), nameof(PawnVerbUtility.BestVerbForTarget))]
     static class PawnVerbUtility_BestVerbForTargets_Prefix_Patch
     {
@@ -39,7 +38,7 @@ namespace MoodndBehaviorsAndEvents
                                   p.CurJob?.targetA + ")");
                     return false;
                 }
-
+                
                 HashSet<Verb> bestVerbs = new HashSet<Verb>();
                 float bestScore = 0;
                 foreach (var verb in verbs)
@@ -51,7 +50,7 @@ namespace MoodndBehaviorsAndEvents
                     } 
                     var score = VerbScore(p, verb.Verb, target, debug);
                     if (score < bestScore) continue;
-                    else if (score == bestScore) bestVerbs.Add(verb.Verb);
+                    else if (score == bestScore) bestVerbs.Add(verb.Verb, verb);
                     else
                     {
                         bestScore = score;
