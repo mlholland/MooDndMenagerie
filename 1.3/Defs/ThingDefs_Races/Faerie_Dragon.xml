@@ -72,6 +72,7 @@ When tame and trained, faerie dragons will occasionally exhale this euphoric gas
 			<li>AnimalExotic</li>
 		</tradeTags>
 		<comps>
+      <li Class="AnimalBehaviours.CompProperties_Floating"></li>
       <li Class="MoodndBehaviorsAndEvents.CompProperties_HediffEffecterRework">
         <radius>10</radius>
         <tickInterval>2000</tickInterval>
