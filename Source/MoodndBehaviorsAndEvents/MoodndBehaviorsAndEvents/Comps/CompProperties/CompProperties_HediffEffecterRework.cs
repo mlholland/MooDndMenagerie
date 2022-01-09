@@ -14,9 +14,10 @@ namespace MoodndBehaviorsAndEvents
         public float severity = 1.0f;
         public int tickInterval = 1000;
         public string hediff = "Plague";
-        public bool onlyAffectColonists = true;
-        public bool requiresPsychicSensitivity = false;
-        public bool needsToBeTamed = true;
+        public bool onlyAffectColonists = true; // if true, the hediff is only applied to colonists (humanoids in the player faction)
+        public bool requiresPsychicSensitivity = false; // if true, then requires non-zero psychic sensitivity.
+        public bool needsToBeTamed = true; // only try to apply the hediff nearby if the animal is tamed and part of the player faction
+        public bool onlyAffectsMaster = false; // if true, only apply the hediff to the animal's master. Do nothing if it has no master.
 
         public CompProperties_HediffEffecterRework()
         {

@@ -6,7 +6,8 @@ using RimWorld;
 using UnityEngine;
 
 // A modified version of the CompHediffEffector class from VEF. The original lacked a bunch of features I needed, so I bootstapped off that to produce this.
-// When added to creature, this comp periodically
+// When added to creature, this comp periodically checks for nearby creatures that meet any of a variety of checks, and if they pass, applies a specific
+// hediff to them
 namespace MoodndBehaviorsAndEvents
 {
     public class CompHediffEffecterRework : ThingComp
@@ -39,18 +40,24 @@ namespace MoodndBehaviorsAndEvents
                 {
                     int targetsAffected = 0;
                     foreach (Thing thing in GenRadial.RadialDistinctThingsAround(thisPawn.Position, thisPawn.Map, Props.radius, true))
-                    {
+                    { 
                         Pawn pawn = thing as Pawn;
                         //Only work on colonists, unless not-OnlyAffectColonists
                         if (pawn != null &&(pawn.IsColonist || !Props.onlyAffectColonists))
                         {
                             //Only work on not dead, not downed, not psychically immune colonists
                             if (!pawn.Dead && !pawn.Downed && (!Props.requiresPsychicSensitivity || pawn.GetStatValue(StatDefOf.PsychicSensitivity, true) > 0f))
-                            {;
-                                // todo: figure out why this was broken, something about finding 1670 elements named Mote_PsycastPsychicEffect
-                                // MoteMaker.MakeAttachedOverlay(this.parent, ThingDef.Named("Mote_PsycastPsychicEffect"), Vector3.zero, 1f, -1f);
-
-                                //Log.Message("Applying Hediff to pawn named"+ pawn.Name);
+                            {
+                                // check if the current pawn is the applier's master if necessary
+                                if (Props.onlyAffectsMaster)
+                                {
+                                    if (thisPawn.playerSettings.Master != null && thisPawn.playerSettings.Master.Equals(pawn)) {
+                                        HediffDef mastersHediff = HediffDef.Named(Props.hediff);
+                                        pawn.health.AddHediff(mastersHediff);
+                                        return;
+                                    }
+                                    continue;
+                                }
                                 HediffDef diff = HediffDef.Named(Props.hediff);
                                 pawn.health.AddHediff(diff);
                                 targetsAffected++;

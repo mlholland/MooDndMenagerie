@@ -6,7 +6,7 @@
 		<label>Faerie Dragon</label>
 		<description>Faerie dragons are small, friendly dragons with beautiful, butterfly-like wings. Although they cannot breathe fire like larger dragons, they can exhale a euphoric gas which puts creatures in a happy, albiet slow-moving, high. 
     
-When tame and trained, faerie dragons will occasionally exhale this euphoric gas on whichever colonist is their current trainer.</description>
+When tame and trained, faerie dragons will occasionally exhale this euphoric gas on whichever colonist is their current master.</description>
 		<statBases>
 			<MoveSpeed>4.7</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -78,6 +78,7 @@ When tame and trained, faerie dragons will occasionally exhale this euphoric gas
         <tickInterval>2000</tickInterval>
         <hediff>DND_EuphoricHaze</hediff>
         <needsToBeTamed>true</needsToBeTamed>
+        <onlyAffectsMaster>true</onlyAffectsMaster>
       </li> 
         <li Class="CompProperties_EggLayer">
           <eggFertilizedDef>DND_EggFaerieDragonFertilized</eggFertilizedDef>
