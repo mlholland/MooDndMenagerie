@@ -33,7 +33,7 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
         </capacities>
         <power>16</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -68,14 +68,14 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
         <chanceFactor>.8</chanceFactor>
       </li>-->
       <li>
-        <label>right lasher</label> 
+        <label>rusting antennae</label> 
         <hediff>Cut</hediff>
         <power>3</power>
         <capacities>
           <li>DND_RustTouchTool</li> 
         </capacities> 
         <cooldownTime>1.1</cooldownTime>
-        <linkedBodyPartsGroup>DND_RightTentacleLasher</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>DND_ChemicalAntenna</linkedBodyPartsGroup>
         <chanceFactor>.8</chanceFactor>
       </li>
     </tools>

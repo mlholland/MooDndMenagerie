@@ -9,8 +9,8 @@
 
 <Defs>
   <BodyDef>
-    <defName>DND_RustMonsterBody</defName>
-    <label>rust monster body</label>
+    <defName>DND_AnnihilatorBody</defName>
+    <label>annihilator body</label>
     <corePart>
       <def>Shell</def>
       <height>Middle</height>

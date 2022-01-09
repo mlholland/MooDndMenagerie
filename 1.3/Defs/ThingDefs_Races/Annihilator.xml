@@ -30,7 +30,7 @@
         </capacities>
         <power>16</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -52,31 +52,9 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
-      <li>
-        <label>left lasher</label>
-        <hediff>Cut</hediff>
-        <power>5</power>
-        <capacities>
-          <li>DND_DisintegrationTouchTool</li>
-        </capacities>
-        <cooldownTime>1.1</cooldownTime>
-        <linkedBodyPartsGroup>DND_LeftTentacleLasher</linkedBodyPartsGroup>
-        <chanceFactor>3</chanceFactor>
-      </li>
-      <li>
-        <label>right lasher</label>
-        <hediff>Cut</hediff>
-        <power>5</power>
-        <capacities>
-          <li>DND_DisintegrationTouchTool</li>
-        </capacities>
-        <cooldownTime>1.1</cooldownTime>
-        <linkedBodyPartsGroup>DND_RightTentacleLasher</linkedBodyPartsGroup>
-        <chanceFactor>3</chanceFactor>
-      </li>
     </tools>
     <race>
-      <body>DND_RustMonsterBody</body>
+      <body>DND_AnnihilatorBody</body>
       <herdAnimal>false</herdAnimal>
       <predator>true</predator>
       <baseBodySize>2</baseBodySize>
