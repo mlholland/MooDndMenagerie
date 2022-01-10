@@ -95,10 +95,9 @@ namespace MoodndBehaviorsAndEvents
                         ThingDef newCorpseDef = ThingDefGenerator_CorpseFromDef.ImpliedCorpseDefFromAnimalDef(newAnimalDef);
                         DefGenerator.AddImpliedDef<ThingDef>(newCorpseDef);
                         
-                        // This did not fix the issue, need to ask discord what this even does anyway
-                        //newAnimalDef.ResolveReferences();
-                        //newPawnKindDef.ResolveReferences();
-                        //newCorpseDef.ResolveReferences();
+                        newAnimalDef.ResolveReferences();
+                        newPawnKindDef.ResolveReferences();
+                        newCorpseDef.ResolveReferences();
                     }
                 }
                 else

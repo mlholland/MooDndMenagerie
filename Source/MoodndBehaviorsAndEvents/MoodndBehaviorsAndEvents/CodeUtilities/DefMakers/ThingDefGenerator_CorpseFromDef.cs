@@ -68,7 +68,8 @@ namespace MoodndBehaviorsAndEvents
             ing.foodType = FoodTypeFlags.Corpse;
             ing.sourceDef = raceDef;
             ing.preferability = ((!raceDef.race.IsFlesh) ? FoodPreferability.NeverForNutrition : FoodPreferability.DesperateOnly);
-            DirectXmlCrossRefLoader.RegisterObjectWantsCrossRef(ing, "tasteThought", ThoughtDefOf.AteCorpse.defName);
+            // Need to figure out what elements I'm missing before playing with cross loaders. 
+            //DirectXmlCrossRefLoader.RegisterObjectWantsCrossRef(ing, "tasteThought", ThoughtDefOf.AteCorpse.defName);
             ing.maxNumToIngestAtOnce = 1;
             ing.ingestEffect = EffecterDefOf.EatMeat;
             ing.ingestSound = SoundDefOf.RawMeat_Eat;
@@ -94,14 +95,14 @@ namespace MoodndBehaviorsAndEvents
             {
                 d.thingCategories = new List<ThingCategoryDef>();
             }
-            if (raceDef.race.Humanlike)
+            /*if (raceDef.race.Humanlike)
             {
                 DirectXmlCrossRefLoader.RegisterListWantsCrossRef<ThingCategoryDef>(d.thingCategories, ThingCategoryDefOf.CorpsesHumanlike.defName, d);
             }
             else
             {
                 DirectXmlCrossRefLoader.RegisterListWantsCrossRef<ThingCategoryDef>(d.thingCategories, raceDef.race.FleshType.corpseCategory.defName, d);
-            }
+            }*/
             raceDef.race.corpseDef = d;
             return d;
         }
