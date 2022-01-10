@@ -4,8 +4,8 @@
     <defName>DND_DungeonMonsterFaction</defName>
     <label>Dungeon Monsters</label>
     <description>Monsters from dungeons and other forgotten corners of the world. Although usually uncoordinated, these beasts will sometimes organize under stronger powers and attack humanoid settlements. Be wary of their varied strengths and abilities.</description>
-    <pawnSingular>dungeon monster</pawnSingular>
-    <pawnsPlural>dungeon monsters</pawnsPlural>
+    <pawnSingular>monster</pawnSingular>
+    <pawnsPlural>monsters</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Dungeon Monsters</fixedName>
     <factionIconPath>World/WorldObjects/Expanding/Mechanoids</factionIconPath>
@@ -51,11 +51,11 @@
         <commonality>100</commonality>
         <options>
           <DND_Medusa>10</DND_Medusa>
-          <DND_Basilisk>30</DND_Basilisk>
+          <DND_Basilisk>20</DND_Basilisk>
         </options>
       </li>
       <li>
-        <!-- Beholder Breach Raid-->
+        <!-- Beholder Breach Raid when implemented...-->
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
@@ -81,7 +81,7 @@
         </options>
       </li>
       <li>
-        <!-- anhilators -->
+        <!-- anhilators only LOL-->
         <kindDef>Combat</kindDef>
         <commonality>50</commonality>
         <options>
@@ -101,7 +101,7 @@
       </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <allowedArrivalTemperatureRange>-30~80</allowedArrivalTemperatureRange>
+    <allowedArrivalTemperatureRange>-50~100</allowedArrivalTemperatureRange>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>86</configurationListOrderPriority>
     <modExtensions>
