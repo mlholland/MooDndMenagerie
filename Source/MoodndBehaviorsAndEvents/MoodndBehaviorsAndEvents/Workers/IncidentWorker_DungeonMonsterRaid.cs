@@ -31,6 +31,50 @@ namespace MoodndBehaviorsAndEvents
             return true;
         }
 
+        /* This is just a copy of vanilla rimworlds's raid executor code, minus some tool/shield specific stuff that causes errors when applied to animals.*/
+        protected override bool TryExecuteWorker(IncidentParms parms)
+        { 
+            List<Pawn> list;
+            if (!this.TryGenerateRaidInfo(parms, out list, false))
+            {
+                return false;
+            } 
+            TaggedString baseLetterLabel = this.GetLetterLabel(parms);
+            TaggedString baseLetterText = this.GetLetterText(parms, list); 
+            PawnRelationUtility.Notify_PawnsSeenByPlayer_Letter(list, ref baseLetterLabel, ref baseLetterText, this.GetRelatedPawnsInfoLetterText(parms), true, true);
+            List<TargetInfo> list2 = new List<TargetInfo>(); 
+            if (parms.pawnGroups != null)
+            {
+                List<List<Pawn>> list3 = IncidentParmsUtility.SplitIntoGroups(list, parms.pawnGroups);
+                List<Pawn> list4 = list3.MaxBy((List<Pawn> x) => x.Count);
+                if (list4.Any<Pawn>())
+                {
+                    list2.Add(list4[0]);
+                }
+                for (int i = 0; i < list3.Count; i++)
+                {
+                    if (list3[i] != list4 && list3[i].Any<Pawn>())
+                    {
+                        list2.Add(list3[i][0]);
+                    }
+                }
+            }
+            else if (list.Any<Pawn>())
+            {
+                foreach (Pawn t in list)
+                {
+                    list2.Add(t);
+                }
+            }
+            base.SendStandardLetter(baseLetterLabel, baseLetterText, this.GetLetterDef(), parms, list2, Array.Empty<NamedArgument>());
+            if (parms.controllerPawn == null || parms.controllerPawn.Faction != Faction.OfPlayer)
+            {
+                parms.raidStrategy.Worker.MakeLords(parms, list);
+            }
+            return true;
+        }
+
+
         // todo roll for alternate raid strategies
         public override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
         {
