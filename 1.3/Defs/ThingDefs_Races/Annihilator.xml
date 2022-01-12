@@ -20,8 +20,7 @@
       <mergeCompatibilityTags>
         <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
       </mergeCompatibilityTags>
-    </ingredient>
-    <receivesSignals>true</receivesSignals> 
+    </ingredient> 
     <uiIconScale>1.15</uiIconScale>
     <tools>
       <li>
@@ -51,6 +50,17 @@
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
+      </li>
+      <li>
+        <label>rusting antennae</label>
+        <hediff>Cut</hediff>
+        <power>5</power>
+        <capacities>
+          <li>DND_DisintegrationTouchTool</li>
+        </capacities>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>DND_ChemicalAntenna</linkedBodyPartsGroup>
+        <chanceFactor>.8</chanceFactor>
       </li>
     </tools>
     <race>

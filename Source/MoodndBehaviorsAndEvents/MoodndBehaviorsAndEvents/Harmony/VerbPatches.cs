@@ -26,8 +26,7 @@ namespace MoodndBehaviorsAndEvents
     static class PawnVerbUtility_BestVerbForTargets_Prefix_Patch
     {
         static bool Prefix(ref Verb __result, Pawn p, LocalTargetInfo target, IEnumerable<ManagedVerb> verbs, VerbManager man = null)
-        {
-            //Log.Message("MooDnd: Best verb for Target post resolve");
+        { 
             if (p.ContentSource.PackageId == "mooloh.monmanmanagerie") // only intercept animals in this mod
             {
                 var debug = man?.debugOpts != null && man.debugOpts.ScoreLogging;
@@ -109,6 +108,4 @@ namespace MoodndBehaviorsAndEvents
             }
         }
     }
-   
-
 }

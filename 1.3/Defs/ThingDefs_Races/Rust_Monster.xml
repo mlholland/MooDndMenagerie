@@ -24,9 +24,7 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
         <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
       </mergeCompatibilityTags>
     </ingredient>
-    <receivesSignals>true</receivesSignals>
-    <tools>
-      <!--
+    <tools> 
       <li>
         <capacities>
           <li>Bite</li>
@@ -56,18 +54,6 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
         <chanceFactor>0.2</chanceFactor>
       </li>
       <li>
-        <label>left lasher</label>
-        <hediff>Cut</hediff>
-        <power>3</power>
-        <capacities>
-          <li>DND_RustTouchTool</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>1.1</cooldownTime>
-        <linkedBodyPartsGroup>DND_LeftTentacleLasher</linkedBodyPartsGroup>
-        <chanceFactor>.8</chanceFactor>
-      </li>-->
-      <li>
         <label>rusting antennae</label> 
         <hediff>Cut</hediff>
         <power>3</power>
@@ -79,6 +65,7 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
         <chanceFactor>.8</chanceFactor>
       </li>
     </tools>
+    
     <race>
       <body>DND_RustMonsterBody</body>
       <wildBiomes>
