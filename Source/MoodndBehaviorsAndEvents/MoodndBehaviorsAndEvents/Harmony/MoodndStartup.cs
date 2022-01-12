@@ -90,8 +90,7 @@ namespace MoodndBehaviorsAndEvents
                         DefGenerator.AddImpliedDef<ThingDef>(newAnimalDef);
                         PawnKindDef newPawnKindDef = MaterialToPawnKindDefConverter.MakeStuffBasedDef(aniFurDef, newAnimalDef, furnitureDef, stuffDef);
                         DefGenerator.AddImpliedDef<PawnKindDef>(newPawnKindDef);
-
-                        // This line causes a single error to be thrown at the end of the entire GenerateImpliedDefs postFix
+                        
                         ThingDef newCorpseDef = ThingDefGenerator_CorpseFromDef.ImpliedCorpseDefFromAnimalDef(newAnimalDef);
                         DefGenerator.AddImpliedDef<ThingDef>(newCorpseDef);
                         
@@ -106,8 +105,6 @@ namespace MoodndBehaviorsAndEvents
                     if (aniFurDef.makeProgrammaticDefs)
                     {
                         ThingDef newAnimalDef = MaterialToAnimalDefConverter.MakeAnimalDef(templateThingDef, furnitureDef);
-                        // todo what was this addImpliedDef line doing? Do we still need it?
-                        //DefGenerator.AddImpliedDef<ThingDef>(newAnimalDef);
                         newAnimalDefNames.Add(newAnimalDef.defName);
                         FurnitureToAnimatedObjectConverter.Add(furnitureDef, newAnimalDef);
                         DefGenerator.AddImpliedDef<PawnKindDef>(MaterialToPawnKindDefConverter.MakeDef(aniFurDef, newAnimalDef, furnitureDef));

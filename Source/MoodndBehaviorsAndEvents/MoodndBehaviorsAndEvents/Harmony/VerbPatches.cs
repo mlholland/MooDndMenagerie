@@ -13,7 +13,7 @@ using MVCF;
 namespace MoodndBehaviorsAndEvents
 {
 
-    // The Normal logic for animal ranged attacks doesn't work for some of my animals for 2 reasons:
+    // The Normal logic for animal ranged attacks from VEF doesn't work for some of my animals for 2 reasons:
     // - The verb-choosing logic only looks at expected damage when picking a verb, so attacks that only apply effects instead of damage are never selected
     // - If multiple verbs have the same weight, the first in the list is always selected.
     // The patch below is more or less a copy of the code found [here](https://github.com/AndroidQuazar/VanillaExpandedFramework/blob/master/Source/MVCF/Utilities/PawnVerbUtility.cs#L47)

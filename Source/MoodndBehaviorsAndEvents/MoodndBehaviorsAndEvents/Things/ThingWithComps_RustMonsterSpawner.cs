@@ -13,7 +13,10 @@ namespace MoodndBehaviorsAndEvents
 {
     [StaticConstructorOnStartup]
     public class ThingWithComps_RustMonsterSpawner : ThingWithComps
-    { 
+    {
+        private static int RUST_MONSTER_SPAWN_LIMIT = 300;
+
+
         // TODO figure out how to patch a call of this during startup like other static data resetters (see playDataLoader)
         public static void ResetStaticData()
         {
@@ -77,23 +80,19 @@ namespace MoodndBehaviorsAndEvents
         {
             float pointsLeft = Math.Max(this.insectsPoints, 1); //min on 1 to ensure at least one rust monster spawning
             List<Pawn> list = new List<Pawn>();
-            int num = 0;
-            Log.Message("pre spawn loop");
+            int num = 0; 
             while (pointsLeft > 0f)
-            {
-                Log.Message("start spawn loop");
+            { 
                 num++;
-                if (num > 1000) // TODO consider putting lower cap on rust mosnter spawns (maybe around 20 or so?)
+                if (num > RUST_MONSTER_SPAWN_LIMIT) 
                 {
-                    Log.Error("Too many iterations.");
+                    Log.Error(String.Format("MooDnd ThingWithComps_RustMonsterSpawner: Too many iterations. Tried to spawn over {0} rust mosnters", RUST_MONSTER_SPAWN_LIMIT));
                     break;
                 }
                 Pawn pawn = PawnGenerator.GeneratePawn(RustMonsterKindDef);
                 GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(loc, map, 2, null), map, WipeMode.Vanish);
-                //pawn.mindState.spawnedByInfestationThingComp = this.spawnedByInfestationThingComp;
                 list.Add(pawn);
                 pointsLeft -= RustMonsterKindDef.combatPower;
-                Log.Message("end spawn loop");
             }
         }
         
