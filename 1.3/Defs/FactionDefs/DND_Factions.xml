@@ -8,9 +8,10 @@
     <pawnsPlural>monsters</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>Dungeon Monsters</fixedName>
-    <factionIconPath>World/WorldObjects/Expanding/Mechanoids</factionIconPath>
+    <factionIconPath>World/WorldObjects/Expanding/Insects</factionIconPath>
     <colorSpectrum>
-      <li>(0.78, 0.79, 0.71)</li>
+      <li>(0.78, 0, 0.27)</li>
+      <li>(1, 0.74, 0.83)</li>
     </colorSpectrum>
     <!-- Zero commonality ensures that this faction never spawns as part of vanilla raids, that way we can more easily control/configure their spawning and behavior via a custom incident-->
     <raidCommonalityFromPointsCurve>
@@ -29,7 +30,7 @@
     </raidLootValueFromPointsCurve>
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
-    <autoFlee>true</autoFlee>
+    <autoFlee>false</autoFlee>
     <canUseAvoidGrid>false</canUseAvoidGrid>
     <techLevel>Animal</techLevel>
     <earliestRaidDays>15</earliestRaidDays>
