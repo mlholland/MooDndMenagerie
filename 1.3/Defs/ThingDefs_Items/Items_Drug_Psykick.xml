@@ -42,7 +42,7 @@
           <severity>0.5</severity>
           <toleranceChemical>DND_Psykick</toleranceChemical>
         </li>
-        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+        <li Class="IngestionOutcomeDoer_OffsetPsyfocus" MayRequire="Ludeon.RimWorld.Royalty">
           <offset>0.5</offset>
         </li>
       </outcomeDoers>
@@ -97,7 +97,7 @@
         </capMods>
         <statOffsets>
           <PsychicSensitivity>0.8</PsychicSensitivity>
-          <PsychicEntropyRecoveryRate>0.36</PsychicEntropyRecoveryRate>
+          <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.36</PsychicEntropyRecoveryRate>
         </statOffsets>
       </li>
     </stages>
