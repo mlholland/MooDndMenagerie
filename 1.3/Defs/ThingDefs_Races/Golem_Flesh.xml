@@ -39,9 +39,9 @@ Flesh golems are extremely flammable, and they may go berserk when sufficiently 
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
       <trainability>Advanced</trainability>
       <lifeExpectancy>2000</lifeExpectancy>
-      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
       <useMeatFrom>Human</useMeatFrom>
       <leatherDef>Meat_Human</leatherDef>
       <lifeStageAges>

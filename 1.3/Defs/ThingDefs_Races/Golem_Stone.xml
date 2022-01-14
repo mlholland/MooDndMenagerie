@@ -46,9 +46,9 @@ Note: Although stone golems can be constructed from any stone blocks, the result
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
       <trainability>Advanced</trainability>
       <lifeExpectancy>2000</lifeExpectancy>
-      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
       <leatherDef>BlocksSandstone</leatherDef>
       <specificMeatDef>BlocksSandstone</specificMeatDef>
       <lifeStageAges>
