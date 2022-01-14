@@ -38,9 +38,9 @@ namespace MoodndBehaviorsAndEvents
             if (!this.TryGenerateRaidInfo(parms, out list, false))
             {
                 return false;
-            } 
-            TaggedString baseLetterLabel = this.GetLetterLabel(parms);
-            TaggedString baseLetterText = this.GetLetterText(parms, list); 
+            }
+            TaggedString baseLetterLabel = "DND_MonsterRaidLetterLabel".Translate();
+            TaggedString baseLetterText = "DND_MonsterRaidLetterText".Translate();
             PawnRelationUtility.Notify_PawnsSeenByPlayer_Letter(list, ref baseLetterLabel, ref baseLetterText, this.GetRelatedPawnsInfoLetterText(parms), true, true);
             List<TargetInfo> list2 = new List<TargetInfo>(); 
             if (parms.pawnGroups != null)
@@ -65,7 +65,7 @@ namespace MoodndBehaviorsAndEvents
                 {
                     list2.Add(t);
                 }
-            }
+            } 
             base.SendStandardLetter(baseLetterLabel, baseLetterText, this.GetLetterDef(), parms, list2, Array.Empty<NamedArgument>());
             if (parms.controllerPawn == null || parms.controllerPawn.Faction != Faction.OfPlayer)
             {

@@ -4,10 +4,7 @@
   <IncidentDef>
     <defName>DND_RustMonsters</defName>
     <label>rust monsters</label>
-    <category>Misc</category>
-    <allowedBiomes>
-      <li>AridShrubland</li>
-    </allowedBiomes>
+    <category>Misc</category> 
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
@@ -17,14 +14,14 @@
     <pointsScaleable>true</pointsScaleable>
     <minThreatPoints>150</minThreatPoints>
     <letterLabel>Rust Monsters!</letterLabel>
-    <letterText>Rust Monsters are tunneling towards you! Once they surface, their metallic apetite can easily prove destructive to your home or your armored warriors. Thankfully they're passive until provoked, so you can carefully organize their extermination.</letterText>
-    <letterDef>ThreatBig</letterDef>
+    <letterText>Rust Monsters are tunneling towards you! Once they surface, their metallic appetite can easily prove destructive to your home and armored warriors. Thankfully they're passive until provoked, so you can carefully organize their extermination.</letterText>
+    <letterDef>ThreatSmall</letterDef>
     <tale>Infestation</tale><!-- TODO: add custom tale-->
   </IncidentDef>
 
   <IncidentDef>
     <defName>DND_DungeonMonsterRaid</defName>
-    <label>dungeon monster raid</label>
+    <label>monster raid</label>
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
@@ -32,8 +29,7 @@
     <baseChance>3.6</baseChance>
     <category>ThreatBig</category>
     <pointsScaleable>true</pointsScaleable>
-    <tale>Raid</tale>
-    <!-- TODO: add custom tale-->
+    <tale>Raid</tale> 
   </IncidentDef>
 
 </Defs>

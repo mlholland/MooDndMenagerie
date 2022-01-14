@@ -23,5 +23,8 @@
     
   <DND_MadeFromMaterialAddon>\n\nThis particular creature is made of {0}</DND_MadeFromMaterialAddon>
   <DND_AnimatedCreatureLabel>{0} ({1})</DND_AnimatedCreatureLabel>
-  
+
+  <DND_MonsterRaidLetterLabel>Monster Raid</DND_MonsterRaidLetterLabel>
+  <DND_MonsterRaidLetterText>A group of dungeon monsters have banded together and are attacking the colony!</DND_MonsterRaidLetterText>
+ 
 </LanguageData>
