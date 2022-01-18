@@ -203,8 +203,8 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 					<drawSize>2.7</drawSize>
 				</dessicatedBodyGraphicData>
         <butcherBodyPart>
-          <bodyPartGroup>DND_BasiliskEyeGroup</bodyPartGroup>
-          <thing>DND_Argaiv</thing>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DND_Antipet</thing>
         </butcherBodyPart>
 			</li>
 		</lifeStages>
