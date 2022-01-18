@@ -2,13 +2,13 @@
 <Defs>
 
   <ThingDef ParentName="MakeableDrugBase">
-    <defName>DND_Argaiv</defName>
-    <label>Argaiv</label>
-    <description>A medicinal drug that quickly counters the effects of petrification prion disease. Can be used to cure all stages of petrification, or to give a creature a few hours of immunity to petrification.
+    <defName>DND_Antipet</defName>
+    <label>Antipet</label>
+    <description>A medicinal drug that quickly counters the effects of petrification. Can be used to cure all stages of petrification, or to give a creature a few hours of immunity to petrification.
     
-Argaiv can be isolated from the corpses of Medusas and Basilisks, or it can be produced artificially using large quantites of neutroamine.</description>
+Antipet can be isolated from the corpses of Medusas and Basilisks, or it can be produced artificially using large quantites of neutroamine.</description>
     <descriptionHyperlinks>
-      <HediffDef>DND_Argaiv</HediffDef>
+      <HediffDef>DND_Antipet</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Drug/GoJuice</texPath>
@@ -37,7 +37,7 @@ Argaiv can be isolated from the corpses of Medusas and Basilisks, or it can be p
       <chairSearchRadius>0</chairSearchRadius>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>DND_Argaiv</hediffDef>
+          <hediffDef>DND_Antipet</hediffDef>
           <severity>1</severity>
         </li>
         <li Class="MoodndBehaviorsAndEvents.InjestionOutcomeDoer_RemoveHediffs">
@@ -67,10 +67,10 @@ Argaiv can be isolated from the corpses of Medusas and Basilisks, or it can be p
   </ThingDef>
 
   <HediffDef>
-    <defName>DND_Argaiv</defName>
+    <defName>DND_Antipet</defName>
     <hediffClass>Hediff_High</hediffClass>
-    <label>argaiv</label>
-    <description>This creature is benefitting from Argaiv-induced petrification immunity.</description>
+    <label>Antipet</label>
+    <description>This creature is benefitting from Antipet-induced petrification immunity.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
