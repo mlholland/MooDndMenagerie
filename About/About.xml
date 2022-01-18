@@ -59,7 +59,7 @@
 
  - Annihilator: A predatory cousin of rust monsters that disintegrates prey and consumes the resulting dust. Keep away from your... everything. Only appears in raids.
 
-    &lt;size=24&gt;Other Features&lt;/size&gt;
+&lt;size=24&gt;Other Features&lt;/size&gt;
     
  - Petrification: This effect can be caused by 3 animals, and acts like a very slow-growing disease. Takes several days to build immunity, but good treatment can almost completely stall its progression. Thankfully, 100% petrification isn't fatal - such victims are merely emtombed alive in their body forever! The effect can be reverted using the antidote drug Antipet, which can either be harvested from Basilisks and Medusas, or crafted using a lot of neutroamine.
  
@@ -77,7 +77,7 @@
  
  - Animal spawn controls: Individual spawn toggles for natural wild spawning (not raid spawning) can be found in the the "Vanilla Animals Expanded" mod's settings thanks to the Vanilla Expanded Framework's code for animal toggles. Spawn rates for animals in this mod can be modified through a slider in this mod's settings.
 
-    &lt;size=24&gt;Mod compatability&lt;/size&gt;
+&lt;size=24&gt;Mod compatability&lt;/size&gt;
 
   This is my first mod, and I've made zero efforts at mod compatability thus far. That said, this mod doesn't do too much beyond adding animals, so I don't expect too many problems beyond possible shield interactions. I do intend to make this mod compatable with the following mods:
     
