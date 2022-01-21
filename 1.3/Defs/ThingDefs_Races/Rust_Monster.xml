@@ -85,7 +85,7 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
       <herdAnimal>false</herdAnimal>
       <predator>false</predator>
       <baseBodySize>2</baseBodySize>
-      <baseHungerRate>.25</baseHungerRate>
+      <baseHungerRate>10</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Panthera</leatherDef>
@@ -123,7 +123,6 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
     <comps>
       <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
         <customThingToEat>
-          <li>ChunkSlagSteel</li>
           <li>Steel</li>
           <li>plasteel</li>
           <li>Silver</li>
@@ -131,7 +130,8 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
           <li>MineableSteel</li>
           <li>MineablePlasteel</li>
           <li>MineableSilver</li>
-          <li>MineableGold</li>
+          <li>MineableGold</li> 
+          <li>ChunkSlagSteel</li>
         </customThingToEat>
         <nutrition>1</nutrition>
         <fullyDestroyThing>true</fullyDestroyThing>
