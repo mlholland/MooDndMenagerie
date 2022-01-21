@@ -5,7 +5,7 @@ using Verse;
 
 /* Based on code from alpha animals: https://github.com/juanosarg/AlphaAnimals/blob/master/1.3/Source/AlphaBehavioursAndEvents/AlphaBehavioursAndEvents/Harmony/SappersUtility_IsGoodSapper.cs
  * Currently irrelevant until I make the monster faction uses breachers, an update disintegration attacks to destroy terrain better.*/
-namespace AlphaBehavioursAndEvents
+namespace MoodndBehaviorsAndEvents
 {
     /*This Harmony Postfix allows appropriate monsters to use the sapper AI
     */
