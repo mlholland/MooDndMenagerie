@@ -123,6 +123,11 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
     <comps>
       <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
         <customThingToEat>
+          <li>Corpse_Mech_Lancer</li>
+          <li>Corpse_Mech_Scyther</li>
+          <li>Corpse_Mech_Centipede</li>
+          <li>Corpse_Mech_Pikeman</li>
+          <li>Corpse_Mech_Termite</li>
           <li>Steel</li>
           <li>plasteel</li>
           <li>Silver</li>
