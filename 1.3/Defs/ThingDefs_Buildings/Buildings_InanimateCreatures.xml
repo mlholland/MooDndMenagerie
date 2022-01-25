@@ -7,8 +7,8 @@
     <graphicData>
       <texPath>Things/Building/Security/DND_DormantGolemFlesh</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,1)</drawSize>
-      <color>(96,0,0)</color>
+      <drawSize>(2,2)</drawSize> 
+      <color>(184,148,131)</color>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -29,7 +29,7 @@
       <Mass>110</Mass>
       <Flammability>2</Flammability>
     </statBases>
-    <size>(2,1)</size>
+    <size>(2,2)</size>
     <costList>
       <Meat_Human>600</Meat_Human>
       <DND_TomeGolemFlesh>1</DND_TomeGolemFlesh>
@@ -64,8 +64,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
     <graphicData>
       <texPath>Things/Building/Security/DND_DormantGolemStone</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,1)</drawSize>
-      <color>(96,0,0)</color>
+      <drawSize>(2,2)</drawSize> 
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -86,7 +85,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
       <Mass>200</Mass>
       <Flammability>0.0</Flammability>
     </statBases>
-    <size>(2,1)</size>
+    <size>(2,2)</size>
     <stuffCategories>
       <li>Stony</li>
     </stuffCategories>
@@ -122,8 +121,8 @@ Note: For balance reasons, the resulting golem will always have the same stats a
     <graphicData>
       <texPath>Things/Building/Security/DND_DormantGolemSteel</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,1)</drawSize>
-      <color>(0,0,96)</color>
+      <drawSize>(2,2)</drawSize>
+      <color>(105,105,105)</color>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -178,8 +177,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
     <graphicData>
       <texPath>Things/Building/Security/DND_SpectatorEffigy</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1,1)</drawSize>
-      <color>(96,0,0)</color>
+      <drawSize>(1,1)</drawSize> 
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
