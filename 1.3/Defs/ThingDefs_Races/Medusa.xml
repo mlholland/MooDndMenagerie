@@ -53,11 +53,7 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
           <soundCall>Pawn_Warg_Call</soundCall>
           <soundAngry>Pawn_Warg_Angry</soundAngry>
 				</li>
-			</lifeStageAges>
-			<soundCallIntervalRange>
-				<min>12000</min>
-				<max>20000</max>
-			</soundCallIntervalRange>
+			</lifeStageAges> 
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -159,17 +155,21 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 			<li>
 				<bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Medusa/DND_Medusa</texPath>
-					<drawSize>0.85</drawSize>
+					<drawSize>1</drawSize>
+          <drawOffset>(0,0,15)</drawOffset>
+          <drawOffsetNorth>(0,0,15)</drawOffsetNorth>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Medusa/DND_Dessicated_Medusa</texPath>
-					<drawSize>0.85</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Medusa/DND_Medusa</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>1.4</drawSize>
+          <drawOffset>(0,0,15)</drawOffset>
+          <drawOffsetNorth>(0,0,15)</drawOffsetNorth>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -177,13 +177,15 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Medusa/DND_Dessicated_Medusa</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-          <texPath>Things/Pawn/Animal/DND_Medusa/DND_Medusa</texPath>
-					<drawSize>3.15</drawSize>
+          <texPath>Things/Pawn/Animal/DND_Medusa/DND_Medusa</texPath> 
+					<drawSize>2</drawSize>
+          <drawOffset>(0,0,15)</drawOffset>
+          <drawOffsetNorth>(0,0,15)</drawOffsetNorth>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -192,7 +194,7 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 
 				<dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Medusa/DND_Dessicated_Medusa</texPath>
-					<drawSize>3.15</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
         <butcherBodyPart>
           <bodyPartGroup>FullHead</bodyPartGroup>

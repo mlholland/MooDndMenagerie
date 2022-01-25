@@ -144,7 +144,7 @@ If tamed, a flumph's tentacles can occasionally be 'milked' for an acidic secret
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Flumph/DND_YFlumph</texPath>
-          <drawSize>1.5</drawSize> 
+          <drawSize>1.7</drawSize> 
           <shadowData>
             <volume>(0.32, 0.35, 0.32)</volume>
             <offset>(0,0,0)</offset>
@@ -152,7 +152,7 @@ If tamed, a flumph's tentacles can occasionally be 'milked' for an acidic secret
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Flumph/DND_Dessicated_Flumph</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>1.7</drawSize>
         </dessicatedBodyGraphicData>
       </li> 
 		</lifeStages>

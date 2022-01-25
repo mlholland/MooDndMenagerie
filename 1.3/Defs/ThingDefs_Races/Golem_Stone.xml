@@ -123,7 +123,7 @@ Note: Although stone golems can be constructed from any stone blocks, the result
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_GolemStone/DND_SGolem</texPath>
-          <drawSize>3.15</drawSize>
+          <drawSize>1.9</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -132,7 +132,7 @@ Note: Although stone golems can be constructed from any stone blocks, the result
         <dessicatedBodyGraphicData>
           <!-- corpse shouldn't ever show up in game -->
           <texPath>Things/Pawn/Animal/DND_GolemStone/DND_SGolem</texPath>
-          <drawSize>3.15</drawSize>
+          <drawSize>1.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

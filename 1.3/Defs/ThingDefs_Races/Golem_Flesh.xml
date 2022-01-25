@@ -116,7 +116,7 @@ Flesh golems are extremely flammable, and they may go berserk when sufficiently 
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_GolemFlesh/DND_FGolem</texPath>
-          <drawSize>3.15</drawSize>
+          <drawSize>1.9</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -126,7 +126,7 @@ Flesh golems are extremely flammable, and they may go berserk when sufficiently 
         <dessicatedBodyGraphicData>
           <!-- corpse shouldn't ever show up in game -->
           <texPath>Things/Pawn/Animal/DND_GolemFlesh/DND_FGolem</texPath> 
-          <drawSize>3.15</drawSize>
+          <drawSize>1.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

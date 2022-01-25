@@ -177,7 +177,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
     <graphicData>
       <texPath>Things/Building/Security/DND_SpectatorEffigy</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1,1)</drawSize> 
+      <drawSize>(1,1)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>

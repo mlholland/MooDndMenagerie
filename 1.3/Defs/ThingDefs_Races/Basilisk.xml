@@ -167,17 +167,17 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 			<li>
 				<bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Basilisk</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>1.3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Dessicated_Basilisk</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Basilisk</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -185,13 +185,13 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Dessicated_Basilisk</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Basilisk</texPath>
-					<drawSize>2.7</drawSize>
+					<drawSize>2.6</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -200,7 +200,7 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 
 				<dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Dessicated_Basilisk</texPath>
-					<drawSize>2.7</drawSize>
+					<drawSize>2.6</drawSize>
 				</dessicatedBodyGraphicData>
         <butcherBodyPart>
           <bodyPartGroup>HeadAttackTool</bodyPartGroup>

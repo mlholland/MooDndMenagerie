@@ -116,7 +116,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_GolemSteel/DND_SteelGolem</texPath>
-          <drawSize>3.15</drawSize>
+          <drawSize>2.05</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -126,7 +126,7 @@
         <dessicatedBodyGraphicData>
           <!-- corpse shouldn't ever show up in game -->
           <texPath>Things/Pawn/Animal/DND_GolemSteel/DND_SteelGolem</texPath>
-          <drawSize>3.15</drawSize>
+          <drawSize>2.05</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

@@ -184,7 +184,7 @@ When tame and trained, faerie dragons will occasionally exhale this euphoric gas
 			<li>
 				<bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonBlue</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -193,7 +193,7 @@ When tame and trained, faerie dragons will occasionally exhale this euphoric gas
 
 				<dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_Dessicated_FDragon</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

@@ -156,27 +156,27 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_RustMonster/DND_RustMonster</texPath>
-          <drawSize>1.2</drawSize> 
+          <drawSize>1</drawSize> 
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_RustMonster/DND_Dessicated_RustMonster</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_RustMonster/DND_RustMonster</texPath>
-          <drawSize>1.6</drawSize> 
+          <drawSize>1.4</drawSize> 
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_RustMonster/DND_Dessicated_RustMonster</texPath>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/DND_RustMonster/DND_RustMonster</texPath>
-          <drawSize>2.5</drawSize> 
+          <drawSize>2.2</drawSize> 
           <shadowData>
             <volume>(0.5, 0.7, 0.43)</volume>
             <offset>(0,0,-0.1)</offset>
