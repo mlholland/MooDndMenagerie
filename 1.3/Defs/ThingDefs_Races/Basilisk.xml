@@ -166,17 +166,17 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Basilisk</texPath>
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Dessicated_Basilisk</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Basilisk</texPath>
 					<drawSize>2.1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
@@ -184,13 +184,13 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Dessicated_Basilisk</texPath>
 					<drawSize>2.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Basilisk</texPath>
 					<drawSize>2.7</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -199,7 +199,7 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 				</bodyGraphicData>
 
 				<dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Basilisk/DND_Dessicated_Basilisk</texPath>
 					<drawSize>2.7</drawSize>
 				</dessicatedBodyGraphicData>
         <butcherBodyPart>

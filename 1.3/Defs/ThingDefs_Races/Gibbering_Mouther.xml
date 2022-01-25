@@ -131,7 +131,7 @@ The effectiveness of a mouther's babble depends on the victim's hearing. Deaf cr
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/DND_Flumph/DND_YFlumph_east</texPath>
+          <texPath>Things/Pawn/Animal/DND_GibberingMouther/DND_Dessicated_GMouther</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>

@@ -5,7 +5,7 @@
     <label>dormant flesh golen</label>
     <description>A lesser magical golem constructed from human flesh. It is currently dormant, and can either be sold now, or awakened to guard the colony. Golems are only loyal to the people that awakened them, so they cannot be sold once awakened.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/ToolCabinet</texPath>
+      <texPath>Things/Building/Security/DND_DormantGolemFlesh</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,1)</drawSize>
       <color>(96,0,0)</color>
@@ -62,7 +62,7 @@
     
 Note: For balance reasons, the resulting golem will always have the same stats and abilities, regardless of the stone type used to make it. Using Jade to make stone golems is not recommended unless you just want to flex.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/ToolCabinet</texPath>
+      <texPath>Things/Building/Security/DND_DormantGolemStone</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,1)</drawSize>
       <color>(96,0,0)</color>
@@ -120,7 +120,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
     <label>dormant steel golen</label>
     <description>A grand magical golem constructed from steel. It is currently dormant, and can either be sold now, or awakened to guard the colony. Golems are only loyal to the people that awakened them, so they cannot be sold once awakened.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/ToolCabinet</texPath>
+      <texPath>Things/Building/Security/DND_DormantGolemSteel</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,1)</drawSize>
       <color>(0,0,96)</color>
@@ -176,7 +176,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
     <label>spectator effigy</label>
     <description>A crude effigy made from human flesh and beholder eyestalks. Activating this will forceably replace the effigy with a similarly-sized creature from the dimension of beholders, and bind it to the colony.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/ToolCabinet</texPath>
+      <texPath>Things/Building/Security/DND_SpectatorEffigy</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
       <color>(96,0,0)</color>

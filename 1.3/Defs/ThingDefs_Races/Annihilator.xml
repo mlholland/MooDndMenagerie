@@ -114,43 +114,40 @@
     <label>Annihilator</label>
     <labelPlural>Annihilator</labelPlural>
     <race>DND_Annihilator</race>
-    <combatPower>250</combatPower>
+    <combatPower>400</combatPower>
     <ecoSystemWeight>0.2</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Megaspider</texPath>
-          <drawSize>1.2</drawSize>
-          <color>(20,20,20)</color>
+          <texPath>Things/Pawn/Animal/DND_Annihilator/DND_Annihilator</texPath>
+          <drawSize>1.2</drawSize> 
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
+          <texPath>Things/Pawn/Animal/DND_Annihilator/DND_Dessicated_Annihilator</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Megaspider</texPath>
-          <drawSize>1.6</drawSize>
-          <color>(20,20,20)</color>
+          <texPath>Things/Pawn/Animal/DND_Annihilator/DND_Annihilator</texPath>
+          <drawSize>1.6</drawSize> 
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
+          <texPath>Things/Pawn/Animal/DND_Annihilator/DND_Dessicated_Annihilator</texPath>
           <drawSize>1.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Megaspider</texPath>
-          <drawSize>2.5</drawSize>
-          <color>(20,20,20)</color>
+          <texPath>Things/Pawn/Animal/DND_Annihilator/DND_Annihilator</texPath>
+          <drawSize>2.5</drawSize> 
           <shadowData>
             <volume>(0.5, 0.7, 0.43)</volume>
             <offset>(0,0,-0.1)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
+          <texPath>Things/Pawn/Animal/DND_Annihilator/DND_Dessicated_Annihilator</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>

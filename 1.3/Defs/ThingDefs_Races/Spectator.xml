@@ -143,16 +143,15 @@
 		<lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder</texPath>
-          <drawSize>1.2</drawSize>
-          <color>(25, 112, 102)</color>
+          <texPath>Things/Pawn/Animal/DND_Spectator/DND_Spectator</texPath>
+          <drawSize>1.2</drawSize> 
           <shadowData>
             <volume>(0.2, 0.2, 0.2)</volume>
             <offset>(0,0,-0.2)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder</texPath>
+          <texPath>Things/Pawn/Animal/DND_Spectator/DND_Dessicated_Spectator</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>

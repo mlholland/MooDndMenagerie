@@ -289,6 +289,19 @@ Most of a beholder's body solidifies into a useless stone-like material on death
 			<min>1</min>
 			<max>1</max>
 		</wildGroupSize>
+
+    <alternateGraphicChance>1</alternateGraphicChance>
+    <alternateGraphics>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder2</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder3</texPath>
+      </li> 
+    </alternateGraphics>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

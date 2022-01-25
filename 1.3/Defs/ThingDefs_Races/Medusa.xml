@@ -158,17 +158,17 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Medusa/DND_Medusa</texPath>
 					<drawSize>0.85</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Medusa/DND_Dessicated_Medusa</texPath>
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Medusa/DND_Medusa</texPath>
 					<drawSize>2.1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
@@ -176,13 +176,13 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Medusa/DND_Dessicated_Medusa</texPath>
 					<drawSize>2.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Medusa/DND_Medusa</texPath>
 					<drawSize>3.15</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
@@ -191,7 +191,7 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
 				</bodyGraphicData>
 
 				<dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+          <texPath>Things/Pawn/Animal/DND_Medusa/DND_Dessicated_Medusa</texPath>
 					<drawSize>3.15</drawSize>
 				</dessicatedBodyGraphicData>
         <butcherBodyPart>
