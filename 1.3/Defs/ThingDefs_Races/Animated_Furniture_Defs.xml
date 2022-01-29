@@ -86,7 +86,7 @@ Animated Chairs will periodically try to comfort nearby colonists, increasing th
         <maxTargetablePct>.5</maxTargetablePct>
         <needDef>Comfort</needDef>
       </li>
-      <li Class="MoodndBehaviorsAndEvents.CompProperties_RecolorableAnimal"/> 
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_StuffableAnimal"/> 
     </comps>
   </ThingDef>
 
@@ -256,7 +256,7 @@ Animated stools are oddly endearing, and have a very high nuzzle interval.</desc
       </li>
     </tools>
     <comps> 
-      <li Class="MoodndBehaviorsAndEvents.CompProperties_RecolorableAnimal"/>
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_StuffableAnimal"/>
     </comps>
   </ThingDef>
 

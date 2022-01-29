@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
   <ThingDef ParentName="ResourceBase" Name="ScrollAndTomeBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -28,14 +25,12 @@
       <effectWorking>Research</effectWorking>
       <soundWorking>Recipe_Tailor</soundWorking>
     </recipeMaker>
-  
 </ThingDef>
-
 
   <ThingDef ParentName="ScrollAndTomeBase">
     <defName>DND_ScrollAnimateObjects</defName>
     <label>Scroll of Animate Objects</label>
-    <description>A one-use magical scroll which animates a piece of furniture into a loyal creature. This can be used on dining chairs, tool cabinets, and stools, and the resulting creature's stats depend on the material and quality of the originating furniture.</description>
+    <description>A one-use magical scroll which animates a piece of furniture into a loyal creature. This can be used on dining chairs, tool cabinets, and stools. The resulting creature's stats depend on the material and quality of the originating furniture.</description>
     <graphicData>
       <texPath>Things/Item/Special/MechSerumHealer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -56,10 +51,7 @@
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>MoodndBehaviorsAndEvents.CompUseEffect_AnimateObject</compClass>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
+      </li> 
     </comps>
     <thingSetMakerTags>
       <li>RewardStandardHighFreq</li> 
@@ -163,7 +155,7 @@
     <label>Ancient Notes</label>
     <description>Ancient scraps of magical research notes. The knowledge is fragmented and difficult to understand, but a someone might be able to decipher something useful from these pieces.
 
-      Ancient notes can be crafted into various rare items from the Dnd Managerie Mod at a crafting spot.</description>
+Ancient notes can be crafted into various rare items from the Dnd Managerie Mod at a crafting spot.</description>
     <graphicData>
       <texPath>Things/Item/Special/MechSerumHealer</texPath>
       <graphicClass>Graphic_Single</graphicClass>

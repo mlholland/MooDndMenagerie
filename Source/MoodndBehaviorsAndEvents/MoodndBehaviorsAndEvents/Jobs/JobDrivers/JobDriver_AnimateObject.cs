@@ -68,15 +68,27 @@ namespace MoodndBehaviorsAndEvents
             {
                 pawn.health.AddHediff(HediffDef.Named(BASE_QUALITY_HEDIFF_STRING + ((int)qc)));
             }
-            // add material hediff
+            // add material hediff and modify stuffable comp if needed
             if (this.building.Stuff != null && furnitureDef.stuffCategories != null && furnitureDef.stuffCategories.Count > 0)
             {
                 pawn.health.AddHediff(HediffDef.Named(MaterialToHediffConverter.s_materialHediffDefNameBase + this.building.Stuff.defName));
+
+                // modify the stuffableAnimal comp if applicable
+                Comp_StuffableAnimal csa = pawn.TryGetComp<Comp_StuffableAnimal>();
+                if (csa == null)
+                {
+                    Log.Error("Moodnd animate: No Comp_StuffableAnimal found for animated creature based on stuffable furniture. Some attributes like color won't change properly.");
+                } else
+                {
+                    csa.stuff = this.building.Stuff;
+                }
             }
-            // spen the creature and remove the furniture
+
+            // spawn the creature and remove the furniture and scroll
             GenSpawn.Spawn(pawn, building.PositionHeld, building.MapHeld, WipeMode.Vanish);
             String buildingLabel = this.building.Label;
             this.building.DeSpawn();
+            this.Item.SplitOff(1).Destroy(DestroyMode.Vanish);
             // announce success
             Messages.Message(String.Format("DND_FurnitureAnimated".Translate(), buildingLabel, pawn.Name), MessageTypeDefOf.PositiveEvent, true); 
         }

@@ -50,9 +50,7 @@
     <defaultLabelColor>(.65,.65,.65)</defaultLabelColor>
     <scenarioCanAdd>false</scenarioCanAdd>
     <initialSeverity>1.0</initialSeverity>
-    <maxSeverity>1.0</maxSeverity>
-    <stages>
-    </stages>
+    <maxSeverity>1.0</maxSeverity> 
   </HediffDef>
 
   <HediffDef>

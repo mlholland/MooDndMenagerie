@@ -33,6 +33,7 @@ namespace MoodndBehaviorsAndEvents
             newHediff.label = String.Format("DND_MaterialHediffLabel".Translate(), stuff.label);
             newHediff.defName = s_materialHediffDefNameBase + stuff.defName;
             newHediff.description = String.Format("DND_MaterialHediffDescription".Translate(), stuff.label);
+            
              
 
             HediffStage hediffStage = new HediffStage();
@@ -49,9 +50,13 @@ namespace MoodndBehaviorsAndEvents
         {
             StuffProperties stuffProps = stuff.stuffProps;
             if (stuffProps != null) {
-                HediffCompProperties_ChangeColorOnAdd colorComp = new HediffCompProperties_ChangeColorOnAdd();
-                colorComp.color = stuffProps.color;
-                newHediff.comps.Add(colorComp);
+                // stat changes that are always added and calculated the same way
+                // This mod assumes 0% flammability of creature it's applied to
+                StatModifier flamMod = new StatModifier();
+                flamMod.stat = StatDefOf.Flammability;
+                flamMod.value = stuff.BaseFlammability;
+                newHediff.stages[0].statOffsets.Add(flamMod);
+                
                 if (  stuffProps.categories != null && stuffProps.categories.Contains(StuffCategoryDefOf.Stony))
                 {
                     AddStoneMods(newHediff, stuff);

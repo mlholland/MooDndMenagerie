@@ -11,6 +11,9 @@
       <li>DND_Annihilator</li>
       <li>DND_Medusa</li>
       <li>DND_GibberingMouther</li>
+      <li>DND_AnimatedDiningChair</li>
+      <li>DND_AnimatedToolCabinet</li>
+      <li>DND_AnimatedStool</li>
 		</disabledFromQuestsPawns>							
 	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
 </Defs>

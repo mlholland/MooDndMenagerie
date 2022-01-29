@@ -57,7 +57,7 @@
   
   <ThingDef ParentName="BuildingBase">
     <defName>DND_GolemBuildingStone</defName>
-    <label>dormant flesh golen</label>
+    <label>dormant stone golen</label>
     <description>A magical golem constructed from stone. It is currently dormant, and can either be sold now, or awakened to guard the colony. Golems are only loyal to the people that awakened them, so they cannot be sold once awakened
     
 Note: For balance reasons, the resulting golem will always have the same stats and abilities, regardless of the stone type used to make it. Using Jade to make stone golems is not recommended unless you just want to flex.</description>

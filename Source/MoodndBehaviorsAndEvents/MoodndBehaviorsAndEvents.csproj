@@ -323,15 +323,13 @@
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\FurnitureToAnimatedObjectConverter.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompHediffEffecterRework.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_BuffedItem.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_RecolorableAnimal.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_StuffableAnimal.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_NeedBooster.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_BuffedStuff.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_BuffedStuff.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_BuffedItem.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_RecolorableAnimal.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffCompProperties\HediffCompProperties_ChangeColorOnAdd.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_StuffableAnimal.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffCompProperties\HediffCompProperties_TurnToDustOnDeath.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffComp_ChangeColorOnAdd.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffComp_TurnToDustOnDeath.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\DebuffingManeuverDef.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Def_AnimatableFurniture.cs" />

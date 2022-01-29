@@ -23,8 +23,8 @@
 
   <DND_MaterialHediffLabel>Living Material: {0}</DND_MaterialHediffLabel>
   <DND_MaterialHediffDescription>This creature is made of {0}, which has various effects on its physiology.</DND_MaterialHediffDescription>
-  <DND_MadeFromMaterialAddon>\n\nThis particular creature is made of {0}</DND_MadeFromMaterialAddon>
-  <DND_AnimatedCreatureLabel>{0} ({1})</DND_AnimatedCreatureLabel>
+  <DND_MadeFromMaterialAddon>\nThis particular creature is made of {0}</DND_MadeFromMaterialAddon>
+  <DND_AnimatedCreatureLabel>{0} ({1})</DND_AnimatedCreatureLabel> 
 
   <DND_MonsterRaidLetterLabel>Monster Raid</DND_MonsterRaidLetterLabel>
   <DND_MonsterRaidLetterText>A group of dungeon monsters have banded together and are attacking the colony!</DND_MonsterRaidLetterText>
