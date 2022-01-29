@@ -1,8 +1,5 @@
-﻿using RimWorld;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
-using System.Collections.Generic;
-using System.Linq;
 using System;
 /* Settings object largely copied/modified from https://github.com/juanosarg/AlphaAnimals/blob/master/1.3/Source/AlphaBehavioursAndEvents/AlphaBehavioursAndEvents/Options%20and%20Utility/AlphaAnimals_Settings.cs
  * */
@@ -31,8 +28,6 @@ namespace MoodndBehaviorsAndEvents
             Scribe_Values.Look(ref flagRustMonsterInfestations, "flagRustMonsterInfestations", true, true);
             Scribe_Values.Look(ref moodndAnimalSpawnMultiplier, "moodndAnimalSpawnMultiplier", moodndAnimalSpawnMultiplierBase, true);
             //Scribe_Values.Look(ref moodndQuestRewardMultiplier, "moodndQuestRewardMultiplier", moodndQuestRewardMultiplierBase, true); 
-
-
         }
 
         public void DoWindowContents(Rect inRect)

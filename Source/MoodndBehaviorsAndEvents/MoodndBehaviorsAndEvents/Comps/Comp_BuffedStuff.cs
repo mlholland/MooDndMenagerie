@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse;
-using RimWorld;
-using UnityEngine;
+﻿using Verse;
 
 // Modelled off the CompEnchantedStuff from RoM
 // https://github.com/TorannD/TMagic/blob/f0895d1d296bf54184d5153ddbb307ac42b776dd/Source/TMagic/TMagic/Enchantment/CompEnchantedStuff.cs

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
+﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
-using UnityEngine;
 
 // A modified variant of the ComHediffEffector from the VEF that parameterizes psy sensitivity, among other things
-
 namespace MoodndBehaviorsAndEvents
 {
     public class Comp_AreaHediffDebuffApplier : ThingComp
@@ -129,7 +125,6 @@ namespace MoodndBehaviorsAndEvents
                 }
                 tickCounter = 0;
             }
-
         }
     }
 }

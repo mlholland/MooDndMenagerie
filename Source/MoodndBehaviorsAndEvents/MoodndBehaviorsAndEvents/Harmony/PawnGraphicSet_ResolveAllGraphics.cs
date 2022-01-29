@@ -4,11 +4,7 @@ using System.Linq;
 using System.Reflection;
 
 using HarmonyLib;
-using RimWorld;
-using Verse;
-using MVCF.Utilities;
-using MVCF;
-
+using Verse; 
 
 /* Allows non-human animals with the Comp_RecolorableAnimal comp to be recolored. Used in-house with the HediffComp_ChangeColorOnAdd hediff comp.
  */

@@ -1,7 +1,5 @@
 ﻿using Verse;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace MoodndBehaviorsAndEvents
 {
@@ -25,9 +23,7 @@ namespace MoodndBehaviorsAndEvents
         public List<HediffDef> immunityHediffs = new List<HediffDef>();
         public CapacityScalingValues capacityScalingValues = null;
         public DebuffLogicUtil.DebuffGiverInputs dgi;
-
-
-
+         
         public CompProperties_AreaHediffDebuffApplier()
         {
             this.compClass = typeof(Comp_AreaHediffDebuffApplier);

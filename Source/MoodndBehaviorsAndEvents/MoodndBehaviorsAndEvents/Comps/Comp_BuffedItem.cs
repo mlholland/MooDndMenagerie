@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse;
+﻿using Verse;
 using RimWorld;
-using UnityEngine;
 
 // Modeled off the CompEnchantedItem from RoM, this comp is added to materials that cause things made from them to have non-standard buffs/effects 
 // on their wielders/wearers.
 // https://github.com/TorannD/TMagic/blob/f0895d1d296bf54184d5153ddbb307ac42b776dd/Source/TMagic/TMagic/Enchantment/CompEnchantedItem.cs#L231
-
 namespace MoodndBehaviorsAndEvents
 {
     public class Comp_BuffedItem : ThingComp
@@ -129,9 +125,7 @@ namespace MoodndBehaviorsAndEvents
                 shouldApplyHediffOnEquip = true;
             }
         }
-
-
-        // Token: 0x06006B2D RID: 27437 RVA: 0x002462F4 File Offset: 0x002444F4
+        
         public override void Notify_Equipped(Pawn pawn)
         {
             base.Notify_Equipped(pawn);
@@ -148,6 +142,5 @@ namespace MoodndBehaviorsAndEvents
                 }
             }
         }
-
     }
 }

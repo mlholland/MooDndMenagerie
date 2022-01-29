@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
-using Verse;
-using RimWorld;
-using UnityEngine;
+﻿using Verse;
 
 /* Def to describe the inputs to a projectile that throws the victim*/
 namespace MoodndBehaviorsAndEvents

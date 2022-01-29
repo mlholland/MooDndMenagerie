@@ -387,7 +387,6 @@
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\HediffSetExtraLogic.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DebuffLogicUtil.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Verbs\Verb_MeleeApplyHediff_MoreOptions.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Verbs\Verb_GetThrown.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

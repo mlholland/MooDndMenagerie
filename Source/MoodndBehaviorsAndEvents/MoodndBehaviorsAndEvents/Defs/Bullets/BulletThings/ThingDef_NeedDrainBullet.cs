@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
-using Verse;
+﻿using Verse;
 using RimWorld;
-using UnityEngine;
 
 /* Def to describe the inputs to a need drain projectile*/
 namespace MoodndBehaviorsAndEvents

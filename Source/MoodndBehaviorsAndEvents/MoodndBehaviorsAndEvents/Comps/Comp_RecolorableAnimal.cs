@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse;
-using RimWorld;
+﻿using Verse; 
 using UnityEngine;
 
 /* This comp marks a holding animal as potentially recolorable.

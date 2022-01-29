@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
 using RimWorld;
-using UnityEngine;
 
 namespace MoodndBehaviorsAndEvents
 {
     class JobDriver_AnimateObject : JobDriver
-    {
-
+    { 
         private static string BASE_QUALITY_HEDIFF_STRING = "DND_AnimatedQuality";
 
         private Building building

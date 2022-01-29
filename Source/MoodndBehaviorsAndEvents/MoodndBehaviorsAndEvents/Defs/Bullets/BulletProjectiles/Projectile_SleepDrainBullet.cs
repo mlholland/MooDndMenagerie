@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
-using Verse;
+﻿using Verse;
 using Verse.AI;
 using RimWorld;
-using UnityEngine;
 
 /* Decribes the special behavior of a sleep drain bullet, a modified need drain bullet that has the additional effect of potentially putting the target to
  * sleep if their rest stat is fully drained.*/

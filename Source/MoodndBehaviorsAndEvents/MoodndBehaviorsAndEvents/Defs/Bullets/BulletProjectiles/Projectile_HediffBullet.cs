@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
+﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
-using UnityEngine;
 
 /* This bullet tries to apply a hediff to the target. Has a lot of options described in the associated ThingDef_HediffBullet
  */

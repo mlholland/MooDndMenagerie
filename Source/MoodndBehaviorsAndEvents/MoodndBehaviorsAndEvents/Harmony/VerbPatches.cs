@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-
+﻿using System.Collections.Generic; 
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -12,7 +8,6 @@ using MVCF;
 // Other Harmony patches
 namespace MoodndBehaviorsAndEvents
 {
-
     // The Normal logic for animal ranged attacks from VEF doesn't work for some of my animals for 2 reasons:
     // - The verb-choosing logic only looks at expected damage when picking a verb, so attacks that only apply effects instead of damage are never selected
     // - If multiple verbs have the same weight, the first in the list is always selected.

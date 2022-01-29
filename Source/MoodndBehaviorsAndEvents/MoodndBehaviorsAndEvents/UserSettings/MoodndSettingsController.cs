@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Globalization;
-using System.Text;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
-using RimWorld;
 
 
 /* Code for adding a settings window which contains toggles for animal spawning and events. Behavior was largely copied from my favorite teacher: 
@@ -15,7 +9,6 @@ namespace MoodndBehaviorsAndEvents
 {
     public class MoodndManagerie_Mod : Mod
     {
-
         public static Moodnd_Settings settings;
 
         public MoodndManagerie_Mod(ModContentPack content) : base(content)
@@ -27,10 +20,7 @@ namespace MoodndBehaviorsAndEvents
         public override void DoSettingsWindowContents(Rect inRect) 
         {
             base.DoSettingsWindowContents(inRect);
-
             settings.DoWindowContents(inRect);
-
-
         }
     }
 }

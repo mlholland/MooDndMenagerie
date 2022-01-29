@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
-using Verse;
-using RimWorld;
-using UnityEngine;
+﻿using Verse;
 
 /* A maneuverDef with extra fields. Consumed and expected as input by custom verbs.
  * The idea is that the fields present allow for more logic on the verb's end when determining what happens based on the

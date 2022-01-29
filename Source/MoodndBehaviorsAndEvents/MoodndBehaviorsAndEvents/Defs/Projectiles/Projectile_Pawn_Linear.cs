@@ -6,7 +6,8 @@ using UnityEngine;
 using Verse.Sound;
 
 /* A pawn as a projectile. Used for abilities that involved rapid forced movement (like beholder telepathy) 
-   Based on the FlyingObject_DragonStrike code from RoM: https://github.com/TorannD/TMagic/blob/419cac105fe6f363f2ae60a7ad82657f01e2688e/Source/TMagic/TMagic/FlyingObject_DragonStrike.cs
+ * Based on the FlyingObject_DragonStrike code from RoM: https://github.com/TorannD/TMagic/blob/419cac105fe6f363f2ae60a7ad82657f01e2688e/Source/TMagic/TMagic/FlyingObject_DragonStrike.cs
+ * Todo: Simplify this to be just a pawn-thrower and be less... damage-y like the original.
    */
 namespace MoodndBehaviorsAndEvents
 {
@@ -14,8 +15,7 @@ namespace MoodndBehaviorsAndEvents
     public class Projectile_Pawn_Linear : Projectile
     {
 
-        protected new Vector3 origin;
-
+        protected new Vector3 origin; 
         protected new Vector3 destination;
 
         protected float ProjPawnAlt = 11f; //TODO go back to using a normal altitude layer once I figure out what the top-level layer is.
@@ -33,10 +33,8 @@ namespace MoodndBehaviorsAndEvents
         private float damageMultiplier = 1;
         public DamageInfo? impactDamage;
 
-        public bool damageLaunched = true;
-
-        public bool explosion = false;
-
+        public bool damageLaunched = true; 
+        public bool explosion = false; 
         public int weaponDmg = 0;
 
         Pawn pawn;

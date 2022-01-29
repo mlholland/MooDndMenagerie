@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
 using Verse;
 using Verse.AI;
 using RimWorld;
-using UnityEngine;
 
 /* A generalized job-forcing bullet. Clears the afflicted pawns work queue, and replaces their current job with the inputted job.
  * By default this just creates the specified forced job with no inputs, but it can be extended by overriding the CreateForcedJob method

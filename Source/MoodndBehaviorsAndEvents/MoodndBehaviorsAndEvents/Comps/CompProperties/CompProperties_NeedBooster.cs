@@ -21,8 +21,6 @@ namespace MoodndBehaviorsAndEvents
         public CompProperties_NeedBooster()
         {
             this.compClass = typeof(Comp_NeedBooster);
-        }
-
-
+        } 
     }
 }

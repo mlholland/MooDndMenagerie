@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic; 
-using Verse;
+﻿using Verse;
 using RimWorld; 
-
-
 
 // Note doesn't work lol
 // Intent is to make cretures that die while having the Disintegration dust actually turn to dust, and make annihilators eat that.

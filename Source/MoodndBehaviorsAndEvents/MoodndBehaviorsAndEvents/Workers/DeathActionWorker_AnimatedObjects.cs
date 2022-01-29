@@ -22,6 +22,5 @@ namespace MoodndBehaviorsAndEvents
             GenPlace.TryPlaceThing(droppedItem, corpse.Position, corpse.Map, ThingPlaceMode.Near); 
             corpse.Destroy();
         }
-
     }
 }

@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
+﻿ using System.Collections.Generic; 
 using Verse;
-using RimWorld;
-using UnityEngine;
+using RimWorld; 
 
 // A modified version of the CompHediffEffector class from VEF. The original lacked a bunch of features I needed, so I bootstapped off that to produce this.
 // When added to creature, this comp periodically checks for nearby creatures that meet any of a variety of checks, and if they pass, applies a specific
@@ -71,8 +68,7 @@ namespace MoodndBehaviorsAndEvents
                 }
                 tickCounter = 0;
                 }
-            //}
-
+            //} 
         }
     }
 }

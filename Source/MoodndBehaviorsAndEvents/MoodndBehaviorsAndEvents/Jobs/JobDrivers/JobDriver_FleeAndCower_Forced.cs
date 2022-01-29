@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic; 
-using Verse;
+﻿using System.Collections.Generic;
 using Verse.AI;
 using RimWorld; 
 

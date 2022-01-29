@@ -1,7 +1,4 @@
 ﻿using Verse;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 // A modified version of the CompProperties_HediffEffecter class from VEF with a few extra params that... works? IDK I couldn't make the original function for some reason.
 namespace MoodndBehaviorsAndEvents
@@ -22,8 +19,6 @@ namespace MoodndBehaviorsAndEvents
         public CompProperties_HediffEffecterRework()
         {
             this.compClass = typeof(CompHediffEffecterRework);
-        }
-
-
+        } 
     }
 }

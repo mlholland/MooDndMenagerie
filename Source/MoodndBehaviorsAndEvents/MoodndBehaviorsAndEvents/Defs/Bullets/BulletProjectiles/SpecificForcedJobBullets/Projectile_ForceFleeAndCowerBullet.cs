@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
-using Verse;
+﻿using Verse;
 using Verse.AI;
 using RimWorld;
-using UnityEngine;
 
 /* Makes the target run away as if fleeing.*/
 namespace MoodndBehaviorsAndEvents

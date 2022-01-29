@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
-using Verse;
+﻿using Verse;
 using RimWorld;
-using UnityEngine;
 
 /* A generalized need draining bullet. Assuming the target has no immunity hediffs, roll under the drain chance to reduce a need.
    Has no effect if the target doesn't have the desired need. */

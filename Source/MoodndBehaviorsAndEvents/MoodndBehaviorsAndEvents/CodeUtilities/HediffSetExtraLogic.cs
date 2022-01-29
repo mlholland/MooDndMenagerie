@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
-using RimWorld;
-using UnityEngine;
+﻿using Verse;
 
 /* Utility functions that are effectively extensions or modifications to HediffSet behaviors.
 */

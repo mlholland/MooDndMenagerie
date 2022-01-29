@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RimWorld;
-using UnityEngine;
-using Verse;
-
+using System.Collections.Generic; 
+using RimWorld; 
+using Verse; 
 
 /* Utility code to help modders get from stuff categories to the ThingDefs associated with that category, since
  * AFAIK there's no build-in functions or fields to make this easy. 

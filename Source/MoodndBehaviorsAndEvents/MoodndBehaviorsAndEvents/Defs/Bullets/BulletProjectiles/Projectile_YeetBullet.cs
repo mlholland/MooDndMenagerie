@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
-using Verse;
+﻿using Verse;
 using RimWorld;
-using UnityEngine;
 
 /* A bullet that throws the hit creature, then does damage to their lower body. */
 namespace MoodndBehaviorsAndEvents

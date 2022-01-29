@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse.Sound;
-using Verse;
-using Verse.AI;
-using RimWorld;
-using UnityEngine;
+﻿using System.Collections.Generic; 
+using Verse; 
+using RimWorld; 
 
 // Removed the current element of a pawn's job queue, used in conjunction with forced behaviors to make sure they don't last too long.
 namespace MoodndBehaviorsAndEvents
@@ -14,9 +10,7 @@ namespace MoodndBehaviorsAndEvents
         public int ticksSinceLastCheck = 0;
         private static HediffDef rageGrace = HediffDef.Named("DND_FleshGolemRageGrace");
         private static List<HediffDef> immunityDefs = new List<HediffDef>() { rageGrace };
-
-
-
+        
         public HediffCompProperties_EnrageAtHighPain Props
         {
             get
@@ -24,7 +18,6 @@ namespace MoodndBehaviorsAndEvents
                 return (HediffCompProperties_EnrageAtHighPain)this.props;
             }
         }
-        
 
         public override void CompPostTick(ref float severityAdjustment)
         {

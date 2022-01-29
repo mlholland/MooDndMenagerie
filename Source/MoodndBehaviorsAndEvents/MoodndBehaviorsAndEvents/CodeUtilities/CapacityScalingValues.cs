@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RimWorld;
-using UnityEngine;
-using Verse;
+﻿using Verse;
 
 
 /* Values related to capacity scaling in the context of determine the chance for effects to occur (ex: petrification application scaling with target sight). Generally used as an input

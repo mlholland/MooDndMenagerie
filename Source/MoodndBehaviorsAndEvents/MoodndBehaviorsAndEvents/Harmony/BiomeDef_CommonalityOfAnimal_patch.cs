@@ -2,7 +2,6 @@
 using RimWorld;
 using Verse; 
 
-
 /*Based on the the code to scale a mod's animals' spawn frequency in alpha animals:  https://github.com/juanosarg/AlphaAnimals/blob/master/1.3/Source/AlphaBehavioursAndEvents/AlphaBehavioursAndEvents/Harmony/BiomeDef_CommonalityOfAnimal_patch.cs */
 namespace MoodndBehaviorsAndEvents
 {

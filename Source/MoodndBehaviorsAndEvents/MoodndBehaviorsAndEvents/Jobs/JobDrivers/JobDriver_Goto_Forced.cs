@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;  
+﻿using System.Collections.Generic;  
 using Verse.AI; 
 
 // Todo: maybe try to abstract this entire behavior out into an extension of JobDef which takes in a different Jobdef as input?
