@@ -20,7 +20,9 @@
   <DND_SpectatorSummoned_Notification>A {0} has been lured into this reality and bound to serve the colony! It has been named {1}.</DND_SpectatorSummoned_Notification>
   <DND_SpectatorSummoned_IconDesc>Activate this effigy to summon a loyal {0} from another dimension to serve the colony.</DND_SpectatorSummoned_IconDesc>
   <DND_SpectatorSummoned_IconLabel>Summon</DND_SpectatorSummoned_IconLabel>
-    
+
+  <DND_MaterialHediffLabel>Living Material: {0}</DND_MaterialHediffLabel>
+  <DND_MaterialHediffDescription>This creature is made of {0}, which has various effects on its physiology.</DND_MaterialHediffDescription>
   <DND_MadeFromMaterialAddon>\n\nThis particular creature is made of {0}</DND_MadeFromMaterialAddon>
   <DND_AnimatedCreatureLabel>{0} ({1})</DND_AnimatedCreatureLabel>
 

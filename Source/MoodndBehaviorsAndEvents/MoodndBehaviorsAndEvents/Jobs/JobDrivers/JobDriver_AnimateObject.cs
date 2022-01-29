@@ -52,23 +52,20 @@ namespace MoodndBehaviorsAndEvents
         
         private void Animate()
         {
+            //get the animal thing corresponding to this furniture
             ThingDef furnitureDef = this.building.def;
-            ThingDef livingObjDef = null;
-            if (this.building.Stuff != null && furnitureDef.stuffCategories != null && furnitureDef.stuffCategories.Count > 0)
+            // went with a pawnKindDef in the mapping just to make it harder to screw with an inproper inputted def
+            PawnKindDef pawnKindDef = FurnitureToAnimatedObjectConverter.GetResultingPawnKindDef(furnitureDef);
+            if (pawnKindDef == null)
             {
-                livingObjDef = FurnitureToAnimatedObjectConverter.GetStuffable(furnitureDef, this.building.Stuff);
-            } else
-            {
-                livingObjDef = FurnitureToAnimatedObjectConverter.Get(furnitureDef);
-            }
-            if (livingObjDef == null)
-            {
+                Log.Error("Moodnd animate: Something went terribly wrong - no pawnKindDef could be found for a mid-animation piece of furniture. Aborting animation attempt.");
                 return;
-            }
-
+            } 
+            ThingDef livingObjDef = pawnKindDef.race;
+            //create the pawn
             PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named(livingObjDef.defName), this.pawn.Faction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false);
-
             Pawn pawn = PawnGenerator.GeneratePawn(request);
+            
             // add quality hediff
             QualityCategory qc;
             bool useQuality = this.building.TryGetQuality(out qc);
@@ -76,13 +73,17 @@ namespace MoodndBehaviorsAndEvents
             {
                 pawn.health.AddHediff(HediffDef.Named(BASE_QUALITY_HEDIFF_STRING + ((int)qc)));
             }
-
+            // add material hediff
+            if (this.building.Stuff != null && furnitureDef.stuffCategories != null && furnitureDef.stuffCategories.Count > 0)
+            {
+                pawn.health.AddHediff(HediffDef.Named(MaterialToHediffConverter.s_materialHediffDefNameBase + this.building.Stuff.defName));
+            }
+            // spen the creature and remove the furniture
             GenSpawn.Spawn(pawn, building.PositionHeld, building.MapHeld, WipeMode.Vanish);
             String buildingLabel = this.building.Label;
             this.building.DeSpawn();
-            
-            Messages.Message("DND_FurnitureAnimated".Translate(buildingLabel, pawn.Name), MessageTypeDefOf.PositiveEvent, true);
-            //this.Item.SplitOff(1).Destroy(DestroyMode.Vanish);
+            // announce success
+            Messages.Message(String.Format("DND_FurnitureAnimated".Translate(), buildingLabel, pawn.Name), MessageTypeDefOf.PositiveEvent, true); 
         }
         
         private const TargetIndex CorpseInd = TargetIndex.A;

@@ -15,17 +15,31 @@ namespace MoodndBehaviorsAndEvents
         public MoodndStartup(ModContentPack content) : base(content)
         {
             //todo move harmony instance to mod file?
-            new Harmony("rimworld.moodnd").PatchAll();
+            new Harmony("rimworld.moodnd").PatchAll(); 
         }
     }
 
     [HarmonyPatch(typeof(DefGenerator), nameof(DefGenerator.GenerateImpliedDefs_PostResolve))]
     static class DefGenerator_GenerateImpliedDefs_PostResolve_Patch
-    {
+    { 
         static void Postfix()
         {
             Log.Message("MooDnd Generation: Interrupting GenerateImpliedDefs to Create and modify defs");
-            Log.Message("MooDnd Generation: Generating material-based animal defs and material hediffs");
+            bool foundAny = false;
+            //
+
+            Log.Message("MooDnd Generation: Loading animation targets for scroll of animation");
+            foreach (Def_AnimatableFurniture animatableFurniture in DefDatabase<Def_AnimatableFurniture>.AllDefs)
+            {
+                foundAny = true;
+                FurnitureToAnimatedObjectConverter.Load(animatableFurniture); 
+            }
+            if (!foundAny)
+            {
+                Log.Error("MooDND: Could not find support def that lists valid animation targets for the scroll of animation. The scroll won't work now.");
+            }
+
+            Log.Message("MooDnd Generation: Generating material-based hediffs");
             StartupHelper.GenerateAnimatedAnimalDefs();
             Log.Message("MooDnd Generation: Modifying existing clothing defs to allow special material buffs");
             StartupHelper.ModifyExistingDefs();
@@ -60,7 +74,7 @@ namespace MoodndBehaviorsAndEvents
                 }
 
             }
-
+            /*
             // Create both thingDefs and pawnKindDefs for each Def_AnimatedFurniture.
             HashSet<String> newAnimalDefNames = new HashSet<String>();
             foreach (Def_AnimatedFurniture aniFurDef in DefDatabase<Def_AnimatedFurniture>.AllDefsListForReading)
@@ -129,7 +143,7 @@ namespace MoodndBehaviorsAndEvents
                         FurnitureToAnimatedObjectConverter.Add(furnitureDef, xmlAnimalDef);
                     }
                 }
-            }
+            }*/
         }
     }
 }

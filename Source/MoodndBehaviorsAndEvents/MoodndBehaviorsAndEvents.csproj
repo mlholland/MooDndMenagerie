@@ -320,18 +320,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\CapacityScalingValues.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\FurnitureToAnimatedObjectConverter.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompHediffEffecterRework.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_BuffedItem.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_RecolorableAnimal.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_NeedBooster.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_BuffedStuff.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_BuffedStuff.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_BuffedItem.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_RecolorableAnimal.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffCompProperties\HediffCompProperties_ChangeColorOnAdd.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffCompProperties\HediffCompProperties_TurnToDustOnDeath.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffComp_ChangeColorOnAdd.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffComp_TurnToDustOnDeath.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\DebuffingManeuverDef.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Defs\Def_AnimatableFurniture.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Suspend.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Linear.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\SappersUtility_IsGoodSapper.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Harmony\PawnGraphicSet_ResolveAllGraphics.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\VerbPatches.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_Goto_Forced.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_FleeAndCower_Forced.cs" />
@@ -373,18 +380,12 @@
     <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_AnimateObject.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Recipes\Recipe_HealWorstInjury10.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Recipes\Recipe_FullHealInjuries.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DefMakers\ThingDefGenerator_CorpseFromDef.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DefMakers\MaterialToHediffConverter.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\MaterialToHediffConverter.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_NeedBooster.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_HediffEffecterRework.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Defs\Def_AnimitedFurniture.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\MoodndStartup.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DefMakers\MaterialToAnimalDefConverter.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DefMakers\MaterialToPawnKindDefConverter.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\HediffSetExtraLogic.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\DebuffLogicUtil.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\FurnitureToAnimatedObjectConverter.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\MoodndDefOf.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Verbs\Verb_MeleeApplyHediff_MoreOptions.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Verbs\Verb_GetThrown.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

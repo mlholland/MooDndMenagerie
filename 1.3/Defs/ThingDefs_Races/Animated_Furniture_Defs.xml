@@ -4,10 +4,7 @@
   <!-- TODO add notes on how to add more. -->
 
   <ThingDef ParentName="AnimalThingBase" Name="BaseAnimatedFurniture" Abstract="True">
-    <defName>DND_BaseAnimatedAnimalDef</defName>
-    <thingClass>ThingWithComps</thingClass>
-    <category>Ethereal</category>
-    <label>Base Animated Furniture - You shouldn't see this name</label>
+    <defName>DND_BaseAnimatedAnimalDef</defName>  
     <statBases>
       <MarketValue>200</MarketValue>
       <Flammability>0.0</Flammability>
@@ -52,7 +49,7 @@
 
   <!-- Dining Chair-->
   <ThingDef ParentName="BaseAnimatedFurniture">
-    <defName>DND_AnimatedDiningChair_Base</defName>
+    <defName>DND_AnimatedDiningChair</defName>
     <label>Animated Dining Chair</label>
     <description>A dining chair that has been brought to life by a scroll of animation. It always seems be right behind you when you need a place to sit.
 
@@ -62,6 +59,7 @@ Animated Chairs will periodically try to comfort nearby colonists, increasing th
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
       <MarketValue>500</MarketValue>
+      <MeatAmount>45</MeatAmount>
       <FilthRate>.2</FilthRate>
     </statBases>
     <race>
@@ -88,14 +86,15 @@ Animated Chairs will periodically try to comfort nearby colonists, increasing th
         <maxTargetablePct>.5</maxTargetablePct>
         <needDef>Comfort</needDef>
       </li>
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_RecolorableAnimal"/> 
     </comps>
   </ThingDef>
-  
-  <Def Class="MoodndBehaviorsAndEvents.Def_AnimatedFurniture">
-    <defName>DND_AnimatedDiningChair</defName>
-    <furnitureDef>DiningChair</furnitureDef>
-    <baseDefName>DND_AnimatedDiningChair_Base</baseDefName>
+
+  <PawnKindDef  ParentName="AnimalKindBase">
+    <defName>DND_AnimatedDiningChair</defName> 
+    <race>DND_AnimatedDiningChair</race>
     <label>Animated Dining Chair</label>
+    <canArriveManhunter>false</canArriveManhunter>
     <labelPlural>Animated Dining Chairs</labelPlural>
     <ecoSystemWeight>0.0</ecoSystemWeight>
     <combatPower>80</combatPower>
@@ -106,6 +105,15 @@ Animated Chairs will periodically try to comfort nearby colonists, increasing th
     <lifeStages>
       <li>
         <bodyGraphicData>
+          <texPath>Things/Building/Furniture/DiningChair</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(1,1)</drawSize>
+          <damageData>
+            <rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+            <rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+            <rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+            <rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+          </damageData> 
           <shadowData>
             <volume>(.35, .35, .35)</volume>
             <offset>(.1,0,-.1)</offset> <!-- positive=left, nothing, positive=up-->
@@ -113,13 +121,11 @@ Animated Chairs will periodically try to comfort nearby colonists, increasing th
         </bodyGraphicData>
       </li>
     </lifeStages>
-  </Def>
+  </PawnKindDef>
 
   <!-- Tool cabinet-->
   <ThingDef ParentName="BaseAnimatedFurniture">
-    <defName>DND_AnimatedToolCabinet</defName>
-    <thingClass>Pawn</thingClass>
-    <category>Pawn</category>
+    <defName>DND_AnimatedToolCabinet</defName> 
     <label>Animated Tool Cabinet</label>
     <description>A tool cabinet that has been brought to life using a scroll of animation. Now it lumbers around and dispenses tools to nearby colonists.
 
@@ -187,9 +193,9 @@ Animated tool cabinets periodically give a small general labor speed boost to ne
     <defName>DND_AnimatedToolCabinet</defName>
     <race>DND_AnimatedToolCabinet</race>
     <label>Animated Tool Cabinet</label>
-    <labelPlural>Animated Tool Cabinets</labelPlural>
-    <ecoSystemWeight>0.0</ecoSystemWeight>
     <canArriveManhunter>false</canArriveManhunter>
+    <labelPlural>Animated Tool Cabinets</labelPlural>
+    <ecoSystemWeight>0.0</ecoSystemWeight> 
     <combatPower>180</combatPower>
     <wildGroupSize>
       <min>1</min>
@@ -209,24 +215,18 @@ Animated tool cabinets periodically give a small general labor speed boost to ne
             <cornerBR>Damage/Corner</cornerBR>
           </damageData>
           <shadowData>
-            <volume>(1, 1, 1)</volume>
-            <offset>(0,0,0)</offset>
+            <volume>(.35, .35, .35)</volume>
+            <offset>(.1,0,-.1)</offset>
+            <!-- positive=left, nothing, positive=up-->
           </shadowData>
         </bodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
-  
-  <Def Class="MoodndBehaviorsAndEvents.Def_AnimatedFurniture">
-    <defName>DND_AnimatedToolCabinet_ProgramDef</defName>
-    <baseDefName>DND_AnimatedToolCabinet</baseDefName>
-    <makeProgrammaticDefs>false</makeProgrammaticDefs>
-    <furnitureDef>ToolCabinet</furnitureDef>
-  </Def>
 
   <!--Stool-->
   <ThingDef ParentName="BaseAnimatedFurniture">
-    <defName>DND_AnimatedStool_Base</defName>
+    <defName>DND_AnimatedStool</defName>
     <label>Animated Stool</label>
     <description>A stool that has been brought to life using a scroll of animation. It is constantly waddling underfoot, and everyone is convinced that it makes a cute chirping noise when they aren't watching it.
 
@@ -255,13 +255,16 @@ Animated stools are oddly endearing, and have a very high nuzzle interval.</desc
         <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
       </li>
     </tools>
+    <comps> 
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_RecolorableAnimal"/>
+    </comps>
   </ThingDef>
 
-  <Def Class="MoodndBehaviorsAndEvents.Def_AnimatedFurniture">
+  <PawnKindDef  ParentName="AnimalKindBase">
     <defName>DND_AnimatedStool</defName>
-    <furnitureDef>Stool</furnitureDef>
-    <baseDefName>DND_AnimatedStool_Base</baseDefName>
+    <race>DND_AnimatedStool</race>
     <label>Animated Stool</label>
+    <canArriveManhunter>false</canArriveManhunter>
     <labelPlural>Animated Stools</labelPlural>
     <ecoSystemWeight>0.0</ecoSystemWeight>
     <combatPower>40</combatPower>
@@ -272,6 +275,18 @@ Animated stools are oddly endearing, and have a very high nuzzle interval.</desc
     <lifeStages>
       <li>
         <bodyGraphicData>
+          <texPath>Things/Building/Furniture/Stool</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <damageData>
+            <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+            <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+            <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+            <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+          </damageData>
           <shadowData>
             <volume>(.4, .4, .4)</volume>
             <offset>(0,0,0)</offset>
@@ -279,6 +294,6 @@ Animated stools are oddly endearing, and have a very high nuzzle interval.</desc
         </bodyGraphicData>
       </li>
     </lifeStages>
-  </Def>
+  </PawnKindDef>
 
 </Defs>
