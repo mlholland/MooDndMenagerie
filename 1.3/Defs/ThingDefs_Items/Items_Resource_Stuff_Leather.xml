@@ -37,7 +37,7 @@
     <label>Displacer Beast Fur</label>
     <description>A beautiful pelt harvested from a displacer beast. Like a living displacer beast, the pelt occasionally bends light, making it appear a few feet away from its real location. This makes the leather exceptionally difficult to work with, but also confers the same benefit to the wearer if clothing is made from it. The clothing must be fairly large to provide this effect, so it must cover the wearer's torso on the outer layer.</description>
     <graphicData>
-      <color>(189,161,116)</color>
+      <color>(20,20,20)</color>
     </graphicData>
     <statBases>
       <MarketValue>5.5</MarketValue>
@@ -48,7 +48,7 @@
       <WorkToBuild>3</WorkToBuild>
     </statBases>
     <stuffProps>
-      <color>(189,161,116)</color>
+      <color>(20,20,20)</color>
       <commonality>0.025</commonality>
       <statFactors>
         <MaxHitPoints>1.5</MaxHitPoints>

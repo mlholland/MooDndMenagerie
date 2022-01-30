@@ -11,8 +11,9 @@
   <DND_MoodndRewardMultiplierTooltip>This multiplier will affect the quest reward rate (commonalities) of ALL animals in this mod. For example, if this is set to 0.5, then items from the mod will appear as quest rewards half as much as the default (which is 1). If set to 2, you'll see quest rewards from this mod twice as often, and so on.</DND_MoodndRewardMultiplierTooltip>
  
   <!-- misc -->
-  <DND_FurnitureAnimated>A {0} has been brought to life to serve the colony! It has been named {1}.</DND_FurnitureAnimated>
+  <DND_madeFromSpecialMaterialNote>\nThis item is made from {0}, so it confers some special powers to the wearer as noted in the material's description.</DND_madeFromSpecialMaterialNote>
   
+  <!--Golem and spectator stuff-->
   <DND_GolemAwoken_Notification>A {0} has been magically compelled to life! It has been named {1} and will now serve the colony.</DND_GolemAwoken_Notification>
   <DND_GolemAwoken_IconDesc>Invoke the last vestiges of power in the manual of golems embedded in the statue. Doing so will permanently awaken it into a {0} to serve the colony.</DND_GolemAwoken_IconDesc>
   <DND_GolemAwoken_IconLabel>Awaken</DND_GolemAwoken_IconLabel>
@@ -21,11 +22,15 @@
   <DND_SpectatorSummoned_IconDesc>Activate this effigy to summon a loyal {0} from another dimension to serve the colony.</DND_SpectatorSummoned_IconDesc>
   <DND_SpectatorSummoned_IconLabel>Summon</DND_SpectatorSummoned_IconLabel>
 
+  <!--Animated furniture stuff-->
+  <DND_FurnitureAnimated>A {0} has been brought to life to serve the colony! It has been named {1}.</DND_FurnitureAnimated>
   <DND_MaterialHediffLabel>Living Material: {0}</DND_MaterialHediffLabel>
   <DND_MaterialHediffDescription>This creature is made of {0}, which has various effects on its physiology.</DND_MaterialHediffDescription>
   <DND_MadeFromMaterialAddon>\nThis particular creature is made of {0}</DND_MadeFromMaterialAddon>
   <DND_AnimatedCreatureLabel>{0} ({1})</DND_AnimatedCreatureLabel> 
-
+  
+  
+<!-- events-->
   <DND_MonsterRaidLetterLabel>Monster Raid</DND_MonsterRaidLetterLabel>
   <DND_MonsterRaidLetterText>A group of dungeon monsters have banded together and are attacking the colony!</DND_MonsterRaidLetterText>
  

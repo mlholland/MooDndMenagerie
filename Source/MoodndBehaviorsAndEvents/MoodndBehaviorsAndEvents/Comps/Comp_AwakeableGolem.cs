@@ -34,7 +34,7 @@ namespace MoodndBehaviorsAndEvents
                         PawnGenerationRequest request = new PawnGenerationRequest(Props.CreatureDef, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false);
                         Pawn pawn = PawnGenerator.GeneratePawn(request);
                         GenSpawn.Spawn(pawn, this.parent.PositionHeld, this.parent.MapHeld, WipeMode.Vanish);
-                        Messages.Message((Props.TranslationString + "_Notification").Translate(this.parent.Label, pawn.Name), MessageTypeDefOf.PositiveEvent, true);
+                        Messages.Message(string.Format((Props.TranslationString + "_Notification").Translate(), this.parent.Label, pawn.Name), MessageTypeDefOf.PositiveEvent, true);
                         this.parent.DeSpawn();
                     },
                     hotKey = KeyBindingDefOf.Misc2,

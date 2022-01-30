@@ -292,9 +292,9 @@ namespace MoodndBehaviorsAndEvents
                         }
                     }
                 }
-                catch (NullReferenceException ex)
+                catch (NullReferenceException)
                 {
-
+                    // ignore?
                 }
             }
             try

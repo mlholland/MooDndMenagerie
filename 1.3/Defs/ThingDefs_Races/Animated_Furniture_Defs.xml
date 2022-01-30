@@ -59,7 +59,7 @@ Animated Chairs will periodically try to comfort nearby colonists, increasing th
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
       <MarketValue>500</MarketValue>
-      <MeatAmount>45</MeatAmount>
+      <MeatAmount>90</MeatAmount>
       <FilthRate>.2</FilthRate>
     </statBases>
     <race>
@@ -237,6 +237,7 @@ Animated stools are oddly endearing, and have a very high nuzzle interval.</desc
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
       <MarketValue>100</MarketValue>
       <FilthRate>.1</FilthRate>
+      <MeatAmount>100</MeatAmount>
     </statBases>
     <race>
       <body>DND_StoolBody</body>

@@ -14,7 +14,6 @@ namespace MoodndBehaviorsAndEvents
         protected override bool CanFireNowSub(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            IntVec3 intVec;
             return base.CanFireNowSub(parms) && map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDef.Named("DND_Beholder"))
                 && MoodndManagerie_Mod.settings.flagMoodndMonsterRaids;
         }

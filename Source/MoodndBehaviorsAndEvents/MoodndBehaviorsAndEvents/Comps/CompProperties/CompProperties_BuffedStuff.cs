@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse;
-using RimWorld;
-using UnityEngine;
+﻿ using Verse;
 
 // Inspired by RoM's CompProperties_EnchantedStuff. This is added to stuffDefs (metals, leathers, etc) that will cause items made
 // out of them to have special buffs.

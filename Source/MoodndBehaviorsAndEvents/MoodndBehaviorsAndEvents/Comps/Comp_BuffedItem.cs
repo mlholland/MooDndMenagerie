@@ -9,6 +9,8 @@ namespace MoodndBehaviorsAndEvents
     public class Comp_BuffedItem : ThingComp
     {
 
+        private static readonly string s_descriptionAddition = "DND_madeFromSpecialMaterialNote";
+
         public CompProperties_BuffedItem Props
         {
             get
@@ -29,28 +31,93 @@ namespace MoodndBehaviorsAndEvents
         {
             get
             {
-                if (this.parent != null && this.parent.def.MadeFromStuff && this.parent.Stuff != null && this.parent.Stuff.GetCompProperties<CompProperties_BuffedStuff>() != null)
+                if (this.parent != null && this.parent.def.MadeFromStuff && this.parent.Stuff != null)
                 {
-                    return BuffedStuff != null;
+                    return this.BuffedStuff != null;
                     // TODO change to this back to return BuffedStuff.isBuffed;
                 }
                 return false;
             }
         }
 
-        public bool AppliedHediffOnEquip
+
+        // whether or not the item associated with this comp should apply a hediff when it's equipped
+        private bool cachedAppliedHediffOnEquip = false;
+        private bool cachedAppliedCalculated = false;
+        public bool AppliesHediffOnEquip
         {
             get
             {
-                if (MadeFromBuffedStuff)
-                {
-                    HediffDef appliedHediffDef = this.parent.Stuff.GetCompProperties<CompProperties_BuffedStuff>().appliedHediffWhenWorn;
-                    if (appliedHediffDef != null)
+                if (!cachedAppliedCalculated)  {
+                    cachedAppliedHediffOnEquip = false;
+                    cachedAppliedCalculated = true;
+                    if (MadeFromBuffedStuff)
                     {
-                        return true;
+                        HediffDef appliedHediffDef = BuffedStuff.appliedHediffWhenWorn;
+                        if (appliedHediffDef != null)
+                        { 
+                            Apparel ap = this.parent as Apparel;
+                            bool meetsPartReq = false; 
+                            if (BuffedStuff.requiredBodyPartGroup != null)
+                            {
+                                foreach (BodyPartGroupDef bpg in ap.def.apparel.bodyPartGroups)
+                                {
+                                    if (bpg.Equals(BuffedStuff.requiredBodyPartGroup))
+                                    { 
+                                        meetsPartReq = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            else
+                            {
+
+                                meetsPartReq = true;
+                            }
+                                
+                            bool meetsLayerReq = false;
+                            if ( BuffedStuff.requiredLayer != null)
+                            { 
+                                foreach (ApparelLayerDef apd in ap.def.apparel.layers)
+                                {
+                                    if (apd.Equals(BuffedStuff.requiredLayer))
+                                    { 
+                                        meetsLayerReq = true;
+                                        break;
+                                    }
+                                }
+                            } 
+                            else 
+                            {
+                                meetsLayerReq = true;
+                            }
+                            // if this is true, then this item is made from a material that applies special effects,
+                            // AND it covers the correct layers and body parts required by the material (if any)
+                            if (meetsPartReq && meetsPartReq)
+                            { 
+                                cachedAppliedHediffOnEquip = true;
+                            }  
+                        } 
+                    }
+                } 
+                return cachedAppliedHediffOnEquip;
+            }
+        }
+
+        private string cachedDescriptionAddon;
+        public string DescriptionAddon
+        {
+            get
+            {
+                if (cachedDescriptionAddon == null)
+                {
+                    cachedDescriptionAddon = "";
+                    if(this.AppliesHediffOnEquip)
+                    {
+                        cachedDescriptionAddon = string.Format(s_descriptionAddition.Translate(), this.parent.Stuff == null ? "???" : this.parent.Stuff.label);
                     }
                 }
-                return false;
+                return cachedDescriptionAddon;
             }
         }
 
@@ -78,58 +145,11 @@ namespace MoodndBehaviorsAndEvents
                 return null;
             }
         }
-
-        private bool shouldApplyHediffOnEquip = false;
-
-        public override void Initialize(CompProperties props)
-        {
-            base.Initialize(props);
-            //Pawn pawn = this.parent as Pawn;
-            shouldApplyHediffOnEquip = false;
-            if (AppliedHediffOnEquip)
-            {
-                Apparel ap = this.parent as Apparel;
-                if (BuffedStuff.requiredBodyPartGroup != null)
-                {
-                    bool meetsPartReq = false;
-                    foreach (BodyPartGroupDef bpg in ap.def.apparel.bodyPartGroups)
-                    {
-                        if (bpg.Equals(BuffedStuff.requiredBodyPartGroup))
-                        {
-                            meetsPartReq = true;
-                            break;
-                        }
-                    }
-                    if (!meetsPartReq)
-                    {
-                        return; // apparel doesn't cover the right body parts - don't apply effects.
-                    }
-                }
-                if (BuffedStuff.requiredLayer != null)
-                {
-                    bool meetsLayerReq = false;
-                    foreach (ApparelLayerDef apd in ap.def.apparel.layers)
-                    {
-                        if (apd.Equals(BuffedStuff.requiredLayer))
-                        {
-                            meetsLayerReq = true;
-                            break;
-                        }
-                    }
-                    if (!meetsLayerReq)
-                    {
-                        return; // apparel doesn't include the right clothing layer - don't apply effects
-                    }
-                }
-                //Log.Message(String.Format("MooDnD debug: initializing apparel made from special stuff: {0}, {1}", this.parent.def.defName, this.parent.Stuff.defName));
-                shouldApplyHediffOnEquip = true;
-            }
-        }
         
         public override void Notify_Equipped(Pawn pawn)
         {
             base.Notify_Equipped(pawn);
-            if (shouldApplyHediffOnEquip)
+            if (this.AppliesHediffOnEquip)
             {
                 HediffDef appliedHediffDef = this.parent.Stuff.GetCompProperties<CompProperties_BuffedStuff>().appliedHediffWhenWorn;
                 if (pawn.health.hediffSet.GetFirstHediffOfDef(appliedHediffDef, false) == null)
@@ -141,6 +161,11 @@ namespace MoodndBehaviorsAndEvents
                     }
                 }
             }
+        }
+
+        public override string GetDescriptionPart()
+        { 
+            return base.GetDescriptionPart() + this.DescriptionAddon; 
         }
     }
 }
