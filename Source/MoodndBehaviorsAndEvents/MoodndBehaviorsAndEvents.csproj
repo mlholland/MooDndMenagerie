@@ -374,7 +374,6 @@
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Bullets\BulletThings\ThingDef_HediffBullet.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Bullets\BulletThings\ThingDef_SleepDrainBullet.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\IngestionOutcomeDoers\InjestionOutcomeDoer_RemoveHediffs.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_GetThrown.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_AnimateObject.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Recipes\Recipe_HealWorstInjury10.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Recipes\Recipe_FullHealInjuries.cs" />
