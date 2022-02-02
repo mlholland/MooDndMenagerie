@@ -28,7 +28,7 @@
 
   <HediffDef>
     <defName>DND_GibberingBabbleImmunity</defName>
-    <description>Gibbering Mouthers are immune to the effects disorienting babble, both from themselves and other mouthers.</description>
+    <description>Gibbering Mouthers are immune to the effects of disorienting babble, both from themselves and other mouthers.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Babble Immunity</label>
     <defaultLabelColor>(0,.7,1)</defaultLabelColor>

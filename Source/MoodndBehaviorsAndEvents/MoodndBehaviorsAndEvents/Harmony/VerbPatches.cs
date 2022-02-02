@@ -44,7 +44,10 @@ namespace MoodndBehaviorsAndEvents
                     } 
                     var score = VerbScore(p, verb.Verb, target, debug);
                     if (score < bestScore) continue;
-                    else if (score == bestScore) bestVerbs.Add(verb.Verb);
+                    else if (score == bestScore)
+                    { 
+                        bestVerbs.Add(verb.Verb);
+                    }
                     else
                     {
                         bestScore = score;

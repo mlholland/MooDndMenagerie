@@ -12,11 +12,11 @@ namespace MoodndBehaviorsAndEvents
     {
         [HarmonyPostfix]
         public static void MultiplyDndAnimalCommonality(PawnKindDef animalDef, ref float __result)
-        {
-            if (animalDef.defName.StartsWith("DND_"))
+        { 
+            if (animalDef.defName.Contains("DND_"))
             {
-                float TotalMultiplier = MoodndManagerie_Mod.settings.moodndAnimalSpawnMultiplier; // original Alpha Animals code multiplied this value by 0.5f. Why? Was that just an ancient bug?
-                __result *= TotalMultiplier; 
+                 // original Alpha Animals code multiplied this value by 0.5f. Why? Was that just an ancient bug?
+                __result = __result * MoodndManagerie_Mod.settings.moodndAnimalSpawnMultiplier; 
             }
         }
     }
