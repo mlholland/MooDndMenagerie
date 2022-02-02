@@ -60,7 +60,7 @@ The effectiveness of a mouther's babble depends on the victim's hearing. Deaf cr
         <needsToBeTamed>false</needsToBeTamed>
         <onlyAffectColonists>false</onlyAffectColonists>
         <affectsSameFaction>false</affectsSameFaction>
-        <maxTargets>3</maxTargets>
+        <maxTargetsPerBroadcast>3</maxTargetsPerBroadcast>
         <dgi>
           <csv>
             <capacityDef>Hearing</capacityDef>
