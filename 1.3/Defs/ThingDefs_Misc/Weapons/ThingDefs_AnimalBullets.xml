@@ -5,7 +5,7 @@
     <defName>DND_ToolThrow</defName>
     <label>thrown hammer</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_Hammer_b</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -38,7 +38,7 @@
     <severityToAdd>.03~0.07</severityToAdd>
     <label>medusa gaze</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_PetrificationRayCluster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -71,7 +71,7 @@
     <severityToAdd>.01~0.03</severityToAdd>
     <label>basilisk gaze</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_PetrificationRayCluster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -86,8 +86,9 @@
     <defName>DND_SpectatorEnervationRay</defName>
     <label>Enervation ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_EnervationRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>.8</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderEnervationRay</damageDef>

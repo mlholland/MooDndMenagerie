@@ -19,7 +19,7 @@
     <severityToAdd>.4~.75</severityToAdd>
     <label>petrification ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_PetrificationRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -48,7 +48,7 @@
     <narcChanceAtZeroRest>1</narcChanceAtZeroRest>
     <label>sleep ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_SleepRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -77,7 +77,7 @@
     <forcedJob>DND_ForcedFlee</forcedJob>
     <label>fear ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_FearRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -106,7 +106,7 @@
     <forcedJob>DND_ForcedCharmApproach</forcedJob>
     <label>charm ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_CharmRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -126,7 +126,7 @@
     </dgi>
     <label>telekinesis ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_TelekinesisRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -147,7 +147,7 @@
     <hediffToAdd>DND_BeholderDeathRayHit</hediffToAdd>
     <label>death ray!</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_DeathRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -174,7 +174,7 @@
     <severityToAdd>.5~1</severityToAdd>
     <label>paralysis ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_ParalysisRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -195,7 +195,7 @@
     <hediffToAdd>DND_BeholderSlowRayHit</hediffToAdd>
     <label>slow ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_SlowRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -211,7 +211,7 @@
     <defName>DND_BeholderEnervationRay</defName>
     <label>enervation ray</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_EnervationRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -233,7 +233,7 @@
     <addHediffToWholeBody>false</addHediffToWholeBody>
     <hediffToAdd>DND_Disintegrating</hediffToAdd>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>Things/Projectile/DND_DisintegrationRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>

@@ -4,13 +4,13 @@
   <ThingDef  ParentName="OrganicProductBase">
     <defName>DND_FlumphInk</defName>
     <label>flumph "ink"</label>
-    <description>The acidic secretions of a flumph. Although it is not useful on its own, it contains trace amounts of psychic-boosting chemicals which can be refined into psy-kick, a powerful psycast-amplifying drug</description>
+    <description>The acidic secretions of a flumph. Although it is not useful on its own, it contains trace amounts of psychic-boosting chemicals which can be refined into psy-kick, a powerful consciousness-amplifying drug</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Neutroamine</texPath>
+      <texPath>Things/Item/DND_FlumphInk</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>0.90</drawSize>
+      <drawSize>1.1</drawSize>
     </graphicData>
-    <stackLimit>150</stackLimit>
+    <stackLimit>75</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
@@ -31,7 +31,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/Neutroamine</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>0.90</drawSize>
+      <drawSize>1</drawSize>
     </graphicData>
     <stackLimit>20</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -75,7 +75,7 @@
   <ThingDef ParentName="EggFertBase">
     <defName>DND_EggFaerieDragonFertilized</defName>
     <label>Faerie Dragon egg (fert.)</label>
-    <description>A colorful fertilized faerie dragon egg. If all goes well, it should hatch into an faerie dragon wyrmling. It can be eaten raw, but it's much better cooked.</description>
+    <description>A colorful fertilized faerie dragon egg. If all goes well, it should hatch into a faerie dragon wyrmling. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
       <color>(100,245,100)</color>
     </graphicData>

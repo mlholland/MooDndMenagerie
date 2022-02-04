@@ -104,6 +104,7 @@
     </comps>
 	</HediffDef>
   
+  TODO change this to stun instead of nausea, and make the mouther show a mote whenever they broadcast
   <HediffDef>
 		<defName>DND_GibberingBabble</defName>
 		<description>A gibbering mouther's babble has disoriented this pawn, causing massive nausea and vomiting</description>

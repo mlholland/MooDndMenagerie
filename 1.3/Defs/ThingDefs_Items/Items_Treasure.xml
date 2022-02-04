@@ -32,7 +32,7 @@
     <label>Scroll of Animate Objects</label>
     <description>A one-use magical scroll which animates a piece of furniture into a loyal creature. This can be used on dining chairs, tool cabinets, and stools. The resulting creature's stats depend on the material and quality of the originating furniture.</description>
     <graphicData>
-      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <texPath>Things/Item/DND_ScrollOAO</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stackLimit>10</stackLimit>
@@ -73,7 +73,7 @@
     <label>Tome of Golems (Flesh)</label>
     <description>An ancient tome which describes how to create an obedient flesh golem to serve its creator. The tome also serves as a magical power source to animate the completed golem, making it single-use.</description>
     <graphicData>
-      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <texPath>Things/Item/DND_MGFlesh</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stackLimit>1</stackLimit>
@@ -101,7 +101,7 @@
     <label>Tome of Golems (Stone)</label>
     <description>An ancient tome which describes how to createe an obedient stone golem to serve its creator. The tome also serves as a magical power source to animate the completed golem, making it single-use.</description>
     <graphicData>
-      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <texPath>Things/Item/DND_MGStone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stackLimit>1</stackLimit>
@@ -128,7 +128,7 @@
     <label>Tome of Golems (Steel)</label>
     <description>An ancient tome which describes how to create an obedient steel golem to serve its creator. The tome also serves as a magical power source to animate the completed golem, making it single-use.</description>
     <graphicData>
-      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <texPath>Things/Item/DND_MGSteel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stackLimit>1</stackLimit>
@@ -157,8 +157,8 @@
 
 Ancient notes can be crafted into various rare items from the Dnd Managerie Mod at a crafting spot.</description>
     <graphicData>
-      <texPath>Things/Item/Special/MechSerumHealer</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/DND_AncientNotes</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
