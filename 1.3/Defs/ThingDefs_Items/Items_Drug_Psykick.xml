@@ -12,6 +12,7 @@
     <graphicData>
       <texPath>Things/Item/Drug/GoJuice</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(0,0,200)</color>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>

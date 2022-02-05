@@ -29,9 +29,10 @@
     <label>Beholder Eyestalk</label>
     <description>An eyestalk from a beholder, eye included. There are rumors that weaker beholderkin can be summoned using these.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Neutroamine</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>1</drawSize>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(189,169,118)</color>
     </graphicData>
     <stackLimit>20</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -77,7 +78,7 @@
     <label>Faerie Dragon egg (fert.)</label>
     <description>A colorful fertilized faerie dragon egg. If all goes well, it should hatch into a faerie dragon wyrmling. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
-      <color>(100,245,100)</color>
+      <color>(140, 77, 189)</color>
     </graphicData>
     <comps>
       <li Class="CompProperties_Hatcher">

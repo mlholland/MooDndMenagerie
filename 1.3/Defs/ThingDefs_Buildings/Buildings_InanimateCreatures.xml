@@ -7,8 +7,7 @@
     <graphicData>
       <texPath>Things/Building/Security/DND_DormantGolemFlesh</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize> 
-      <color>(184,148,131)</color>
+      <drawSize>(2,2)</drawSize>  
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -121,8 +120,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
     <graphicData>
       <texPath>Things/Building/Security/DND_DormantGolemSteel</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
-      <color>(105,105,105)</color>
+      <drawSize>(2,2)</drawSize> 
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -216,6 +214,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
       <li Class="MoodndBehaviorsAndEvents.CompProperties_AwakeableGolem">
         <CreatureDef>DND_Spectator</CreatureDef>
         <TranslationString>DND_SpectatorSummoned</TranslationString>
+        <IconString>UI/Abilities/DND_Summon</IconString>
       </li>
     </comps>
     <designationHotKey>Misc6</designationHotKey>

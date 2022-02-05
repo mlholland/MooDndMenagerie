@@ -5,7 +5,7 @@ namespace MoodndBehaviorsAndEvents
     public class CompProperties_AwakeableGolem : CompProperties
     { 
         public PawnKindDef CreatureDef;
-        // public ~ todo add dirt type that spawns
+        public string IconString = "UI/Abilities/DND_Awaken";
         public string TranslationString = "DND_GolemAwoken";
 
         public CompProperties_AwakeableGolem()

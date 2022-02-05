@@ -12,7 +12,8 @@ Antipet can be isolated from the corpses of Medusas and Basilisks, or it can be 
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Drug/GoJuice</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass> 
+      <color>(130,0,69)</color>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>

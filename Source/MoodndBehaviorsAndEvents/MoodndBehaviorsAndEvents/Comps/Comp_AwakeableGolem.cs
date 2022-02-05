@@ -39,7 +39,7 @@ namespace MoodndBehaviorsAndEvents
                     },
                     hotKey = KeyBindingDefOf.Misc2,
                     defaultDesc = (Props.TranslationString+"_IconDesc").Translate(Props.CreatureDef.label),
-                    icon = ContentFinder<Texture2D>.Get("UI/Commands/TryReconnect", true),
+                    icon = ContentFinder<Texture2D>.Get(Props.IconString, true),
                     defaultLabel = (Props.TranslationString+"_IconLabel").TranslateSimple()
                 };
             }

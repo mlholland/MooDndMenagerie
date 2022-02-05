@@ -107,7 +107,7 @@
   TODO change this to stun instead of nausea, and make the mouther show a mote whenever they broadcast
   <HediffDef>
 		<defName>DND_GibberingBabble</defName>
-		<description>A gibbering mouther's babble has disoriented this pawn, causing massive nausea and vomiting</description>
+		<description>A gibbering mouther's babble has disoriented this pawn and severely clouding thier mind.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Disorienting Babble</label>
 		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
@@ -116,13 +116,18 @@
 		<maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>240~360</disappearsAfterTicks>
+        <disappearsAfterTicks>360~1080</disappearsAfterTicks>
         <showRemainingTime>True</showRemainingTime>
       </li>
     </comps>
     <stages>
-      <li>
-        <vomitMtbDays>.0001</vomitMtbDays>
+      <li> 
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.35</setMax>
+          </li>
+        </capMods>
       </li>
     </stages>
 	</HediffDef>
