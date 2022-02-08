@@ -14,6 +14,7 @@ namespace MoodndBehaviorsAndEvents
         public bool applyHediffToWholeBody = false; // if dealing with an extra hediff, apply it to the whole body if true, and the last hit part according to normal calculations otherwise.
         // ... if there is no last part to hit, then a random part is selected and added to the DamageResult.
         public bool onlyApplyHediffIfWounded = false; // if true, then normal melee verb calculations must have determined that this effect wounded the target.
+        public float structureBonusDamage = 1f;
 
         public static DebuffingManeuverDef GetDMDFromVerb(Verb verb)
         {

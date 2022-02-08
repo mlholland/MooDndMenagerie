@@ -29,6 +29,7 @@
     <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
     <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
     <hediffDef>DND_Disintegrating</hediffDef>
+    <structureBonusDamage>200</structureBonusDamage>
   </MoodndBehaviorsAndEvents.DebuffingManeuverDef>
 
   <ManeuverDef>

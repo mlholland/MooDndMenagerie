@@ -88,7 +88,7 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
         <accuracyMedium>.5</accuracyMedium>
         <accuracyLong>.4</accuracyLong>
         <minRange>1</minRange>
-        <label>Petrification Ray B</label>
+        <label>Petrification Ray</label>
         <commonality>.8</commonality>
       </li>
     </verbs>

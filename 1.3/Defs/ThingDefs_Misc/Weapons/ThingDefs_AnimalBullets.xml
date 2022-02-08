@@ -33,6 +33,7 @@
       <shieldPierceChance>0</shieldPierceChance>
       <shieldDamage>18</shieldDamage>
     </dgi>
+    <bonusDamageToStructures>1</bonusDamageToStructures>
     <addHediffChance>1</addHediffChance>
     <hediffToAdd>DND_Petrification</hediffToAdd>
     <severityToAdd>.03~0.07</severityToAdd>
@@ -66,6 +67,7 @@
       <shieldPierceChance>0</shieldPierceChance>
       <shieldDamage>12</shieldDamage>
     </dgi>
+    <bonusDamageToStructures>1</bonusDamageToStructures>
     <addHediffChance>1</addHediffChance>
     <hediffToAdd>DND_Petrification</hediffToAdd> 
     <severityToAdd>.01~0.03</severityToAdd>

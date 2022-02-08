@@ -143,6 +143,7 @@
       <shieldPierceChance>0</shieldPierceChance>
       <shieldDamage>3000</shieldDamage>
     </dgi>
+    <bonusDamageToStructures>20</bonusDamageToStructures>
     <addHediffChance>1</addHediffChance> 
     <hediffToAdd>DND_BeholderDeathRayHit</hediffToAdd>
     <label>death ray!</label>
@@ -228,7 +229,8 @@
     <dgi>
       <shieldPierceChance>0</shieldPierceChance>
       <shieldDamage>150</shieldDamage>
-    </dgi> 
+    </dgi>
+    <bonusDamageToStructures>250</bonusDamageToStructures>
     <modifyExistingHediff>false</modifyExistingHediff>
     <addHediffToWholeBody>false</addHediffToWholeBody>
     <hediffToAdd>DND_Disintegrating</hediffToAdd>

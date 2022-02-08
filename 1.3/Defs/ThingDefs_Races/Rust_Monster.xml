@@ -62,7 +62,7 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
         </capacities> 
         <cooldownTime>1.1</cooldownTime>
         <linkedBodyPartsGroup>DND_ChemicalAntenna</linkedBodyPartsGroup>
-        <chanceFactor>.8</chanceFactor>
+        <chanceFactor>5</chanceFactor>
       </li>
     </tools>
     

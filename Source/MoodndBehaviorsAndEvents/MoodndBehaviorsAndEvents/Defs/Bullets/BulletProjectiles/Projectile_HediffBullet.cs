@@ -20,10 +20,13 @@ namespace MoodndBehaviorsAndEvents
         protected override void Impact(Thing hitThing)
         {
             base.Impact(hitThing);
-
+            
             // sanity check that nothing important is null
-            if (Def != null && hitThing != null && hitThing is Pawn hitPawn)
+            bool targetWasPawn = false;
+            if (Def != null && hitThing != null && hitThing is Pawn hitPawn && hitPawn != null)
             {
+                Log.Message(string.Format("c"));
+                targetWasPawn = true;
                 if (DebuffLogicUtil.DoesDebuffHappen(hitPawn, Def.dgi)) // try to roll to 'hit'
                 {
                     var hediffOnPawn = hitPawn.health?.hediffSet?.GetFirstHediffOfDef(Def.hediffToAdd);
@@ -42,40 +45,12 @@ namespace MoodndBehaviorsAndEvents
                             { 
                                 hediff.Severity = severity;
                             }
-                        }
-                        // not needed since the hediff's already on the pawn
-                        // hitPawn.health.AddHediff(hediff);
-
-                        // See ThingDef_HediffBullet comment for why this is blocked out
-                        /*if (Def.addDurationToExisting) 
-                        {
-                            // TODO fix the fact that the first hit always uses the time range specified in the hediff def, and not the one in the bullet def
-                            HediffComp_Disappears disComp = hediff.TryGetComp<HediffComp_Disappears>();
-                            if (disComp != null)
-                            {
-                                disComp.ticksToDisappear += Def.hediffDurationRange.RandomInRange;
-                            }
-                            else
-                            {
-                                Log.Error("Couldn't get disappear comp from hediff - this likely means that an invalid hediff was inputted into a TimedHediffBullet");
-                            }
-                        }*/
+                        } 
                     }
                     else // Hediff adding logic that's independant of existing hediffs of the same type.
                     {
 
-                        hediff = HediffMaker.MakeHediff(Def.hediffToAdd, hitPawn); // Make a new hediff
-                        // commented out for same reason as sibling block above
-                        /* HediffComp_Disappears disComp = hediff.TryGetComp<HediffComp_Disappears>();
-                        if (disComp != null)
-                        {
-                            HediffCompProperties_Disappears props = (HediffCompProperties_Disappears)disComp.props;
-                            props.disappearsAfterTicks = Def.hediffDurationRange;
-                        }
-                        else
-                        {
-                            Log.Error("Couldn't get disappear comp from hediff - this likely means that an invalid hediff was inputted into a TimedHediffBullet");
-                        }*/
+                        hediff = HediffMaker.MakeHediff(Def.hediffToAdd, hitPawn); // Make a new hediff 
 
                         if (Def.severityToAdd.max > 0f) // add severity if this hediff uses it
                         {
@@ -103,6 +78,14 @@ namespace MoodndBehaviorsAndEvents
                     // Regardless of the exact details of what hediff we added or modified, the fact that we're in this if-statement means that it was probably applied, so run a resistance check
                     DebuffLogicUtil.AddOrModifyResistanceIfNeeded(hitPawn, Def.dgi);
                 }
+            }
+
+            // extra check for dealing bonus damage to non-living things, mostly copied from normal bullet impact code, but with modified damage
+            if (Def != null && hitThing != null && !targetWasPawn)
+            {
+                BattleLogEntry_RangedImpact battleLogEntry_RangedImpact = new BattleLogEntry_RangedImpact(this.launcher, hitThing, this.intendedTarget.Thing, this.equipmentDef, this.def, this.targetCoverDef);
+                DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, Def.bonusDamageToStructures, base.ArmorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing, true, true);
+                hitThing.TakeDamage(dinfo).AssociateWithLog(battleLogEntry_RangedImpact);
             }
         }
     }

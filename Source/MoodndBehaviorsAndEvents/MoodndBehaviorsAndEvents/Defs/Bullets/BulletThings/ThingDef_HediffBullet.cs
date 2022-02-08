@@ -14,7 +14,8 @@ namespace MoodndBehaviorsAndEvents
         public Verse.FloatRange severityToAdd = Verse.FloatRange.Zero; // If the max is non zero, then assume this hediff uses severity, and add a random amount from this range to the created hediff
         public bool addSeverityToExisting = true; // if false, replace severity with new value only if the newly rolled value is higher
         public bool addHediffToWholeBody = true; // If false, applies the hediff to the body part that was hit, and becomes incompatible with modifyExistingHediff=true. The hit part is calculated separately from normal damage.
-       
+        public float bonusDamageToStructures = 0; // If non-zero, deal this much damage if the projectile hits a non-living thing.
+
         // TODO figure out if this is possible, not sure if I can really modify hediff durations when they're added
         // Was previously seeing strange glitches where the duration would NOT be set according to the below value
         // on the first application of a hediff, and possibly other problems that I don't recall now.
