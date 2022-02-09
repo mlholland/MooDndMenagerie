@@ -45,10 +45,10 @@
     <hediffClass>HediffWithComps</hediffClass>
     <label>petrification</label>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-    <description>A magical disease that causes the victim's body to turn to stone. If untreated it can become a permanent condition that emtombs the victim. Thankfully the development of the disease can be heavily slowed with sufficient medical treatment, and the magic fades after several days if it doesn't take over the victim's entire body.</description>
+    <description>A magical disease that causes the victim's body to turn to stone. If untreated it can become a permanent condition that emtombs the victim. Thankfully the progression of the disease can be slowed to a near-standstill with good medical treatment, and the magic fades after several days if it doesn't take over the victim's entire body.</description>
     <makesSickThought>true</makesSickThought>
     <tendable>true</tendable>
-    <lethalSeverity>1.01</lethalSeverity><!--Lethal severity is  -->
+    <lethalSeverity>1.01</lethalSeverity><!--Lethal severity is above the max, that way you can't actually die from this, but you can see the severity percentage. -->
     <minSeverity>0.001</minSeverity>
     <maxSeverity>1</maxSeverity>
     <initialSeverity>0.001</initialSeverity>
@@ -57,11 +57,11 @@
       </li>
       <li Class="HediffCompProperties_TendDuration">
         <baseTendDurationHours>24</baseTendDurationHours>
-        <severityPerDayTended>0.1</severityPerDayTended>
+        <severityPerDayTended>-0.48</severityPerDayTended>
       </li>
       <li Class="HediffCompProperties_Immunizable">
-        <severityPerDayNotImmune>1</severityPerDayNotImmune>
-        <immunityPerDaySick>.25</immunityPerDaySick>
+        <severityPerDayNotImmune>.5</severityPerDayNotImmune>
+        <immunityPerDaySick>0.25</immunityPerDaySick>
         <severityPerDayImmune>-20</severityPerDayImmune>
         <immunityPerDayNotSick>-10</immunityPerDayNotSick>
       </li>
