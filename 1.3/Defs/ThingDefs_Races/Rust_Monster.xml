@@ -85,7 +85,7 @@ Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food a
       <herdAnimal>false</herdAnimal>
       <predator>false</predator>
       <baseBodySize>2</baseBodySize>
-      <baseHungerRate>10</baseHungerRate>
+      <baseHungerRate>.6</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Panthera</leatherDef>
