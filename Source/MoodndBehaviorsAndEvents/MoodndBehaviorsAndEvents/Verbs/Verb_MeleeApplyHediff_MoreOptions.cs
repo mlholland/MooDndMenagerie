@@ -12,8 +12,7 @@ namespace MoodndBehaviorsAndEvents
         protected override DamageWorker.DamageResult ApplyMeleeDamageToTarget(LocalTargetInfo target)
         { 
             // apply the normal melee attack first;
-            DamageWorker.DamageResult damageResult =  base.ApplyMeleeDamageToTarget(target);
-            Log.Message("a");
+            DamageWorker.DamageResult damageResult =  base.ApplyMeleeDamageToTarget(target); 
             // Cast the parent maneuver to a DebuffingManeuverDef. This verb can only be used with that def, and the extra data it contains.
             DebuffingManeuverDef dmd = DebuffingManeuverDef.GetDMDFromVerb(this);
             if (dmd == null)
@@ -45,9 +44,7 @@ namespace MoodndBehaviorsAndEvents
             }
             // extra check for dealing bonus damage to non-living things, mostly copied from normal bullet impact code, but with modified damage
             else if (pawn == null)
-            {
-                Log.Message("b");
-
+            {  
                 ThingDef source;
                 if (base.EquipmentSource != null)
                 {
