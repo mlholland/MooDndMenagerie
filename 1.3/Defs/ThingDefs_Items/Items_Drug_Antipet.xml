@@ -4,7 +4,7 @@
   <ThingDef ParentName="MakeableDrugBase">
     <defName>DND_Antipet</defName>
     <label>Antipet</label>
-    <description>A medicinal drug that quickly counters the effects of petrification. Can be used to cure all stages of petrification, or used preemptively a creature a few hours of immunity to petrification effects.
+    <description>A medicinal drug that quickly counters the effects of petrification. Can be used to cure all stages of petrification, or used preemptively to grant a creature a few hours of immunity to petrification effects.
     
 Antipet can be harvested from the corpses of Medusas and Basilisks, or it can be produced artificially using a lot of neutroamine.</description>
     <descriptionHyperlinks>
@@ -18,7 +18,7 @@ Antipet can be harvested from the corpses of Medusas and Basilisks, or it can be
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>550</WorkToMake>
-      <MarketValue>78</MarketValue>
+      <MarketValue>50</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <techLevel>Industrial</techLevel>

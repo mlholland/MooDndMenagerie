@@ -38,7 +38,7 @@
     <stackLimit>10</stackLimit>
     <statBases>
       <MarketValue>500</MarketValue>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToMake>300</WorkToMake>
     </statBases>
     <comps>
       <li Class="CompProperties_Usable">
@@ -79,7 +79,7 @@
     <stackLimit>1</stackLimit>
     <statBases>
       <MarketValue>1200</MarketValue>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToMake>600</WorkToMake>
     </statBases>
     <thingSetMakerTags>
       <li>RewardStandardHighFreq</li> 
@@ -88,8 +88,7 @@
       <recipeUsers>
         <li>CraftingSpot</li>
       </recipeUsers>
-      <soundWorking>Recipe_Tailor</soundWorking>
-      <workSpeedStat></workSpeedStat>
+      <soundWorking>Recipe_Tailor</soundWorking> 
     </recipeMaker>
     <costList>
       <DND_AncientNotes>15</DND_AncientNotes>
@@ -107,7 +106,7 @@
     <stackLimit>1</stackLimit>
     <statBases>
       <MarketValue>2200</MarketValue>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToMake>600</WorkToMake>
     </statBases>
     <thingSetMakerTags> 
       <li>RewardStandardMedFreq</li>
@@ -134,7 +133,7 @@
     <stackLimit>1</stackLimit>
     <statBases>
       <MarketValue>4000</MarketValue>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToMake>600</WorkToMake>
     </statBases>
     <thingSetMakerTags> 
       <li>RewardStandardLowFreq</li>
