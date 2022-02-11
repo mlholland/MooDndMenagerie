@@ -17,7 +17,7 @@ Thankfully this effect is not as powerful as the dreaded medusa, and it requires
 		<race>
 			<wildBiomes>
         <TemperateSwamp>0.03</TemperateSwamp>
-        <TemperateForest>0.03</TemperateForest>
+        <TemperateForest>0.06</TemperateForest>
         <TropicalSwamp>0.03</TropicalSwamp>
         <TropicalRainforest>0.01</TropicalRainforest>
         <AridShrubland>0.17</AridShrubland>

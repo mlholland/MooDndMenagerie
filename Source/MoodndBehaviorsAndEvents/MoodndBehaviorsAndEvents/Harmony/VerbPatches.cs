@@ -22,8 +22,8 @@ namespace MoodndBehaviorsAndEvents
     {
         static bool Prefix(ref Verb __result, Pawn p, LocalTargetInfo target, IEnumerable<ManagedVerb> verbs, VerbManager man = null)
         { 
-            if (p.ContentSource.PackageId == "mooloh.monmanmanagerie") // only intercept animals in this mod
-            {
+            if (p.ContentSource.PackageId == "mooloh.dndmenagerie") // only intercept animals in this mod
+            { 
                 var debug = man?.debugOpts != null && man.debugOpts.ScoreLogging;
                 if (!target.IsValid || (p.Map != null && !target.Cell.InBounds(p.Map))) // not sure why the last condition is red according to VS; it compiles just fine.
                 {

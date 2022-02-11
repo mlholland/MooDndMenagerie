@@ -6,7 +6,7 @@
     <label>Rust Monster</label>
     <description>Rust monsters are chunky, quadrupedal crustaceans with long feathery antennae. As their name might suggest, rust monsters eat rusted metals. If no rust is present, they can secrete an ususual chemical from their antennae which rapidly oxidizes most metals on touch. Close combat with these creatures while wearing metal armor (or worse, while having metal body parts) is ill-advised.
 
-Thankfully, Rim-adapted Rust Monsters have evolved to tolerate vegetarian food as well, but they stil prefer to eat metal when it's available, including mineable ores, slag, and even some metal structures...</description>
+Rust monsters will eat most metal deposits and raw metals that they can reach, making them a bit of a pest. If you want to tame them as an anti-mech fighter, keep them around your slag piles.</description>
     <statBases>
       <MoveSpeed>3.9</MoveSpeed>
       <MarketValue>200</MarketValue>      
