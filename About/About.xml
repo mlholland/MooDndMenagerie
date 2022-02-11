@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Mooloh's Dnd Managerie</name>
+	<name>Mooloh's Dnd Menagerie</name>
 	<supportedVersions>
 		<li>1.3</li>
 	</supportedVersions>
@@ -27,7 +27,7 @@
 	</loadAfter>
 	<author>Mooloh</author>
 
-	<packageId>mooloh.dndmanagerie</packageId>
+	<packageId>mooloh.dndmenagerie</packageId>
 
 	<description>  This mod adds over a dozen Dungeons and Dragons-inspired animals to Rimworld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique monster faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has either a non-vanilla ability, behavior, or item associated with it.
 

@@ -56,7 +56,7 @@
         </options>
       </li>
       <li>
-        <!-- Beholder Breach Raid when implemented...-->
+        <!-- Beholder Raid should eventually breach when implemented...-->
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
@@ -72,17 +72,19 @@
         <kindDef>Combat</kindDef>
         <commonality>200</commonality>
         <options>
+          <DND_Beholder>5</DND_Beholder>
           <DND_RustMonster>10</DND_RustMonster>
-          <DND_Spectator>10</DND_Spectator>
+          <DND_Spectator>20</DND_Spectator>
           <DND_DisplacerBeast>10</DND_DisplacerBeast>
           <DND_Owlbear>10</DND_Owlbear>
           <DND_Basilisk>10</DND_Basilisk>
+          <DND_Medusa>8</DND_Medusa>
           <DND_GibberingMouther>4</DND_GibberingMouther>
           <DND_Annihilator>1</DND_Annihilator>
         </options>
       </li>
       <li>
-        <!-- anhilators only LOL-->
+        <!-- annihilators only LOL-->
         <kindDef>Combat</kindDef>
         <commonality>50</commonality>
         <options>

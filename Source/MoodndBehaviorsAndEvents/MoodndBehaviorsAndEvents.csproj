@@ -332,10 +332,12 @@
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffCompProperties\HediffCompProperties_TurnToDustOnDeath.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffComp_TurnToDustOnDeath.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\DebuffingManeuverDef.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Defs\RaidStrategyWorker_AnimalAttack.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Def_AnimatableFurniture.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Suspend.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Linear.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\BiomeDef_CommonalityOfAnimal_patch.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Harmony\PawnUtility_IsFighting.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\SappersUtility_IsGoodSapper.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\PawnGraphicSet_ResolveAllGraphics.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\VerbPatches.cs" />

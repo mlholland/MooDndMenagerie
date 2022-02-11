@@ -24,8 +24,7 @@ namespace MoodndBehaviorsAndEvents
             // sanity check that nothing important is null
             bool targetWasPawn = false;
             if (Def != null && hitThing != null && hitThing is Pawn hitPawn && hitPawn != null)
-            {
-                Log.Message(string.Format("c"));
+            { 
                 targetWasPawn = true;
                 if (DebuffLogicUtil.DoesDebuffHappen(hitPawn, Def.dgi)) // try to roll to 'hit'
                 {
@@ -61,7 +60,7 @@ namespace MoodndBehaviorsAndEvents
                         {
                             hitPawn.health.AddHediff(hediff);
                         }
-                        else // Otherwise choose a body part to afflict. TODO: add logic for target specificity
+                        else // Otherwise choose a body part to afflict. TODO: add logic for target specificity - would need to sync this with normal impact hit location if the bullet also does localized damage
                         {
                             IEnumerable<BodyPartRecord>  notMissingParts = hitPawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Outside, null, null);
                             BodyPartRecord result;
