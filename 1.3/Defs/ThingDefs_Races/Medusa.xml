@@ -3,9 +3,9 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_Medusa</defName>
 		<label>Medusa</label>
-		<description>Although mythological Medusae were thought to be cursed humanoids, their modern-day equivalents on the Rim are actually reptilian cousins of hydras and basilisks. Like a hydra, Medusae possess multiple heads, although most of them that from a larger primary head. Like a basilisk, Medusae possess the magical ability to petrify enemies with their stare. 
+		<description>Although mythological Medusae were thought to be cursed humanoids, their modern-day equivalents on the Rim are actually reptilian cousins of hydras and basilisks. Like a hydra, Medusae possess multiple heads, although most of them sprout from a larger primary head. Like a basilisk, Medusae possess the magical ability to petrify enemies with their gaze. 
     
-Thankfully their petrification attack obeys magical relativity, so it requires that the victim can observe the Medusa, rendering blind creatures immune to the effect. Medusae are immune to petrification themselves, and a petrification antidote can be harvested from their main head.</description>
+Thankfully their petrification attack obeys magical relativity, so it requires that the victim can observe the Medusa, rendering blind creatures immune to the effect. Medusae are immune to petrification themselves, and a petrification antidote can be harvested from their corpse.</description>
 		<statBases>
 			<MoveSpeed>4.7</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

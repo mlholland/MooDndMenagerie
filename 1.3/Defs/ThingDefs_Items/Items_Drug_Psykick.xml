@@ -4,7 +4,7 @@
   <ThingDef ParentName="MakeableDrugBase">
     <defName>DND_Psykick</defName>
     <label>psy-kick</label>
-    <description>Psy-kick is a drug that drastically improves a users potential for psychic abilities. On top of boosting the user's consciousness, psycasters will benefit from improved psychic sensitivity, neural heat decay, and an immediate burst psyfocus. These effects can give psycasters a powerful edge, but the transcendent sensation can lead to a mind-numbing addiction.</description>
+    <description>Psy-kick is a drug that drastically improves a users potential for psychic abilities. On top of boosting the user's consciousness, psycasters will benefit from improved psychic sensitivity, neural heat decay, and an immediate burst of psyfocus. These effects can give psycasters a powerful edge, but the transcendent sensation can lead to a mind-numbing addiction.</description>
     <descriptionHyperlinks>
       <HediffDef>DND_PsykickHigh</HediffDef>
       <HediffDef>DND_PsykickAddiction</HediffDef>

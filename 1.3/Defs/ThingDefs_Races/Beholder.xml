@@ -3,9 +3,9 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_Beholder</defName>
 		<label>Beholder</label>
-    <description>Beholders are dangerous and malevolent creatures, thought to be from another dimension. Their entire body consists of a large magically floating head with a single huge eye. Ten eyestalks sprout from this head, which each end in a single, smaller eye. 
+    <description>Beholders are dangerous and malevolent creatures, thought to be from another dimension. Their "body" consists of a large magically floating head with a single huge eye. Ten eyestalks sprout from this head, which each end in a smaller eye. 
     
-If their appearance wasn't bad enough, beholders can shoot magical rays of light from their eyes. They rays can have one of ten effects: charming, paralysis, terror, slowing time dilation, sudden necrosis, telekenesis, narcolepsy, petrification, disintigration, and... death.
+If their appearance wasn't bad enough, beholders can shoot magical rays of light from their eyes. They rays can have one of ten effects: charming, paralysis, terror, slowing time dilation, sudden necrosis, telekinesis, forced sleep, petrification, disintegration, and... death.
     
 Most of a beholder's body solidifies into a useless stone-like material on death. But the eyestalks remain useful, both as a trophy, and as a potential ritual tool...</description>
     <statBases>

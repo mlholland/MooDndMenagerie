@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_GibberingMouther</defName>
 		<label>Gibbering Mouther</label>
-		<description>Thought to be the failed result of some profane experiment, a gibbering mouther is an amorphous, liquid-like blob of flesh. Countless eyes and mouths are ceacelessly coalescing and dissolving over its body. These many mouths constantly emit a disorienting babble of gibberish that induces vomiting and nausia in nearby creatures that hear it, which allows this slow predator to close in and consume its the disoriented victims. 
+		<description>Thought to be the failed result of some profane experiment, a gibbering mouther is an amorphous, liquid-like blob of flesh. Countless eyes and mouths are ceacelessly coalescing and dissolving over its body. These many mouths constantly emit a disorienting babble of gibberish that disorients nearby creatures, allowing this slow predator to close in and consume its victims. 
     
 The effectiveness of a mouther's babble depends on the victim's hearing. Deaf creatures are immune, while acute listeners are more easily affected. Creatures that experience prolonged exposure to the babble will build a temporary resistance to the effect.</description>
 		<statBases>
@@ -51,7 +51,7 @@ The effectiveness of a mouther's babble depends on the victim's hearing. Deaf cr
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
       <hasGenders>false</hasGenders>
     </race>
-    <!-- This comp gives the gibbering mouther an AOE effect every 10 seconds that tries to apply a vomit-inducing hediff on up to 3 nearby creatures that aren't part of its faction.-->
+    <!-- This comp gives the gibbering mouther an AOE effect every 10 seconds that tries to apply a hediff on up to 3 nearby creatures that aren't part of its faction.-->
     <comps>
       <li Class="MoodndBehaviorsAndEvents.CompProperties_AreaHediffDebuffApplier">
         <radius>15</radius>

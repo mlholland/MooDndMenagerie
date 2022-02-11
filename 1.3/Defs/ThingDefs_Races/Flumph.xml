@@ -3,9 +3,9 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_Flumph</defName>
 		<label>Flumph</label>
-		<description>One of the few nice aliens on the rim, flumphs are intelligent, jellyfish-like creatures. Their body is a disk-shaped bell, with two large eyestalks sprouting upwards, and several tentacles dangling below. They are curious, friendly towards people, and tend to glow slightly based on their mood. They are also very weak in combat; their only defence is a mild acid on their tentacles.  Flumphs are natural psionics, and they use their power to levitate and feed themselves by siphoning trace amounts of psychic energy from nearby creatures. 
+		<description>One of the few nice aliens on the rim, flumphs are intelligent, jellyfish-like creatures. Their body is a disk-shaped bell, with two large eyestalks sprouting upwards, and several tentacles dangling below. They are curious, friendly towards people, and tend to glow slightly based on their mood. They are also very weak in combat; their only defence is a mild acid secreted from their tentacles. Flumphs are also natural psionics, and they use their power to levitate and feed themselves by siphoning trace amounts of psychic energy from nearby creatures. 
     
-If tamed, a flumph's tentacles can occasionally be 'milked' for an acidic secretion. This substance can be refined into a psychic-boosting drug.</description>
+If tamed, a flumph's tentacles can occasionally be 'milked' for the acidic secretion. This substance can be refined into a psychic-boosting drug.</description>
 		<statBases>
 			<MoveSpeed>4.2</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

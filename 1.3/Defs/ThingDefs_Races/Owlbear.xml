@@ -3,7 +3,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>DND_Owlbear</defName>
     <label>owlbear</label>
-    <description>It is unclear if owlbears are natural creatures, or the result of an ancient magical experiment. What is definitely clear is that owlbears are bear-shaped animals with several owl-like features, including feathers, talons, and a large beak. For an animal of their size, owlbears are exceptionally deadly, and their natural weapons have an easy time shredding through armor. They make use of this strength to maintain their unusually large appetite. 
+    <description>It is unclear if owlbears are natural creatures or the result of an ancient magical experiment. What is definitely clear is that owlbears are bear-shaped animals with several owl-like features like feathers, talons, and a large beak. For an animal of their size, owlbears are exceptionally deadly, and their natural weapons have an easy time shredding through armor. They make use of this strength to maintain their unusually large appetite. 
     
 Tame owlbears make for excellent attack animals, assuming one has the resources to keep them fed. If killed, their feathery pelts muffle noises, and can be crafted into good hunting gear.</description>
     <statBases>
