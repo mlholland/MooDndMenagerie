@@ -29,7 +29,7 @@
 
 	<packageId>mooloh.dndmenagerie</packageId>
 
-	<description>  This mod adds over a dozen Dungeons and Dragons-inspired animals to Rimworld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique monster faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has either a non-vanilla ability, behavior, or item associated with it.
+	<description>  This mod adds over a dozen Dungeons and Dragons-inspired animals to Rimworld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique dungeon monster faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has a non-vanilla ability, behavior, or item associated with it.
 
 &lt;size=24&gt;Animal List&lt;/size&gt;
 
@@ -39,41 +39,39 @@
 
  - Flumph: A friendly, psychic jellyfish that be tamed to produce a psychic-boosting drug.
 
- - Faerie Dragon: A small friendly dragon that can keep its animal handler happy with its eupohira breath.
+ - Faerie Dragon: A small friendly dragon that can keep someone happy with its euphoric breath.
 
  - Owlbear: A deadly apex predator with a huge appetite. Its damage and armor penetration are higher than you'd expect for a creature of its size. Can appear in the wild or in raids.
 
  - Displacer Beast: A magical feline that distorts light around its body. Boasts a high dodge chance, which is passed onto clothing made from its pelt. Can appear in the wild or in raids.
 
- - Basilisk: An eight-legged reptile that can pretrify prey. Can appear in the wild or in raids.
+ - Basilisk: An eight-legged reptile that pretrifies its prey. Can appear in the wild or in raids.
 
  - Medusa: A dangerous multi-headed reptile with a powerful petrification attack. Only appears in raids.
 
  - Gibbering Mouther: A blob of flesh that disorients nearby prey with magical babble. Appears very rarely outside of raids.
 
- - Beholder: A malevolent, otherworldly creature that shoots magical beams with a variety of effects. Only appears in large raids.
+ - Beholder: A malevolent, otherworldly creature that shoots magical eye rays with a 10 different effects. Rays that don't deal damage have a small chance to pierce shield belts. Only appears in raids.
 
  - Spectator: A small cousin of beholders. Can appear in raids, or be summoned to join your colony using eyestalks harvested from beholders.
 
- - Rust Monster: A strange crustacean that eats rusted metals. Keep away from your metal stockpiles and armored warriors. Can appear in the wild, in raids, or even burrowing beneath your base.
+ - Rust Monster: A strange crustacean that eats rusted metals. Keep away from your metal stockpiles, armored warriors, and steel golems. Can appear in the wild, in raids, or even burrowing beneath your base.
 
- - Annihilator: A predatory cousin of rust monsters that disintegrates prey and consumes the resulting dust. Keep away from your... everything. Only appears in raids.
+ - Annihilator: A predatory cousin of rust monsters that disintegrates prey and consumes the resulting dust. Keep away from your... everything. Only appears in raids or manhunter events. 
 
 &lt;size=24&gt;Other Features&lt;/size&gt;
     
- - Petrification: This effect can be caused by 3 animals, and acts like a very slow-growing disease. Takes several days to build immunity, but good treatment can almost completely stall its progression. Thankfully, 100% petrification isn't fatal - such victims are merely emtombed alive in their body forever! The effect can be reverted using the antidote drug Antipet, which can either be harvested from Basilisks and Medusas, or crafted using a lot of neutroamine.
+ - Petrification: This effect can be applied by basilisks, medusae, and beholders. Mechanically it acts like a very slow-growing disease, which each petrifying hit increasing the severity. Patients require several days to build immunity, but good treatment can almost completely stall the disease's progression outside of combat. Thankfully, 100% petrification isn't fatal - such victims are merely emtombed alive in their body forever! The effect can be reverted using the antidote drug Antipet, which can either be harvested from Basilisks and Medusas, or crafted using a lot of neutroamine.
  
- - Resistance: Certain debillitating effects will grant the victim a stacking resistance buff. At max stacks, the holder is immune to the relevant effect for a day or so. 
+ - Resistance: Certain debillitating effects, like gibbering mouther babble, charm rays, and fear rays, will grant the victim a stacking resistance buff, which decreases the likelihood that subsequent effects will take hold. At max stacks, the holder is immune to the relevant effect for a day or so. 
  
- - Shield-piercing: Certain ranged attacks, notably those that can't deal damage directly, have small chances to pierce through shield belt shields. This chance has no effect on drop shields, which still stops them, or 'damaging' ranged attacks like a beholder's disintegration ray.
+ - Ancient Notes: This item serves as a partial reward towards gaining the other rare items from this mod. They can be crafted into any of the three types of Manual of Golems items, or into a Scroll of Animation. Both ancient notes and the resulting items can appear as quest rewards or (expensive) trade goods.
  
- - Ancient Notes: This item serves as a partial reward towards gaining the other rare items in this mod. They can be crafted into any of the three types of Manual of Golems items, or into a Scroll of animation. Note that all of these items can appear as quest rewards or (expensive) trade goods.
- 
- - Psy-kick: The drug that can be refined from Flumphs. It boosts consciousness, psychic entropy recovery, and immediately grants a ton of psyfocus, but is comparable in addictiveness to go-juice. Obviously this is most useful if you have Royalty installed, but the drug's consciousness boost is still nothing to scoff at.
+ - Psy-kick: The drug that can be refined from Flumph "Ink". It boosts consciousness, psychic entropy recovery, and immediately grants a ton of psyfocus, but is comparable in addictiveness to go-juice. Obviously this is most useful if you have Royalty installed, but the drug's consciousness boost is still nothing to scoff at.
  
  - Monster Faction: This faction is invisible like mechanoid and insect factions, and is the source of monster raids. These raids can consist of a variety of combinations of monsters to offer slightly different threats and challenges. This faction can be disabled like other hidden factions with ideology, or you can disable the raids directly in the mod's settings.
  
- - Rust monster infestations: This event is a mix of an insect infestation and an alpha-beaver herd. Neutral rust monsters will spawn somewhere according to infestation mechanics. Although they won't attack unless harmed, their metallic appetite might be a problem. This event can be disabled in the mod's settings.
+ - Rust monster infestations: This event is a cross between an insect infestation and an alpha-beaver migration. Passive rust monsters will spawn somewhere according to infestation spawning rules. Although they won't attack unless harmed, their metallic appetite might be a problem. This event can be disabled in the mod's settings.
  
  - Animal spawn controls: Individual spawn toggles for natural wild spawning (not raid spawning) can be found in the the "Vanilla Animals Expanded" mod's settings thanks to the Vanilla Expanded Framework's code for animal toggles. Spawn rates for animals in this mod can be modified through a slider in this mod's settings.
 
@@ -98,31 +96,16 @@ I do not have any intention of making this mod compatable with the following mod
   
 &lt;size=24&gt;Planned Features&lt;/size&gt;
 
-  This mod is a passion project, and since I don't want to risk Wizards of the Coast coming after me for using DND stuff, I have zero intention of ever monetizing this mod. All that means that future development depends a lot on player interest. I have several other mod ideas that I'd like to work on next, but I'll certainly revisit this in the future if there's demand for it. My current ideas for expanding this mod include:
+  This mod is a passion project, and since I don't want to risk Wizards of the Coast coming after me for using DND stuff, I have zero intention of ever monetizing this mod. That means that future development depends a lot on player interest. I have several other mod ideas that I'd like to work on next, but I'll certainly revisit this in the future if there's demand for it. I have a bunch of ideas for other DND creatures I'd like to put into Rimworld, but I'll happily take more ideas under consideration.
   
- - Shield guardians: A weak golem that has an associated amulet. The wearer of this amulet has diverts some damage taken to the golem.
- 
- - More magical items as quest rewards and rare trader items. I haven't thought about this much, but classics like a Ring of Protection and Gauntlets of Ogre Strength would certainly be on the menu.
- 
- - Gargoyle: Medium hp and size, but very high pierce and heat armor. Has a 'ranged attack' that just involves yeeting itself at enemies to represent flight.
- 
- - Phase spider: Occasionally blinks out of existance, only to reappear a few tiles away, usually behind whoever it was just fighting. Very likely to overrun chokepoints if not handled properly.
- 
- - Golem abilities: In DND, flesh golems are empowered by lighting, stone golems can cast slow magic, and steel golems can breathe poison. I'd like to implment these effects eventually, but they were beyond the scope of v1 due to how wildly different they were from normal ranged attacks that can be implemented with the VEF ranged animal framework.
- 
- - Mimics: Because everyone loves getting attacked by treasure.
- 
- - Remorhaz: Attacks both pierce and burn. Can show up in extremely frigid biomes.
- 
- - Trolls: Have absurdly high regeneration that's disabled by fire. Have a chance to resurrect themselves if killed without sustaining burn injuries.
- 
- - Behir: Fast, possibly able to climb walls, and has a lightning attack.
- 
- - bulette: Able to yeet itself like a gargoyle, except it causes damage and stuns to nearby pawns on landing.
- 
- - Devils and Demons: A variety of these creature types lend themselves to unusual combatants. I'd also want to add some 'deal with the devil' events, or demonic summoning events (either as timed world events you need to stop, or something you can do yourself)
- 
- - The Terrasque: For when you just want to watch everything get devoured, including your colony.
+  
+&lt;size=24&gt;FAQ&lt;/size&gt;
+
+ - You call this a 'dungeons and DRAGONS' mod and you don't even have (full sized) dragons?! What gives?
+   Off the top of my head I can think of at least three great mods that already add dragons into Rimworld. I wanted to add creatures from DND fantasy that I haven't already seen in my games before. That's not to say that none of these animals don't already exist in Rimworld mods, but I haven't seen them.
+   
+ - What about Liches? Those are pretty classic DND enemies too.
+   I play too much Rimworld of Magic to feel like I can contribute anything with a new rimworld Lich variety.
 
 &lt;size=24&gt;Credits and Thanks&lt;/size&gt;
 
@@ -136,9 +119,11 @@ I do not have any intention of making this mod compatable with the following mod
 
 &lt;size=24&gt;Legal&lt;/size&gt;
 
- - MIT License: TODO - add link when this repo is public.
+ - MIT License: https://github.com/mlholland/MooDndMenagerie/blob/main/LICENSE
  
- - Source Code on Github: TODO - add when the repo is published on 1.0 release.
+ - Source Code on Github: https://github.com/mlholland/MooDndMenagerie
+ 
+ - I did a bunch of odd stuff behind the scenes in this mod. If you're a modder and you have any questions about how the code works, feel free to find me on Discord (mooloh#1554) and ask.
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 

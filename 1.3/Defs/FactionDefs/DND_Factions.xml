@@ -102,6 +102,15 @@
           <DND_Annihilator>1</DND_Annihilator>
         </options>
       </li>
+      <li>
+        <!-- eye things animals -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <DND_Beholder>10</DND_Beholder>
+          <DND_Spectator>20</DND_Spectator>
+        </options>
+      </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <allowedArrivalTemperatureRange>-50~100</allowedArrivalTemperatureRange>
