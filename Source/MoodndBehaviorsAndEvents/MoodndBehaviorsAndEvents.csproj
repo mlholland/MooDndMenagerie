@@ -332,7 +332,6 @@
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffCompProperties\HediffCompProperties_TurnToDustOnDeath.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffComp_TurnToDustOnDeath.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\DebuffingManeuverDef.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Defs\RaidStrategyWorker_AnimalAttack.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Def_AnimatableFurniture.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Suspend.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Linear.cs" />

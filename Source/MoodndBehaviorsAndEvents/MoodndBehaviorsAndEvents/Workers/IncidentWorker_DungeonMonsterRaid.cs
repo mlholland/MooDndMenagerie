@@ -82,7 +82,8 @@ namespace MoodndBehaviorsAndEvents
         // todo roll for alternate raid strategies
         public override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
         {
-            parms.raidStrategy = DefDatabase<RaidStrategyDef>.GetNamed("DND_AnimalAttackStrategy");
+            parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
+            //parms.raidStrategy = DefDatabase<RaidStrategyDef>.GetNamed("DND_AnimalAttackStrategy");
         }
 
         public override void ResolveRaidArriveMode(IncidentParms parms)
