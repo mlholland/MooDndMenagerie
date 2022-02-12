@@ -33,8 +33,7 @@
       <shieldPierceChance>0</shieldPierceChance>
       <shieldDamage>10</shieldDamage>
     </dgi>
-    <bonusDamageToStructures>1</bonusDamageToStructures>
-    <addHediffChance>1</addHediffChance>
+    <bonusDamageToStructures>1</bonusDamageToStructures> 
     <hediffToAdd>DND_Petrification</hediffToAdd>
     <severityToAdd>.03~0.07</severityToAdd>
     <label>medusa gaze</label>
@@ -66,9 +65,9 @@
       </csv>
       <shieldPierceChance>0</shieldPierceChance>
       <shieldDamage>6</shieldDamage>
+      <baseApplicationChance>.6</baseApplicationChance>
     </dgi>
-    <bonusDamageToStructures>1</bonusDamageToStructures>
-    <addHediffChance>1</addHediffChance>
+    <bonusDamageToStructures>1</bonusDamageToStructures> 
     <hediffToAdd>DND_Petrification</hediffToAdd> 
     <severityToAdd>.01~0.03</severityToAdd>
     <label>basilisk gaze</label>
@@ -99,6 +98,87 @@
       <armorPenetrationBase>1</armorPenetrationBase>
     </projectile>
   </ThingDef>
+
+
+  <ThingDef Name="SpectatorParalysisRayBullet" Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
+    <defName>DND_SpectatorParalysisRay</defName>
+    <dgi>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>80</shieldDamage>
+      <immunityHediffDefs>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
+      </immunityHediffDefs>
+      <baseApplicationChance>.6</baseApplicationChance>
+    </dgi>
+    <hediffToAdd>DND_TemporaryParalysis</hediffToAdd>
+    <severityToAdd>.1~25</severityToAdd>
+    <label>paralysis ray</label> 
+    <graphicData>
+      <texPath>Things/Projectile/DND_ParalysisRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
+    <defName>DND_SpectatorSlowRay</defName>
+    <dgi>
+      <shieldPierceChance>.3</shieldPierceChance>
+      <shieldDamage>0</shieldDamage>
+      <baseApplicationChance>.6</baseApplicationChance>
+    </dgi>
+    <hediffToAdd>DND_BeholderSlowRayHit</hediffToAdd> 
+    <label>slow ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_SlowRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_ForceJobBullet" ParentName="BaseBullet">
+    <defName>DND_SpectatorFearRay</defName>
+    <dgi>
+      <resistanceHediffDef>DND_MindControlResistance</resistanceHediffDef>
+      <immunityHediffDefs>
+        <li>DND_MindControlImmunity</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
+      </immunityHediffDefs>
+      <shieldPierceChance>.4</shieldPierceChance>
+      <shieldDamage>0</shieldDamage>
+      <baseApplicationChance>.6</baseApplicationChance>
+    </dgi>
+    <forcedJob>DND_ForcedFlee</forcedJob>
+    <label>fear ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_FearRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_ForceFleeBullet</thingClass>
+  </ThingDef>
+
 
   <!--This pawn represents a pawn that is moving due to a telekinetic power-->
   <ThingDef ParentName="BaseBullet" Name="Projectile_Pawn_Linear">

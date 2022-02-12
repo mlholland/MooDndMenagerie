@@ -61,7 +61,7 @@
         <label>Slow Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>DND_BeholderSlowRay</defaultProjectile>
+        <defaultProjectile>DND_SpectatorSlowRay</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>25.9</range>
         <burstShotCount>1</burstShotCount>
@@ -79,7 +79,7 @@
         <label>Fear Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>DND_BeholderFearRay</defaultProjectile>
+        <defaultProjectile>DND_SpectatorFearRay</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>25.9</range>
         <burstShotCount>1</burstShotCount>
@@ -92,6 +92,24 @@
         <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality> 
+      </li>
+      <li>
+        <label>Paralysis Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_SpectatorParalysisRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_SpectatorRay_Fire1</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
       </li>
     </verbs>
     <tools>

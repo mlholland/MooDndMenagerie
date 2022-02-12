@@ -8,8 +8,7 @@ namespace MoodndBehaviorsAndEvents
         // mandatory
         public HediffDef hediffToAdd;
         // optional
-        public DebuffLogicUtil.DebuffGiverInputs dgi; // Contains a bunch of options for what affects the likelihood that a hediff will be added.
-        public float addHediffChance = 1f; // chance the hediff is applied before other values like capacity scaling or resistances are applied
+        public DebuffLogicUtil.DebuffGiverInputs dgi; // Contains a bunch of options for what affects the likelihood that a hediff will be added. 
         public bool modifyExistingHediff = true; // if false, create and add a new hediff every time
         public Verse.FloatRange severityToAdd = Verse.FloatRange.Zero; // If the max is non zero, then assume this hediff uses severity, and add a random amount from this range to the created hediff
         public bool addSeverityToExisting = true; // if false, replace severity with new value only if the newly rolled value is higher

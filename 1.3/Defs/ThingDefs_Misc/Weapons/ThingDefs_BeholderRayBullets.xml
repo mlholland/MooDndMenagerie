@@ -13,8 +13,7 @@
       </immunityHediffDefs>
       <shieldPierceChance>0</shieldPierceChance>
       <shieldDamage>100</shieldDamage>
-    </dgi>
-    <addHediffChance>1</addHediffChance>
+    </dgi> 
     <hediffToAdd>DND_Petrification</hediffToAdd>
     <severityToAdd>.4~.75</severityToAdd>
     <label>petrification ray</label>
@@ -43,7 +42,6 @@
       <shieldPierceChance>.5</shieldPierceChance>
       <shieldDamage>0</shieldDamage>  
   </dgi>
-    <drainChance>1</drainChance>
     <drainAmount>1</drainAmount>
     <narcChanceAtZeroRest>1</narcChanceAtZeroRest>
     <label>sleep ray</label>
@@ -101,8 +99,7 @@
       <resistanceHediffDef>DND_MindControlResistance</resistanceHediffDef>
       <shieldPierceChance>.5</shieldPierceChance>
       <shieldDamage>0</shieldDamage>
-    </dgi>
-    <applicationChance>1</applicationChance> 
+    </dgi> 
     <forcedJob>DND_ForcedCharmApproach</forcedJob>
     <label>charm ray</label>
     <graphicData>
@@ -144,7 +141,6 @@
       <shieldDamage>3000</shieldDamage>
     </dgi>
     <bonusDamageToStructures>20</bonusDamageToStructures>
-    <addHediffChance>1</addHediffChance> 
     <hediffToAdd>DND_BeholderDeathRayHit</hediffToAdd>
     <label>death ray!</label>
     <graphicData>

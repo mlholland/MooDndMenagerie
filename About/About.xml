@@ -29,83 +29,85 @@
 
 	<packageId>mooloh.dndmenagerie</packageId>
 
-	<description>  This mod adds over a dozen Dungeons and Dragons-inspired animals to Rimworld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique dungeon monster faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has a non-vanilla ability, behavior, or item associated with it.
+	<description>  This mod adds over a dozen Dungeons and Dragons-inspired animals to RimWorld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique dungeon monster faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has a non-vanilla ability, behavior, or item associated with it.
 
 &lt;size=24&gt;Animal List&lt;/size&gt;
 
- - Golems: Constructed guardians that trade natural healing for extreme power. Requires a "Manual of Golems" item, a bunch of materials, and a high construction skill to build one. There are three types of golems: flesh, stone, and steel, with flesh being the weakest, and steel being the strongest.
+ - Golems: Constructed guardians that trade natural healing for extreme power. Requires a "Manual of Golems" item, a lot of materials, and a high construction skill to build one. There are three types of golems: flesh, stone, and steel, with flesh being the weakest, and steel being the strongest.
 
- - Animated Furniture: Living buildings whose stats depend on the original furniture. Created by using a "Scroll of Animation" item on either a chair, tool cabinet, or stool, each of which has different behaviors.
+ - Animated Furniture: Reward animals that are created by using a "Scroll of Animate Objects" item on a chair, tool cabinet, or stool. Each type of animated furniture has a different behavior.
 
- - Flumph: A friendly, psychic jellyfish that be tamed to produce a psychic-boosting drug.
+ - Flumph: A friendly, psychic jellyfish that can be tamed to produce a psychic-boosting drug.
 
- - Faerie Dragon: A small friendly dragon that can keep someone happy with its euphoric breath.
+ - Faerie Dragon: A small colorful dragon that can keep people happy with its euphoric breath.
 
  - Owlbear: A deadly apex predator with a huge appetite. Its damage and armor penetration are higher than you'd expect for a creature of its size. Can appear in the wild or in raids.
 
  - Displacer Beast: A magical feline that distorts light around its body. Boasts a high dodge chance, which is passed onto clothing made from its pelt. Can appear in the wild or in raids.
 
- - Basilisk: An eight-legged reptile that pretrifies its prey. Can appear in the wild or in raids.
+ - Basilisk: An eight-legged reptile that petrifies its prey. Can appear in the wild or in raids.
 
- - Medusa: A dangerous multi-headed reptile with a powerful petrification attack. Only appears in raids.
+ - Medusa: A dangerous multi-headed reptile with a powerful petrification attack. Untameable and only appears in raids.
 
- - Gibbering Mouther: A blob of flesh that disorients nearby prey with magical babble. Appears very rarely outside of raids.
+ - Gibbering Mouther: A blob of flesh that disorients nearby prey with magical babble. Can appear very rarely in the wild or in raids, and is untameable.
 
- - Beholder: A malevolent, otherworldly creature that shoots magical eye rays with a 10 different effects. Rays that don't deal damage have a small chance to pierce shield belts. Only appears in raids.
+ - Beholder: A malevolent, otherworldly creature that shoots magical eye rays with 10 different effects. Rays that don't deal damage have a chance to pierce shield belts. Untameable and only appears in raids.
 
- - Spectator: A small cousin of beholders. Can appear in raids, or be summoned to join your colony using eyestalks harvested from beholders.
+ - Spectator: A small cousin of beholders with 4 weaker eye ray attacks. Can appear in raids, or be summoned to join your colony by constructing a Spectator Effigy.
 
  - Rust Monster: A strange crustacean that eats rusted metals. Keep away from your metal stockpiles, armored warriors, and steel golems. Can appear in the wild, in raids, or even burrowing beneath your base.
 
- - Annihilator: A predatory cousin of rust monsters that disintegrates prey and consumes the resulting dust. Keep away from your... everything. Only appears in raids or manhunter events. 
+ - Annihilator: A predatory cousin of rust monsters that disintegrates prey and consumes the resulting dust. Keep away from your... everything. Only appears in raids or manhunter events, and is nearly impossible to tame. 
 
 &lt;size=24&gt;Other Features&lt;/size&gt;
     
- - Petrification: This effect can be applied by basilisks, medusae, and beholders. Mechanically it acts like a very slow-growing disease, which each petrifying hit increasing the severity. Patients require several days to build immunity, but good treatment can almost completely stall the disease's progression outside of combat. Thankfully, 100% petrification isn't fatal - such victims are merely emtombed alive in their body forever! The effect can be reverted using the antidote drug Antipet, which can either be harvested from Basilisks and Medusas, or crafted using a lot of neutroamine.
- 
- - Resistance: Certain debillitating effects, like gibbering mouther babble, charm rays, and fear rays, will grant the victim a stacking resistance buff, which decreases the likelihood that subsequent effects will take hold. At max stacks, the holder is immune to the relevant effect for a day or so. 
- 
- - Ancient Notes: This item serves as a partial reward towards gaining the other rare items from this mod. They can be crafted into any of the three types of Manual of Golems items, or into a Scroll of Animation. Both ancient notes and the resulting items can appear as quest rewards or (expensive) trade goods.
- 
- - Psy-kick: The drug that can be refined from Flumph "Ink". It boosts consciousness, psychic entropy recovery, and immediately grants a ton of psyfocus, but is comparable in addictiveness to go-juice. Obviously this is most useful if you have Royalty installed, but the drug's consciousness boost is still nothing to scoff at.
- 
- - Monster Faction: This faction is invisible like mechanoid and insect factions, and is the source of monster raids. These raids can consist of a variety of combinations of monsters to offer slightly different threats and challenges. This faction can be disabled like other hidden factions with ideology, or you can disable the raids directly in the mod's settings.
+ - Monster Faction: This faction is normally invisible like the mechanoid and insect factions, and it is the source of monster raids. These raids can consist of a variety of combinations of monsters to offer different threats and challenges. This faction can be disabled like other hidden factions with the Ideology DLC, or you can disable the raids directly in the mod's settings.
  
  - Rust monster infestations: This event is a cross between an insect infestation and an alpha-beaver migration. Passive rust monsters will spawn somewhere according to infestation spawning rules. Although they won't attack unless harmed, their metallic appetite might be a problem. This event can be disabled in the mod's settings.
  
  - Animal spawn controls: Individual spawn toggles for natural wild spawning (not raid spawning) can be found in the the "Vanilla Animals Expanded" mod's settings thanks to the Vanilla Expanded Framework's code for animal toggles. Spawn rates for animals in this mod can be modified through a slider in this mod's settings.
 
+ - Ancient Notes: This item serves as a partial reward towards gaining the other rare items from this mod. They can be crafted into any of the three types of Manual of Golems items, or into a Scroll of Animation. Both ancient notes and the resulting items can appear as quest rewards or (expensive) trade goods.
+ 
+ - Petrification: This effect can be applied by basilisks, medusae, and beholders. Mechanically it acts like a very slow-growing disease, with each petrifying hit adding severity. Patients require several days to build immunity, but good treatment can heavily stall the disease's progression outside of combat. Thankfully, 100% petrification isn't fatal - such victims are merely entombed alive in their body forever! The effect can be reverted using the antidote drug Antipet, which can either be harvested from Basilisks and Medusae, or crafted using a lot of neutroamine.
+ 
+ - Resistance: Certain debilitating effects, like gibbering mouther babble, charm rays, and fear rays, will grant the victim a stacking resistance buff. This resistance decreases the likelihood that subsequent effects will take hold, and grants immunity at max stacks. 
+
+ - Psy-kick: This is the drug that can be refined from Flumph "Ink". It boosts consciousness, psychic entropy recovery, and immediately grants a ton of psyfocus, but is comparable in addictiveness to go-juice. Obviously this is most useful if you have the Royalty DLC installed, but the drug's consciousness boost is still useful on its own.
+
 &lt;size=24&gt;Mod compatability&lt;/size&gt;
 
-  This is my first mod, and I've made zero efforts at mod compatability thus far. That said, this mod doesn't do too much beyond adding animals, so I don't expect too many problems beyond possible shield interactions. I do intend to make this mod compatable with the following mods:
-    
- - A dog said
- 
- - ...Whatever else commonly needs patches for animal mods. I'm sure people will point them out.
- 
-I do not have any intention of making this mod compatable with the following mods:
+  DnD Menagerie has compatibility patches for the following:
+  
+  - A Dog Said... Animal Prosthetics: All organic animals are compatible with implants added by A Dog Said. That said, I don't add any new prosthetics, so some body parts - like displacer beast tentacles and full eyestalks - have no replacements. Also, inorganic and unstable creatures (golems, animated furniture, and gibbering mouthers) are ineligible for implants.
+  
+  This mod doesn't do too much beyond adding animals, so I don't expect too many problems beyond possible strange interactions between beholder rays and modded body shields. 
+  
+  I do indent to make this mod compatible with the following:
 
  - Combat Extended: I've never used this mod, and don't intend to plan around it. 
 
 &lt;size=24&gt;Issues&lt;/size&gt;
 
-  Balance is the main concern. I did some playtesting, but there are several new mechanics that can warp combat a bit. I'm certainly open to feedback regarding the resistance mechanic, shield-piercing rates for magical attacks, the general dps/tankiness of creatures, costs of rare items, and anything else really.
-    
-  Other issues to be noted if/when they arise...
+  Balance is the main concern. I did some playtesting, but there are several new mechanics that can warp combat a bit. I'm very open to feedback regarding the resistance mechanic, shield-piercing rates for magical attacks, the general dps/tankiness of creatures, costs of rare items, and anything else.
   
+  Below is a list of known bugs that can open up the debug logs you're playing in debug mode, but don't really impact gameplay:
+  
+  - Creatures targeting the victim of someone who just got thrown by a telekinesis ray get confused when their target can't be found. They will select a new target normally after an error is logged.  
+  
+  Other issues to be noted if/when they arise...
   
 &lt;size=24&gt;Planned Features&lt;/size&gt;
 
-  This mod is a passion project, and since I don't want to risk Wizards of the Coast coming after me for using DND stuff, I have zero intention of ever monetizing this mod. That means that future development depends a lot on player interest. I have several other mod ideas that I'd like to work on next, but I'll certainly revisit this in the future if there's demand for it. I have a bunch of ideas for other DND creatures I'd like to put into Rimworld, but I'll happily take more ideas under consideration.
-  
+  This mod is a passion project, and since I don't want to risk Wizards of the Coast coming after me for using DnD stuff, I have zero intention of ever monetizing this mod. That means that future development depends a lot on player interest. I have several other mod ideas that I'd like to work on next, but I'll certainly revisit this in the future if there's demand for it. I have a bunch of ideas for other DND creatures I'd like to put into RimWorld, and I'll happily take more ideas under consideration.
   
 &lt;size=24&gt;FAQ&lt;/size&gt;
 
  - You call this a 'dungeons and DRAGONS' mod and you don't even have (full sized) dragons?! What gives?
-   Off the top of my head I can think of at least three great mods that already add dragons into Rimworld. I wanted to add creatures from DND fantasy that I haven't already seen in my games before. That's not to say that none of these animals don't already exist in Rimworld mods, but I haven't seen them.
+   Off the top of my head I can think of at least three great mods that already add dragons into RimWorld. I wanted to add creatures from DND fantasy that I haven't already seen in my games before. That's not to say that none of these animals don't already exist in RimWorld mods, but I haven't seen them.
    
  - What about Liches? Those are pretty classic DND enemies too.
-   I play too much Rimworld of Magic to feel like I can contribute anything with a new rimworld Lich variety.
+   I play too much RimWorld of Magic to feel like I can contribute anything with a new RimWorld Lich variety.
 
 &lt;size=24&gt;Credits and Thanks&lt;/size&gt;
 
@@ -113,9 +115,11 @@ I do not have any intention of making this mod compatable with the following mod
  
  - Art: Erok
  
- - Big thanks to the many wonderful people on the Rimworld Discord's modding channel - especially Steve - who helped me learn, debug, and solve all sorts of issues that came up as I learned about modding.
+ - Big thanks to the many wonderful people on the RimWorld Discord's modding channel - especially Steve - who helped me learn, debug, and solve all sorts of issues that came up as I learned about modding.
  
- - Thanks to Hi19Hi19 and Frogoe for early playtesting.
+ - Thanks to all the modders who listed their work on GitHub. I learned so much just from poking around the repos of my favorite mods, and I'm grateful that new modders stand on the shoulders of giants.
+ 
+ - Thanks to Hi19Hi19 for early playtesting.
 
 &lt;size=24&gt;Legal&lt;/size&gt;
 
