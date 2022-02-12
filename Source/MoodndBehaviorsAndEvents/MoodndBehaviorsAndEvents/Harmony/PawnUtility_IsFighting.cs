@@ -13,10 +13,10 @@ namespace MoodndBehaviorsAndEvents
     {
         
         [HarmonyPostfix]
-        public static void DisableMonsters(Pawn pawn, ref bool __result)
+        public static void MakeMonstersFight(Pawn pawn, ref bool __result)
 
         {
-            if (pawn != null && pawn.Faction.Equals(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("DND_DungeonMonsterFaction"))) && pawn.CurJob != null) {
+            if (pawn != null && pawn.Faction != null && pawn.Faction.Equals(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("DND_DungeonMonsterFaction"))) && pawn.CurJob != null) {
                 __result = true;
             }
         }

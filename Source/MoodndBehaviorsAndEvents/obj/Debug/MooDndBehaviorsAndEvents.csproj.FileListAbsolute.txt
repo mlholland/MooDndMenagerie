@@ -30,3 +30,10 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndManagerie\Sour
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndManagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoosDndMod.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndManagerie\1.3\Assemblies\MoosDndMod.dll.config
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndManagerie\1.3\Assemblies\MoosDndMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\1.3\Assemblies\MoosDndMod.dll.config
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\1.3\Assemblies\MoosDndMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoodndBehaviorsAndEvents.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoodndBehaviorsAndEvents.Properties.Resources.resources
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoodndBehaviorsAndEvents.csproj.GenerateResource.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoodndBehaviorsAndEvents.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoosDndMod.dll
