@@ -7,15 +7,21 @@
   - this body part is then hit.
 -->
 
-<Defs> 
+<Defs>
+
+
   <BodyDef>
-    <defName>DND_BeakedQuadruped</defName>
-    <label>beaked quadruped</label>
+    <defName>DND_FaerieDragonBody</defName>
+    <label>winged quadruped animal with tail</label>
     <corePart>
       <def>Body</def>
       <height>Middle</height>
       <depth>Outside</depth>
       <parts>
+        <li>
+          <def>Tail</def>
+          <coverage>0.07</coverage>
+        </li>
         <li>
           <def>Spine</def>
           <coverage>0.03</coverage>
@@ -23,7 +29,7 @@
         </li>
         <li>
           <def>Stomach</def>
-          <coverage>0.03</coverage>
+          <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
         <li>
@@ -57,12 +63,13 @@
         </li>
         <li>
           <def>Liver</def>
-          <coverage>0.03</coverage>
+          <customLabel>first liver</customLabel>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
-        </li>
+        </li> 
         <li>
           <def>Neck</def>
-          <coverage>0.22</coverage>
+          <coverage>0.20</coverage>
           <height>Top</height>
           <parts>
             <li>
@@ -79,7 +86,7 @@
                   <parts>
                     <li>
                       <def>Brain</def>
-                      <coverage>0.70</coverage>
+                      <coverage>0.7</coverage>
                       <depth>Inside</depth>
                     </li>
                   </parts>
@@ -105,10 +112,14 @@
                   <coverage>0.08</coverage>
                 </li>
                 <li>
-                  <def>Beak</def>
-                  <coverage>0.25</coverage>
+                  <def>Nose</def>
+                  <coverage>0.1</coverage>
+                </li>
+                <li>
+                  <def>AnimalJaw</def>
+                  <coverage>0.1</coverage>
                   <groups>
-                    <li>Beak</li>
+                    <li>Teeth</li>
                   </groups>
                 </li>
               </parts>
@@ -116,14 +127,27 @@
           </parts>
         </li>
         <li>
+          <def>DND_ButterflyWing</def>
+          <customLabel>left wing</customLabel>
+          <coverage>0.07</coverage>
+          <height>Top</height>
+
+        </li>
+        <li>
+          <def>DND_ButterflyWing</def>
+          <customLabel>right wing</customLabel>
+          <coverage>0.07</coverage>
+          <height>Top</height>
+        </li>
+        <li>
           <def>Leg</def>
           <customLabel>front left leg</customLabel>
-          <coverage>0.07</coverage>
+          <coverage>0.04</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>front left talons</customLabel>
+              <customLabel>front left paw</customLabel>
               <coverage>0.15</coverage>
               <groups>
                 <li>FrontLeftPaw</li>
@@ -134,12 +158,12 @@
         <li>
           <def>Leg</def>
           <customLabel>front right leg</customLabel>
-          <coverage>0.07</coverage>
+          <coverage>0.04</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>front right talons</customLabel>
+              <customLabel>front right paw</customLabel>
               <coverage>0.15</coverage>
               <groups>
                 <li>FrontRightPaw</li>
@@ -150,12 +174,12 @@
         <li>
           <def>Leg</def>
           <customLabel>rear left leg</customLabel>
-          <coverage>0.07</coverage>
+          <coverage>0.03</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>rear left talons</customLabel>
+              <customLabel>rear left paw</customLabel>
               <coverage>0.15</coverage>
             </li>
           </parts>
@@ -163,12 +187,12 @@
         <li>
           <def>Leg</def>
           <customLabel>rear right leg</customLabel>
-          <coverage>0.07</coverage>
+          <coverage>0.03</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>Paw</def>
-              <customLabel>rear right talons</customLabel>
+              <customLabel>rear right paw</customLabel>
               <coverage>0.15</coverage>
             </li>
           </parts>
@@ -176,5 +200,4 @@
       </parts>
     </corePart>
   </BodyDef>
-
 </Defs>

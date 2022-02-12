@@ -23,7 +23,7 @@ When tame and trained, faerie dragons will occasionally exhale this euphoric gas
       </wildBiomes>
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
-			<body>DND_DisplacerBeastBody</body>
+			<body>DND_FaerieDragonBody</body>
 			<packAnimal>false</packAnimal>
 			<baseBodySize>.25</baseBodySize>
 			<baseHealthScale>.45</baseHealthScale>

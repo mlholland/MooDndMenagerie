@@ -634,6 +634,11 @@
             </li>
           </parts>
         </li>
+
+        <li>
+          <def>DND_Huge_Tail</def>
+          <coverage>0.07</coverage>
+        </li>
       </parts>
     </corePart>
 	</BodyDef>

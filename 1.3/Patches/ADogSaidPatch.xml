@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>A Dog Said... Animal Prosthetics</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- Organ installing recipes == should be most animals except artificials-->
+        <li Class="PatchOperationAdd">
+
+          <xpath>/Defs/RecipeDef[@Name = "OldWoundsAnimal"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li>
+            <li>DND_Flumph</li> 
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li>
+            <li>DND_Spectator</li> 
+          </value>
+        </li>
+
+        <!-- Organ installing recipes == should be most animals -->
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallBionicAnimalStomach surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
+          <value>
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li>
+            <li>DND_Flumph</li> 
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li>
+            <li>DND_Spectator</li> 
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallBionicAnimalKidney surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li> 
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li> 
+            <li>DND_Spectator</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallBionicAnimalLiver surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
+          <value>  
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li> 
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li> 
+            <li>DND_Spectator</li> 
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallBionicAnimalLung surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
+          <value>
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li> 
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li>
+            <li>DND_Spectator</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallBionicAnimalHeart surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li>
+            <li>DND_Flumph</li>
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li>
+            <li>DND_Spectator</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallAnimalBrainStimulator surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li>
+            <li>DND_Flumph</li>
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li>
+            <li>DND_Spectator</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            <li>DND_Telekinetic_Flyer_Brain</li>
+            <li>DND_Psychic_Flyer_Brain</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallSpineAnimalBionic surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallSpineAnimalBionic" or defName = "InstallSpineAnimalSimple"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li> 
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li> 
+            <li>DND_Medusa</li>
+            <li>DND_RustMonster</li>
+            <li>DND_Owlbear</li> 
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallJawAnimalBionic surgery <recipeUsers> -->
+          <xpath>/Defs/RecipeDef[defName = "InstallJawAnimalBionic" or defName ="InstallJawAnimalSimple"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li>
+            <li>DND_Flumph</li>
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li>
+            <li>DND_Spectator</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName = "InstallJawAnimalBionic"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            <li>DND_Massive_Jaw</li>
+            <li>DND_Flumph_Flap</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName = "InstallJawAnimalSimple"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            <li>DND_Massive_Jaw</li>
+            <li>DND_Flumph_Flap</li>
+          </value>
+        </li>
+
+
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallNoseAnimalSimple surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Basilisk</li> 
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li> 
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li> 
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallBionicEyeAnimal surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
+          <value>
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li>
+            <li>DND_Beholder</li>
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li>
+            <li>DND_Flumph</li>
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li>
+            <li>DND_Spectator</li> 
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            <li>DND_Massive_Eye</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallEarAnimalSimple surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallEarAnimalSimple" or defName ="InstallEarAnimalBionic"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li> 
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li> 
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li> 
+          </value>
+        </li>
+
+
+
+
+        <!-- Leg installing recipes == should be most grounded animals -->
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallPegLegAnimal surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or defName ="InstallSimpleProstheticLegAnimal" or defName ="InstallBionicLegAnimal"]/recipeUsers</xpath>
+          <value>
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li> 
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li> 
+            <li>DND_Medusa</li>
+            <li>DND_Owlbear</li>
+            <li>DND_RustMonster</li>  
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[@Name= "LegBaseAnimal"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            
+
+          </value>
+        </li>
+
+                <!-- Arm installing recipes == only animals with arms -->
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallPegLegAnimal surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName ="InstallSimpleProstheticArmAnimal" or defName ="InstallBionicArmAnimal"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Medusa</li>  
+          </value>
+        </li> 
+        
+
+ 
+        <!-- Tail installing recipe == Only for animal with tail-->
+        <li Class="PatchOperationAdd">
+          <!-- "Inserting animal defNames into InstallSimpleProstheticTailAnimal surgery <recipeUsers>" -->
+          <xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
+          <value> 
+            <li>DND_Annihilator</li>
+            <li>DND_Basilisk</li> 
+            <li>DND_DisplacerBeast</li>
+            <li>DND_FaerieDragon</li> 
+            <li>DND_Medusa</li> 
+            <li>DND_RustMonster</li> 
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            <li>DND_Huge_Tail</li>
+          </value>
+        </li>
+
+
+
+
+
+        <!-- Patch to vanilla to ensure operations appear in all animals when they should -->
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+          <value> 
+          </value>
+        </li>
+
+
+      </operations>
+    </match>
+  </Operation>
+
+
+</Patch>

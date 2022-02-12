@@ -27,25 +27,10 @@
           <depth>Inside</depth>
         </li>
         <li>
-          <def>Heart</def>
+          <def>InsectHeart</def>
           <coverage>0.03</coverage>
           <depth>Inside</depth>
-        </li>
-        <li>
-          <def>Lung</def>
-          <coverage>0.04</coverage>
-          <depth>Inside</depth>
-        </li>
-        <li>
-          <def>Kidney</def>
-          <coverage>0.04</coverage>
-          <depth>Inside</depth>
-        </li>
-        <li>
-          <def>Liver</def>
-          <coverage>0.03</coverage>
-          <depth>Inside</depth>
-        </li>
+        </li> 
         <li>
           <def>DND_Psychic_Flyer_Brain</def>
           <coverage>0.03</coverage>

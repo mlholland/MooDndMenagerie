@@ -3,6 +3,20 @@
 <Defs>
 
   <BodyPartDef>
+    <defName>DND_ButterflyWing</defName>
+    <label>wing</label>
+    <hitPoints>25</hitPoints>
+    <frostbiteVulnerability>0.9</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>.3</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <alive>true</alive>
+    <bleedRate>.5</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
     <defName>DND_Snake_Hair_Head</defName>
     <label>snake hair head</label>
     <hitPoints>5</hitPoints>

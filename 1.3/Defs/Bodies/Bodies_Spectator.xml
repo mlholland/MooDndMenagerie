@@ -127,60 +127,6 @@
         </li>
         <li>
           <def>DND_Eyestalk</def>
-          <customLabel>third upper eyestalk</customLabel>
-          <depth>Outside</depth>
-          <coverage>0.04</coverage>
-          <height>Top</height>
-          <parts>
-            <li>
-              <def>Eye</def>
-              <customLabel>third upper eye</customLabel>
-              <depth>Outside</depth>
-              <coverage>0.15</coverage>
-              <groups>
-                <li>DND_EyestalkGroup</li>
-              </groups>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DND_Eyestalk</def>
-          <customLabel>fourth upper eyestalk</customLabel>
-          <depth>Outside</depth>
-          <coverage>0.04</coverage>
-          <height>Top</height>
-          <parts>
-            <li>
-              <def>Eye</def>
-              <customLabel>fourth upper eye</customLabel>
-              <depth>Outside</depth>
-              <coverage>0.15</coverage>
-              <groups>
-                <li>DND_EyestalkGroup</li>
-              </groups>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DND_Eyestalk</def>
-          <customLabel>fifth upper eyestalk</customLabel>
-          <depth>Outside</depth>
-          <coverage>0.04</coverage>
-          <height>Top</height>
-          <parts>
-            <li>
-              <def>Eye</def>
-              <customLabel>fifth upper eye</customLabel>
-              <depth>Outside</depth>
-              <coverage>0.15</coverage>
-              <groups>
-                <li>DND_EyestalkGroup</li>
-              </groups>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DND_Eyestalk</def>
           <customLabel>first lower eyestalk</customLabel>
           <depth>Outside</depth>
           <coverage>0.04</coverage>
@@ -214,61 +160,7 @@
               </groups>
             </li>
           </parts>
-        </li>
-        <li>
-          <def>DND_Eyestalk</def>
-          <customLabel>third lower eyestalk</customLabel>
-          <depth>Outside</depth>
-          <coverage>0.04</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>Eye</def>
-              <customLabel>third lower eye</customLabel>
-              <depth>Outside</depth>
-              <coverage>0.15</coverage>
-              <groups>
-                <li>DND_EyestalkGroup</li>
-              </groups>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DND_Eyestalk</def>
-          <customLabel>fourth lower eyestalk</customLabel>
-          <depth>Outside</depth>
-          <coverage>0.04</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>Eye</def>
-              <customLabel>fourth lower eye</customLabel>
-              <depth>Outside</depth>
-              <coverage>0.15</coverage>
-              <groups>
-                <li>DND_EyestalkGroup</li>
-              </groups>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>DND_Eyestalk</def>
-          <customLabel>fifth lower eyestalk</customLabel>
-          <depth>Outside</depth>
-          <coverage>0.04</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>Eye</def>
-              <customLabel>fifth lower eye</customLabel>
-              <depth>Outside</depth>
-              <coverage>0.15</coverage>
-              <groups>
-                <li>DND_EyestalkGroup</li>
-              </groups>
-            </li>
-          </parts>
-        </li>
+        </li> 
       </parts>
         
     </corePart>

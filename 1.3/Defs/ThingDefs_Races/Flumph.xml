@@ -96,8 +96,8 @@ If tamed, a flumph's tentacles can occasionally be 'milked' for the acidic secre
 			</li>
       <li Class="CompProperties_Milkable">
         <milkDef>DND_FlumphInk</milkDef>
-        <milkIntervalDays>15</milkIntervalDays>
-        <milkAmount>3</milkAmount>
+        <milkIntervalDays>12</milkIntervalDays>
+        <milkAmount>5</milkAmount>
         <milkFemaleOnly>false</milkFemaleOnly>
       </li>
     </comps>
