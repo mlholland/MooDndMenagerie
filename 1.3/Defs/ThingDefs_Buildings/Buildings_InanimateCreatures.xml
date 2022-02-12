@@ -14,11 +14,13 @@
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
+      <shadowData>
+        <volume>(1.2, 1.2, 0.7)</volume>
+        <offset>(0,0, -.3</offset>
+      </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <passability>PassThroughOnly</passability> 
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <pathCost>42</pathCost>
@@ -70,11 +72,13 @@ Note: For balance reasons, the resulting golem will always have the same stats a
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
+      <shadowData>
+        <volume>(1.2, 1.2, 0.7)</volume>
+        <offset>(0,0, -.3</offset>
+      </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <passability>PassThroughOnly</passability> 
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <pathCost>42</pathCost>
@@ -127,11 +131,13 @@ Note: For balance reasons, the resulting golem will always have the same stats a
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
+      <shadowData>
+        <volume>(1.2, 1.2, 0.7)</volume>
+        <offset>(0,0, -.3</offset>
+      </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <passability>PassThroughOnly</passability> 
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <pathCost>42</pathCost>
@@ -182,11 +188,13 @@ Note: For balance reasons, the resulting golem will always have the same stats a
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
+      <shadowData>
+        <volume>(.4, .4, .4)</volume>
+        <offset>(0, 0, -.05)</offset>
+      </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <passability>PassThroughOnly</passability> 
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <pathCost>42</pathCost>

@@ -5,7 +5,7 @@
 		<label>Beholder</label>
     <description>Beholders are dangerous and malevolent creatures, thought to be from another dimension. Their "body" consists of a large magically floating head with a single huge eye. Ten eyestalks sprout from its head, each ending in a single, smaller eye. 
     
-If their appearance wasn't bad enough, beholders can shoot magical rays of light from their eyes. These rays can have one of ten effects: charming, paralysis, terror, slowing time dilation, sudden necrosis, telekinesis, forced sleep, petrification, disintegration, and... death.
+If their appearance wasn't bad enough, beholders can shoot magical rays of light from their eyes. These rays can have one of eight effects: paralysis, slowing time dilation, sudden necrosis, telekinesis, forced sleep, petrification, disintegration, and... death.
     
 Most of a beholder's body solidifies into a useless stone-like material on death. But the eyestalks remain useful, both as a trophy, and as a potential ritual tool...</description>
     <statBases>
@@ -101,7 +101,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <minRange>1</minRange>
         <commonality>1</commonality>
       </li>
-      <li>
+      <!--li>
         <label>Fear Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
@@ -123,7 +123,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <label>Charm Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>DND_ForcedCharmApproachRay</defaultProjectile>
+        <defaultProjectile>DND_BeholderCharmRay</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>40.9</range>
         <burstShotCount>1</burstShotCount>
@@ -136,7 +136,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <accuracyLong>.99</accuracyLong>
         <minRange>15</minRange>
         <commonality>1</commonality>
-      </li>
+      </li-->
       <li>
         <label>Telekinesis Ray</label>
         <verbClass>Verb_Shoot</verbClass>

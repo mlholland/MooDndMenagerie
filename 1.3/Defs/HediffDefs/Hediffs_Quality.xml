@@ -78,7 +78,7 @@
     <defName>DND_AnimatedQuality4</defName>
     <description>This animated creature was made from an excellent piece of furniture, and its performance benefits moderately because of it.</description>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>Animated Quality (Exellent)</label>
+    <label>Animated Quality (Excellent)</label>
     <defaultLabelColor>(.25,.5,.8)</defaultLabelColor>
     <scenarioCanAdd>false</scenarioCanAdd>
     <initialSeverity>1.0</initialSeverity>

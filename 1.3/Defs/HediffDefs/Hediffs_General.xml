@@ -13,7 +13,7 @@
     <stages>
       <li>
         <statOffsets>
-          <GeneralLaborSpeed>.1</GeneralLaborSpeed>
+          <GeneralLaborSpeed>.15</GeneralLaborSpeed>
         </statOffsets>
       </li>
     </stages>
@@ -50,9 +50,9 @@
 
   <HediffDef>
     <defName>DND_WornDisplacement</defName>
-    <description>Wearing displacer beast fur over most of their body has granted this person limited optical displacement, much like the displacer beast the fur came from. This improves their evasion.</description>
+    <description>Wearing displacer beast fur over most of their body has granted this person limited optical displacement, improving their evasion.</description>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>Worn Displacement</label>
+    <label>Worn Optical Displacement</label>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>false</scenarioCanAdd>
     <initialSeverity>1.0</initialSeverity>
@@ -72,7 +72,7 @@
 
   <HediffDef>
 		<defName>DND_EuphoricHaze</defName>
-		<description>This person is under the effects of a friendly faerie dragon's euphoria breath. They're content, but they're reaction speed is a little slower, especially when under pressure.</description>
+		<description>This person is under the effects of a friendly faerie dragon's euphoria breath. They're content, but their reaction speed is a little slow, especially when under pressure.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Euphoric Haze</label>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
@@ -103,11 +103,10 @@
       </li>
     </comps>
 	</HediffDef>
-  
-  TODO change this to stun instead of nausea, and make the mouther show a mote whenever they broadcast
+   
   <HediffDef>
 		<defName>DND_GibberingBabble</defName>
-		<description>A gibbering mouther's babble has disoriented this pawn and severely clouding thier mind.</description>
+		<description>A gibbering mouther's babble has disoriented this pawn, severely clouding their mind.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Disorienting Babble</label>
 		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
@@ -153,7 +152,7 @@
 
   <HediffDef>
     <defName>DND_Rusting</defName>
-    <description>This creature was covered in rapid-rusting chemicals. Metallic clothing or body parts at the impact site are rusting away at a dangerous rate.</description>
+    <description>This creature was covered in rapid-rusting chemicals. Top-layer metallic clothing or body parts at the impact site are rusting away at a dangerous rate.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Rapid Rusting</label>
     <defaultLabelColor>(.8,0,0)</defaultLabelColor>
@@ -267,7 +266,7 @@
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>300~600</disappearsAfterTicks>
+        <disappearsAfterTicks>450~900</disappearsAfterTicks>
         <showRemainingTime>True</showRemainingTime>
       </li>
     </comps>
@@ -318,7 +317,7 @@
   
   <HediffDef>
     <defName>DND_GolemStatsFlesh</defName>
-    <description>This creature is an animated golem. It does not bleed, eat, nor heal, and it is very capable in combat. Unlike other golems, it does feel limited pain.</description>
+    <description>This creature is an animated golem. It does not bleed, eat, nor heal, and it is very capable in combat. Unlike other golems, flesh golems still feel limited pain.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Constructed Guardian</label>
     <defaultLabelColor>(0,.7,1)</defaultLabelColor>
@@ -354,7 +353,7 @@
 
   <HediffDef>
     <defName>DND_FleshGolemRageGrace</defName>
-    <description>This flesh golem was damaged and went berserk recently. It won't do so again until at least 3 days have passed.</description>
+    <description>This flesh golem was damaged and went berserk recently. It won't do so again until at a few days have passed.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Recently Raged</label>
     <defaultLabelColor>(0,.7,1)</defaultLabelColor>

@@ -110,7 +110,7 @@
         <li>DND_GolemStatsStone</li>
         <li>DND_GolemStatsSteel</li>
       </immunityHediffDefs>
-      <baseApplicationChance>.6</baseApplicationChance>
+      <baseApplicationChance>.8</baseApplicationChance>
     </dgi>
     <hediffToAdd>DND_TemporaryParalysis</hediffToAdd>
     <severityToAdd>.1~25</severityToAdd>
@@ -133,7 +133,7 @@
     <dgi>
       <shieldPierceChance>.3</shieldPierceChance>
       <shieldDamage>0</shieldDamage>
-      <baseApplicationChance>.6</baseApplicationChance>
+      <baseApplicationChance>.8</baseApplicationChance>
     </dgi>
     <hediffToAdd>DND_BeholderSlowRayHit</hediffToAdd> 
     <label>slow ray</label>
@@ -178,7 +178,6 @@
     </projectile>
     <thingClass>MoodndBehaviorsAndEvents.Projectile_ForceFleeBullet</thingClass>
   </ThingDef>
-
 
   <!--This pawn represents a pawn that is moving due to a telekinetic power-->
   <ThingDef ParentName="BaseBullet" Name="Projectile_Pawn_Linear">

@@ -91,11 +91,11 @@
 
   Balance is the main concern. I did some playtesting, but there are several new mechanics that can warp combat a bit. I'm very open to feedback regarding the resistance mechanic, shield-piercing rates for magical attacks, the general dps/tankiness of creatures, costs of rare items, and anything else.
   
-  Below is a list of known bugs that can open up the debug logs you're playing in debug mode, but don't really impact gameplay:
+  The following is a list of known bugs that can open up the debug logs you're playing in debug mode, but have minimal impact on gameplay:
   
-  - Creatures targeting the victim of someone who just got thrown by a telekinesis ray get confused when their target can't be found. They will select a new target normally after an error is logged.  
+  - Creatures targeting the victim of someone who just got thrown by a telekinesis ray will get confused when their target can't be found. They will properly select a new target after an error is logged.  
   
-  Other issues to be noted if/when they arise...
+  Other issues to be noted when they arise...
   
 &lt;size=24&gt;Planned Features&lt;/size&gt;
 
@@ -108,6 +108,9 @@
    
  - What about Liches? Those are pretty classic DND enemies too.
    I play too much RimWorld of Magic to feel like I can contribute anything with a new RimWorld Lich variety.
+   
+ - Beholders are supposed to have 10 eye ray effects - you're missing fear and charm rays.
+   Those actually exist in my code, but after 3 different attempts at making fear and charm rays, I am still not satisfied with their behavior. There are too many buggy edge cases that I didn't want to introduce into the game. When these reach a stable state, I'll add them back in. This goes for spectator fear rays as well.
 
 &lt;size=24&gt;Credits and Thanks&lt;/size&gt;
 

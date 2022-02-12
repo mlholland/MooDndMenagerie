@@ -58,7 +58,6 @@
     <thingClass>MoodndBehaviorsAndEvents.Projectile_SleepDrainBullet</thingClass>
   </ThingDef>
 
-
   <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_ForceJobBullet" ParentName="BaseBullet">
     <defName>DND_BeholderFearRay</defName>
     <dgi>
@@ -88,7 +87,7 @@
   </ThingDef>
 
   <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_ForceJobBullet" ParentName="BaseBullet">
-    <defName>DND_ForcedCharmApproachRay</defName>
+    <defName>DND_BeholderCharmRay</defName>
     <dgi>
       <immunityHediffDefs>
         <li>DND_MindControlImmunity</li>
@@ -99,7 +98,7 @@
       <resistanceHediffDef>DND_MindControlResistance</resistanceHediffDef>
       <shieldPierceChance>.5</shieldPierceChance>
       <shieldDamage>0</shieldDamage>
-    </dgi> 
+    </dgi>
     <forcedJob>DND_ForcedCharmApproach</forcedJob>
     <label>charm ray</label>
     <graphicData>

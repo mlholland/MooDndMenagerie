@@ -84,35 +84,4 @@
       <destroyedOutLabel>Rusted Away</destroyedOutLabel>
     </injuryProps>
   </HediffDef>
-
- <!--
-  <HediffDef ParentName="InjuryBase">
-    <defName>Gunshot</defName>
-    <label>gunshot</label>
-    <labelNoun>a gunshot wound</labelNoun>
-    <description>A gunshot wound.</description>
-    <comps>
-      <li Class="HediffCompProperties_TendDuration">
-        <labelTendedWell>bandaged</labelTendedWell>
-        <labelTendedWellInner>sutured</labelTendedWellInner>
-        <labelSolidTendedWell>set</labelSolidTendedWell>
-      </li>
-      <li Class="HediffCompProperties_Infecter">
-        <infectionChance>0.15</infectionChance>
-      </li>
-      <li Class="HediffCompProperties_GetsPermanent">
-        <permanentLabel>old gunshot</permanentLabel>
-        <instantlyPermanentLabel>permanent gunshot injury</instantlyPermanentLabel>
-      </li>
-    </comps>
-    <injuryProps>
-      <painPerSeverity>0.0125</painPerSeverity>
-      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
-      <bleedRate>0.06</bleedRate>
-      <canMerge>false</canMerge>
-      <destroyedLabel>Shot off</destroyedLabel>
-      <destroyedOutLabel>Shot out</destroyedOutLabel>
-    </injuryProps>
-  </HediffDef>-->
-
 </Defs>

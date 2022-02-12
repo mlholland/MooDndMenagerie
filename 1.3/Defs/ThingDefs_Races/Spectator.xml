@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_Spectator</defName>
 		<label>Spectator</label>
-    <description>Spectators are weaker relatives of beholders. Their orb-like head is four feet in diameter, and they only have 4 eyestalks. They can be pulled from whatever dimension they hail from by constructing an effigy in their likeness using the eyestalks of a killed beholder. Spectators that are summoned this way are loyal to their summoner, and will fight for them.</description>
+    <description>Spectators are weaker relatives of beholders. Their orb-like head is four feet in diameter, and they only have 4 eyestalks. They can be pulled from whatever dimension they hail from by constructing an effigy in their likeness using the eyestalks of a killed beholder. Spectators that are summoned this way are loyal to their summoner, and will fight for them using thier 3 eye ray attacks of necrosis, time-slowing, and paralysis.</description>
     <statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -75,7 +75,7 @@
         <minRange>1</minRange>
         <commonality>1</commonality> 
     </li>
-      <li>
+      <!--li>
         <label>Fear Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
@@ -92,7 +92,7 @@
         <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality> 
-      </li>
+      </li-->
       <li>
         <label>Paralysis Ray</label>
         <verbClass>Verb_Shoot</verbClass>
