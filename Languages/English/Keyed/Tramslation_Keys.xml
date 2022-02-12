@@ -15,18 +15,18 @@
   
   <!--Golem and spectator stuff-->
   <DND_GolemAwoken_Notification>A {0} has been magically compelled to life! It has been named {1} and will now serve the colony.</DND_GolemAwoken_Notification>
-  <DND_GolemAwoken_IconDesc>Invoke the last vestiges of power in the manual of golems embedded in the statue. Doing so will permanently awaken it into a {0} to serve the colony.</DND_GolemAwoken_IconDesc>
+  <DND_GolemAwoken_IconDesc>Invoke the last vestiges of power from tome of golems embedded in this statue. Doing so will permanently awaken it into a {0} to serve the colony.</DND_GolemAwoken_IconDesc>
   <DND_GolemAwoken_IconLabel>Awaken</DND_GolemAwoken_IconLabel>
   
-  <DND_SpectatorSummoned_Notification>A {0} has been summoned into this reality and bound to serve the colony! It has been named {1}.</DND_SpectatorSummoned_Notification>
-  <DND_SpectatorSummoned_IconDesc>Activate this effigy to summon a loyal {0} from another dimension to serve the colony.</DND_SpectatorSummoned_IconDesc>
+  <DND_SpectatorSummoned_Notification>A {0} has been summoned and bound to serve the colony! It has been named {1}.</DND_SpectatorSummoned_Notification>
+  <DND_SpectatorSummoned_IconDesc>Activate this effigy to summon a {0} from another dimension to serve the colony.</DND_SpectatorSummoned_IconDesc>
   <DND_SpectatorSummoned_IconLabel>Summon</DND_SpectatorSummoned_IconLabel>
 
   <!--Animated furniture stuff-->
   <DND_FurnitureAnimated>A {0} has been brought to life to serve the colony! It has been named {1}.</DND_FurnitureAnimated>
   <DND_MaterialHediffLabel>Living Material: {0}</DND_MaterialHediffLabel>
   <DND_MaterialHediffDescription>This creature is made of {0}, which has various effects on its physiology.</DND_MaterialHediffDescription>
-  <DND_MadeFromMaterialAddon>\nThis particular creature is made of {0}</DND_MadeFromMaterialAddon>
+  <DND_MadeFromMaterialAddon>\nThis particular creature is made of {0}.</DND_MadeFromMaterialAddon>
   <DND_AnimatedCreatureLabel>{0} ({1})</DND_AnimatedCreatureLabel> 
   
 <!-- events-->

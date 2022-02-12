@@ -30,7 +30,7 @@
   <ThingDef ParentName="ScrollAndTomeBase">
     <defName>DND_ScrollAnimateObjects</defName>
     <label>Scroll of Animate Objects</label>
-    <description>A one-use magical scroll which animates a piece of furniture into a loyal creature. This can be used on dining chairs, tool cabinets, and stools. The resulting creature's stats depend on the material and quality of the originating furniture.</description>
+    <description>A single-use magical scroll which animates a piece of furniture into a loyal creature. This can be used on dining chairs, tool cabinets, and stools. The resulting creature's stats depend on the material and quality of the originating furniture.</description>
     <graphicData>
       <texPath>Things/Item/DND_ScrollOAO</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -178,5 +178,4 @@ Ancient notes can be crafted into various rare items from the Dnd Managerie Mod 
       <li>Items</li>
     </thingCategories>
   </ThingDef>
-
 </Defs>

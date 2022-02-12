@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>DND_Annihilator</defName>
     <label>Annihilator</label>
-    <description>Annihilators are extremely dangerous relatives of the innocuous rust monster. Like rust monsters, they possess large antennae that are coated in unusual chemicals, but instead of corroding metals on contact, an annihilator's chemicals will disintegrate most solid matter on contact, leaving behind nothing but a fine dust which the annihilator then consumes. Armor will last seconds at most against them, and flesh will fare even worse. Avoid close quaters combat with these creatures at all costs.</description>
+    <description>Annihilators are extremely dangerous relatives of the innocuous rust monster. Like rust monsters, they possess large antennae that are coated in unusual chemicals, but instead of corroding metals on contact, an annihilator's chemicals will disintegrate most solid matter, leaving behind nothing but a fine dust which the annihilator then consumes. Armor will last for seconds against them, and flesh will fare even worse. Avoid close quaters combat with these creatures at all costs.</description>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
       <MarketValue>1200</MarketValue>      

@@ -4,9 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>DND_DisplacerBeast</defName>
     <label>displacer beast</label>
-    <description>At a glance, a displacer beast looks like an enormous panther, but their alien origin is quickly apparent when you look beyond their feline face. Displacer beasts have six legs, as well as two tentacles sprouting from their shoulders. These tentacles end in spiny lashers, and the displacer beast uses them to shred their prey. If this was not dangerous enough, displacer beasts earn their name from their ability to distort light, making them appear to be standing a few feet away from their actual location. 
-    
-This light-bending power makes hitting a displacer beast extremely difficult. If successfully hunted, a displacer beast's pelt can confer its light-bending ability to large clothing made from it.</description>
+    <description>At a glance, a displacer beast looks like an enormous panther, but their alien origin is quickly apparent when you look beyond their feline face. Displacer beasts have six legs, as well as two tentacles sprouting from their shoulders. These tentacles end in spiny lashers, and the displacer beast uses them to shred their prey. If this was not dangerous enough, displacer beasts earn their name from their ability to distort light, making them appear to be standing a few feet away from their actual location.</description>
     <statBases>
       <MoveSpeed>6.1</MoveSpeed>
       <MarketValue>900</MarketValue>      

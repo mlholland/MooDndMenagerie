@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>DND_RustMonster</defName>
     <label>Rust Monster</label>
-    <description>Rust monsters are chunky, quadrupedal crustaceans with long feathery antennae. As their name might suggest, rust monsters eat rusted metals. If no rust is present, they can secrete an ususual chemical from their antennae which rapidly oxidizes most metals on touch. Close combat with these creatures while wearing metal armor (or worse, while having metal body parts) is ill-advised.
+    <description>Rust monsters are chunky, quadrupedal crustaceans with long feathery antennae. As their name might suggest, rust monsters eat rusted metals. If no rust is present, they can secrete an unusual chemical from their antennae which rapidly oxidizes most metals on touch. Close combat with these creatures while wearing metal armor (or worse, while having metal body parts) is ill-advised.
 
 Rust monsters will eat most metal deposits and raw metals that they can reach, making them a bit of a pest. If you want to tame them as an anti-mech fighter, keep them around your slag piles.</description>
     <statBases>

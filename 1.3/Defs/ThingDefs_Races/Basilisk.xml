@@ -5,7 +5,7 @@
 		<label>Basilisk</label>
 		<description>Basilisks are burrowing reptilian predators with large heads and eight legs. They are known for their troublesome ability to petrify their prey with their magical gaze. 
     
-Thankfully this effect is not as powerful as the dreaded medusa, and it requires that the victim be capable of sight, so blind creatures are immune. If slain, a petrification antidote can be harvested from a basilisk's corpse.</description>
+Thankfully this effect is not as powerful as the dreaded medusa, and like a medusa's attack it still requires that the victim be capable of sight, so blind creatures are immune. If slain, a petrification antidote can be harvested from a basilisk's corpse.</description>
 		<statBases>
 			<MoveSpeed>3.95</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

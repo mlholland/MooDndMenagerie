@@ -3,9 +3,11 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DND_GibberingMouther</defName>
 		<label>Gibbering Mouther</label>
-		<description>Thought to be the failed result of some profane experiment, a gibbering mouther is an amorphous, liquid-like blob of flesh. Countless eyes and mouths are ceacelessly coalescing and dissolving over its body. These many mouths constantly emit a disorienting babble of gibberish that disorients nearby creatures, allowing this slow predator to close in and consume its victims. 
+		<description>Thought to be the failed result of some profane experiment, a gibbering mouther is an amorphous, liquid-like blob of flesh. As it searches for prey, countless eyes and mouths constantly coalesce and dissolve over its body. These mouths emit a magical babble of gibberish that disorients nearby creatures, allowing this slow predator to close in and consume its victims. 
     
-The effectiveness of a mouther's babble depends on the victim's hearing. Deaf creatures are immune, while acute listeners are more easily affected. Creatures that experience prolonged exposure to the babble will build a temporary resistance to the effect.</description>
+The likelihood that a mouther's babble will affect someone depends on the their hearing. Deaf creatures are immune, while acute listeners are more easily affected. Creatures that experience prolonged exposure to the babble will build a temporary resistance to the effect.
+
+Note: For balance reasons, a mouther's babble will only affect at most 3 creatures per periodic attempt.</description>
 		<statBases>
 			<MoveSpeed>2.7</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

@@ -171,7 +171,7 @@ Note: For balance reasons, the resulting golem will always have the same stats a
   <ThingDef ParentName="BuildingBase">
     <defName>DND_SpectatorEffigy</defName>
     <label>spectator effigy</label>
-    <description>A crude effigy made from human flesh and beholder eyestalks. Activating this will forceably replace the effigy with a similarly-sized creature from the dimension of beholders, and bind it to the colony.</description>
+    <description>A crude effigy made from human flesh and beholder eyestalks. Activating this will replace the effigy with a similarly-sized creature from the dimension of beholders, and bind it to the colony.</description>
     <graphicData>
       <texPath>Things/Building/Security/DND_SpectatorEffigy</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
