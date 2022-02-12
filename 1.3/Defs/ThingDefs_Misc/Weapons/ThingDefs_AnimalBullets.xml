@@ -31,7 +31,7 @@
         <capacityDef>Sight</capacityDef>
       </csv>
       <shieldPierceChance>0</shieldPierceChance>
-      <shieldDamage>18</shieldDamage>
+      <shieldDamage>10</shieldDamage>
     </dgi>
     <bonusDamageToStructures>1</bonusDamageToStructures>
     <addHediffChance>1</addHediffChance>
@@ -65,7 +65,7 @@
         <capacityDef>Sight</capacityDef>
       </csv>
       <shieldPierceChance>0</shieldPierceChance>
-      <shieldDamage>12</shieldDamage>
+      <shieldDamage>6</shieldDamage>
     </dgi>
     <bonusDamageToStructures>1</bonusDamageToStructures>
     <addHediffChance>1</addHediffChance>

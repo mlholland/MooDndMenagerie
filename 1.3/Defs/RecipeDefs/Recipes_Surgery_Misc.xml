@@ -26,7 +26,7 @@
   <RecipeDef ParentName="SurgeryFlesh">
     <defName>DND_RepairGolemFleshTen</defName>
     <label>repair 10 wounds</label>
-    <description>Repair the 10 worst injuries on this golem using some human flesh. This acts like 10 applications of a healer mech serum.</description>
+    <description>Repair the 10 worst injuries on this golem using some human flesh. This acts like 10 applications of healer mech serum.</description>
     <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
     <jobString>Repairing.</jobString>
     <workAmount>200</workAmount>
@@ -75,7 +75,7 @@
   <RecipeDef ParentName="SurgeryFlesh">
     <defName>DND_RepairGolemStoneTen</defName>
     <label>repair 10 wounds</label>
-    <description>Repair the 10 worst injuries on this golem using some stone blocks. This acts like 10 applications of a healer mech serum.</description>
+    <description>Repair the 10 worst injuries on this golem using some stone blocks. This acts like 10 applications of healer mech serum.</description>
     <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
     <jobString>Repairing.</jobString>
     <workAmount>200</workAmount>
@@ -124,7 +124,7 @@
   <RecipeDef ParentName="SurgeryFlesh">
     <defName>DND_RepairGolemSteelTen</defName>
     <label>repair 10 wounds</label>
-    <description>Repair the 10 worst injuries on this golem using some steel. This acts like 10 applications of a healer mech serum.</description>
+    <description>Repair the 10 worst injuries on this golem using some steel. This acts like 10 applications of healer mech serum.</description>
     <workerClass>MoodndBehaviorsAndEvents.Recipe_HealWorstInjury10</workerClass>
     <jobString>Repairing.</jobString>
     <workAmount>200</workAmount>

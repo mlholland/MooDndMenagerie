@@ -11,7 +11,7 @@
         <li>DND_GolemStatsStone</li>
         <li>DND_GolemStatsSteel</li>
       </immunityHediffDefs>
-      <shieldPierceChance>.4</shieldPierceChance>
+      <shieldPierceChance>0</shieldPierceChance>
       <shieldDamage>100</shieldDamage>
     </dgi>
     <addHediffChance>1</addHediffChance>
@@ -41,7 +41,7 @@
         <li>DND_GolemStatsSteel</li>
       </immunityHediffDefs>
       <shieldPierceChance>.5</shieldPierceChance>
-      <shieldDamage>40</shieldDamage>  
+      <shieldDamage>0</shieldDamage>  
   </dgi>
     <drainChance>1</drainChance>
     <drainAmount>1</drainAmount>
@@ -71,7 +71,7 @@
         <li>DND_GolemStatsStone</li>
         <li>DND_GolemStatsSteel</li>
       </immunityHediffDefs>
-      <shieldPierceChance>1</shieldPierceChance>
+      <shieldPierceChance>.5</shieldPierceChance>
       <shieldDamage>0</shieldDamage>
     </dgi>
     <forcedJob>DND_ForcedFlee</forcedJob>
@@ -163,8 +163,8 @@
   <ThingDef Name="ParalysisRayBullet" Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
     <defName>DND_BeholderParalysisRay</defName>
     <dgi>
-      <shieldPierceChance>.3</shieldPierceChance>
-      <shieldDamage>70</shieldDamage>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>150</shieldDamage>
       <immunityHediffDefs>
         <li>DND_GolemStatsFlesh</li>
         <li>DND_GolemStatsStone</li>
@@ -228,7 +228,7 @@
     <label>disintegration ray</label>
     <dgi>
       <shieldPierceChance>0</shieldPierceChance>
-      <shieldDamage>150</shieldDamage>
+      <shieldDamage>500</shieldDamage>
     </dgi>
     <bonusDamageToStructures>250</bonusDamageToStructures>
     <modifyExistingHediff>false</modifyExistingHediff>
