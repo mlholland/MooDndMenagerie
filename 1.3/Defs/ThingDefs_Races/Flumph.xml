@@ -39,9 +39,9 @@ If tamed, a flumph's tentacles can occasionally be 'milked' for the acidic secre
 			<gestationPeriodDays>60</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
-          <li>(1, .35)</li>
-          <li>(2, .55)</li>
-          <li>(3, .1)</li>
+          <li>(.99, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0)</li>
 				</points>
 			</litterSizeCurve>
 			<lifeExpectancy>20</lifeExpectancy>
