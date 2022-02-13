@@ -29,7 +29,7 @@
 
 	<packageId>mooloh.dndmenagerie</packageId>
 
-	<description>  This mod adds over a dozen Dungeons and Dragons-inspired animals to RimWorld. 
+	<description>  Adds over a dozen Dungeons and Dragons-inspired animals to RimWorld. 
   
   Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has a non-vanilla ability, behavior, or item associated with it.
 
@@ -84,10 +84,6 @@
   - A Dog Said... Animal Prosthetics: All organic animals are compatible with implants added by A Dog Said. That said, I don't add any new prosthetics, so some body parts - like displacer beast tentacles and full eyestalks - have no replacements. Also, inorganic and unstable creatures (golems, animated furniture, and gibbering mouthers) are ineligible for implants.
   
   This mod doesn't do too much beyond adding animals, so I don't expect too many problems beyond possible strange interactions between beholder rays and modded body shields. 
-  
-  I do indent to make this mod compatible with the following:
-
- - Combat Extended: I've never used this mod, and don't intend to plan around it. 
 
 &lt;size=24&gt;Issues&lt;/size&gt;
 
@@ -134,6 +130,6 @@
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
-    v0.1: Alpha release on Steam
+ - v1.0: Initial release
 	</description>
 </ModMetaData>
