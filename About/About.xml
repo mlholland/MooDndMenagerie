@@ -29,7 +29,7 @@
 
 	<packageId>mooloh.dndmenagerie</packageId>
 
-	<description>  This mod adds over a dozen Dungeons and Dragons-inspired animals to RimWorld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique dungeon monster faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has a non-vanilla ability, behavior, or item associated with it.
+	<description>  This mod adds over a dozen Dungeons and Dragons-inspired animals to RimWorld. Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has a non-vanilla ability, behavior, or item associated with it.
 
 &lt;size=24&gt;Animal List&lt;/size&gt;
 
@@ -75,7 +75,7 @@
 
  - Psy-kick: This is the drug that can be refined from Flumph "Ink". It boosts consciousness, psychic entropy recovery, and immediately grants a ton of psyfocus, but is comparable in addictiveness to go-juice. Obviously this is most useful if you have the Royalty DLC installed, but the drug's consciousness boost is still useful on its own.
 
-&lt;size=24&gt;Mod compatability&lt;/size&gt;
+&lt;size=24&gt;Mod Compatibility&lt;/size&gt;
 
   DnD Menagerie has compatibility patches for the following:
   
@@ -89,11 +89,11 @@
 
 &lt;size=24&gt;Issues&lt;/size&gt;
 
-  Balance is the main concern. I did some playtesting, but there are several new mechanics that can warp combat a bit. I'm very open to feedback regarding the resistance mechanic, shield-piercing rates for magical attacks, the general dps/tankiness of creatures, costs of rare items, and anything else.
+  Balance is the main concern. I did some playtesting, but there are several new mechanics that can warp combat a bit. I'm very open to feedback regarding the resistance mechanic, shield-piercing rates for magical attacks, the general dps/tankiness of creatures, costs of rare items, and anything else. If you find a bug, please include a log if possible.
   
-  The following is a list of known bugs that can open up the debug logs you're playing in debug mode, but have minimal impact on gameplay:
+  The following is a list of known bugs:
   
-  - Creatures targeting the victim of someone who just got thrown by a telekinesis ray will get confused when their target can't be found. They will properly select a new target after an error is logged.  
+  - Creatures targeting the victim of someone who just got thrown by a telekinesis ray will get confused when their target can't be found. They will properly select a new target after an error is logged. Fixing this would require checks in the combat AI code, which I don't want to do because of performance concerns for large lategame raids. 
   
   Other issues to be noted when they arise...
   
@@ -121,8 +121,6 @@
  - Big thanks to the many wonderful people on the RimWorld Discord's modding channel - especially Steve - who helped me learn, debug, and solve all sorts of issues that came up as I learned about modding.
  
  - Thanks to all the modders who listed their work on GitHub. I learned so much just from poking around the repos of my favorite mods, and I'm grateful that new modders stand on the shoulders of giants.
- 
- - Thanks to Hi19Hi19 for early playtesting.
 
 &lt;size=24&gt;Legal&lt;/size&gt;
 
