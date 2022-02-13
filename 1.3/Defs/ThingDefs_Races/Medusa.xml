@@ -68,7 +68,7 @@ Thankfully their petrification attack obeys magical relativity, so it requires t
         <defaultProjectile>DND_MedusaRay</defaultProjectile>
         <warmupTime>2</warmupTime>
         <range>35.9</range>
-        <burstShotCount>30</burstShotCount>
+        <burstShotCount>20</burstShotCount>
         <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
         <soundCast>DND_PetrificationRay_Fire6</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
