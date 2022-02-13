@@ -20,12 +20,13 @@
     <graphicData>
       <texPath>Things/Projectile/DND_PetrificationRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageAmountBase>0</damageAmountBase>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
       <armorPenetrationBase>1</armorPenetrationBase>
-      <speed>120</speed>
+      <speed>60</speed>
     </projectile>
     <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass> 
   </ThingDef>
@@ -48,6 +49,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_SleepRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
@@ -76,6 +78,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_FearRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
@@ -104,6 +107,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_CharmRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
@@ -124,6 +128,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_TelekinesisRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
@@ -145,6 +150,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_DeathRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderDeathRay</damageDef>
@@ -172,6 +178,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_ParalysisRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
@@ -193,6 +200,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_SlowRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
@@ -209,6 +217,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_EnervationRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderEnervationRay</damageDef>
@@ -232,6 +241,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_DisintegrationRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>

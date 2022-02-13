@@ -40,6 +40,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_PetrificationRayCluster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_MedusaRay</damageDef>
@@ -74,6 +75,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_PetrificationRayCluster</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_MedusaRay</damageDef>
@@ -118,6 +120,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_ParalysisRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
@@ -140,6 +143,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_SlowRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
@@ -169,6 +173,7 @@
     <graphicData>
       <texPath>Things/Projectile/DND_FearRay</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
     </graphicData>
     <projectile>
       <damageDef>DND_DmgDef_BeholderRay</damageDef>
