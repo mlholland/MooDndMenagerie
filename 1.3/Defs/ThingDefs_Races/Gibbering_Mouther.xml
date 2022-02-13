@@ -42,9 +42,6 @@ Note: For balance reasons, a mouther's babble will only affect at most 3 creatur
         <li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
-          <soundWounded>Pawn_Warg_Wounded</soundWounded>
-          <soundDeath>Pawn_Warg_Death</soundDeath>
-          <soundCall>Pawn_Warg_Call</soundCall>
           <soundAngry>Pawn_Warg_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
