@@ -49,7 +49,6 @@
     <makesSickThought>true</makesSickThought>
     <tendable>true</tendable>
     <lethalSeverity>1.01</lethalSeverity><!--Lethal severity is above the max, that way you can't actually die from this, but you can see the severity percentage. -->
-    <minSeverity>0.001</minSeverity>
     <maxSeverity>1</maxSeverity>
     <initialSeverity>0.001</initialSeverity>
     <comps>
