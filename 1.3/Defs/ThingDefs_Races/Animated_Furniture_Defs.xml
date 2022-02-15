@@ -52,19 +52,21 @@
     <defName>DND_AnimatedDiningChair</defName>
     <label>Animated Dining Chair</label>
     <description>A dining chair that has been brought to life by a Scroll of Animate Objects. It seems to always be right behind you when you need a place to sit.
+    
+Animated Chairs will periodically try to comfort nearby colonists, increasing their Comfort need if it's below 50%.
 
-Animated Chairs will periodically try to comfort nearby colonists, increasing their Comfort need if it's below 50%.</description>
+If Giddy Up! Battle Mounts is also installed, Animated Dining Chairs also make for alright mounts, gaining a 25% speed boost.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
       <MarketValue>500</MarketValue>
-      <MeatAmount>90</MeatAmount>
+      <MeatAmount>45</MeatAmount>
       <FilthRate>.2</FilthRate>
     </statBases>
     <race>
       <body>DND_DiningChairBody</body>
-      <baseBodySize>.5</baseBodySize>
+      <baseBodySize>1</baseBodySize>
     </race>
     <tools>
       <li>
@@ -230,18 +232,21 @@ Animated tool cabinets periodically give a small general labor speed boost to ne
     <label>Animated Stool</label>
     <description>A stool that has been brought to life using a Scroll of Animate Objects. It is constantly waddling underfoot, and everyone is convinced that it makes a cute chirping noise when they aren't watching it.
 
-Animated stools are oddly endearing, and have a very high nuzzle interval.</description>
+Animated stools are oddly endearing, and have a very high nuzzle interval.
+
+    
+If Giddy Up! Battle Mounts is also installed, Animated Stools make for unusually good mounts, gaining a 50% speed boost and a 30% armor multiplier.</description>
     <statBases>
       <MoveSpeed>4.7</MoveSpeed>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
       <MarketValue>100</MarketValue>
       <FilthRate>.1</FilthRate>
-      <MeatAmount>100</MeatAmount>
+      <MeatAmount>31</MeatAmount>
     </statBases>
     <race>
       <body>DND_StoolBody</body>
-      <baseBodySize>.25</baseBodySize>
+      <baseBodySize>.8</baseBodySize>
       <baseHealthScale>.5</baseHealthScale>
       <nuzzleMtbHours>3</nuzzleMtbHours>
     </race>
