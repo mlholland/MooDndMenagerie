@@ -339,6 +339,7 @@
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\PawnUtility_IsFighting.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\SappersUtility_IsGoodSapper.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\PawnGraphicSet_ResolveAllGraphics.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Harmony\GizmoForPawn.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\VerbPatches.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_Goto_Forced.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Jobs\JobDrivers\JobDriver_FleeAndCower_Forced.cs" />

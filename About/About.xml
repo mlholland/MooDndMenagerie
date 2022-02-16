@@ -79,11 +79,16 @@
 
 &lt;size=24&gt;Mod Compatibility&lt;/size&gt;
 
-  DnD Menagerie has compatibility patches for the following:
+  DnD Menagerie is compatible with the following mods:
   
   - A Dog Said... Animal Prosthetics: All organic animals are compatible with implants added by A Dog Said. That said, I don't add any new prosthetics, so some body parts - like displacer beast tentacles and full eyestalks - have no replacements. Also, inorganic and unstable creatures (golems, animated furniture, and gibbering mouthers) are ineligible for implants.
   
   - Giddy Up!: All sufficiently large, tameable animals besides Spectators can be ridden by default, and many animals have minor patches to make models look better while mounted. If Giddy Up! Battle Mounts is installed, animated dining chairs and stools gain stat bonuses while mounted.
+  
+  - Draftable Animals.
+  
+  - Animal Search and Destroy: Tameable animals with multiple ranged attacks (currently just spectators) will choose randomly among toggled-on attacks, and can be set to only use a single attack type if needed.
+  
   
   This mod doesn't do much beyond adding animals, so I don't expect too many problems beyond possible issues between beholder rays and modded body shields. 
 
