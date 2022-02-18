@@ -89,7 +89,7 @@
   
   - Animal Search and Destroy: Tameable animals with multiple ranged attacks (currently just spectators) will choose randomly among toggled-on attacks, and can be set to only use a single attack type if needed.
   
-  - Dungeons Core: Dungeons will be populated with animals from my mod about 25% of the time (assuming no other threats beyond the original three in the mod). Be warned: These threats get more points to spawn creatures than normal, and some of the uncommon spawn chances are simply... unfair. Have fun!
+  - Dungeons Core: Groups of animals from this mod are added as possible dungeon occupants, with a 25% of occurring per dungeon. Note that due to how Dungeons Core selects dungeons occupants, this 25% chance can't be toggled or turned off (yet). Also be warned: This threat spawns more creatures than others, and some of the animal spawn choices are very deadly. Have fun!
   
   This mod doesn't do much beyond adding animals, so I don't expect too many problems beyond possible issues between beholder rays and modded body shields. 
 
