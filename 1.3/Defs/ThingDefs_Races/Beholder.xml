@@ -283,7 +283,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
 		<race>DND_Beholder</race>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
-		<combatPower>600</combatPower>
+		<combatPower>500</combatPower>
 
 		<wildGroupSize>
 			<min>1</min>

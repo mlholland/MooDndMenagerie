@@ -81,14 +81,15 @@
 
   DnD Menagerie is compatible with the following mods:
   
-  - A Dog Said... Animal Prosthetics: All organic animals are compatible with implants added by A Dog Said. That said, I don't add any new prosthetics, so some body parts - like displacer beast tentacles and full eyestalks - have no replacements. Also, inorganic and unstable creatures (golems, animated furniture, and gibbering mouthers) are ineligible for implants.
+  - A Dog Said... Animal Prosthetics: All organic animals are compatible with implants added by A Dog Said. That said, I don't add any new prosthetics, so some body parts - like displacer beast tentacles and entire spectator eyestalks - have no replacements. Also, inorganic and unstable creatures (golems, animated furniture, and gibbering mouthers) are ineligible for implants.
   
-  - Giddy Up!: All sufficiently large, tameable animals besides Spectators can be ridden by default, and many animals have minor patches to make models look better while mounted. If Giddy Up! Battle Mounts is installed, animated dining chairs and stools gain stat bonuses while mounted.
+  - Giddy Up!: All sufficiently large, tameable animals besides Spectators can be ridden by default, and many animals have minor patches to make the mount/rider overlap look better. If Giddy Up! Battle Mounts is installed, animated dining chairs and stools gain stat bonuses while mounted.
   
-  - Draftable Animals.
+  - Draftable Animals: Works without issue as far as I could tell.
   
   - Animal Search and Destroy: Tameable animals with multiple ranged attacks (currently just spectators) will choose randomly among toggled-on attacks, and can be set to only use a single attack type if needed.
   
+  - Dungeons Core: Dungeons will be populated with animals from my mod about 25% of the time (assuming no other threats beyond the original three in the mod). Be warned: These threats get more points to spawn creatures than normal, and some of the uncommon spawn chances are simply... unfair. Have fun!
   
   This mod doesn't do much beyond adding animals, so I don't expect too many problems beyond possible issues between beholder rays and modded body shields. 
 
@@ -137,6 +138,7 @@
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+ - v1.1c: Added compatability for 4 other mods.
  - v1.0: Initial release
 	</description>
 </ModMetaData>

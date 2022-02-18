@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Patch for Dungeons core to allow my monsters to spawn in castles and graveyards-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Dungeons Core</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/LocationGeneration.LocationDef[defName = "DF_CastleOne" or defName = "DF_CastleTwo" or defName = "DF_CastleThree" or defName = "DF_CastleFour" or defName = "DF_CastleFive" or defName = "DF_GraveyardOne" or defName = "DF_GraveyardTwo" or defName = "DF_GraveyardThree" or defName = "DF_GraveyardFour" or defName = "DF_GraveyardFive"]/threatGenerator/optionsOneOfAll</xpath>
+          <value> 
+            <li>
+              <chance>.05</chance>
+              <lordJob>Verse.AI.Group.LordJob_DefendPoint</lordJob>
+              <indoorsOnly>true</indoorsOnly>
+              <combatPoints>3000~4000</combatPoints>
+              <defaultFaction>DND_DungeonMonsterFaction</defaultFaction>
+              <pawnGroupMaker>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                  <DND_Beholder>10</DND_Beholder>
+                  <DND_Spectator>15</DND_Spectator>
+                </options>
+              </pawnGroupMaker>
+            </li>
+            <li>
+              <chance>.08</chance>
+              <lordJob>Verse.AI.Group.LordJob_DefendPoint</lordJob>
+              <indoorsOnly>true</indoorsOnly>
+              <combatPoints>2000~5000</combatPoints>
+              <defaultFaction>DND_DungeonMonsterFaction</defaultFaction>
+              <pawnGroupMaker>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                  <DND_Beholder>10</DND_Beholder>
+                  <DND_Owlbear>10</DND_Owlbear>
+                  <DND_DisplacerBeast>10</DND_DisplacerBeast>
+                  <DND_RustMonster>10</DND_RustMonster>
+                  <DND_Spectator>10</DND_Spectator>
+                </options>
+              </pawnGroupMaker>
+            </li>
+            <li>
+              <chance>.05</chance>
+              <lordJob>Verse.AI.Group.LordJob_DefendPoint</lordJob>
+              <indoorsOnly>true</indoorsOnly>
+              <combatPoints>2000~4000</combatPoints>
+              <defaultFaction>DND_DungeonMonsterFaction</defaultFaction>
+              <pawnGroupMaker>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options> 
+                  <DND_Owlbear>10</DND_Owlbear>
+                  <DND_DisplacerBeast>10</DND_DisplacerBeast>
+                  <DND_RustMonster>10</DND_RustMonster>
+                  <DND_Annihilator>2</DND_Annihilator>
+                </options>
+              </pawnGroupMaker>
+            </li>
+            <li>
+              <chance>.05</chance>
+              <lordJob>Verse.AI.Group.LordJob_DefendPoint</lordJob>
+              <indoorsOnly>true</indoorsOnly>
+              <combatPoints>2000~4000</combatPoints>
+              <defaultFaction>DND_DungeonMonsterFaction</defaultFaction>
+              <pawnGroupMaker>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                  <DND_Medusa>10</DND_Medusa>
+                  <DND_Basilisk>15</DND_Basilisk>
+                </options>
+              </pawnGroupMaker>
+            </li>
+            <li>
+              <chance>.05</chance>
+              <lordJob>Verse.AI.Group.LordJob_DefendPoint</lordJob>
+              <indoorsOnly>true</indoorsOnly>
+              <combatPoints>2000~4000</combatPoints>
+              <defaultFaction>DND_DungeonMonsterFaction</defaultFaction>
+              <pawnGroupMaker>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                  <DND_Beholder>10</DND_Beholder>
+                  <DND_Spectator>15</DND_Spectator>
+                  <DND_Medusa>15</DND_Medusa>
+                  <DND_Basilisk>15</DND_Basilisk>
+                </options>
+              </pawnGroupMaker>
+            </li>
+            <li>
+              <chance>.01</chance>
+              <lordJob>Verse.AI.Group.LordJob_DefendPoint</lordJob>
+              <indoorsOnly>true</indoorsOnly>
+              <combatPoints>3000~5000</combatPoints>
+              <defaultFaction>DND_DungeonMonsterFaction</defaultFaction>
+              <pawnGroupMaker>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                  <DND_Annihilator>10</DND_Annihilator>
+                </options>
+              </pawnGroupMaker>
+            </li>
+            <li>
+              <chance>.01</chance>
+              <lordJob>Verse.AI.Group.LordJob_DefendPoint</lordJob>
+              <indoorsOnly>true</indoorsOnly>
+              <combatPoints>4000~5000</combatPoints>
+              <defaultFaction>DND_DungeonMonsterFaction</defaultFaction>
+              <pawnGroupMaker>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                  <DND_Beholder>10</DND_Beholder>
+                  <DND_Owlbear>10</DND_Owlbear>
+                  <DND_DisplacerBeast>10</DND_DisplacerBeast>
+                  <DND_RustMonster>10</DND_RustMonster>
+                  <DND_FleshGolem>10</DND_FleshGolem>
+                  <DND_Spectator>10</DND_Spectator>
+                </options>
+              </pawnGroupMaker>
+            </li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+
+</Patch>
