@@ -68,8 +68,7 @@
       <herdAnimal>false</herdAnimal>
       <predator>true</predator>
       <baseBodySize>2</baseBodySize>
-      <maxPreyBodySize>3</maxPreyBodySize>
-      <fleshType>Insectoid</fleshType>
+      <maxPreyBodySize>3</maxPreyBodySize> 
       <bloodDef>Filth_BloodInsect</bloodDef>
       <meatColor>(160,168,139)</meatColor>
       <useMeatFrom>Megaspider</useMeatFrom>

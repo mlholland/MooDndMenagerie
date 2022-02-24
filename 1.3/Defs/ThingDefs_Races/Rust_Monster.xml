@@ -75,8 +75,6 @@ Rust monsters will eat most metal deposits and raw metals that they can reach, m
         <TropicalRainforest>0.05</TropicalRainforest>
         <AridShrubland>0.1</AridShrubland>
       </wildBiomes>
-
-      <fleshType>Insectoid</fleshType>
       <bloodDef>Filth_BloodInsect</bloodDef>
       <meatColor>(160,168,139)</meatColor>
       <meatMarketValue>0.5</meatMarketValue>
@@ -87,8 +85,7 @@ Rust monsters will eat most metal deposits and raw metals that they can reach, m
       <baseBodySize>2</baseBodySize>
       <baseHungerRate>.8</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
-      <foodType>VegetarianRoughAnimal</foodType>
-      <leatherDef>Leather_Panthera</leatherDef>
+      <foodType>VegetarianRoughAnimal</foodType> 
       <wildness>0.75</wildness>
       <trainability>Intermediate</trainability>
       <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
