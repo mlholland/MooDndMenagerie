@@ -17,7 +17,7 @@ namespace MoodndBehaviorsAndEvents
     // - It uses custom logic for determining verb scores that's much more lenient, and generally produces the same value for most viable verbs
     // - It selects randomly among viable verbs if multiple verbs have the same best sore, 
     // TODO: figure out if it's possible to make verb selection be weighted by commonality.
-    //[HarmonyPatch(typeof(PawnVerbUtility), nameof(PawnVerbUtility.BestVerbForTarget))]
+    [HarmonyPatch(typeof(PawnVerbUtility), nameof(PawnVerbUtility.BestVerbForTarget))]
     static class PawnVerbUtility_BestVerbForTargets_Prefix_Patch
     {
         static bool Prefix(ref Verb __result, Pawn p, LocalTargetInfo target, IEnumerable<ManagedVerb> verbs, VerbManager man = null)
