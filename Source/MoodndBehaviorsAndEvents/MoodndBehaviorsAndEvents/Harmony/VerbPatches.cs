@@ -17,12 +17,12 @@ namespace MoodndBehaviorsAndEvents
     // - It uses custom logic for determining verb scores that's much more lenient, and generally produces the same value for most viable verbs
     // - It selects randomly among viable verbs if multiple verbs have the same best sore, 
     // TODO: figure out if it's possible to make verb selection be weighted by commonality.
-    [HarmonyPatch(typeof(PawnVerbUtility), nameof(PawnVerbUtility.BestVerbForTarget))]
+    //[HarmonyPatch(typeof(PawnVerbUtility), nameof(PawnVerbUtility.BestVerbForTarget))]
     static class PawnVerbUtility_BestVerbForTargets_Prefix_Patch
     {
         static bool Prefix(ref Verb __result, Pawn p, LocalTargetInfo target, IEnumerable<ManagedVerb> verbs, VerbManager man = null)
         { 
-            if (p.ContentSource.PackageId == "mooloh.dndmenagerie") // only intercept animals in this mod
+            if (p != null && p.ContentSource != null && p.ContentSource.PackageId == "mooloh.dndmenagerie") // only intercept animals in this mod
             { 
                 var debug = man?.debugOpts != null && man.debugOpts.ScoreLogging;
                 if (!target.IsValid || (p.Map != null && !target.Cell.InBounds(p.Map))) // not sure why the last condition is red according to VS; it compiles just fine.
