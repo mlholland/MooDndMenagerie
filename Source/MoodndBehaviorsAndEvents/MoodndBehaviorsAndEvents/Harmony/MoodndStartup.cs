@@ -36,25 +36,12 @@ namespace MoodndBehaviorsAndEvents
 
             Log.Message("MooDnd Generation: Generating material-based hediffs");
             StartupHelper.GenerateAnimatedAnimalDefs();
-            Log.Message("MooDnd Generation: Modifying existing clothing defs to allow special material buffs");
-            StartupHelper.ModifyExistingDefs();
             Log.Message("MooDnd Generation: Complete");
         }
     }
 
     static class StartupHelper
     {
-        // should probably move this, among many other things into a separate utility mod if I keep making stuff.
-        public static void ModifyExistingDefs()
-        {
-            foreach(ThingDef td in DefDatabase<ThingDef>.AllDefs)
-            {
-                if (td.IsApparel)
-                { 
-                    td.comps.Add(new CompProperties_BuffedItem());
-                }
-            }
-        }
 
         // Adds new Defs to the game - namely all the stuff related to animated furnituire (besides tool cabinets)
         public static void GenerateAnimatedAnimalDefs()

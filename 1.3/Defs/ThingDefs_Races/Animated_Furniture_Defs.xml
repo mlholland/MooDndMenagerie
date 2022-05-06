@@ -32,7 +32,6 @@
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-      <leatherDef>Leather_Bird</leatherDef>
       <gestationPeriodDays>999</gestationPeriodDays>
       <baseHealthScale>1</baseHealthScale>
       <lifeStageAges>

@@ -23,13 +23,6 @@
         <Beauty>2</Beauty>
       </statFactors>
     </stuffProps>
-    <comps>
-      <li Class="MoodndBehaviorsAndEvents.CompProperties_BuffedStuff">
-        <appliedHediffWhenWorn>DND_OwlbearSilence</appliedHediffWhenWorn>
-        <requiredLayer>Shell</requiredLayer>
-        <requiredBodyPartGroup>Torso</requiredBodyPartGroup>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="LeatherBase">
@@ -55,13 +48,6 @@
         <Beauty>3</Beauty>
       </statFactors>
     </stuffProps>
-    <comps>
-      <li Class="MoodndBehaviorsAndEvents.CompProperties_BuffedStuff">
-        <appliedHediffWhenWorn>DND_WornDisplacement</appliedHediffWhenWorn>
-        <requiredLayer>Shell</requiredLayer>
-        <requiredBodyPartGroup>Torso</requiredBodyPartGroup>
-      </li>
-    </comps>
   </ThingDef>
   
 

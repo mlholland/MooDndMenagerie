@@ -322,21 +322,19 @@
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\CapacityScalingValues.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\CodeUtilities\FurnitureToAnimatedObjectConverter.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompHediffEffecterRework.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_BuffedItem.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_StuffableAnimal.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_NeedBooster.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Comps\CompProperties\CompProperties_BuffedStuff.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_BuffedStuff.cs" />
-    <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_BuffedItem.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\Comp_StuffableAnimal.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffCompProperties\HediffCompProperties_TurnToDustOnDeath.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Comps\HediffComps\HediffComp_TurnToDustOnDeath.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\DebuffingManeuverDef.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Defs\StuffedApparelGrantsHediffDef.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Def_AnimatableFurniture.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Suspend.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Defs\Projectiles\Projectile_Pawn_Linear.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\BiomeDef_CommonalityOfAnimal_patch.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\PawnUtility_IsFighting.cs" />
+    <Compile Include="MoodndBehaviorsAndEvents\Harmony\Pawn_ApparelTracker_Wear.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\SappersUtility_IsGoodSapper.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\PawnGraphicSet_ResolveAllGraphics.cs" />
     <Compile Include="MoodndBehaviorsAndEvents\Harmony\GizmoForPawn.cs" />
@@ -408,6 +406,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

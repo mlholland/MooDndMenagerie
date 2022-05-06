@@ -25,6 +25,9 @@
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
     <li>spoonshortage.ADogSaidAnimalProsthetics</li>
 	</loadAfter>
+  <loadBefore>
+    <li>seohyeon.OptimizationMeats</li>
+  </loadBefore>
 	<author>Mooloh</author>
 
 	<packageId>mooloh.dndmenagerie</packageId>
