@@ -12,6 +12,7 @@ namespace MoodndBehaviorsAndEvents
 
         public bool flagMoodndMonsterRaids = true;
         public bool flagRustMonsterInfestations = true;
+        public bool flagDebug = false;
 
         public const float moodndAnimalSpawnMultiplierBase = 1;
         public float moodndAnimalSpawnMultiplier = moodndAnimalSpawnMultiplierBase;
@@ -23,9 +24,11 @@ namespace MoodndBehaviorsAndEvents
 
         public override void ExposeData()
         {
+            
             base.ExposeData();
             Scribe_Values.Look(ref flagMoodndMonsterRaids, "flagmoodndMonsterRaids", true, true);
             Scribe_Values.Look(ref flagRustMonsterInfestations, "flagRustMonsterInfestations", true, true);
+            Scribe_Values.Look(ref flagDebug, "flagDebug", false, true);
             Scribe_Values.Look(ref moodndAnimalSpawnMultiplier, "moodndAnimalSpawnMultiplier", moodndAnimalSpawnMultiplierBase, true);
             //Scribe_Values.Look(ref moodndQuestRewardMultiplier, "moodndQuestRewardMultiplier", moodndQuestRewardMultiplierBase, true); 
         }
@@ -46,6 +49,7 @@ namespace MoodndBehaviorsAndEvents
             ls.Label("DND_MoodndAnimalSpawnMultiplier".Translate() + ": " + moodndAnimalSpawnMultiplier, -1, "DND_MoodndAnimalSpawnMultiplierTooltip".Translate());
             moodndAnimalSpawnMultiplier = (float)Math.Round(ls.Slider(moodndAnimalSpawnMultiplier, 0.1f, 5f), 2);
             ls.Label("DND_IndividualSpawnSettingsNote".Translate());
+            ls.CheckboxLabeled("DND_PrintDebugLogs".Translate(), ref flagDebug, null);
 
             ls.End();
             base.Write();

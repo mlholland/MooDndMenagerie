@@ -9,9 +9,10 @@
   <DND_IndividualSpawnSettingsNote>Note: Toggles to control whether specific animals can naturally spawn in the wild can be found under the 'Vanilla Animals Expanded' mod settings tab.</DND_IndividualSpawnSettingsNote>
   <DND_MoodndRewardMultiplier>Dnd Managerie quest reward frequency multiplier</DND_MoodndRewardMultiplier>
   <DND_MoodndRewardMultiplierTooltip>This multiplier will affect the quest reward rate (commonalities) of ALL animals in this mod. For example, if this is set to 0.5, then items from the mod will appear as quest rewards half as much as the default (which is 1). If set to 2, you'll see quest rewards from this mod twice as often, and so on.</DND_MoodndRewardMultiplierTooltip>
- 
+  <DND_PrintDebugLogs>Enable Debug Logging</DND_PrintDebugLogs>
   <!-- misc -->
   <DND_madeFromSpecialMaterialNote>\nThis item is made from {0}, so it confers some special powers to the wearer as noted in the material's description.</DND_madeFromSpecialMaterialNote>
+  <MooDnD_LogPrefix>Dnd Menagerie: </MooDnD_LogPrefix>
   
   <!--Golem and spectator stuff-->
   <DND_GolemAwoken_Notification>A {0} has been magically compelled to life! It has been named {1} and will now serve the colony.</DND_GolemAwoken_Notification>
