@@ -8,7 +8,6 @@
 			<RangedAnimals>true</RangedAnimals>
 			<HediffVerbs>true</HediffVerbs>
 			<IntegratedToggle>true</IntegratedToggle>
-      <ExtraEquipmentVerbs>true</ExtraEquipmentVerbs>
 		</Features>
 	</MVCF.ModDef>
 </Defs>
