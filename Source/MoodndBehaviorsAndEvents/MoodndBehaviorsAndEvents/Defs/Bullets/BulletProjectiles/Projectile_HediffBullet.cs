@@ -17,9 +17,9 @@ namespace MoodndBehaviorsAndEvents
             }
         }
         
-        protected override void Impact(Thing hitThing)
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
-            base.Impact(hitThing);
+            base.Impact(hitThing, blockedByShield);
             
             // sanity check that nothing important is null
             bool targetWasPawn = false;

@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
+    <defName>DND_BeholderPetrificationRay</defName>
+    <dgi>
+      <immunityHediffDefs>
+        <li>DND_PetrificationImmunity</li>
+        <li>DND_Petrification_Complete</li>
+        <li>DND_Antipet</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
+      </immunityHediffDefs>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>100</shieldDamage>
+    </dgi> 
+    <hediffToAdd>DND_Petrification</hediffToAdd>
+    <severityToAdd>.4~.75</severityToAdd>
+    <label>petrification ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_PetrificationRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageAmountBase>0</damageAmountBase>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass> 
+  </ThingDef>
+
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_SleepDrainBullet" ParentName="BaseBullet">
+    <defName>DND_BeholderSleepRay</defName>
+    <dgi>
+      <immunityHediffDefs> 
+        <li>WakeUpHigh</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
+      </immunityHediffDefs>
+      <shieldPierceChance>.5</shieldPierceChance>
+      <shieldDamage>0</shieldDamage>  
+  </dgi>
+    <drainAmount>1</drainAmount>
+    <narcChanceAtZeroRest>1</narcChanceAtZeroRest>
+    <label>sleep ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_SleepRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_SleepDrainBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_ForceJobBullet" ParentName="BaseBullet">
+    <defName>DND_BeholderFearRay</defName>
+    <dgi>
+      <resistanceHediffDef>DND_MindControlResistance</resistanceHediffDef>
+      <immunityHediffDefs>
+        <li>DND_MindControlImmunity</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
+      </immunityHediffDefs>
+      <shieldPierceChance>.5</shieldPierceChance>
+      <shieldDamage>0</shieldDamage>
+    </dgi>
+    <forcedJob>DND_ForcedFlee</forcedJob>
+    <label>fear ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_FearRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_ForceFleeBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_ForceJobBullet" ParentName="BaseBullet">
+    <defName>DND_BeholderCharmRay</defName>
+    <dgi>
+      <immunityHediffDefs>
+        <li>DND_MindControlImmunity</li>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
+      </immunityHediffDefs>
+      <resistanceHediffDef>DND_MindControlResistance</resistanceHediffDef>
+      <shieldPierceChance>.5</shieldPierceChance>
+      <shieldDamage>0</shieldDamage>
+    </dgi>
+    <forcedJob>DND_ForcedCharmApproach</forcedJob>
+    <label>charm ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_CharmRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_ForceApproachBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef  Class="MoodndBehaviorsAndEvents.ThingDef_YeetBullet"  ParentName="BaseBullet" >
+    <defName>DND_BeholderTelekineticRay</defName>
+    <dgi>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>120</shieldDamage>
+    </dgi>
+    <label>telekinesis ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_TelekinesisRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <speed>60</speed>
+      <damageAmountBase>0</damageAmountBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_YeetBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef Name="DeathRayBullet" Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
+    <defName>DND_BeholderDeathRay</defName>
+    <dgi>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>3000</shieldDamage>
+    </dgi>
+    <bonusDamageToStructures>20</bonusDamageToStructures>
+    <hediffToAdd>DND_BeholderDeathRayHit</hediffToAdd>
+    <label>death ray!</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_DeathRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderDeathRay</damageDef>
+      <damageAmountBase>29</damageAmountBase>
+      <speed>40</speed>
+      <armorPenetrationBase>1</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef Name="ParalysisRayBullet" Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
+    <defName>DND_BeholderParalysisRay</defName>
+    <dgi>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>150</shieldDamage>
+      <immunityHediffDefs>
+        <li>DND_GolemStatsFlesh</li>
+        <li>DND_GolemStatsStone</li>
+        <li>DND_GolemStatsSteel</li>
+      </immunityHediffDefs>
+    </dgi>
+    <hediffToAdd>DND_TemporaryParalysis</hediffToAdd>
+    <severityToAdd>.5~1</severityToAdd>
+    <label>paralysis ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_ParalysisRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet" ParentName="BaseBullet">
+    <defName>DND_BeholderSlowRay</defName>
+    <dgi>
+      <shieldPierceChance>.5</shieldPierceChance>
+      <shieldDamage>30</shieldDamage>
+    </dgi> 
+    <hediffToAdd>DND_BeholderSlowRayHit</hediffToAdd>
+    <label>slow ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_SlowRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DND_BeholderEnervationRay</defName>
+    <label>enervation ray</label>
+    <graphicData>
+      <texPath>Things/Projectile/DND_EnervationRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderEnervationRay</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>1</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef  Class="MoodndBehaviorsAndEvents.ThingDef_HediffBullet"  ParentName="BaseBullet">
+    <defName>DND_BeholderDisintegrationRay</defName>
+    <label>disintegration ray</label>
+    <dgi>
+      <shieldPierceChance>0</shieldPierceChance>
+      <shieldDamage>500</shieldDamage>
+    </dgi>
+    <bonusDamageToStructures>250</bonusDamageToStructures>
+    <modifyExistingHediff>false</modifyExistingHediff>
+    <addHediffToWholeBody>false</addHediffToWholeBody>
+    <hediffToAdd>DND_Disintegrating</hediffToAdd>
+    <graphicData>
+      <texPath>Things/Projectile/DND_DisintegrationRay</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>DND_DmgDef_BeholderRay</damageDef>
+      <damageAmountBase>0</damageAmountBase>
+      <speed>60</speed>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <thingClass>MoodndBehaviorsAndEvents.Projectile_HediffBullet</thingClass>
+  </ThingDef>
+  
+
+</Defs>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+	Each coverage value is relative to its parent.
+	Remaining body part coverage (100% minus coverage of all child nodes) is a chance to hit exactly this part.
+	Damage "starts" at corePart, and then "goes deeper" until it hits remaining body part coverage or leaf node
+  - this body part is then hit.
+-->
+
+<Defs>
+
+  <BodyDef>
+    <defName>DND_FlumphBody</defName>
+    <label>flumph</label>
+    <corePart>
+      <def>Body</def>
+      <customLabel>bell</customLabel>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>DND_BodySlamTool</li>
+      </groups>
+      <parts>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>InsectHeart</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li> 
+        <li>
+          <def>DND_Psychic_Flyer_Brain</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DND_Flumph_Flap</def>
+          <coverage>0.1</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>left eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.07</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>left eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>right eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.07</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>right eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Flumph_Tentacle</def>
+          <customLabel>first tentacle</customLabel>
+          <depth>Outside</depth>
+          <height>Bottom</height>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>DND_AcidTentacle</li>
+          </groups>
+        </li>
+        <li>
+          <def>DND_Flumph_Tentacle</def>
+          <customLabel>second tentacle</customLabel>
+          <depth>Outside</depth>
+          <height>Bottom</height>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>DND_AcidTentacle</li>
+          </groups>
+        </li>
+        <li>
+          <def>DND_Flumph_Tentacle</def>
+          <customLabel>third tentacle</customLabel>
+          <depth>Outside</depth>
+          <height>Bottom</height>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>DND_AcidTentacle</li>
+          </groups>
+        </li>
+        <li>
+          <def>DND_Flumph_Tentacle</def>
+          <customLabel>fourth tentacle</customLabel>
+          <depth>Outside</depth>
+          <height>Bottom</height>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>DND_AcidTentacle</li>
+          </groups>
+        </li>
+        <li>
+          <def>DND_Flumph_Tentacle</def>
+          <customLabel>fifth tentacle</customLabel>
+          <depth>Outside</depth>
+          <height>Bottom</height>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>DND_AcidTentacle</li>
+          </groups>
+        </li>
+        <li>
+          <def>DND_Flumph_Tentacle</def>
+          <customLabel>sixth tentacle</customLabel>
+          <depth>Outside</depth>
+          <height>Bottom</height>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>DND_AcidTentacle</li>
+          </groups>
+        </li>
+        <li>
+          <def>DND_Flumph_Tentacle</def>
+          <customLabel>seventh tentacle</customLabel>
+          <depth>Outside</depth>
+          <height>Bottom</height>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>DND_AcidTentacle</li>
+          </groups>
+        </li>
+        <li>
+          <def>DND_Flumph_Tentacle</def>
+          <customLabel>eighth tentacle</customLabel>
+          <depth>Outside</depth>
+          <height>Bottom</height>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>DND_AcidTentacle</li>
+          </groups>
+        </li>
+      </parts>
+        
+    </corePart>
+  </BodyDef>
+
+</Defs>

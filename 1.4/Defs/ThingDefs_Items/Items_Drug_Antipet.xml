@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>DND_Antipet</defName>
+    <label>Antipet</label>
+    <description>A medicinal drug that quickly counters the effects of petrification. Can be used to cure all stages of petrification, or used preemptively to grant a creature a few hours of petrification immunity.
+
+Antipet can be harvested from the corpses of Medusas and Basilisks, or it can be produced artificially using a lot of neutroamine.</description>
+    <descriptionHyperlinks>
+      <HediffDef>DND_Antipet</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/GoJuice</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass> 
+      <color>(80,50,100)</color>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>550</WorkToMake>
+      <MarketValue>50</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>20</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DND_Antipet</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="MoodndBehaviorsAndEvents.InjestionOutcomeDoer_RemoveHediffs">
+          <hediffDefs>
+            <li>DND_Petrification</li>
+            <li>DND_Petrification_Complete</li>
+          </hediffDefs>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>DrugProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>20</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1001</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>DND_Antipet</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>Antipet</label>
+    <description>This creature is benefitting from Antipet-induced petrification immunity.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>DND_Petrification</li>
+          <li>DND_Petrification_Complete</li>
+        </makeImmuneTo>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

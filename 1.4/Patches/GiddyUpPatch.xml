@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Patch for Giddy Up core to change which animals are mountable by default, and does visual changes-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Giddy-up! Core</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Things that would normally be mountable but shouldn't be-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "DND_Spectator" or defName = "DND_Medusa" or defName = "DND_Beholder"  or defName = "DND_GibberingMouther"]/comps</xpath>
+          <value>
+            <li Class="GiddyUpCore.CompProperties_Mount">
+              <isException>true</isException>
+            </li>
+          </value>
+        </li>
+
+        <!--Positional patches to change how pawns look when riding various animals-->
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_AnimatedDiningChair"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.DrawingOffsetPatch">
+              <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+              <northOffsetCSV>0.0, 0.0, 0.25</northOffsetCSV>
+              <!--x,y,z coordinates. Mind that x: horizontal axis, y: drawing priority, z: vertical axis -->
+              <southOffsetCSV>0,0,0.25</southOffsetCSV>
+              <eastOffsetCSV>.1,0,0.25</eastOffsetCSV>
+              <westOffsetCSV>-.1,0,0.25</westOffsetCSV>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_AnimatedStool"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.DrawingOffsetPatch">
+              <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+              <northOffsetCSV>0.0, 0.0, 0.32</northOffsetCSV>
+              <!--x,y,z coordinates. Mind that x: horizontal axis, y: drawing priority, z: vertical axis -->
+              <southOffsetCSV>0,0,0.32</southOffsetCSV>
+              <eastOffsetCSV>.1,0,0.32</eastOffsetCSV>
+              <westOffsetCSV>-.1,0,0.32</westOffsetCSV>
+            </li>
+          </value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_AnimatedToolCabinet"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.DrawingOffsetPatch">
+              <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+              <northOffsetCSV>0.0, 0.0, 0.5</northOffsetCSV>
+              <!--x,y,z coordinates. Mind that x: horizontal axis, y: drawing priority, z: vertical axis -->
+              <southOffsetCSV>0,0,0.5</southOffsetCSV>
+              <eastOffsetCSV>0,0,0.5</eastOffsetCSV>
+              <westOffsetCSV>0,0,0.5</westOffsetCSV>
+            </li>
+          </value> 
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_Basilisk"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.DrawingOffsetPatch">
+              <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+              <northOffsetCSV>0.1, 0.0, 0</northOffsetCSV>
+              <southOffsetCSV>0,0,0</southOffsetCSV>
+              <eastOffsetCSV>0,0,0</eastOffsetCSV>
+              <westOffsetCSV>0,0,0</westOffsetCSV>
+            </li>
+          </value>
+        </li>
+        
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_DisplacerBeast"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.DrawingOffsetPatch">
+              <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+              <northOffsetCSV>0.0, 0.0, -0.3</northOffsetCSV>
+              <!--x,y,z coordinates. Mind that x: horizontal axis, y: drawing priority, z: vertical axis -->
+              <southOffsetCSV>0,0,-0.3</southOffsetCSV>
+              <eastOffsetCSV>.2,0,-0.3</eastOffsetCSV>
+              <westOffsetCSV>-.2,0,-0.3</westOffsetCSV>
+            </li>
+          </value>
+        </li>
+
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_GolemStone" or defName = "DND_GolemSteel" or defName = "DND_GolemFlesh"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.DrawingOffsetPatch">
+              <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+              <northOffsetCSV>0.0, 0.0, -0.3</northOffsetCSV>
+              <!--x,y,z coordinates. Mind that x: horizontal axis, y: drawing priority, z: vertical axis -->
+              <southOffsetCSV>0,0,-0.3</southOffsetCSV>
+              <eastOffsetCSV>0,0,-0.3</eastOffsetCSV>
+              <westOffsetCSV>0,0,-0.3</westOffsetCSV>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_RustMonster" or defName = "DND_Annihilator"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.DrawingOffsetPatch">
+              <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+              <northOffsetCSV>0.0, 0.0, -0.2</northOffsetCSV>
+              <!--x,y,z coordinates. Mind that x: horizontal axis, y: drawing priority, z: vertical axis -->
+              <southOffsetCSV>0,0,-0.2</southOffsetCSV>
+              <eastOffsetCSV>.1,0,-0.2</eastOffsetCSV>
+              <westOffsetCSV>-.1,0,-0.2</westOffsetCSV>
+            </li>
+          </value>
+        </li>
+        
+        <!--Patches to change render overlaps between mounts and riders-->
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "DND_GolemFlesh"]/comps</xpath> 
+          <value>
+            <li Class="GiddyUpCore.CompProperties_Overlay">
+              <overlayFront>
+                <!--Different overlays can be provided for different viewpoints, possibilities are: overlayFront, overlaySide, and overlayBack -->
+                <graphicDataDefault>
+                  <!-- Different graphics data can be provided for different genders, possibilities are: graphicDataDefault(for all genders), graphicDataMale and graphicDataFemale -->
+                  <texPath>Things/Pawn/Animal/DND_GolemFlesh/DND_FGolem_south</texPath>
+                  <!-- Any property of the GraphicData class can be set here. This includes colors, shadows etc! -->
+                  <graphicClass>Graphic_Single</graphicClass>
+                  <drawSize>1.9</drawSize>
+                  <drawRotated>false</drawRotated> 
+                </graphicDataDefault>
+                <offsetDefault>(0,0,0,0)</offsetDefault> 
+              </overlayFront>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "DND_GolemStone"]/comps</xpath>
+          <value>
+            <li Class="GiddyUpCore.CompProperties_Overlay">
+              <overlayFront>
+                <!--Different overlays can be provided for different viewpoints, possibilities are: overlayFront, overlaySide, and overlayBack -->
+                <graphicDataDefault>
+                  <!-- Different graphics data can be provided for different genders, possibilities are: graphicDataDefault(for all genders), graphicDataMale and graphicDataFemale -->
+                  <texPath>Things/Pawn/Animal/DND_GolemStone/DND_SGolem_south</texPath>
+                  <!-- Any property of the GraphicData class can be set here. This includes colors, shadows etc! -->
+                  <graphicClass>Graphic_Single</graphicClass>
+                  <drawSize>1.9</drawSize>
+                  <drawRotated>false</drawRotated> 
+                </graphicDataDefault>
+                <offsetDefault>(0,0,0,0)</offsetDefault>
+              </overlayFront>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "DND_GolemSteel"]/comps</xpath>
+          <value>
+            <li Class="GiddyUpCore.CompProperties_Overlay">
+              <overlayFront>
+                <!--Different overlays can be provided for different viewpoints, possibilities are: overlayFront, overlaySide, and overlayBack -->
+                <graphicDataDefault>
+                  <!-- Different graphics data can be provided for different genders, possibilities are: graphicDataDefault(for all genders), graphicDataMale and graphicDataFemale -->
+                  <texPath>Things/Pawn/Animal/DND_GolemSteel/DND_SteelGolem_south</texPath>
+                  <!-- Any property of the GraphicData class can be set here. This includes colors, shadows etc! -->
+                  <graphicClass>Graphic_Single</graphicClass>
+                  <drawSize>2.05</drawSize>
+                  <drawRotated>false</drawRotated> 
+                </graphicDataDefault>
+                <offsetDefault>(0,0,0,0)</offsetDefault>
+              </overlayFront>
+            </li>
+          </value>
+        </li>
+      </operations> 
+    </match>
+  </Operation>
+  
+  <!-- combat patch that adjusts certain animal stats-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Giddy-up! Battle Mounts</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_AnimatedStool"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.CustomStatsPatch">
+              <!--Speed factor. -->
+              <speedModifier>1.5</speedModifier>
+              <!--Armor factor. -->
+              <armorModifier>1.3</armorModifier>
+              <!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount -->
+              <useMetalArmor>true</useMetalArmor>
+            </li>
+          </value>
+        </li>
+
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_AnimatedDiningChair"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.CustomStatsPatch">
+              <!--Speed factor. -->
+              <speedModifier>1.25</speedModifier> 
+              <!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount -->
+              <useMetalArmor>true</useMetalArmor>
+            </li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/ThingDef[defName = "DND_AnimatedToolCabinet"]</xpath>
+          <value>
+            <li Class="GiddyUpCore.CustomStatsPatch"> 
+              <!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount -->
+              <useMetalArmor>true</useMetalArmor>
+            </li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+
+</Patch>

@@ -9,6 +9,7 @@ using System.Linq;
  * instance of the Comp_InertMimic class, which isn't normally loaded because it's not part of any normal defs.
  * When saving, inert mimics are ID'd by the presense of a mythic comp.
  * When loading, they're identified by a flag that's saved to the ThingWithComps itself.
+ * DIsabled until I work on it post 1.4 update
  */
 namespace MoodndBehaviorsAndEvents
 {
@@ -22,7 +23,8 @@ namespace MoodndBehaviorsAndEvents
         private static readonly float MIMIC_CASKET_CHANCE = 0.5f;
         private static readonly float OOPS_ALL_MIMICS_CHANCE = 1f;
 
-        [HarmonyPatch(typeof(Building_AncientCryptosleepCasket), "EjectContents")]
+        //[HarmonyPatch(typeof(Building_AncientCryptosleepCasket), "EjectContents")]
+
         static class SignalAction_OpenCasket_Complete_Prefix_Patch
         {
             static bool Prefix(ref Building_AncientCryptosleepCasket __instance)
@@ -38,7 +40,7 @@ namespace MoodndBehaviorsAndEvents
                         // Contents are known (which means other caskets are already being managed), and this
                         // one is a mimic. Replace it with a mimic and cancel normal opening code.
                         Debug.LogIfDebug("Replacing opening cryptosleep casket with mimic.");
-                        PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named("Thrumbo"), Find.FactionManager.FirstFactionOfDef(FactionDef.Named("DND_DungeonMonsterFaction")), PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false);
+                        PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named("Thrumbo"), Find.FactionManager.FirstFactionOfDef(FactionDef.Named("DND_DungeonMonsterFaction")), PawnGenerationContext.NonPlayer, -1, false, false, false, false, false, 0f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, DevelopmentalStage.Adult, null, null, null, false);
                         Pawn pawn = PawnGenerator.GeneratePawn(request);
                         GenSpawn.Spawn(pawn, __instance.PositionHeld, __instance.MapHeld, WipeMode.Vanish);
                         __instance.DeSpawn();

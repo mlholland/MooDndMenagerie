@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>DND_RustMonsters</defName>
+    <label>rust monsters</label>
+    <category>Misc</category> 
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>MoodndBehaviorsAndEvents.IncidentWorker_RustMonsterInfestation</workerClass>
+    <baseChance>1</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>150</minThreatPoints>
+    <letterLabel>Rust Monsters!</letterLabel>
+    <letterText>Rust Monsters are tunneling towards you! Once they surface, their metallic appetite can easily prove destructive to your home and armored warriors. Thankfully they're passive until provoked, so you can carefully organize their extermination.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <tale>Infestation</tale><!-- TODO: add custom tale-->
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>DND_DungeonMonsterRaid</defName>
+    <label>monster raid</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>MoodndBehaviorsAndEvents.IncidentWorker_DungeonMonsterRaid</workerClass>
+    <baseChance>3.6</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>Raid</tale> 
+  </IncidentDef>
+
+</Defs>

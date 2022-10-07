@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <Def Class="MoodndBehaviorsAndEvents.Def_AnimatableFurniture">
+    <defName>DND_AnimatableFurnitureMapping</defName>
+    <targets>
+      <li>DiningChair</li>
+      <li>ToolCabinet</li>
+      <li>Stool</li> 
+    </targets>
+    <results>
+      <li>DND_AnimatedDiningChair</li>
+      <li>DND_AnimatedToolCabinet</li>
+      <li>DND_AnimatedStool</li>
+    </results>
+  </Def>
+</Defs>

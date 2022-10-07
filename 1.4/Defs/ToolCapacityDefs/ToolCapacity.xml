@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs> 
+  <ToolCapacityDef>
+    <defName>DND_RustTouchTool</defName>
+    <label>rusting touch</label>
+  </ToolCapacityDef> 
+
+  <ToolCapacityDef>
+    <defName>DND_DisintegrationTouchTool</defName>
+    <label>disintegrating touch</label>
+  </ToolCapacityDef> 
+
+  <ToolCapacityDef>
+    <defName>DND_AcidAttackTool</defName>
+    <label>acid burn</label>
+  </ToolCapacityDef> 
+</Defs>

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+	Each coverage value is relative to its parent.
+	Remaining body part coverage (100% minus coverage of all child nodes) is a chance to hit exactly this part.
+	Damage "starts" at corePart, and then "goes deeper" until it hits remaining body part coverage or leaf node
+  - this body part is then hit.
+-->
+
+<Defs>
+
+  <BodyDef>
+    <defName>DND_BeholderBody</defName>
+    <label>beholder</label>
+    <corePart>
+      <def>DND_Large_Body</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>DND_BodySlamTool</li>
+      </groups>
+      <parts>
+        <li>
+          <def>DND_Massive_Eye</def>
+          <coverage>.15</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>DND_Massive_Jaw</def>
+          <coverage>.1</coverage>
+          <depth>Outside</depth>
+          <groups>
+            <li>Teeth</li>
+          </groups>
+        </li>
+        <li>
+          <def>Stomach</def>
+          <customLabel>left stomach</customLabel>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Stomach</def>
+          <customLabel>right stomach</customLabel>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Heart</def>
+          <customLabel>blood sack</customLabel>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Heart</def>
+          <customLabel>vascular diaphragm</customLabel>
+          <coverage>0.02</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Lung</def>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Kidney</def>
+          <customLabel>left kidney</customLabel>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Kidney</def>
+          <customLabel>right kidney</customLabel>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Liver</def>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DND_Telekinetic_Flyer_Brain</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DND_Levitation_Bladder</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>first upper eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>first upper eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>second upper eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>second upper eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>third upper eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>third upper eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>fourth upper eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>fourth upper eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>fifth upper eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>fifth upper eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>first lower eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>first lower eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>second lower eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>second lower eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>third lower eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>third lower eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>fourth lower eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>fourth lower eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>DND_Eyestalk</def>
+          <customLabel>fifth lower eyestalk</customLabel>
+          <depth>Outside</depth>
+          <coverage>0.04</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>fifth lower eye</customLabel>
+              <depth>Outside</depth>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>DND_EyestalkGroup</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+      </parts>
+        
+    </corePart>
+  </BodyDef>
+
+</Defs>

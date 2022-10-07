@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- TODO re-add once I figure out how to make the HediffComp_TurnToDustOnDeath code work
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>DND_OrganicDust</defName>
+    <label>Organic Dust</label>
+    <description>A pile of fine dust composed of organic matter from a disintegrated creature. Certain exotic creatures prefer eating this, although it can be used as an unpleasant meat substitute for other creatures.</description>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Resource/Kibble</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>.2</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>1</Flammability>
+    </statBases>
+
+    <ingestible>
+      <optimalityOffsetFeedingAnimals>6</optimalityOffsetFeedingAnimals>
+    </ingestible>
+  </ThingDef>-->
+
+</Defs>

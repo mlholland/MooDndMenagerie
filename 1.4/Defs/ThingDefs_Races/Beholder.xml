@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>DND_Beholder</defName>
+		<label>Beholder</label>
+    <description>Beholders are dangerous and malevolent creatures, thought to be from another dimension. Their "body" consists of a large magically floating head with a single huge eye. Ten eyestalks sprout from its head, each ending in a single, smaller eye. 
+    
+If their appearance wasn't bad enough, beholders can shoot magical rays of light from their eyes. These rays can have one of eight effects: paralysis, slowing time dilation, sudden necrosis, telekinesis, forced sleep, petrification, disintegration, and... death.
+    
+Most of a beholder's body solidifies into a useless stone-like material on death. But the eyestalks remain useful, both as a trophy, and as a potential ritual tool...</description>
+    <statBases>
+			<MoveSpeed>5.0</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>100</ComfyTemperatureMax>
+			<MarketValue>3000</MarketValue>
+      <FilthRate>4</FilthRate>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>0</MeatAmount>
+      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		</statBases>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>false</predator>
+			<body>DND_BeholderBody</body>
+			<packAnimal>false</packAnimal>
+			<baseBodySize>3.5</baseBodySize>
+			<baseHealthScale>12</baseHealthScale>
+			<baseHungerRate>0.17</baseHungerRate>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<wildness>1</wildness>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>150</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.99, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>130</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>1</minAge>
+        </li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>2</minAge>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <hasGenders>false</hasGenders>
+    </race>
+    <verbs>
+      <li>
+        <label>Sleep Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderSleepRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_General</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <label>Petrification Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderPetrificationRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_General</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
+      </li>
+      <!--li>
+        <label>Fear Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderFearRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_General</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <label>Charm Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderCharmRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_General</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>15</minRange>
+        <commonality>1</commonality>
+      </li-->
+      <li>
+        <label>Telekinesis Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderTelekineticRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_General</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <label>Death Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderDeathRay</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_Death</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <label>Paralysis Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderParalysisRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_General</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <label>Slow Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderSlowRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_General</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <label>Enervation Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderEnervationRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>4</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_Enervate</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.97</accuracyTouch>
+        <accuracyShort>.97</accuracyShort>
+        <accuracyMedium>.97</accuracyMedium>
+        <accuracyLong>.97</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <label>Disintegration Ray</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DND_BeholderDisintegrationRay</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>DND_BeholderRay_Fire_Death</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <accuracyTouch>.99</accuracyTouch>
+        <accuracyShort>.99</accuracyShort>
+        <accuracyMedium>.99</accuracyMedium>
+        <accuracyLong>.99</accuracyLong>
+        <minRange>1</minRange>
+        <commonality>.4</commonality>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+      </li>
+      <li>
+        <label>slam</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>DND_BodySlamTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.01</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_Floating"></li>
+    </comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DND_Beholder</defName>
+		<label>Beholder</label>
+		<labelPlural>Beholders</labelPlural>
+		<race>DND_Beholder</race>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<combatPower>500</combatPower>
+
+		<wildGroupSize>
+			<min>1</min>
+			<max>1</max>
+		</wildGroupSize>
+
+    <alternateGraphicChance>1</alternateGraphicChance>
+    <alternateGraphics>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder2</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder3</texPath>
+      </li> 
+    </alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder</texPath>
+					<drawSize>0.85</drawSize>
+          <color>(25, 112, 102)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_Beholder/DND_Dessicated_Beholder</texPath>
+					<drawSize>0.85</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder</texPath>
+					<drawSize>2.1</drawSize>
+          <color>(25, 112, 102)</color>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_Beholder/DND_Dessicated_Beholder</texPath>
+					<drawSize>2.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/DND_Beholder/DND_Beholder</texPath>
+					<drawSize>3.75</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+
+				<dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_Beholder/DND_Dessicated_Beholder</texPath>
+					<drawSize>3.75</drawSize>
+				</dessicatedBodyGraphicData>
+        <butcherBodyPart>
+          <bodyPartGroup>DND_EyestalkGroup</bodyPartGroup>
+          <thing>DND_BeholderEyestalk</thing>
+        </butcherBodyPart>
+			</li>
+		</lifeStages>
+
+	</PawnKindDef>
+
+</Defs>

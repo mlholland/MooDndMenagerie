@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>DND_FaerieDragon</defName>
+		<label>Faerie Dragon</label>
+		<description>Faerie dragons are small, friendly dragons with beautiful, butterfly-like wings. Although they cannot breathe fire like larger dragons, they can exhale a euphoric gas which puts creatures in a happy, albiet slow-moving, high. 
+    
+When tame and trained, faerie dragons will occasionally exhale this euphoric gas on whichever colonist is their current master.</description>
+		<statBases>
+			<MoveSpeed>4.7</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<MarketValue>400</MarketValue>
+      <FilthRate>1</FilthRate>
+		</statBases>
+		<race>
+			<wildBiomes>
+        <TemperateForest>0.3</TemperateForest>
+        <TemperateSwamp>0.3</TemperateSwamp>
+        <TropicalRainforest>.3</TropicalRainforest>
+        <TropicalSwamp>.5</TropicalSwamp>
+      </wildBiomes>
+			<herdAnimal>false</herdAnimal>
+			<predator>false</predator>
+			<body>DND_FaerieDragonBody</body>
+			<packAnimal>false</packAnimal>
+			<baseBodySize>.25</baseBodySize>
+			<baseHealthScale>.45</baseHealthScale>
+			<baseHungerRate>0.8</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>0.65</wildness>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<leatherDef>DND_Leather_FaerieDragon</leatherDef>
+			<gestationPeriodDays>15</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.99, 0)</li>
+          <li>(1, .5)</li>
+          <li>(2, .5)</li>
+					<li>(2.01, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>70</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>.75</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>1.5</minAge>
+          <soundWounded>Pawn_Hare_Wounded</soundWounded>
+          <soundDeath>Pawn_Hare_Death</soundDeath>
+          <soundCall>Pawn_Hare_Call</soundCall>
+          <soundAngry>Pawn_Hare_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+
+    <tradeTags>
+			<li>AnimalExotic</li>
+		</tradeTags>
+		<comps>
+      <li Class="AnimalBehaviours.CompProperties_Floating"></li>
+      <li Class="MoodndBehaviorsAndEvents.CompProperties_HediffEffecterRework">
+        <radius>10</radius>
+        <tickInterval>2000</tickInterval>
+        <hediff>DND_EuphoricHaze</hediff>
+        <needsToBeTamed>true</needsToBeTamed>
+        <onlyAffectsMaster>true</onlyAffectsMaster>
+      </li> 
+        <li Class="CompProperties_EggLayer">
+          <eggFertilizedDef>DND_EggFaerieDragonFertilized</eggFertilizedDef>
+          <eggFertilizationCountMax>1</eggFertilizationCountMax>
+          <eggLayIntervalDays>20</eggLayIntervalDays>
+          <eggCountRange>1</eggCountRange>
+        </li> 
+		</comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>4.5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>4.5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>6.8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DND_FaerieDragon</defName>
+		<label>Faerie Dragon</label>
+		<labelPlural>Faerie Dragons</labelPlural>
+		<race>DND_FaerieDragon</race> 
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<combatPower>37</combatPower>
+		<wildGroupSize>
+			<min>1</min>
+			<max>1</max>
+		</wildGroupSize>
+    <alternateGraphicChance>1</alternateGraphicChance>
+    <alternateGraphics>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonBlue</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonGreen</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonPurple</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonYellow</texPath>
+      </li>
+    </alternateGraphics>
+		<lifeStages>
+			<li>
+				<label>faerie dragon wyrmling</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonBlue</texPath>
+					<drawSize>0.75</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_Dessicated_FDragon</texPath>
+					<drawSize>0.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonBlue</texPath>
+					<drawSize>1.05</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_Dessicated_FDragon</texPath>
+					<drawSize>1.05</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_FDragonBlue</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+
+				<dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_FaerieDragon/DND_Dessicated_FDragon</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>DND_GibberingBabbleResistance</defName>
+    <description>This pawn is building a resistance to the babble of Gibbering Mouthers. They are less likely to be affected by babbling, with 100% resistance granting complete immunity. This resistance lasts about a day.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Babble Resistance</label>
+    <defaultLabelColor>(0,.7,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>.01</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>50000~70000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>building</label>
+      </li>
+      <li>
+        <label>temporary immunity</label>
+        <minSeverity>1</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>DND_GibberingBabbleImmunity</defName>
+    <description>Gibbering Mouthers are immune to the effects of disorienting babble, both from themselves and other mouthers.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Babble Immunity</label>
+    <defaultLabelColor>(0,.7,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>DND_MindControlResistance</defName>
+    <description>This pawn is building a resistance to mind control. They are less likely to be affected by charming and fear effects, with full resistance granting complete immunity. This resistance lasts about a day.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Mind Control Resistance</label>
+    <defaultLabelColor>(0,.7,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>.01</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>50000~70000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>building</label>
+      </li>
+      <li>
+        <label>temporary immunity</label>
+        <minSeverity>1</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>DND_MindControlImmunity</defName>
+    <description>This creature is immune to mind control effects like charms and fears</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Mind Control Immunity</label>
+    <defaultLabelColor>(0,.7,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+  </HediffDef>
+</Defs>

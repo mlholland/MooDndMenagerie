@@ -260,7 +260,7 @@ namespace MoodndBehaviorsAndEvents
             }
         }
 
-        protected new void Impact(Thing hitThing)
+        protected void Impact(Thing hitThing)
         {
             bool flag = hitThing == null;
             if (flag)

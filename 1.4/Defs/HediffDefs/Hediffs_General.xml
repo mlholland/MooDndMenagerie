@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <HediffDef>
+    <defName>DND_HelpfulTools</defName>
+    <description>A nearby animated tool cabinet is helping out with mundane tasks, increasing general labor speed</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Helpful tools</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <GeneralLaborSpeed>.15</GeneralLaborSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>5000~5000</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>DND_OwlbearSilence</defName>
+    <description>Wearing owlbear featherfur over most of their body is muffling this person's movements, granting improved hunting stealth.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Muffled Movement</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <HuntingStealth>1</HuntingStealth>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped">
+      </li>
+    </comps>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>DND_WornDisplacement</defName>
+    <description>Wearing displacer beast fur over most of their body has granted this person limited optical displacement, improving their evasion.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Worn Optical Displacement</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>15</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped">
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+		<defName>DND_EuphoricHaze</defName>
+		<description>This person is under the effects of a friendly faerie dragon's euphoria breath. They're content, but their reaction speed is a little slow, especially when under pressure.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Euphoric Haze</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+    <descriptionHyperlinks>
+      <ThingDef>DND_FaerieDragon</ThingDef>
+    </descriptionHyperlinks>
+    <stages>
+      <li>
+        <statOffsets>
+          <AimingDelayFactor>.5</AimingDelayFactor> 
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>.85</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>.65</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>    
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1500~3000</disappearsAfterTicks>
+      </li>
+    </comps>
+	</HediffDef>
+   
+  <HediffDef>
+		<defName>DND_GibberingBabble</defName>
+		<description>A gibbering mouther's babble has disoriented this pawn, severely clouding their mind.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Disorienting Babble</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>360~1080</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li> 
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.35</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>DND_OpticalDisplacement</defName>
+		<description>This creature is bending light around its body, making it appear to be standing a few feet away from its real location. Hitting it up close is extremely difficult.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Optical Displacement</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>40</MeleeDodgeChance>
+          <!--<RangedDodgeChance>15</RangedDodgeChance>-->
+        </statOffsets>
+      </li>
+    </stages>
+	</HediffDef>
+
+  <HediffDef>
+    <defName>DND_Rusting</defName>
+    <description>This creature was covered in rapid-rusting chemicals. Top-layer metallic clothing or body parts at the impact site are rusting away at a dangerous rate.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Rapid Rusting</label>
+    <defaultLabelColor>(.8,0,0)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~600</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="MoodndBehaviorsAndEvents.HediffCompProperties_Decay">
+        <decayDmg>5</decayDmg>
+        <skinDamage>DND_DmgDef_BodyRusting</skinDamage>
+        <targetMustBeMetallic>true</targetMustBeMetallic>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>DND_Disintegrating</defName>
+    <description>This creature was hit by a disintegration effect. The top layer of clothing on this part of the body is rapidly fading to dust. If there is no clothing here... then the creature's flesh is next.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Disintegrating</label>
+    <defaultLabelColor>(.8,0,0)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~600</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="MoodndBehaviorsAndEvents.HediffCompProperties_Decay">
+        <decayDmg>39</decayDmg>
+        <skinDamage>DND_DmgDef_Disintegration</skinDamage>
+      </li>
+      <!--TODO re add when dust to death code is working <li Class="MoodndBehaviorsAndEvents.HediffCompProperties_TurnToDustOnDeath">
+      </li>-->
+    </comps>
+  </HediffDef>
+  
+  
+  <HediffDef>
+		<defName>DND_BeholderDeathRayHit</defName>
+		<description>This creature has been hit by a beholder's death ray, and has a very weak grasp on life.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Death's Door</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>7200~14400</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <totalBleedFactor>10</totalBleedFactor>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.6</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+	</HediffDef>
+
+  <HediffDef>
+    <defName>DND_BeholderSlowRayHit</defName>
+    <description>This creature has been hit by a magical time-slowing effect.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Time-Slowed</label>
+    <defaultLabelColor>(.8,0,0)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~900</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>.4</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <AimingDelayFactor>3</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>DND_TemporaryParalysis</defName>
+    <description>This creature has been hit by paralytic jolt. They will be temporarily slowed, or even incapacitated at high severities.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Paralized</label>
+    <defaultLabelColor>(.8,0,0)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>450~900</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>twitching</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.3</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <label>restraining</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.6</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.7</minSeverity>
+        <label>total</label>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0</postFactor>
+          </li>
+        </capMods>
+      </li>
+  </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>DND_GolemStatsFlesh</defName>
+    <description>This creature is an animated golem. It does not bleed, eat, nor heal, and it is very capable in combat. Unlike other golems, flesh golems still feel limited pain.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Constructed Guardian</label>
+    <defaultLabelColor>(0,.7,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>3</MeleeDodgeChance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>1.5</postFactor>
+          </li>
+        </capMods>
+        <statFactors>
+          <HungerRateMultiplier>0</HungerRateMultiplier>
+          <ImmunityGainSpeed>5</ImmunityGainSpeed>
+          <InjuryHealingFactor>0</InjuryHealingFactor>
+        </statFactors>
+        <totalBleedFactor>0</totalBleedFactor>
+        <painFactor>0.6</painFactor>
+      </li>
+    </stages>
+    <comps>
+      <li Class="MoodndBehaviorsAndEvents.HediffCompProperties_EnrageAtHighPain">
+        <painThreshold>.65</painThreshold>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>DND_FleshGolemRageGrace</defName>
+    <description>This flesh golem was damaged and went berserk recently. It won't do so again until at a few days have passed.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Recently Raged</label>
+    <defaultLabelColor>(0,.7,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>180000~300000</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>DND_GolemStatsStone</defName>
+    <description>This creature is an animated stone golem. As such, it does not bleed, eat, feel pain, nor heal, and it is very capable in combat.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Constructed Guardian</label>
+    <defaultLabelColor>(0,.7,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>5</MeleeDodgeChance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>2</postFactor>
+          </li>
+        </capMods>
+        <statFactors>
+          <HungerRateMultiplier>0</HungerRateMultiplier>
+          <ImmunityGainSpeed>5</ImmunityGainSpeed>
+          <InjuryHealingFactor>0</InjuryHealingFactor>
+        </statFactors>
+        <totalBleedFactor>0</totalBleedFactor>
+        <painFactor>0</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>DND_GolemStatsSteel</defName>
+    <description>This creature is an animated steel golem. As such, it does not bleed, eat, feel pain, nor heal, and it is very capable in combat.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Constructed Guardian</label>
+    <defaultLabelColor>(0,.7,1)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>10</MeleeDodgeChance>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>2.5</postFactor>
+          </li>
+        </capMods>
+        <statFactors>
+          <HungerRateMultiplier>0</HungerRateMultiplier>
+          <ImmunityGainSpeed>5</ImmunityGainSpeed>
+          <InjuryHealingFactor>0</InjuryHealingFactor>
+        </statFactors>
+        <totalBleedFactor>0</totalBleedFactor>
+        <painFactor>0</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

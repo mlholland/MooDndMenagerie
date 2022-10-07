@@ -31,7 +31,8 @@ namespace MoodndBehaviorsAndEvents
                     action = delegate ()
                     {
                         SoundDefOf.Roof_Collapse.PlayOneShot(null);
-                        PawnGenerationRequest request = new PawnGenerationRequest(Props.CreatureDef, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false);
+                        PawnGenerationRequest request = new PawnGenerationRequest(Props.CreatureDef, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, false, 0f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, DevelopmentalStage.Adult, null, null, null, false);
+
                         Pawn pawn = PawnGenerator.GeneratePawn(request);
                         GenSpawn.Spawn(pawn, this.parent.PositionHeld, this.parent.MapHeld, WipeMode.Vanish);
                         Messages.Message(string.Format((Props.TranslationString + "_Notification").Translate(), this.parent.Label, pawn.Name), MessageTypeDefOf.PositiveEvent, true);

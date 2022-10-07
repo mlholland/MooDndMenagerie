@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>DND_PetrificationRay_Fire6</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/ChargeShotA</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>
+        <pitchRange>2.4~2.6</pitchRange>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/InfernoCannon_Fire</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>10~10</volumeRange>
+        <pitchRange>.55~.65</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DND_BeholderRay_Fire_General</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/ChargeShotA</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~32</volumeRange>
+        <pitchRange>1.1~1.2</pitchRange>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/ChargeLance/Fire</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>10~12</volumeRange>
+        <pitchRange>1.2082353~1.345882</pitchRange>
+        <!--
+        <pitchRange>1.5082353~1.645882</pitchRange> high-pitched ting-->
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DND_BeholderRay_Fire_Death</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/ChargeShotA</clipPath>
+          </li>
+        </grains>
+        <volumeRange>35~35</volumeRange>
+        <pitchRange>1.6~1.8</pitchRange>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/InfernoCannon_Fire</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>10~10</volumeRange>
+        <pitchRange>.55~.65</pitchRange>
+      </li>
+
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/ChargeLance/Fire</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>10~12</volumeRange>
+        <pitchRange>1.2082353~1.345882</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DND_BeholderRay_Fire_Enervate</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/ChargeShotA</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~32</volumeRange>
+        <pitchRange>1.6~1.8</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DND_SpectatorRay_Fire1</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapon/ChargeShotA</clipPath>
+          </li>
+        </grains>
+        <volumeRange>18~26</volumeRange>
+        <pitchRange>2.1~2.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
