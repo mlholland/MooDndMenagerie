@@ -326,6 +326,7 @@
     <maxSeverity>1.0</maxSeverity>
     <stages>
       <li>
+        <hungerRateFactor>0.0</hungerRateFactor>
         <statOffsets>
           <MeleeDodgeChance>3</MeleeDodgeChance>
         </statOffsets>
@@ -336,7 +337,6 @@
           </li>
         </capMods>
         <statFactors>
-          <HungerRateMultiplier>0</HungerRateMultiplier>
           <ImmunityGainSpeed>5</ImmunityGainSpeed>
           <InjuryHealingFactor>0</InjuryHealingFactor>
         </statFactors>
@@ -382,6 +382,7 @@
     <maxSeverity>1.0</maxSeverity>
     <stages>
       <li>
+        <hungerRateFactor>0.0</hungerRateFactor>
         <statOffsets>
           <MeleeDodgeChance>5</MeleeDodgeChance>
         </statOffsets>
@@ -392,7 +393,6 @@
           </li>
         </capMods>
         <statFactors>
-          <HungerRateMultiplier>0</HungerRateMultiplier>
           <ImmunityGainSpeed>5</ImmunityGainSpeed>
           <InjuryHealingFactor>0</InjuryHealingFactor>
         </statFactors>
@@ -413,6 +413,7 @@
     <maxSeverity>1.0</maxSeverity>
     <stages>
       <li>
+        <hungerRateFactor>0.0</hungerRateFactor>
         <statOffsets>
           <MeleeDodgeChance>10</MeleeDodgeChance>
         </statOffsets>
@@ -423,7 +424,6 @@
           </li>
         </capMods>
         <statFactors>
-          <HungerRateMultiplier>0</HungerRateMultiplier>
           <ImmunityGainSpeed>5</ImmunityGainSpeed>
           <InjuryHealingFactor>0</InjuryHealingFactor>
         </statFactors>

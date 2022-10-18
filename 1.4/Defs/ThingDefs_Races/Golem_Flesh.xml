@@ -10,7 +10,8 @@ Flesh golems are extremely flammable, and they may go berserk when sufficiently 
     <statBases>
       <Flammability>2</Flammability>
       <Mass>200</Mass>
-      <ToxicSensitivity>0.0</ToxicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <IncomingDamageFactor>1</IncomingDamageFactor>
       <MoveSpeed>4.2</MoveSpeed>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>

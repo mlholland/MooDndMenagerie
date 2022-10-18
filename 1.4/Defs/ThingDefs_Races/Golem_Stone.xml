@@ -14,7 +14,8 @@ Note: Although stone golems can be constructed from any stone blocks, the result
     <statBases>
       <Flammability>0</Flammability>
       <Mass>350</Mass>
-      <ToxicSensitivity>0.0</ToxicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <IncomingDamageFactor>1</IncomingDamageFactor>
       <MoveSpeed>3.9</MoveSpeed>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>

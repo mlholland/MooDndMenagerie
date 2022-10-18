@@ -21,6 +21,7 @@
     <makesSickThought>true</makesSickThought>
     <stages>
       <li>
+        <hungerRateFactor>0.0</hungerRateFactor>
         <label>Entombed Alive</label>
         <capMods>
           <li>
@@ -29,7 +30,6 @@
           </li>
         </capMods>
         <statFactors>
-          <HungerRateMultiplier>0</HungerRateMultiplier>
           <ImmunityGainSpeed>5</ImmunityGainSpeed>
           <InjuryHealingFactor>0</InjuryHealingFactor>
         </statFactors>

@@ -9,7 +9,8 @@
       <MoveSpeed>5.2</MoveSpeed>
       <MarketValue>1200</MarketValue>      
       <ComfyTemperatureMin>-50</ComfyTemperatureMin>
-      <ToxicSensitivity>0</ToxicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
       <FilthRate>2</FilthRate>
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>

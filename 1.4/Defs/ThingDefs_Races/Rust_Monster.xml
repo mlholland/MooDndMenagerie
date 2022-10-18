@@ -11,7 +11,8 @@ Rust monsters will eat most metal deposits and raw metals that they can reach, m
       <MoveSpeed>3.9</MoveSpeed>
       <MarketValue>200</MarketValue>      
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-      <ToxicSensitivity>.3</ToxicSensitivity>
+      <ToxicResistance>.9</ToxicResistance>
+      <ToxicEnvironmentResistance>.8</ToxicEnvironmentResistance>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
       <FilthRate>6</FilthRate>
       <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
