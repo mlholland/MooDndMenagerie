@@ -13,7 +13,7 @@
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
 		<li>
-			<packageId>oskarPotocki.vanillaFactionsExpanded.core</packageId>
+			<packageId>oskarPotocki.vanillafactionsexpanded.core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
 		</li>
@@ -23,7 +23,7 @@
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
     <li>brrainz.harmony</li>
-    <li>oskarPotocki.vanillaFactionsExpanded.core</li>
+    <li>oskarPotocki.vanillafactionsexpanded.core</li>
     <li>spoonshortage.ADogSaidAnimalProsthetics</li>
 	</loadAfter>
   <loadBefore>
@@ -35,8 +35,15 @@
 
 	<description>  Adds over a dozen Dungeons and Dragons-inspired animals to RimWorld. 
   
-  Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has a non-vanilla ability, behavior, or item associated with it.
+Given the antagonistic nature of most creatures in DnD, many of these animals only appear in raids from a unique faction, while other creatures are loyal allies that must be summoned, built, or tamed. Almost every animal has a non-vanilla ability, behavior, or item associated with it.
+  
+RW v1.4 NOTICE: Although I've gotten this mod to a state where it doesn't immediately seem to break on v1.4, I'm sure there are issues I've missed, since this mod is too big for me to test thoroughly in a few evenings. You see a bug, please report it in the comments of this mod's steam page. Thank you for your patience.
 
+Known issues in RW v1.4 include:
+
+ - Sheild-piercing effects had to be disabled due to changes in vanilla shieldbelts that I'm still learning about.
+ - Animals with multiple verbs break when tamed, so spectators have had their non-damaging attacks disabled until I fix them.
+ 
 &lt;size=24&gt;Animal List&lt;/size&gt;
 
  - Golems: Constructed guardians that trade natural healing for extreme power. Requires a "Manual of Golems" item, a lot of materials, and a high construction skill to build one. There are three types of golems: flesh, stone, and steel, with flesh being the weakest, and steel being the strongest.
@@ -142,6 +149,7 @@
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+ - v1.1u: Minimal RW 1.4 compatability update.
  - v1.1c: Added compatability for 4 other mods.
  - v1.0: Initial release
 	</description>
