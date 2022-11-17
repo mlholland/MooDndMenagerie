@@ -13,11 +13,44 @@
   </HediffDef>
 
   <HediffDef ParentName="InfectionBase">
-    <defName>DND_Petrification_Complete</defName>
+    <defName>DND_Petrification_Complete_Mechs</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>full petrification</label>
-    <defaultLabelColor>(0.25, 0.25, 0.25)</defaultLabelColor>
-    <description>>A magical disease that causes the victim's body to turn to stone. This particular case had advanced to the point that the victim is emtombed in their own body. They don't need to eat, and diseases will struggle to infect them, but they're also immobile. To undo advanced petrification, someone else must administer a dose of Argiav to the victim.</description>
+    <defaultLabelColor>(0.55, 0.55, 0.55)</defaultLabelColor>
+    <description>A magical disease that causes the victim's body to turn to stone. This particular case had advanced to the point that the victim is emtombed in their own body. This disease is unstable on mechanoids, and will fade away on its own after five days.</description>
+    <makesSickThought>true</makesSickThought>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>true</showRemainingTime>
+        <disappearsAfterTicks>300000~300000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <hungerRateFactor>0.0</hungerRateFactor>
+        <label>Entombed Alive (mech)</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>.1</setMax>
+          </li>
+        </capMods>
+        <statFactors>
+          <ImmunityGainSpeed>5</ImmunityGainSpeed>
+          <InjuryHealingFactor>0</InjuryHealingFactor>
+        </statFactors>
+        <totalBleedFactor>0</totalBleedFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+  <HediffDef ParentName="InfectionBase">
+    <defName>DND_Petrification_Complete</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>A magical disease that causes the victim's body to turn to stone. This particular case had advanced to the point that the victim is emtombed in their own body. They don't need to eat, and diseases will struggle to infect them, but they're also immobile. To undo advanced petrification, someone else must administer a dose of Argiav to the victim.</description>
+    <label>full petrification</label>
+    <defaultLabelColor>(0.55, 0.55, 0.55)</defaultLabelColor>
     <makesSickThought>true</makesSickThought>
     <stages>
       <li>
@@ -37,9 +70,10 @@
       </li>
     </stages>
   </HediffDef>
-  
-  
-  
+
+
+
+
   <HediffDef ParentName="InfectionBase">
     <defName>DND_Petrification</defName>
     <hediffClass>HediffWithComps</hediffClass>

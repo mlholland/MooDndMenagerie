@@ -22,6 +22,7 @@
       <immunityHediffDefs>
         <li>DND_Petrification_Complete</li>
         <li>DND_PetrificationImmunity</li>
+        <li>DND_Petrification_Complete_Mechs</li>
         <li>DND_Antipet</li>
         <li>DND_GolemStatsFlesh</li>
         <li>DND_GolemStatsStone</li>
@@ -56,6 +57,7 @@
       <immunityHediffDefs>
         <li>DND_Petrification_Complete</li>
         <li>DND_PetrificationImmunity</li>
+        <li>DND_Petrification_Complete_Mechs</li>
         <li>DND_Antipet</li>
         <li>DND_GolemStatsFlesh</li>
         <li>DND_GolemStatsStone</li>
