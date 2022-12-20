@@ -57,7 +57,7 @@
         <commonality>1</commonality>
         <defaultCooldownTime>2</defaultCooldownTime>
       </li>
-      <!--li>
+      <li>
         <label>Slow Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
@@ -74,7 +74,7 @@
         <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality> 
-    </li-->
+    </li>
       <!--li>
         <label>Fear Ray</label>
         <verbClass>Verb_Shoot</verbClass>
@@ -93,7 +93,7 @@
         <minRange>1</minRange>
         <commonality>1</commonality> 
       </li-->
-      <!--li>
+      <li>
         <label>Paralysis Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
@@ -110,7 +110,7 @@
         <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
         <commonality>1</commonality>
-      </li-->
+      </li>
     </verbs>
     <tools>
       <li>
