@@ -48,7 +48,7 @@
   <HediffDef ParentName="InfectionBase">
     <defName>DND_Petrification_Complete</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <description>A magical disease that causes the victim's body to turn to stone. This particular case had advanced to the point that the victim is emtombed in their own body. They don't need to eat, and diseases will struggle to infect them, but they're also immobile. To undo advanced petrification, someone else must administer a dose of Argiav to the victim.</description>
+    <description>A magical disease that causes the victim's body to turn to stone. This particular case had advanced to the point that the victim is emtombed in their own body. They don't need to eat, and diseases will struggle to infect them, but they're also immobile. To undo advanced petrification, someone else must administer a dose of Antipet to the victim.</description>
     <label>full petrification</label>
     <defaultLabelColor>(0.55, 0.55, 0.55)</defaultLabelColor>
     <makesSickThought>true</makesSickThought>
