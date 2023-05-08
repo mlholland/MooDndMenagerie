@@ -52,7 +52,7 @@
         <commonality>100</commonality>
         <options>
           <DND_Medusa>10</DND_Medusa>
-          <DND_Basilisk>20</DND_Basilisk>
+          <DND_Basilisk>30</DND_Basilisk>
         </options>
       </li>
       <li>
@@ -60,7 +60,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <DND_Beholder>20</DND_Beholder>
+          <DND_Beholder>10</DND_Beholder>
           <DND_Spectator>30</DND_Spectator>
           <DND_DisplacerBeast>10</DND_DisplacerBeast>
           <DND_Owlbear>10</DND_Owlbear>
@@ -72,7 +72,7 @@
         <kindDef>Combat</kindDef>
         <commonality>200</commonality>
         <options>
-          <DND_Beholder>5</DND_Beholder>
+          <DND_Beholder>3</DND_Beholder>
           <DND_RustMonster>10</DND_RustMonster>
           <DND_Spectator>20</DND_Spectator>
           <DND_DisplacerBeast>10</DND_DisplacerBeast>
@@ -108,7 +108,7 @@
         <commonality>100</commonality>
         <options>
           <DND_Beholder>10</DND_Beholder>
-          <DND_Spectator>20</DND_Spectator>
+          <DND_Spectator>40</DND_Spectator>
         </options>
       </li>
     </pawnGroupMakers>
