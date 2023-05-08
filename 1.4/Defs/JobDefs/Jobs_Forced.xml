@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>DND_ForcedFlee</defName>    
+    <playerInterruptible>false</playerInterruptible>
+    <suspendable>false</suspendable>
+    <casualInterruptible>false</casualInterruptible>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+    <reportString>fleeing.</reportString>
+    <isIdle>false</isIdle>
+    <driverClass>MoodndBehaviorsAndEvents.JobDriver_FleeAndCower_Forced</driverClass>
+  </JobDef>
+
+  <JobDef>
+    <defName>DND_ForcedCharmApproach</defName>
+    <playerInterruptible>false</playerInterruptible>
+    <suspendable>false</suspendable>
+    <casualInterruptible>false</casualInterruptible>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+    <reportString>approaching charmer.</reportString>
+    <isIdle>false</isIdle>
+    <driverClass>MoodndBehaviorsAndEvents.JobDriver_Goto_Forced</driverClass>
+  </JobDef>
+
+</Defs>

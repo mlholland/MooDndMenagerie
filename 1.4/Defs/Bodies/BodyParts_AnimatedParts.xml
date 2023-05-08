@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+	Each coverage value is relative to its parent.
+	Remaining body part coverage (100% minus coverage of all child nodes) is a chance to hit exactly this part.
+	Damage "starts" at corePart, and then "goes deeper" until it hits remaining body part coverage or leaf node
+  - this body part is then hit.
+-->
+
+<Defs>
+  <!--tool cabinet stuff-->
+  <BodyPartDef>
+    <defName>DND_Tool_Cabinet_Case</defName>
+    <label>cabinet case</label>
+    <hitPoints>200</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Drawer</defName>
+    <label>tool drawer</label>
+    <hitPoints>75</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Animated_Hammer</defName>
+    <label>animated hammer</label>
+    <hitPoints>30</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Animated_Screwdriver</defName>
+    <label>animated screwdriver</label>
+    <hitPoints>30</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Animated_Handsaw</defName>
+    <label>animated handsaw</label>
+    <hitPoints>30</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Cabinet_Leg</defName>
+    <label>cabinet leg</label>
+    <hitPoints>20</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Cabinet_Floor_Protector</defName>
+    <label>floor protector</label>
+    <hitPoints>10</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  
+  <!--dining chair stuff-->
+  <BodyPartDef>
+    <defName>DND_Chair_Seat</defName>
+    <label>seat</label>
+    <hitPoints>50</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Chair_Leg</defName>
+    <label>chair leg</label>
+    <hitPoints>25</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>DND_Floor_Protector</defName>
+    <label>floor protector</label>
+    <hitPoints>10</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbSegment</li>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  
+    <BodyPartDef>
+    <defName>DND_Backrest</defName>
+    <label>backrest</label>
+    <hitPoints>30</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DND_Backrest_Spoke</defName>
+    <label>backrest spoke</label>
+    <hitPoints>10</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>true</canSuggestAmputation>
+  </BodyPartDef>
+
+  <!-- shared stuff -->
+
+
+  
+  <BodyPartDef>
+    <defName>DND_MagicalCore</defName>
+    <label>Magical Core</label>
+    <hitPoints>20</hitPoints>
+    <bleedRate>0</bleedRate>
+    <skinCovered>false</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <tags>
+      <li>SightSource</li>
+      <li>ConsciousnessSource</li> 
+      <li>EatingSource</li> 
+      <li>BreathingSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>MetabolismSource</li>
+      <li>BloodFiltrationKidney</li>
+      <li>BloodPumpingSource</li>
+    </tags>
+  </BodyPartDef>
+	
+</Defs>

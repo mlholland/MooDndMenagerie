@@ -20,15 +20,13 @@ namespace MoodndBehaviorsAndEvents
     [HarmonyPatch(typeof(PawnVerbUtility), nameof(PawnVerbUtility.BestVerbForTarget))]
     static class PawnVerbUtility_BestVerbForTargets_Prefix_Patch
     {
-        static bool Prefix(ref Verb __result, Pawn p, LocalTargetInfo target, IEnumerable<ManagedVerb> verbs, VerbManager man = null)
+        static bool Prefix(ref Verb __result, Pawn p, LocalTargetInfo target, IEnumerable<ManagedVerb> verbs)
         { 
             if (p != null && p.ContentSource != null && p.ContentSource.PackageId == "mooloh.dndmenagerie") // only intercept animals in this mod
             { 
-                var debug = man?.debugOpts != null && man.debugOpts.ScoreLogging;
                 if (!target.IsValid || (p.Map != null && !target.Cell.InBounds(p.Map))) // not sure why the last condition is red according to VS; it compiles just fine.
                 {
-                    if (debug)
-                        Log.Error("MooDnd BestVerbForTarget patch: (Current job is " + p.CurJob + " with verb " + p.CurJob?.verbToUse + " and target " +
+                    Debug.LogIfDebug("MooDnd BestVerbForTarget patch: (Current job is " + p.CurJob + " with verb " + p.CurJob?.verbToUse + " and target " +
                                   p.CurJob?.targetA + ")");
                     return false;
                 }
@@ -42,7 +40,7 @@ namespace MoodndBehaviorsAndEvents
                         __result = verb.Verb;
                         return false;
                     } 
-                    var score = VerbScore(p, verb.Verb, target, debug);
+                    var score = VerbScore(p, verb.Verb, target);
                     if (score < bestScore) continue;
                     else if (score == bestScore)
                     { 
@@ -56,7 +54,7 @@ namespace MoodndBehaviorsAndEvents
                     }
                 }
                 Verb randomVerbAmongBest = bestVerbs.RandomElement();
-                if (debug) Log.Message("MooDnd BestVerbForTarget patch returning " + randomVerbAmongBest);
+                Debug.LogIfDebug("MooDnd BestVerbForTarget patch returning " + randomVerbAmongBest);
                 __result = randomVerbAmongBest;
                 return false;
             }
@@ -64,9 +62,9 @@ namespace MoodndBehaviorsAndEvents
         }
 
 
-        private static float VerbScore(Pawn p, Verb verb, LocalTargetInfo target, bool debug = false)
+        private static float VerbScore(Pawn p, Verb verb, LocalTargetInfo target)
         {
-            if (debug) Log.Message("MooDnd VerbScore Patch: Getting score of " + verb + " with target " + target);
+            Debug.LogIfDebug("MooDnd VerbScore Patch: Getting score of " + verb + " with target " + target);
             if (verb is IVerbScore score) return score.GetScore(p, target);
             var accuracy = 0f;
             if (p.Map != null)
@@ -77,15 +75,11 @@ namespace MoodndBehaviorsAndEvents
 
             var damage = accuracy * verb.verbProps.burstShotCount * GetDamage(verb);
             var timeSpent = verb.verbProps.AdjustedCooldownTicks(verb, p) + verb.verbProps.warmupTime.SecondsToTicks();
-            if (debug)
-            {
-                Log.Message("Accuracy: " + accuracy);
-                Log.Message("Damage: " + damage);
-                Log.Message("timeSpent: " + timeSpent);
-                Log.Message("Original score of " + verb + " on target " + target + " is " + damage / timeSpent);
-                Log.Message("Score Overwritten to 1 due to Mooloh's DnD patch");
-            }
-
+            Debug.LogIfDebug("Accuracy: " + accuracy);
+            Debug.LogIfDebug("Damage: " + damage);
+            Debug.LogIfDebug("timeSpent: " + timeSpent);
+            Debug.LogIfDebug("Original score of " + verb + " on target " + target + " is " + damage / timeSpent);
+            Debug.LogIfDebug("Score Overwritten to 1 due to Mooloh's DnD patch");
             return 1;
         }
 

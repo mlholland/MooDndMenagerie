@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>DND_RustMonsterSpawner</defName>
+    <label>rust tunnel</label>
+    <thingClass>MoodndBehaviorsAndEvents.ThingWithComps_RustMonsterSpawner</thingClass>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
+
+</Defs>

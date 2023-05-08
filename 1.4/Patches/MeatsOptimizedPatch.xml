@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Optimization: Meats - C# Edition</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <!-- If the race drops the meats below, Then excludes the race from the meat optimization. -->
+          <xpath>/Defs/AlienMeatTest.MeatListDef[defName="WhiteList"]/meats</xpath>
+          <value>
+            <li>Steel</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <!-- Excludes the races below from the meat optimization.-->
+          <xpath>/Defs/AlienMeatTest.MeatListDef[defName="WhiteList"]/races</xpath>
+          <value>
+            <li>DND_GolemSteel</li>
+          </value>
+        </li> 
+      </operations> 
+    </match>
+  </Operation>
+
+</Patch>

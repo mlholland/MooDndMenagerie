@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MoodndBehaviorsAndEvents.StuffedApparelGrantsHediffDef>
+    <defName>DND_OwlbearLeatherGivesSilence</defName>
+    <stuff>DND_Leather_Owlbear</stuff>
+    <appliedHediffDef>DND_OwlbearSilence</appliedHediffDef>
+    <validLayers>
+      <li>Shell</li>
+    </validLayers>
+    <validBodyPartGroups>
+      <li>Torso</li>
+    </validBodyPartGroups>
+  </MoodndBehaviorsAndEvents.StuffedApparelGrantsHediffDef>
+
+  <MoodndBehaviorsAndEvents.StuffedApparelGrantsHediffDef>
+    <defName>DND_DisplacerFurGivesDisplacement</defName>
+    <stuff>DND_Leather_DisplacerBeast</stuff>
+    <appliedHediffDef>DND_WornDisplacement</appliedHediffDef>
+    <validLayers>
+      <li>Shell</li>
+    </validLayers>
+    <validBodyPartGroups>
+      <li>Torso</li>
+    </validBodyPartGroups>
+  </MoodndBehaviorsAndEvents.StuffedApparelGrantsHediffDef>
+
+</Defs>

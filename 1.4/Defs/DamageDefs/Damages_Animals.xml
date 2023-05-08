@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Temporary hack; ranged weapons need to use the old pre-flavorful-combat system to avoid a rebalance cascade. -->
+
+
+  <DamageDef Name="DND_HediffRayBase" Abstract="True">
+    <impactSoundType>Bullet</impactSoundType>
+    <externalViolence>true</externalViolence>
+    <harmsHealth>true</harmsHealth>
+    <makesBlood>false</makesBlood>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+  <DamageDef ParentName="DND_HediffRayBase">
+    <defName>DND_DmgDef_MedusaRay</defName>
+    <label>medusa ray</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <deathMessage>{0} Has been petrified to death.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <hediff>Burn</hediff>
+  </DamageDef>
+
+  <DamageDef ParentName="DND_HediffRayBase">
+    <defName>DND_DmgDef_BeholderRay</defName>
+    <label>beholder ray</label>
+    <deathMessage>{0} Has been beamed to death.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+  </DamageDef>
+
+  <DamageDef ParentName="DND_HediffRayBase">
+    <harmsHealth>true</harmsHealth>
+    <defName>DND_DmgDef_BeholderDeathRay</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <label>damaging beholder ray</label>
+    <deathMessage>{0} was killed by a death ray.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <hediff>DND_Necrosis</hediff>
+    <hediffSkin>DND_Necrosis</hediffSkin>
+    <hediffSolid>DND_Necrosis</hediffSolid>
+    <isRanged>true</isRanged>
+  </DamageDef>
+  
+  <DamageDef ParentName="DND_HediffRayBase">
+    <harmsHealth>true</harmsHealth>
+    <defName>DND_DmgDef_BeholderEnervationRay</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <label>damaging beholder ray</label>
+    <deathMessage>{0} Has been beamed to death.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <hediff>DND_Necrosis</hediff>
+    <hediffSkin>DND_Necrosis</hediffSkin>
+    <hediffSolid>DND_Necrosis</hediffSolid>
+    <isRanged>true</isRanged>
+  </DamageDef>
+
+
+  <DamageDef>
+    <harmsHealth>true</harmsHealth>
+    <defName>DND_DmgDef_BeholderDisintegrationRay</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <label>disintigrating beholder ray</label>
+    <deathMessage>{0} has disintegrated.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <hediff>DND_Necrosis</hediff>
+    <hediffSkin>DND_Necrosis</hediffSkin>
+    <hediffSolid>DND_Necrosis</hediffSolid>
+    <isRanged>true</isRanged>
+  </DamageDef>
+  
+  <DamageDef>
+    <harmsHealth>true</harmsHealth>
+    <defName>DND_DmgDef_Disintegration</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <label>disintigration</label>
+    <deathMessage>{0} has disintegrated.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <hediff>DND_Disintegration</hediff>
+    <hediffSkin>DND_Disintegration</hediffSkin>
+    <hediffSolid>DND_Disintegration</hediffSolid>
+    <isRanged>false</isRanged>
+  </DamageDef>
+
+  <DamageDef ParentName="DND_HediffRayBase">
+    <harmsHealth>true</harmsHealth>
+    <defName>DND_DmgDef_BodyRusting</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <label>rapid rusting</label>
+    <deathMessage>{0} has rusted away.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <hediff>DND_BodyRusting</hediff>
+    <hediffSkin>DND_BodyRusting</hediffSkin>
+    <hediffSolid>DND_BodyRusting</hediffSolid>
+    <isRanged>false</isRanged>
+  </DamageDef>
+
+</Defs>

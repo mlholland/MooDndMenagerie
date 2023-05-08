@@ -57,9 +57,10 @@ namespace MoodndBehaviorsAndEvents
                 return;
             } 
             ThingDef livingObjDef = pawnKindDef.race;
-            //create the pawn
-            PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named(livingObjDef.defName), this.pawn.Faction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false);
-            Pawn pawn = PawnGenerator.GeneratePawn(request);
+            //create the pawn                        
+            PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named(livingObjDef.defName), this.pawn.Faction, PawnGenerationContext.NonPlayer, -1, false, false, false, false, false, 0f, false, true, false, true, true, false, false, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, DevelopmentalStage.Adult, null, null, null, false);
+
+           Pawn pawn = PawnGenerator.GeneratePawn(request);
             
             // add quality hediff
             QualityCategory qc;

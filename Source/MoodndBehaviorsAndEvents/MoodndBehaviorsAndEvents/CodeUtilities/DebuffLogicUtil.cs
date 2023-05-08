@@ -156,7 +156,9 @@ namespace MoodndBehaviorsAndEvents
         // then the shield will be dealt shieldDamage points of damage.
         public static float PawnShieldResistance(Pawn pawn, float shieldDamage = 0f, float shieldPiercing = .5f)
         {
-            if (pawn != null && pawn.apparel != null)
+            // disabling this due to RW 1.4 shield mechanic rework. I need to examine that code more closely 
+            // to understand how to adapt this.
+            /*if (pawn != null && pawn.apparel != null)
             {
                 foreach(Apparel app in pawn.apparel.WornApparel)
                 {
@@ -174,7 +176,7 @@ namespace MoodndBehaviorsAndEvents
                         }
                     }
                 }
-            } 
+            } */
             return 1;
         }
 

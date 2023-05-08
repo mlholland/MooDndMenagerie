@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MoodndBehaviorsAndEvents.DebuffingManeuverDef>
+    <defName>DND_RustTouchManeuver</defName>
+    <requiredCapacity>DND_RustTouchTool</requiredCapacity>
+    <verb>
+      <verbClass>MoodndBehaviorsAndEvents.Verb_MeleeApplyHediff_MoreOptions</verbClass>
+      <meleeDamageDef>Cut</meleeDamageDef> 
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+    <hediffDef>DND_Rusting</hediffDef>
+  </MoodndBehaviorsAndEvents.DebuffingManeuverDef>
+
+  <MoodndBehaviorsAndEvents.DebuffingManeuverDef>
+    <defName>DND_DisintegrationTouchManeuver</defName>
+    <requiredCapacity>DND_DisintegrationTouchTool</requiredCapacity>
+    <verb>
+      <verbClass>MoodndBehaviorsAndEvents.Verb_MeleeApplyHediff_MoreOptions</verbClass>
+      <meleeDamageDef>Cut</meleeDamageDef> 
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+    <hediffDef>DND_Disintegrating</hediffDef>
+    <structureBonusDamage>200</structureBonusDamage>
+  </MoodndBehaviorsAndEvents.DebuffingManeuverDef>
+
+  <ManeuverDef>
+    <defName>DND_AcidAttackManeuver</defName>
+    <requiredCapacity>DND_AcidAttackTool</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Burn</meleeDamageDef> 
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>  
+</Defs>

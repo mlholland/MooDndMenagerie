@@ -37,3 +37,5 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Sour
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoodndBehaviorsAndEvents.csproj.GenerateResource.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoodndBehaviorsAndEvents.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\Source\MoodndBehaviorsAndEvents\obj\Debug\MoosDndMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\1.4\Assemblies\MoosDndMod.dll.config
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MooDndMenagerie\1.4\Assemblies\MoosDndMod.dll

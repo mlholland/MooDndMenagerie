@@ -16,7 +16,7 @@ namespace MoodndBehaviorsAndEvents
             }
         }
         
-        protected override void Impact(Thing hitThing)
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             base.Impact(hitThing);
             if (Def != null && hitThing != null && hitThing is Pawn hitPawn)

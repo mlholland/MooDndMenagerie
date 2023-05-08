@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>DND_DisplacerBeast</defName>
+    <label>displacer beast</label>
+    <description>At a glance, a displacer beast looks like an enormous panther, but their alien origin is quickly apparent when you look beyond their feline face. Displacer beasts have six legs, as well as two tentacles sprouting from their shoulders. These tentacles end in spiny lashers, and the displacer beast uses them to shred their prey. If this was not dangerous enough, displacer beasts earn their name from their ability to distort light, making them appear to be standing a few feet away from their actual location.</description>
+    <statBases>
+      <MoveSpeed>6.1</MoveSpeed>
+      <MarketValue>900</MarketValue>      
+      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <FilthRate>4</FilthRate>
+    </statBases>
+    <uiIconScale>1.15</uiIconScale>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_InitialHediff">
+        <hediffname>DND_OpticalDisplacement</hediffname>
+        <hediffseverity>1</hediffseverity>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12.1</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12.1</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+      <li>
+        <label>left lasher</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Scratch</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>DND_LeftTentacleLasher</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>1</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right lasher</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Scratch</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>DND_RightTentacleLasher</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>1</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+    <race>
+      <body>DND_DisplacerBeastBody</body>
+      <wildBiomes>
+        <TemperateSwamp>0.07</TemperateSwamp>
+        <TemperateForest>0.07</TemperateForest>
+        <TropicalSwamp>0.1</TropicalSwamp>
+        <TropicalRainforest>0.1</TropicalRainforest>
+      </wildBiomes>
+      <herdAnimal>true</herdAnimal>
+      <predator>true</predator>
+      <maxPreyBodySize>2</maxPreyBodySize>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHungerRate>0.18</baseHungerRate>
+      <baseHealthScale>2.5</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>DND_Leather_DisplacerBeast</leatherDef>
+      <wildness>0.85</wildness>
+      <trainability>Advanced</trainability>
+      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.90</manhunterOnDamageChance>
+      <gestationPeriodDays>15</gestationPeriodDays>
+      <lifeExpectancy>50</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Cougar_Injured</soundWounded>
+          <soundDeath>Pawn_Cougar_Death</soundDeath>
+          <soundAngry>Pawn_Cougar_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase" >
+    <defName>DND_DisplacerBeast</defName>
+    <label>displacer beast</label>
+    <labelPlural>displacer beasts</labelPlural>
+    <race>DND_DisplacerBeast</race>
+    <combatPower>250</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>displacer beast kitten</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_DisplacerBeast/DND_DisplacerBeast</texPath>
+          <drawSize>1.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_DisplacerBeast/DND_Dessicated_DisplacerBeast</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_DisplacerBeast/DND_DisplacerBeast</texPath>
+          <drawSize>1.75</drawSize> 
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(-.3, -0.2,.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_DisplacerBeast/DND_Dessicated_DisplacerBeast</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_DisplacerBeast/DND_DisplacerBeast</texPath>
+          <drawSize>2.7</drawSize> 
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(-.4,0,.7)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/DND_DisplacerBeast/DND_Dessicated_DisplacerBeast</texPath>
+          <drawSize>2.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>
