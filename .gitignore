@@ -3,3 +3,6 @@
 *.ide*
 *.cache
 *.dll
+Source/MoodndBehaviorsAndEvents/.vs/MoodndBehaviorsAndEvents/v15/.suo
+*.ide-shm
+*.ide-wal
