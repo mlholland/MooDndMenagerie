@@ -6,3 +6,9 @@
 Source/MoodndBehaviorsAndEvents/.vs/MoodndBehaviorsAndEvents/v15/.suo
 *.ide-shm
 *.ide-wal
+*.cache
+*.csproj
+*.ide-wal
+*.ide-shm
+Source/MoodndBehaviorsAndEvents/.vs/MoodndBehaviorsAndEvents/v15/.suo
+*.cache

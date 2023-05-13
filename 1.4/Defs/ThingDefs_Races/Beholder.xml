@@ -207,7 +207,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <accuracyMedium>.99</accuracyMedium>
         <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
-        <commonality>1</commonality>
+        <commonality>1000</commonality>
       </li>
       <li>
         <label>Enervation Ray</label>
@@ -273,6 +273,9 @@ Most of a beholder's body solidifies into a useless stone-like material on death
     </tools>
     <comps>
       <li Class="AnimalBehaviours.CompProperties_Floating"></li>
+      <li Class="MVCF.Comps.CompProperties_RandomVerbs">
+        <meleeChance>0.01</meleeChance>
+      </li>
     </comps>
 	</ThingDef>
 
