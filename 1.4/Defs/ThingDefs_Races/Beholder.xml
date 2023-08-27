@@ -207,7 +207,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <accuracyMedium>.99</accuracyMedium>
         <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
-        <commonality>1000</commonality>
+        <commonality>1</commonality>
       </li>
       <li>
         <label>Enervation Ray</label>
