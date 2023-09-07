@@ -65,11 +65,12 @@ Most of a beholder's body solidifies into a useless stone-like material on death
       <hasGenders>false</hasGenders>
     </race>
     <verbs>
+
       <li>
-        <label>Sleep Ray</label>
+        <label>Petrification Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>DND_BeholderSleepRay</defaultProjectile>
+        <defaultProjectile>DND_BeholderPetrificationRay</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>40.9</range>
         <burstShotCount>1</burstShotCount>
@@ -84,10 +85,10 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <commonality>1</commonality>
       </li>
       <li>
-        <label>Petrification Ray</label>
+        <label>Sleep Ray</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>DND_BeholderPetrificationRay</defaultProjectile>
+        <defaultProjectile>DND_BeholderSleepRay</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>40.9</range>
         <burstShotCount>1</burstShotCount>
@@ -225,7 +226,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <accuracyMedium>.97</accuracyMedium>
         <accuracyLong>.97</accuracyLong>
         <minRange>1</minRange>
-        <commonality>1</commonality>
+        <commonality>2</commonality>
       </li>
       <li>
         <label>Disintegration Ray</label>
@@ -243,7 +244,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
         <accuracyMedium>.99</accuracyMedium>
         <accuracyLong>.99</accuracyLong>
         <minRange>1</minRange>
-        <commonality>.4</commonality>
+        <commonality>.5</commonality>
       </li>
     </verbs>
     <tools>
@@ -274,7 +275,7 @@ Most of a beholder's body solidifies into a useless stone-like material on death
     <comps>
       <li Class="AnimalBehaviours.CompProperties_Floating"></li>
       <li Class="MVCF.Comps.CompProperties_RandomVerbs">
-        <meleeChance>0.01</meleeChance>
+        <meleeChance>0.0001</meleeChance>
       </li>
     </comps>
 	</ThingDef>

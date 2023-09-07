@@ -7,6 +7,8 @@ using Verse;
  * instance of the Comp_InertMimic class, which isn't normally loaded because it's not part of any normal defs.
  * When saving, inert mimics are ID'd by the presense of a mythic comp.
  * When loading, they're identified by a flag that's saved to the ThingWithComps itself.
+ * 
+ * Currently only half-implemented and disabled
  */
 namespace MoodndBehaviorsAndEvents
 {
@@ -14,7 +16,7 @@ namespace MoodndBehaviorsAndEvents
     {
         private static readonly string isMimicLookString = "MooDND_InertMimicComp";
 
-        [HarmonyPatch(typeof(ThingWithComps), nameof(ThingWithComps.ExposeData))]
+        // [HarmonyPatch(typeof(ThingWithComps), nameof(ThingWithComps.ExposeData))]
         static class ThingWithComps_InitializeComps_PostResolve_Patch
         {
             static void Postfix(ref ThingWithComps __instance, List<ThingComp> ___comps)

@@ -22,7 +22,6 @@ namespace MoodndBehaviorsAndEvents
         {
             base.CompPostTick(ref severityAdjustment);
             if (this.parent.Severity >= 1) {
-                Debug.MooLog("Hello");
                 HediffDef perm = (this.Pawn.RaceProps.IsMechanoid || this.Pawn.RaceProps.IsWorkMech) ? HediffDef.Named(PERMANENT_HEDIFF_NAME_MECHS) : HediffDef.Named(PERMANENT_HEDIFF_NAME);
                 this.Pawn.health.AddHediff(perm);
                 this.Pawn.health.RemoveHediff(this.parent);
